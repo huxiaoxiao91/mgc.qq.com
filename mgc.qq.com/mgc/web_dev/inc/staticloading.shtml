@@ -1,0 +1,160 @@
+<!--Created by shixinqi on 2015/11/25.Adding static resource version-->
+<script src="https://js.aq.qq.com/js/aq_common.js"></script>
+<script>
+    //解决IE下JS不执行
+    (function() {
+        var method;
+        var noop = function () {
+        };
+        var methods = [
+            'assert', 'clear', 'count', 'debug', 'dir', 'dirxml', 'error',
+            'exception', 'group', 'groupCollapsed', 'groupEnd', 'info', 'log',
+            'markTimeline', 'profile', 'profileEnd', 'table', 'time', 'timeEnd',
+            'timeline', 'timelineEnd', 'timeStamp', 'trace', 'warn'
+        ];
+        var length = methods.length;
+        var console = (window.console = window.console || {});
+        while (length--) {
+            method = methods[length];
+            if (!console[method])
+            {
+                console[method] = noop;
+            }
+        }
+    }());
+
+    //阻止异常抛出   
+    window.onerror = function(sMessage, sUrl, sLine) {
+        var _error = "阻止异常抛出:[sMessage:" + sMessage + "],[sUrl:" + sUrl + "],[sLine:" + sLine + "]";
+        console.log(_error);
+        //log.error(_error);
+        return true;
+    };
+    var MgcAPI = {
+        HostConfig: {
+            QGame: "qgame.mgc.qq.com",                //mgc for qqgame qgame专用 ：暂时 [qgame.rp.mgc.qq.com]
+            X52: "xw2.mgc.qq.com",              //mgc for x52           [x52.rp.mgc.qq.com]
+            MGC: "other.qq.com",                  //mgc about online   其它host均为web端
+            Local: "xxx.qq.com"                 //mgc about local  ....
+        },
+        SNSBrowser: {
+            Host: window.location.host,//当前文档host
+            IsQQGame: function() { return this.Host == MgcAPI.HostConfig.QGame; },//是否QGame大厅
+            IsX52: function() { return this.Host == MgcAPI.HostConfig.X52; },//是否是x52
+            IsQQGameLiveArea: function(){ return MgcAPI.SNSBrowser.intrieveUrl(); }, //是否是qgame直播专区
+            IsMGC: function() { return this.Host == MgcAPI.HostConfig.MGC; },//是否是梦工厂
+            IsThirdParty: function() { return this.IsQQGame() || this.IsX52(); },//是否是第三方接入平台
+            intrieveUrl: function(){
+                var url = window.location.href;
+                if(url.indexOf("param") != -1){
+                    var hashes = url.slice(url.indexOf('?') + 1).split('&');
+                    for (var i = 0; i < hashes.length; i++) {
+                        hash = hashes[i].split('=');
+                        if (hash[0] == "param") {
+                            var _pv = hash[1];
+                            if (_pv.indexOf('|') != -1) {
+                                return _pv.split('|')[0];
+                            } else if (_pv.indexOf('&') != -1) {
+                                return _pv.split('&')[0];
+                            } else {
+                                return _pv;
+                            }
+                        }
+                    }   
+                }
+            }
+        }
+    };
+    var STATIC_RESOURCE = {
+        debug: true,
+        static_resource_version: "3_8_8_2016_15_4_final_3",
+        doc: document,
+        heads: document.getElementsByTagName("head"),
+        filename: function(url) {
+            if (!url)
+                url = location.href;
+            var urlArray = url.split("#")[0].split("?")[0].split("/");
+            return urlArray[urlArray.length - 1];
+        },
+        getUrlParam: function(name, url) {
+            if (!url) {
+                url = window.location.href;
+            };
+            var vars = [], hash;
+            var hashes = url.slice(url.indexOf('?') + 1).split(/[&#|]/);
+            for (var i = 0; i < hashes.length; i++) {
+                hash = hashes[i].split('=');
+                vars.push(hash[0]);
+                vars[hash[0]] = decodeURIComponent(hash[1]);
+            }
+            return vars[name];
+        },
+        addCssByLink: function(a) {
+            var _filename = this.filename();
+            for (var i = 0; i < a.length; i++) {
+                if ((_filename == "nest.shtml" || _filename == "caveolaeroom.shtml") && a[i] == '/css/room.caveolaeroom.css') {
+                    //choose skin on load
+                    var skin_id = parseInt(this.getUrlParam("skin_id") || 0, 10);
+                    var skin_level = parseInt(this.getUrlParam("skin_level") || 0, 10);
+                    SKIN = { id: skin_id, level: skin_level };
+                    if (skin_id && skin_level > 0 && _filename == "nest.shtml") {
+                        a[i] = '/css/room.skin' + SKIN.id + '.css';
+                    }
+                }
+                var b = this.doc.createElement("link");
+                b.setAttribute("rel", "stylesheet");
+                b.setAttribute("type", "text/css");
+                b.setAttribute("href", a[i] + "?v=" + this.static_resource_version);
+                if (this.heads.length)
+                    this.heads[0].appendChild(b);
+                else
+                    this.doc.documentElement.appendChild(b);
+            }
+        },
+        addLessCssByLink: function(a) {
+            for (var i = 0; i < a.length; i++) {
+                var b = this.doc.createElement("link");
+                b.setAttribute("rel", "stylesheet/less");
+                b.setAttribute("type", "text/css");
+                b.setAttribute("href", a[i] + "?v=" + this.static_resource_version);
+                if (this.heads.length)
+                    this.heads[0].appendChild(b);
+                else
+                    this.doc.documentElement.appendChild(b);
+            }
+        },
+        addCssByInc: function(a) {
+            var t = document.getElementById("cssTempDiv");
+            //ie下需要在body下预先加好
+            for (var i = 0; i < a.length; i++) {
+                var b = this.doc.createElement("link");
+                b.setAttribute("rel", "stylesheet");
+                b.setAttribute("type", "text/css");
+                b.setAttribute("href", a[i] + "?v=" + this.static_resource_version);
+                if (t) {
+                    t.innerHTML = "";
+                    t.appendChild(b);
+                } else {
+                    var c = this.doc.createElement("div");
+                    c.id = "cssTempDiv";
+                    c.appendChild(b);
+                    var f = document.body.firstChild;
+                    document.body.insertBefore(c, f);
+                }
+            }
+        },
+        addJsByScript: function(a, callback) {
+            for (var i = 0; i < a.length; i++) {
+                var b = this.doc.createElement("script");
+                b.setAttribute("type", "text/javascript");
+                b.setAttribute("src", a[i] + "?v=" + this.static_resource_version);
+                if (this.heads.length)
+                    this.heads[0].appendChild(b);
+                else
+                    this.doc.documentElement.appendChild(b);
+            }
+            if (callback)
+                callback();
+        }
+    };
+</script>

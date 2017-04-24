@@ -1,0 +1,17 @@
+/*举报房间*/
+.room_box{ padding:20px 0 0 47px; position:relative;}
+.room_box p,.room_box .room_nr{ color:#424242; font-size:14px; height:40px; line-height:40px; width:240px;}
+.room_box span{ font-weight:bold;}
+.room_box .petname{ background-position:0 -364px; width: 400px;padding-left: 5px; height:61px; margin-bottom: 20px;overflow: hidden;}
+.room_box .petname textarea{width:366px;height:55px;margin: 5px 0 0 15px;background:none;border: 0 none;resize: none;}
+.room_box .room_tu{ position:absolute; left:318px; top:33px;}
+.room_box .room_nr,.room_box .select_box{ float:left;}
+.room_box .select_box{ position:relative;}
+.room_box .room_nr{ width:75px; height: 31px;line-height: 31px;font-weight:bold;}
+.room_box .select_input{background: url(http://ossweb-img.qq.com/images/mgc/css_img/common/pop_sprite.png?v=3_8_8_2016_15_4_final_3) no-repeat -192px -325px;width:120px; height:33px;  line-height:32px; padding-left:10px; color:#424242; font-size:12px;cursor:pointer;}
+.room_box .select_input i{display: block;width: 30px;height: 30px;right: 0;top: 0;position: absolute;cursor: pointer;}
+.room_box .select_more{ position:absolute; left:0; top:28px; width:125px; background-color:#fff; border:1px solid #6c42c8;display: none;}
+.room_box .select_more li{padding:3px 30px 3px 15px;height:30px;line-height:30px;border-bottom:1px solid #b5b5b5;cursor:pointer;}
+.room_box .select_more li:hover{background:#f5f0ff;border-bottom:1px solid #f5f0ff;color:#6c42c8;}
+.pop_mgc_list .select_more2 span{display: inline-block;width: 120px;}
+.pop_mgc_list .select_more2 span i{float: right;margin: 7px -36px 0 0}

@@ -1,0 +1,43 @@
+<script>STATIC_RESOURCE.addCssByInc(['/css/group.member.css']);</script>
+<!--后援团成员列表-->
+<div class="member">
+    <div class="title">
+        <span class="sex">性别</span>
+        <span class="name">昵称</span>
+        <span class="ctrbt">资产贡献</span>
+        <span class="position">职位</span>
+        <span class="kick">开除</span>
+    </div>
+    <div class="list"><div class="sus_tips_listLi"></div>
+        <ul class="memberlist">
+        </ul>
+    </div>
+</div>
+
+<!--职位列表容器-->
+<div class="positionContainer" style="display: none;">
+    <ul class="positionlist" data-player_id="0">
+    </ul>
+</div>
+
+<!--职位列表模版-->
+<script id="positionTmpl" type="text/x-jquery-tmpl">
+	<li data-position_id="${m_position_id}">
+		<a class="name">${m_position_name}</a>
+	</li>
+</script>
+
+<!--成员列表模版-->
+<script id="memberTmpl" type="text/x-jquery-tmpl">
+	<li data-id="${m_member_id}">
+		<span class="sex"><i class="sex${m_member_sex}"></i></span>
+        <span class="name"><i class="nick_zone">{{if m_wealth_level==0}}{{else}}<i class="weath_level_${m_wealth_level}" onmouseover="MGC.susStateTips(event,1,'财富值:${m_wealth}',0,50)" onmouseout="MGC.susStateTips(event,0);" style="background:url('http://ossweb-img.qq.com/images/mgc/css_img/common/wealth_level/${m_wealth_level}.png?v=3_8_8_2016_15_4_final_3') no-repeat"></i>{{/if}}<i>${m_member_nick}</i></i></span>
+        <span class="ctrbt">${m_ctrbt}</span>
+        <span class="position"><span style="{{if canEdit}}color:#FFFFFF{{/if}}">${m_position_name}</span><a data-id="${m_member_id}" data-position="${m_position}" data-select="false" {{if !canEdit}}style="display:none"{{/if}}}></a></span>
+        <span class="kick" {{if !canEdit}}style="display:none"{{/if}}}><a data-id="${m_member_id}"></a></span>
+	</li>
+</script>
+
+<script>
+        MemberGroup.init();
+</script>

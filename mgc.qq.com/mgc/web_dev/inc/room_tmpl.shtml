@@ -1,0 +1,654 @@
+<!--******************直播间公共模块*************************-->
+<script>STATIC_RESOURCE.addCssByLink(['/css/report.css', '/css/anchorcard.css', '/css/groupcard.css']);</script>
+<!--#include virtual="/inc/role.shtml"-->
+<!--签到-->
+<!--#include virtual="/inc/dialog.shtml"-->
+<!--#include virtual="/inc/vip.inc"-->
+<!--#include virtual="/inc/sign.shtml" -->
+<!--#include virtual="/inc/gifttip.shtml"-->
+<!--#include virtual="/inc/redpacket.shtml" -->
+<!--#include virtual="/inc/luckydraw.shtml" -->
+<!--#include virtual="/inc/rankmeili.shtml" -->
+<!--#include virtual="/inc/OperationBusinessCard.shtml"-->
+<!--#include virtual="/inc/anchorcard.shtml"-->
+<!--#include virtual="/inc/dreamcard.shtml"-->
+<!--#include virtual="/inc/report.shtml"-->
+<!--#include virtual="/inc/vgCard.shtml"-->
+<!--#include virtual="/inc/BackupInvitationBox.shtml" -->
+<!-- 宝箱热度START-->
+<script id="boxHotTmpl" type="text/x-jquery-tmpl">
+    <span class="bgSpan" style="width: ${width}px;"></span>
+    <div class="spanCover" style="width: ${width}px"><span class="showSpan2" style="width: ${width}px; margin: -2px 0 0 16px;"><i class="p_icon_1 " style="left: 27px"></i><i class="p_icon_1 " style="left: 69px"></i><i class="p_icon_1 " style="left: 116px;"></i><i class="p_icon_1 " style="left: 163px;"></i></span></div>
+    <div class="showSpanCover" style="width: ${width}px"><span class="showSpan" style="width: ${width}px; margin: -12px 0 0 16px;">{{html iHtml}}</span></div>
+</script>
+<!-- 宝箱热度END-->
+<!-- 增加热度START-->
+<script id="addHotTmpl" type="text/x-jquery-tmpl">
+    {{html vipInfo}}为房间提供${perHot}热度/每分钟
+</script>
+
+<!--宝箱打开tip-->
+<script id="opentipTmpl" type="text/template">
+    <% _.each(obj, function (data) { %>
+    <li class="tip" data-boxid="<%= data.boxid %>" style="display:none; left:<%= data.left %>px;">
+    </li>
+    <% }); %>
+</script>
+
+<!-- 增加热度END-->
+<!-- 获取宝箱数据START-->
+<script id="boxGiftTmpl" type="text/x-jquery-tmpl">
+    <a href="javascript:;" class="pop_close">关闭</a>
+    <p class="pop_title">宝箱奖励</p>
+    <div class="pop_task_prize">
+        <p class="txt">
+            <span class="span">${lostReward}<br />
+            </span>${showTips}<span>${showTips_game}</span>
+        </p>
+        <div class="list_taskprize">
+            <div class="susw_tips"></div>
+            <a class="task_pre" href="javascript:;">上一页</a>
+            <div class="task_list">
+                <ul class="clearfix">
+                    {{tmpl(reward) "#boxGiftImageTmpl"}}
+			
+                </ul>
+            </div>
+            <a class="task_next" href="javascript:;">下一页</a>
+        </div>
+        <!-- //list -->
+    </div>
+    <div class="pop_btn_box clearfix">
+        <a class="btn_open" href="javascript:;">确定</a>
+    </div>
+</script>
+<!-- 获取宝箱数据END-->
+<!--在线好礼任务  完成任务 -->
+    <div id="pop19" class="pop pop_anchor_task">
+        <a class="pop_close" href="javascript:showDialog.hide();">关闭</a>
+        <p class="pop_title">在线好礼</p>
+        <div class="pop_task_prize">
+            <p class="txt l_pd30">您完成了<span id="onlineTitle"></span>任务，你获得了如下奖励<span id="gameTips"></span></p>
+            <div class="list_taskprize"><div class="susw_tips"></div>                
+                <div class="task_list">
+                    <ul id="CompleteOnlineTaskRewardContainer" class="clearfix">
+                         <!--{{tmpl(reward) "#OnlineTaskRewardsTmpl"}}-->
+                    </ul>
+                </div>
+                
+            </div>
+            <!-- //list -->
+        </div>
+        <a href="javascript:MGC_CommResponse.onlineFun();" class="btn_open">领取</a>
+    </div>
+    <!-- 在线好礼任务START-->
+    <script id="OnlineTaskRewardsTmpl" type="text/x-jquery-tmpl">
+        <li data="${num}"><span mgc_name="${name}" mgc_tips="${tips}">{{if Qgame}}<img class='Qgame-img' src="${url}" onerror="this.src='http://ossweb-img.qq.com/images/mgc/css_img/common/game_default.png?v=3_8_8_2016_15_4_final_3'" width="68" height="68" />{{else}}<img class='${url.indexOf("x52itemicon") > 0 ? "" : url.indexOf("ktv.x5.qq.com") > 0 ? "game-img" : ""}' src="${url}" width="68" height="68" />{{/if}}</span><p>${count_desc}</p>
+        </li>
+    </script>
+    <!-- 在线好礼任务END-->
+<!-- 获取宝箱奖励图片START-->
+<script id="boxGiftImageTmpl" type="text/x-jquery-tmpl">
+    <li data="${num}">
+        <span mgc_giftname="${name}" mgc_gifttips="${tips}" onmouseover='MGC.suswTips2(event,1,"${name}","${tips}");' onmouseout="MGC.suswTips2(event,0);" width="66" height="66" alt="">
+            {{if Qgame}}
+            <img class='Qgame-img' src="${url}" onerror="this.src='http://ossweb-img.qq.com/images/mgc/css_img/common/game_default.png?v=3_8_8_2016_15_4_final_3'" width="66" height="66" /></span>
+            {{else}}
+            <img class='${url.indexOf("x52itemicon") > 0 ? "" : url.indexOf("ktv.x5.qq.com") > 0 ? "game-img" : ""}' src="${url}" width="66" height="66" /></span>
+            {{/if}}
+        {{if anchor_level==0}}{{else name=='梦幻币' || name=='经验' }}<i mgc_buff="${anchor_level}级主播把这项奖励提高了${buff_percent}%" onmouseover="MGC.suswTips5(event,1,'${anchor_level}级主播把这项奖励提高了${buff_percent}%','');" onmouseout="MGC.suswTips5(event,0);">+${buff_percent}%</i>{{/if}}
+            <p>${count_desc}</p>
+    </li>
+</script>
+<!-- 获取宝箱奖励图片END-->
+<!--宝箱弹窗-->
+<div id="box" class="box">
+    <ul class="clearfix">
+        <li><span>
+            <img src="http://ossweb-img.qq.com/images/mgc/css_img/video_room/auto_pic.png?v=3_8_8_2016_15_4_final_3" alt="安可ぃ德玛西亚"><i></i></span></li>
+        <li><span>
+            <img src="http://ossweb-img.qq.com/images/mgc/css_img/video_room/auto_pic.png?v=3_8_8_2016_15_4_final_3" alt="安可ぃ德玛西亚"><i></i></span></li>
+        <li><span>
+            <img src="http://ossweb-img.qq.com/images/mgc/css_img/video_room/auto_pic.png?v=3_8_8_2016_15_4_final_3" alt="安可ぃ德玛西亚"><i></i></span></li>
+    </ul>
+</div>
+<div class="pop_shade"></div>
+<!--遮罩层，一个页面引入一个可以共用-->
+<!--宝箱结果-->
+<div id="boxGiftContainer" class="pop">
+</div>
+<!--主播等级tip-->
+<div class="sus_tips_end"></div>
+<div class="sus_tips_list3"></div>
+<!-- 主播区域-主播经验tips处理 -->
+<div id="anchor_level_tips">
+    <strong id="anchor_level_strong">
+    	<em id="anchor_level_txt">主播等级：<i id="i_anchor_level">LV</i></em>
+        <em id="i_is_bottleneck">赠送炫豆礼物可帮助主播升阶哦<br>已获得：5999</em>
+        <em id="exp_max">经验值：<i>max</i></em><em id="exp_common">经验值：<i>0/0</i></em>
+        <em id="gift_mover"><em id="em_mhb_exp">Ta今日收梦幻币礼物还可增加<i id="i_mhb_exp">55555</i>主播经验值</em><br />
+            <em id="em_star_exp">Ta今日通过涨星耀值还可增加<i id="i_star_exp">555</i>主播经验值</em><br />
+            <!--<em id="em_lucky_exp">Ta今日通过幸运转盘—主播经验奖品还可增加<i id="i_lucky_exp"></i>主播经验值</em><br />-->
+            <em id="mhb_anchor">荧光棒：1 主播经验/个
+                    <br>
+                鼓掌：3 主播经验/个
+                    <br>
+                v587：7 主播经验/个
+                    <br>
+            </em>炫豆礼物：1主播经验/炫豆<br />
+            <br />
+            我今天能用梦幻币礼物为主播增加经验：<i id="forAnchor_exp">0/0</i>
+        </em>
+    </strong>
+</div>
+<!--房间面板模板-->
+<script id="RoomListTmpl" type="text/x-jquery-tmpl">
+    <li>
+        <span class="out-of-room" data-module-type="${module_type}">
+            {{if tag_name!="" && (status ==2) && (!bSuperRoom)}}
+                 <span class="icon-week-label">${tag_name}</span>
+            {{else}}
+                {{if is_star_gift_champion}}
+                    <span class="icon-week-star"></span>
+                {{/if}}
+            {{/if}}
+        </span>
+        <span class="room-list-box">
+            <a class="mgc-a-link room-li-a" href="${url}" onclick="mgc.tools.EAS([{'e_c': 'mgc.enterroom.1','c_t':4},{'e_c': 'mgc.enterroom','c_t':4}])">
+                <span class="room-img">
+                    <img src="${small_anchor_posing_url||roomLogoUrl|| (roomPics.length>0 ? roomPics[0] : '')||'http://ossweb-img.qq.com/images/mgc/css_img/common/mgc_auto.png?v=3_8_8_2016_15_4_final_3'}" alt="${anchorName}" vertical_live="{{if status==2 && small_anchor_posing_url==""}}${vertical_live}{{else}}false{{/if}}">
+                    {{if anchor_badge==0}}{{else}}<em class="badge" mgc_data="${anchor_badge}" style="background:url('http://ossweb-img.qq.com/images/mgc/css_img/common/anchor_badge_small/${anchor_badge}.png?v=3_8_8_2016_15_4_final_3') no-repeat;"></em>{{/if}}
+                        {{if bSuperRoom}}
+                            <span class="icon-showroom">演唱会</span>
+                    {{else star_anchor}}
+                            <b class="icon_star">星级</b>
+                    {{/if}}
+                    {{if is_anchor_pk_room}}
+                        <span class="icon-pk">PK比赛</span>
+                    {{/if}}
+                        <p class="total-number-sbar">
+                                {{if week_star_grade && week_star_sub_level && status==2}}
+                                     <span class="week_star_badge week_star_badge${week_star_grade}">
+                                        {{each sub_level}}
+                                        <i class="week_star_level week_star_level_${$value} i_${$index}"></i>
+                                        {{/each}}
+                                     </span>
+                                {{else isNest }}
+                                    {{if room_skin_level==0}}{{else}}<span class="roomGrad roomGrad_${room_skin_id}" style="background:url('http://ossweb-img.qq.com/images/mgc/css_img/common/skin_level/${room_skin_id}.png?v=3_8_8_2016_15_4_final_3')">${room_skin_level}</span>
+                                    {{/if}}
+                                {{/if}}
+                            <span class="total-number">${playerCount}人</span>
+                        </p>
+                    <span class="room-cover"><i class="icon-mic"></i></span>
+                </span>
+                <p class="show-anchor-name">
+                    <span class="anchor-name">{{if status == 2}}
+                                ${anchorName}
+                            {{else}}
+                                未开播
+                            {{/if}}
+                    </span>
+
+                    {{if (isNest && status == 2 && anchor_level_temp!=0) }}
+                            <i class="anchor-level anchor_level_${anchor_level_temp}" style="background:url('http://ossweb-img.qq.com/images/mgc/css_img/common/anchor_level/${anchor_level_temp}.png?v=3_8_8_2016_15_4_final_3')">
+                                    <label>${anchor_level}</label></i>
+                    {{/if}}
+
+                </p>
+                <p class="show-room-id">
+                    <span>ID: ${roomID}</span>
+                </p>
+            </a>
+        </span>
+    </li>
+</script>
+<!-- 玩家名片START-->
+<!--<script id="cardTipTmpl" type="text/x-jquery-tmpl">
+    <div class="card_head clearfix">
+        <div class="head_info">
+            <img width="80" height="80" alt="" src="${_portrait_url}">
+            <span class="cover"></span>
+            <span class="male ${_sexFemale}"></span>
+        </div>
+        <div class="name_info">
+            <span class="ni_nick" style="color: ${_nickColor}">${_nickName}</span>
+            <i anchorid="${anchorId}" class="${_cardClass}"></i>
+            <p class="l_pd5">${_showAreaName}</p>
+            <i class="${wealthlevelClass}"></i>
+            <i class="${guardlevelClass}">${guardlevelShow}</i>
+            <i class="${viplevelClass}">${viplevelShow}</i>
+        </div>
+    </div>
+    {{html card_list_info}}
+</script>-->
+<!-- 玩家名片END-->
+<!-- 玩家名片-抢座START-->
+<script id="grabChaircardTipTmpl" type="text/x-jquery-tmpl">
+    <div class="card_head clearfix" style="padding-bottom: {{if hid}}0{{else}}6px{{/if}}; padding-top: {{if hid}}0{{else}}1px{{/if}}; border-bottom: {{if hid}}none{{else}}1px solid #afafaf{{/if}};">
+        <div class="hiding" style="display: {{if hid}}none{{else}}block{{/if}}">
+            <div class="head_info">
+                <img width="68" height="68" alt="" src="${_portrait_url}">
+                <span class="cover"></span>
+                <span class="male ${_sexFemale}"></span>
+            </div>
+
+            <div class="name_info">
+                <span class="ni_nick" style="color: ${_nickColor}">${_nickName}</span>
+                <!--<i class="icon_card"></i>-->
+                <i anchorid="${anchorId}" class="${_cardClass}"></i>
+                <p class="l_pd5" style="display:none">${_showAreaName}</p>
+                <!--p class="l_pd5">梦工厂</p-->
+                {{if wealth_level!=0}} <i class="wealth_level"  style="background:url('http://ossweb-img.qq.com/images/mgc/css_img/common/wealth_level/${wealth_level}.png?v=3_8_8_2016_15_4_final_3') no-repeat center;"></i>{{else}}{{/if}}
+                {{if _guard_level!=0}}<i  class="icon_lv" style="background:url('http://ossweb-img.qq.com/images/mgc/css_img/common/guard/${_guard_level}.png?v=3_8_8_2016_15_4_final_3') no-repeat;" >${guardlevelShow}</i>{{else}}{{/if}}
+                {{if _vip_level!=0}}<i class="icon_honor" style="background:url('http://ossweb-img.qq.com/images/mgc/css_img/common/nobility/${_vip_level}.png?v=3_8_8_2016_15_4_final_3') no-repeat;margin-left:4px;">${viplevelShow}</i>{{else}}{{/if}}
+                {{if isMobileManager}}<i class="icon_mobile_admin" style="background: url(http://ossweb-img.qq.com/images/mgc/css_img/common/mobile_admin.png?v=3_8_8_2016_15_4_final_3) no-repeat center center; background-size: cover;"></i>{{/if}}
+            </div>
+        </div>
+    </div>
+
+    {{html card_list_info}}
+	
+        <!--
+		<li><a href="javascript:;">私 聊</a></li>
+		<li><a class="current" href="javascript:;">复制昵称</a></li>
+		<li><a href="javascript:;">屏 蔽</a></li>
+		<li><a href="javascript:;">禁 言</a></li>
+		<li><a href="javascript:;">取消禁言</a></li>-->
+
+</script>
+<!-- 玩家名片-抢座END-->
+<!--玩家列表START-->
+<script id="roleListTmpl" type="text/x-jquery-tmpl">
+    <li class="li_player" online="${online}" playid="${playerID}" name="${name}" area="${zoneName}" mytype="${playerType}">
+        <p class="sz_icon">
+        <!-- 移动端管理员图标替换111 start -->
+        {{if ((guardlevelClass != "icon_forever") && (guardlevelClass != "icon_temp") && isMobileManager)}}<i class="icon_mobile_admin" mgc_guardlevel="移动端管理员" style="background: url(http://ossweb-img.qq.com/images/mgc/css_img/common/mobile_admin.png?v=3_8_8_2016_15_4_final_3.png?v=3_8_8_2016_15_4_final_3) no-repeat center center"></i>{{else}}
+        {{if guardlevelClass.indexOf('icon_lv')>=0}}
+        <i class="${guardlevelClass}" mgc_guardlevel="${guardlevelShow}" {{if guardLevel != 0}}style="background:url('http://ossweb-img.qq.com/images/mgc/css_img/common/guard/${guardLevel}.png?v=3_8_8_2016_15_4_final_3') no-repeat;"{{/if}}></i>
+        {{else}}
+        <i class="${guardlevelClass}" mgc_guardlevel="${guardlevelShow}"></i>
+        {{/if}}
+        {{/if}}
+        <!-- 移动端管理员图标替换 end -->
+        <i class="${viplevelClass}" mgc_vipname="${viplevelShow}" {{if viplevel != 0}}style="background:url('http://ossweb-img.qq.com/images/mgc/css_img/common/nobility/${viplevel}.png?v=3_8_8_2016_15_4_final_3') no-repeat"{{/if}}></i>
+        </p>
+        <p class="sq" {{if isSelf && playerType==3}}style="width:135px;"{{/if}}><span class="player" style="color: ${nickColor}">
+        {{if isSelf && playerType==3}}
+            ${name}<a href="javascript:;">[点击登录]</a>
+		{{else}}
+			${name}
+		{{/if}}</span></p>
+        {{if playerType == 2 }}
+        <p class="sn roleListWeath wealth_level" mgc_wealthlevel="财富值：${wealth}" style="position:relative;top:-5px;background:url('http://ossweb-img.qq.com/images/mgc/css_img/common/wealth_level/${wealth_level}.png?v=3_8_8_2016_15_4_final_3') no-repeat"></p>
+        <p mgc_videolevel="${videoLevelShowTips}" class="sn roleListLv" style="display: none;">${videoLevelShow}</p>
+        {{else playerType == 0}}
+        <p class="sn anchor_level anchor_level_${anchor_level_temp}" mgc_anchorlevel="主播等级:${anchor_level}" style="background:url('http://ossweb-img.qq.com/images/mgc/css_img/common/anchor_level/${anchor_level_temp}.png?v=3_8_8_2016_15_4_final_3') no-repeat right center">{{if anchor_level_temp ==0 }}{{else}}<i>${anchor_level}</i>{{/if}}</p>
+        {{/if}}
+    </li>
+</script>
+<!--玩家列表END-->
+<!-- 超级粉丝START-->
+<script id="fansTmpl" type="text/x-jquery-tmpl">
+    <li class="li_sz_room" playerid="${playerID}" name="${playerName}" area="${zoneName}">
+        <b class="${liClass}">${liNum}</b>
+        <div class="sc_zone_info">
+            <p class="sz_room"><span style="color: ${nickColor}">${playerName}</span></p>
+            <p class="sz_fans">${affinity}</p>
+            <p class="sz_icon">
+                <i class="${guardlevelClass}" mgc_guardlevel="${guard_levelShow}" {{if guardlevel != 0}}style="background:url('http://ossweb-img.qq.com/images/mgc/css_img/common/guard/${guardlevel}.png?v=3_8_8_2016_15_4_final_3') no-repeat;"{{/if}}></i>
+                <i class="${viplevelClass}" mgc_vipname="${vipName}" {{if viplevel != 0}}style="background:url('http://ossweb-img.qq.com/images/mgc/css_img/common/nobility/${viplevel}.png?v=3_8_8_2016_15_4_final_3') no-repeat"{{/if}}></i>
+            </p>
+        </div>
+    </li>
+</script>
+<!-- 超级粉丝END-->
+<!-- 守护START-->
+<script id="guardTmpl" type="text/x-jquery-tmpl">
+    <li class="li_sz_room" playerid="${playerID}" name="${playerName}" area="${zoneName}">
+        <b class="${liClass}">${liNum}</b>
+        <div class="sc_zone_info">
+            <p class="sz_room"><span style="color: ${nickColor}">${playerName}</span></p>
+            <p class="sz_fans">${total_affinity}</p>
+            <p class="sz_icon">
+            	<i class="${guardlevelClass}" mgc_guardlevel="${guard_levelShow}" {{if guardlevel != 0}}style="background:url('http://ossweb-img.qq.com/images/mgc/css_img/common/guard/${guardlevel}.png?v=3_8_8_2016_15_4_final_3') no-repeat;"{{/if}}></i>
+            	<i class="${viplevelClass}" mgc_vipname="${vipName}" {{if viplevel != 0}}style="background:url('http://ossweb-img.qq.com/images/mgc/css_img/common/nobility/${viplevel}.png?v=3_8_8_2016_15_4_final_3') no-repeat"{{/if}}></i>
+            </p>
+        </div>
+    </li>
+</script>
+<!-- 守护END-->
+<!--守护宝座用户TIP模版-->
+<script id="seatUserTipTmpl" type="text/x-jquery-tmpl">
+	<ul>
+	{{if m_player_id != "0"}}
+	<li><span>
+	{{if m_take_cost > 0}}名字{{else}}${guardName}{{/if}}：${m_nick}
+	</span></li>
+	<li><span>身份：</span>
+	{{if m_guard_level == 0 && m_vip_level == 0}}无{{/if}}
+	{{if m_guard_level != 0}}<i class="icon_lv" {{if m_guard_level != 0}}style="background:url('http://ossweb-img.qq.com/images/mgc/css_img/common/guard/${m_guard_level}.png?v=3_8_8_2016_15_4_final_3') no-repeat;"{{/if}}></i>{{/if}}
+	{{if m_vip_level != 0}}<i class="icon_honor" {{if m_vip_level != 0}}style="background:url('http://ossweb-img.qq.com/images/mgc/css_img/common/nobility/${m_vip_level}.png?v=3_8_8_2016_15_4_final_3') no-repeat"{{/if}}></i>{{/if}}
+	</li>
+	<li><span>等级：${m_level}</span></li>
+	<li><span>财富等级：${m_wealth_level}</span></li>
+	{{if m_take_cost <= 0}}
+	<li><span>日亲密度：${m_affinity}</span></li>
+	<li><span>日财富值：${m_wealth}</span></li>
+	{{/if}}
+	{{/if}}
+	{{if m_take_cost > 0}}
+	<li><span class="cost">${m_take_cost}炫豆抢宝座</span></li>
+	{{/if}}
+	</ul>
+</script>
+<!--主播任务，未/已领取-->
+<div id="pop10" class="pop pop_anchor_task">
+    <a class="pop_close" href="javascript:showDialog.hide();">关闭</a>
+    <p class="pop_title">主播任务</p>
+    <p class="pop_item_title"><strong>完成</strong><em>条件</em></p>
+    <ul id="TaskDescriptionContainer" class="list_cond line_bot">
+        <!-- <li id="TaskDescription"></li>
+		<li>1. 献给主播1朵免费花（0/1）；</li>
+		<li>2. 不离开当前视频房间；</li>
+		<li>3. 在凌晨2:00前完成。</li> -->
+    </ul>
+    <p class="pop_item_title"><strong>任务</strong><em>奖励</em></p>
+    <div class="pop_task_prize">
+        <p class="txt">当你完成主播任务后，你将有机会获得以下奖品之一：</p>
+        <p class="txt adv_guard_ratio" style="font-weight: bold;">* 超凡守护和天尊守护获得<span></span>倍奖励</p>
+        <div class="list_taskprize">
+            <div class="susw_tips"></div>
+            <a id="task_pre" class="task_pre" href="javascript:;">上一页</a>
+            <div class="task_list">
+                <ul id="TaskRewardsContainer" class="clearfix">
+                </ul>
+            </div>
+            <a id="task_next" class="task_next" href="javascript:;">下一页</a>
+        </div>
+        <!-- //list -->
+    </div>
+    <a id="TaskBtn" href="javascript:;" class="btn_gettask">领取任务</a>
+    <!--a href="#" class="btn_gettask">放弃任务</a>
+	<a href="#" class="btn_gettask btn_gettask_dis">灰色不可点</a-->
+</div>
+<!--主播任务  完成任务 -->
+<div id="pop11" class="pop pop_anchor_task">
+    <a class="pop_close" href="javascript:showDialog.hide();">关闭</a>
+    <p class="pop_title">主播任务</p>
+    <div class="pop_task_prize">
+        <p class="txt l_pd30 adv_guard_ratio">你完成了主播发布的任务，超凡守护和天尊守护获得<span></span>倍奖励，你获得了如下奖励<span id='gameTool'>：</span></p>
+        <div class="list_taskprize">
+            <div class="susw_tips"></div>
+            <a class="task_pre" href="javascript:;">上一页</a>
+            <div class="task_list">
+                <ul id="CompleteTaskRewardContainer" class="clearfix">
+                </ul>
+            </div>
+            <a class="task_next" href="javascript:;">下一页</a>
+        </div>
+        <!-- //list -->
+    </div>
+    <a href="javascript:showDialog.hide();" class="btn_gettask">关闭</a>
+</div>
+<!--主播任务  无任务 -->
+<div id="pop12" class="pop pop_anchor_task">
+    <a class="pop_close" href="javascript:showDialog.hide();">关闭</a>
+    <p class="pop_title">提示</p>
+    <p class="pop_tip_txt">当前没有发布主播任务</p>
+</div>
+<!-- 主播任务条件START-->
+<script id="TaskDescriptionTmpl" type="text/x-jquery-tmpl">
+    {{each TaskDescriptionStr}}
+
+
+
+        <li>{{= $value}}</li>
+    {{/each}}
+</script>
+<!-- 主播任务条件END-->
+<!-- 主播任务START-->
+<script id="TaskRewardsTmpl" type="text/x-jquery-tmpl">
+    <li data="${num}"><span mgc_name="${name}" mgc_tips="${tips}" alt="奖品名称">
+        {{if Qgame}}
+        <img class='Qgame-img' src="${url}" onerror="this.src='http://ossweb-img.qq.com/images/mgc/css_img/common/game_default.png?v=3_8_8_2016_15_4_final_3'" width="66" height="66" />
+        {{else}}
+        <img class='${url.indexOf("x52itemicon") > 0 ? "" : url.indexOf("ktv.x5.qq.com") > 0 ? "game-img" : ""}' src="${url}" width="66" height="66" />{{/if}}</span>{{if anchor_level==0 || buff_percent==0 }}{{else name=='梦幻币' || name=='经验' }}<i mgc_tips="${anchor_level}级主播把这项奖励提高了${buff_percent}%">+${buff_percent}%</i>{{/if}}<p>${count_desc}</p>
+    </li>
+</script>
+<!-- 主播任务END-->
+<!-- 主播任务START-->
+<script id="TaskRewardsTmpl_home" type="text/x-jquery-tmpl">
+    <li data="${num}"><span mgc_name="${name}" mgc_tips="${tips}" alt="奖品名称">
+        {{if Qgame}}
+        <img class='Qgame-img' src="${url}" onerror="this.src='http://ossweb-img.qq.com/images/mgc/css_img/common/game_default.png?v=3_8_8_2016_15_4_final_3'" width="66" height="66" />
+        {{else}}
+        <img class='${url.indexOf("x52itemicon") > 0 ? "" : url.indexOf("ktv.x5.qq.com") > 0 ? "game-img" : ""}' src="${url}" width="66" height="66" />{{/if}}</span>{{if anchor_level==0}}{{else name=='梦幻币' || name=='经验' }}<i mgc_tips="${anchor_level}级主播把这项奖励提高了${buff_percent}%">+${buff_percent}%</i>{{/if}}<p>${count_desc}</p>
+    </li>
+</script>
+<!-- 主播任务END-->
+<!-- 投票START-->
+<script id="voteTmpl" type="text/x-jquery-tmpl">
+    <a class="pop_close" href="javascript:showDialog.hide();">关闭</a>
+    <p class="pop_title">投  票</p>
+    <div class="pop_vote_title">
+        <p class="${voteStatus}"></p>
+        <p>${vote_topic}</p>
+        <p>${vote_maxShow}</p>
+    </div>
+    <div class="pop_vote_con">
+        <ul>{{html voteSelect}}</ul>
+    </div>
+    <a id="p_vote_btn" num="${voteMax}" class="p_vote_btn_ed" href="javascript:;">投票</a><!--已投票按钮class为“p_vote_btn_ed”-->
+</script>
+<!-- 投票END-->
+<!--投票-->
+<div id="voteContainer" class="pop pop_vote"></div>
+<!--投票结束-->
+<!--无投票-->
+<div id="noVote" class="pop pop_vote">
+    <a class="pop_close" href="javascript:showDialog.hide();">关闭</a>
+    <p class="pop_title">投  票</p>
+    <div class="pop_vote_title">
+        <p class="p_vote_wtp">无投票</p>
+        <p>当前没有投票活动</p>
+    </div>
+</div>
+<!-- 公共可以跟随移动的tips开始 -->
+<div class="sus_tips"></div>
+<div class="common_tips"></div>
+<!-- 公共可以跟随移动的tips结束 -->
+<!-- 徽章tips开始 -->
+<div class="sus_badge_tips"></div>
+<!-- 徽章tips结束 -->
+<!-- template-goodFriendPay -->
+<div id="goodFriendPay" class="pop pop_goodFriendPay">
+    <a id="closeBtn2" class="pop_close">关闭</a>
+    <p class="pop_title">获得赠送礼物</p>
+    
+    <ul id="goodFriendPayContainer"></ul>
+        
+    <div class="pop_btn_box clearfix"><a id="confirmBtn2" class="btn_open" href="javascript:;">确定</a> </div>     
+</div>
+    
+   
+<!-- 好友充值提现模板 -->
+<script id="goodFriendPayTmpl" type="text/x-jquery-tmpl">
+    
+    <div class="pop_tip_">恭喜您，收到来自好友（${qq}）【${nick}】的礼物</div>
+    <div class="pop_tip_txt">
+    <li class="title">物品：</li>
+    <li class="gift"><div class="susw_tips"></div>
+        <img onmouseover='MGC.suswTips2(event,1,"炫豆","通过充值获得，可用来购买付费礼物、贵族身份等，消费炫豆还能够增加财富值哦！");' onmouseout="MGC.suswTips2(event,0);" src="http://ossweb-img.qq.com/images/mgc/css_img/items/item_money.png?v=3_8_8_2016_15_4_final_3" width="68" height="68" alt="" />
+        <p>${amount}</p>
+    </li>
+        </div>
+
+        
+</script>
+
+
+    <!--守护宝座列表模版-->
+    <script id="seatTmpl" type="text/x-jquery-tmpl">
+	    <li data-seatid="${m_seat_id}">
+            {{if canseatIE}}
+            <img class="ieStyle" src="${m_pic_url}">
+            {{else nullIE}}
+            <img class="ieStyle" src="${m_pic_url}">
+            {{else}}
+            <img src="${m_pic_url}">
+            {{/if}}
+            <i class="{{if canseat}}canseat{{else canseatIE}}canseat canseatIE{{else nullIE}}nullIE{{/if}}"></i>
+            {{if m_take_cost < 0}}
+            <span>${m_nick}</span>
+            {{/if}}
+            <a style="{{if m_player_id == '0'}}cursor: auto; {{/if}}" class="userbtn" data-picurl="${m_pic_url}" data-playerid="${m_player_id}" data-seatid="${m_seat_id}" data-cost="${m_take_cost}" data-name="${m_nick}" data-zone="${m_zone}" data-sex="${m_gender}" data-inroom="${m_in_room}" data-viplevel="${m_vip_level}" data-guardlevel="${m_guard_level}" data-wealthlevel="${m_wealth_level}"></a>
+            {{if canseatIE}}
+            <a class="seatbtn" data-playerid="${m_player_id}" data-seatid="${m_seat_id}" data-cost="${m_take_cost}"></a>
+            {{else canseat}}
+            <a class="seatbtn" data-playerid="${m_player_id}" data-seatid="${m_seat_id}" data-cost="${m_take_cost}"></a>
+            {{/if}}
+	    </li>
+    </script>
+    <!-- 贵宾席START-->
+    <script id="vipTmpl" type="text/x-jquery-tmpl">
+        <li class="${liClass}">
+            <img src="${pic_url||'http://ossweb-img.qq.com/images/mgc/css_img/headicon/default_head_null.png?v=3_8_8_2016_15_4_final_3'}" width="65" height="65" alt="" style=""></img>
+            <span class="${vipI}"></span>
+            <p zonename="${zoneName}" name="${nick||'抢座'}" class="${vipP} vipPopClass" onmouseover="MGC.susTipsLvList(event,1,'${level}|@abc${wealth_level}|@abc${video_room_wealth}|@abc${vipName}|@abc${num}|@abc${nickColor}|@abc${zone}',this,10,105,'sus_tips_LvList',3);" onmouseout="MGC.susTipsLvList(event,0,'',this,10,105,'sus_tips_LvList',3);">${nick||'抢座'}</p>
+            <i class="${vipI} vipPopClass" data-playerId="${player_id}" data-seatid="${index}" data-cost="${take_cost}" zone ="${zone}" protect_time="${protect_time}" begin_time="${begin_time}" taken_cnt="${taken_cnt}"  cost_seat="${cost_seat}"  name="${nick||'抢座'}" style="${vipIclass}"  onmouseover="MGC.susTipsLvList(event,1,'${level}|@abc${wealth_level}|@abc${video_room_wealth}|@abc${vipName}|@abc${num}|@abc${nickColor}|@abc${zone}',this,10,105,'sus_tips_LvList',3);" onmouseout="MGC.susTipsLvList(event,0,'',this,10,105,'sus_tips_LvList',3);"></i>
+            <span class="april_fool_s_day_04"></span>            
+        </li>
+    </script>
+    <!-- 贵宾席END-->
+
+<!-- 贵宾席-皮肤START-->
+    <script id="skinTmpl" type="text/x-jquery-tmpl">
+        <li class="${liClass}" style="float:${index==0?'left':index==1?'left':index==2?'left':''}" >
+            {{if ieFlag}}
+            <img src="${pic_url||''}" class="ieStyle" width="48" height="48" alt="" style="display:${pic_url==''?'none':'block'}"></img>
+            {{else}}
+            <img src="${pic_url||''}" width="65" height="65" alt="" style="display:${pic_url==''?'none':'block'}"></img>
+            {{/if}}
+            
+            <span class="${vipI}"></span>
+            <p zonename="${zoneName}" name="${nick||'抢座'}" class="sv_0_c vipPopClass">${nick||'抢座'}</p>           
+            <i class="${vipI} {{if ieFlag}}sv_1{{elsepic_url!=''}}sv_0{{/if}} vipPopClass" data-playerId="${player_id}" data-seatid="${index}" data-cost="${take_cost}" zone ="${zone}" protect_time="${protect_time}" begin_time="${begin_time}" taken_cnt="${taken_cnt}"  cost_seat="${cost_seat}"  name="${nick||'抢座'}" style="${vipIclass}"></i>            
+            <span class="april_fool_s_day_04"></span>            
+             <!--div>
+                <p>名字：<strong style="color: ${nickColor}">${playerName}</strong></p>
+                <p>等级：LV${video_level}</p>
+                <p>来源：${zoneName}</p>
+                <p>财富值：${wealth}</p>
+                <p>贵族身份：${vipName}</p>
+            </div-->
+        </li>
+    </script>
+    <!-- 贵宾席END-->
+
+<!--PK榜-->
+<div class="pk-rank">
+    <div class="row1">
+        <a class="btn-close"></a>
+    </div>
+    <div class="row2">
+        <a class="btn-tab btn-anchor" data-tabindex="0">PK值总榜</a>
+        <a class="btn-tab btn-fans" data-tabindex="1">本场贡献榜</a>
+    </div>
+    <div class="tab row-anchor">
+        <div class="row3">
+            <span class="rank">名次</span>
+            <span class="name">主播名</span>
+            <span class="value">PK总值</span>
+        </div>
+        <div class="row4">
+            <ul>
+            </ul>
+        </div>
+        <div class="tip">暂无主播上榜</div>
+        <div class="row5">
+            <span class="text-total">当前主播PK总值:<span></span></span>
+        </div>
+    </div>
+    <div class="tab row-fans">
+        <div class="row3">
+            <span class="rank">名次</span>
+            <span class="name">玩家名</span>
+            <span class="value">贡献PK值</span>
+        </div>
+        <div class="row4">
+            <ul>
+            </ul>
+        </div>
+        <div class="tip">暂无玩家上榜</div>
+    </div>
+</div>
+
+<script id="pkRankTmpl" type="text/template">
+    <% _.each(obj, function (data) { %>
+    <li style="background-color:<%= data.background_color %>">
+        <div class="rank">
+            <span><%= data.rank %></span>
+            <i class="anchor_level anchor_level_<%= data.anchor_level_bg %>" style="background:url('http://ossweb-img.qq.com/images/mgc/css_img/common/anchor_level/<%= data.anchor_level_bg %>.png?v=3_8_8_2016_15_4_final_3') no-repeat left center"><i><%= data.m_anchor_level %></i></i>
+        </div>
+        <div class="name">
+            <span><%= data.m_anchor_name %></span>
+        </div>
+        <div class="value">
+            <span><%= data.m_pk_value %></span>
+        </div>
+    </li>
+    <% }); %>
+</script>
+
+<script id="pkFansRankTmpl" type="text/template">
+    <% _.each(obj, function (data) { %>
+    <li style="background-color:<%= data.background_color %>">
+        <div class="rank">
+            <span class="i_rich_level i_rich_level_<%= data.m_level %>" style="background:url('http://ossweb-img.qq.com/images/mgc/css_img/common/wealth_level/<%= data.m_level %>.png?v=3_8_8_2016_15_4_final_3') no-repeat 2px center"></span>
+            <span><%= data.rank %></span>
+        </div>
+        <div class="name">
+            <span><%= data.m_nick %></span>
+        </div>
+        <div class="value">
+            <span><%= data.m_pk_score %></span>
+        </div>
+    </li>
+    <% }); %>
+</script>
+
+
+<!--粉丝贡献榜-->
+<div class="gift-rank">
+    <div class="row1">
+        <span>粉丝贡献榜</span>
+        <a class="btn-close"></a>
+    </div>
+    <div class="row2">
+        <span class="rank">名次</span>
+        <span class="name">玩家名</span>
+        <span class="value">赠送礼物数</span>
+    </div>
+    <div class="row3">
+        <ul>
+        </ul>
+    </div>
+    <div class="tip">暂无玩家上榜</div>
+</div>
+
+<script id="sendGiftRankTmpl" type="text/template">
+    <% _.each(obj, function (data) { %>
+    <li style="background-color:<%= data.background_color %>">
+        <div class="rank">
+            <span><%= data.rank %></span>
+        </div>
+        <div class="name">
+            <i class="wealth_level" style="background: url(http://ossweb-img.qq.com/images/mgc/css_img/common/wealth_level/<%= data.m_video_wealth_level %>.png?v=3_8_8_2016_15_4_final_3) no-repeat center center;"></i>
+            <span><%= data.m_player_nick %></span>
+        </div>
+        <div class="value">
+            <span><%= data.m_score %></span>
+        </div>
+    </li>
+    <% }); %>
+</script>

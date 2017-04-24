@@ -1,0 +1,154 @@
+<link href="../css/newPlayerGuide.css?v=3_8_8_2016_15_4_final_3" rel="stylesheet" />
+
+<!--首登礼包-->
+<div id="pop_logingifts" class="pop_index pop_newGift" style="display: none;">
+    <div class="bg">
+    <div class="logingifts_title" id="logingifts_title"></div>
+    <!--<a href="javascript:;" class="pop_close">关闭</a>-->
+    <div class="logingiftsContainer clearfix">        
+        <div class="list_taskprize">
+            <div class="susw_tips"></div>
+            <a id="task_pre" class="task_pre" href="javascript:;">上一页</a>
+            <div class="task_list">
+                <ul id="logingiftsList" class="clearfix">
+                </ul>
+            </div>
+            <a id="task_next" class="task_next" href="javascript:;">下一页</a>
+        </div>
+    </div>
+    <div class="pop_btn_box clearfix guideBtn">
+        <a class="btn_receive submitReceive center" href="javascript:void(0);">领取</a>
+    </div>       
+
+        </div>
+</div>
+<!-- 首登礼包-template-->
+<script type="text/x-jquery-tmpl" id="logingiftsTmpl">
+       
+        {{if gameMark}}    
+        <img class="h88 mouse_tips" data-name="${name}" data-tips="${tips}" src="${url}" height="68" />
+        {{else Qgame}}
+        <img class="mouse_tips" data-name="${name}" data-tips="${tips}" src="${url}" onerror="this.src='http://ossweb-img.qq.com/images/mgc/css_img/common/game_default.png?v=3_8_8_2016_15_4_final_3'"  height="68" />
+        {{else}}
+        <img class="mouse_tips" data-name="${name}" data-tips="${tips}" src="${url}" height="68" />
+        {{/if}}
+        <p>${count_desc}</p>
+    
+</script>
+
+
+<!--首登礼包补发-->
+<div id="pop_logingiftsGet" class="pop_index pop_newGift pop_newPlayer" style="display: none;">
+    <div class="bg">    
+    <div class="logingifts_title">很遗憾，本期新手大礼包奖励已经发完，您获得了安慰奖励：</div>
+    <!--a href="javascript:;" class="pop_close">关闭</!--a-->
+    <div class="logingiftsContainer clearfix">        
+        <div class="list_taskprize">
+            <div class="susw_tips"></div>
+            <a id="task_pre" class="task_pre" href="javascript:;">上一页</a>
+            <div class="task_list">
+                <ul id="logingiftsListGet" class="clearfix">
+                </ul>
+            </div>
+            <a id="task_next" class="task_next" href="javascript:;">下一页</a>
+        </div>
+    </div>        
+        <div class="pop_btn_box clearfix guideBtn">
+        <a class="btn_receive submitReceive center" id="pop_newPlayer_a_get" href="javascript:void(0);">领取</a>
+    </div>       
+
+        </div>
+</div>
+<!-- 首登礼包补发-template-->
+<script type="text/x-jquery-tmpl" id="logingiftsGetTmpl">
+       
+        {{if gameMark}}    
+        <img class="h88 mouse_tips" data-name="${name}" data-tips="${tips}" src="${url}" height="68" />
+        {{else Qgame}}
+        <img class="mouse_tips" data-name="${name}" data-tips="${tips}" src="${url}" onerror="this.src='http://ossweb-img.qq.com/images/mgc/css_img/common/game_default.png?v=3_8_8_2016_15_4_final_3'"  height="68" />
+        {{else}}
+        <img class="mouse_tips" data-name="${name}" data-tips="${tips}" src="${url}" height="68" />
+        {{/if}}
+        <p>${count_desc}</p>
+    
+</script>
+
+
+
+
+<!--新手礼包提示-UI-->
+
+<!--div id="pop_newPlayer" class="pop_index pop_newPlayer">
+    
+    <div class="bg">
+    <div id="pop_newPlayerContainer" class="clearfix signContainer">
+        <div class="guideBtn">
+            <div class="leftBtn"><a id="pop_newPlayer_a" href='javascript:showDialog.hide();'>残忍拒绝</a></div><div class="rightBtn"><a id="pop_newPlayer_act" target="_blank" href='act.shtml'>去做任务</a></div>
+        </div>
+    </div>
+    </div>    
+</!--div-->
+
+<div id="pop_newPlayer_get" class="pop_index pop_newPlayer">
+    
+    <div class="bg">
+    <div id="pop_newPlayerContainer2" class="clearfix signContainer">
+        <div class="node">奖励已经领取啦~去直播间看看吧。</div>
+        <div class="guideBtn">
+            <div class="centerBtn"><a id="pop_newPlayer_a_geted" href='javascript:showDialog.hide();'>确定</a></div></div>
+        </div>
+    </div>
+    </div>    
+
+
+<div id="pop_newPlayer_error" class="pop_index pop_newPlayer">
+    
+    <div class="bg">
+    <div id="pop_newPlayerContainer3" class="clearfix signContainer">
+        <div class="node">新手导师正在拼命赶来的路上，请刷新一下~</div>
+        <div class="guideBtn">
+            <div class="centerBtn"><a id="pop_newPlayer_a_error" href='javascript:showDialog.hide();'>确定</a></div></div>
+        </div>
+    </div>
+    </div>    
+
+
+
+
+<div id="pop_newGift" class="pop_index pop_newGift">
+    <!--a href="javascript:showDialog.hide();" class="pop_close">关闭</!--a-->
+    <div class="bg">
+    <div id="pop_newGiftContainer" class="clearfix signContainer">
+        <div class="list_taskprize"><div class="susw_tips"></div>
+                <a class="task_pre" href="javascript:;">上一页</a>
+                <div class="task_list">
+                    <ul id="newGiftContainer">
+                        <li>
+                                <span onmouseover='MGC.suswTips2(event,1,"${name}","${tips}");' onmouseout="MGC.suswTips2(event,0);" style="background:url(${url}) no-repeat 0 0 #eadef9;" width="90" height="90" alt="" /></span>
+                                <p>${count_desc}</p>
+                            </li>
+                    </ul>
+                    </div>
+                <a class="task_next" href="javascript:;">下一页</a>
+            </div>
+            <div class="guideBtn">
+                <div class="center"><a href=''>领取</a></div>
+            </div>
+        </div>
+    </div>    
+</div>
+
+
+<!-- -template-->
+
+
+<!-- 奖励结果数据START-->
+<script id="newGiftContainerTmpl" type="text/x-jquery-tmpl">
+    <li>
+        <span onmouseover='MGC.suswTips2(event,1,"${name}","${tips}");' onmouseout="MGC.suswTips2(event,0);" style="background:url(${url}) no-repeat 0 0 #eadef9;" width="90" height="90" alt="" /></span>
+        <p>${count_desc}</p>
+    </li>    
+    <div class="pop_btn_box clearfix guideBtn">
+            <div class="center"><a href='javascript:;'>领取</a></div>
+        </div>
+</script>

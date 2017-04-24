@@ -1,0 +1,39 @@
+<script>STATIC_RESOURCE.addCssByInc(['/css/group.apply.css']);</script>
+<!--后援团管理-后援团信息--->
+
+<!--后援团内公告-->
+<div class="coment">
+        
+        <div class="backupGroup_list" >  
+		<div class="div" ><span id='refuseCheck' class="uncheck" onclick="GroupApply.refuseGroupApply()" check-data='1'></span>拒绝任何入团申请</div>        
+		<div class="table">
+		<ul><li class="title"><span class="sex">性别</span><span class="nick">昵称</span><span  class="vip_level">贵族身份</span><span class="wealth">财富等级</span><span class="apply">审核</span></li></ul>
+		<div class="groupList">
+			<div class="sus_tips_listLi"></div>
+            <ul id="groupApplyList" >
+			</ul>
+		</div>
+</div>
+		<!--
+			<li>
+				<span class="sex">女</span><span class="nick">玩家【梦工厂大区】</span>
+				<span  class="vip_level">贵族身份</span><span class="wealth">${wealth}</span>
+				<span class="msg"><a href="javascript:;" class="btn_getun" pstid='${pstid}'>信息</a></span>
+				<span class="apply"><a href="javascript:GroupApply.getGroupApplyRequest();">勾</a><a href="javascript:GroupApply.getGroupApplydeleRequest();">叉</a></span>
+			</li>
+		-->
+
+<!--后援团申请审核模版--><!--<span class="msg msgBtn" nick='${nick}' zone_name='${zone_name}' pstid='${pstid}'></span>-->
+<script id="groupApplyListTmpl" type="text/x-jquery-tmpl">		
+	<li data-pstid='${pstid}'>
+		<span class="sex ${sex}"></span><span class="nick">${nick}</span>
+		<span  class="vip_level_${vip_level}" onmouseover="MGC.susStateTips(event,1,'${vipName}',0,35)" onmouseout="MGC.susStateTips(event,0);" style="background:url(http://ossweb-img.qq.com/images/mgc/css_img/common/nobility/${vip_level}.png?v=3_8_8_2016_15_4_final_3) no-repeat"></span><span class="wealth"><i class="wealth_level_${wealth_level}" onmouseover="MGC.susStateTips(event,1,'财富值:${wealth}',0,35)" onmouseout="MGC.susStateTips(event,0);"  style="background:url(http://ossweb-img.qq.com/images/mgc/css_img/common/wealth_level/${wealth_level}.png?v=3_8_8_2016_15_4_final_3) no-repeat"></i></span>
+		
+		<span class="apply"><a class="tick" href="javascript:GroupApply.getGroupApplyRequest('${pstid}');"></a><a class="fork" href="javascript:GroupApply.getGroupApplydeleRequest('${pstid}')"></a></span>
+	</li>
+</script>
+
+
+<script>
+        GroupApply.init();
+</script>

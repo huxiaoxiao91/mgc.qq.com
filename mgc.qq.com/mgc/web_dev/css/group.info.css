@@ -1,0 +1,23 @@
+/**
+ * 
+ * 后援团信息css 2015-09-23
+ *
+**/
+
+/*后援团信息模块部分*/
+.coment{background:#fbfbfb;width:755px;height:535px;margin:0;padding:0 0 0 22px;text-align:left;}
+.coment .input_coment{width:755px;height:153px;border-bottom:1px solid #e4e0e9;position:relative;}
+.coment .input_coment h3{padding:0;line-height:30px;}
+.coment .input_coment input,.coment .input_coment textarea{font-family:'Microsoft YaHei';}
+.coment .input_coment textarea{width:703px;height:55px;padding:15px 25px 10px;resize:none;border:none;background:url(http://ossweb-img.qq.com/images/mgc/css_img/fans_guild/group_background.png?v=3_8_8_2016_15_4_final_3) no-repeat -12px -10px;font-size:14px;}
+.coment .input_coment textarea:disabled{color: #9b9b9b;}
+.coment .input_coment .sureBtn{height:36px;width:120px;background:url(http://ossweb-img.qq.com/images/mgc/css_img/fans_guild/group_icon.png?v=3_8_8_2016_15_4_final_3) no-repeat -2px -397px;border:none;color:#fff;font-size:17px;position:absolute;bottom:4px;right:27px;}
+.coment .input_coment .sureBtn:hover{color:#ffe73d;cursor:pointer;}
+.coment .msg_tail {margin:14px auto 0;}
+.coment .msg_tail .inputTxt{padding:5px 0;line-height:40px;font-size:14px;font-weight:bold;}
+.coment .msg_tail .inputTxt p{position:relative;display:inline-block;}
+.coment .msg_tail .inputTxt p.left{width:355px;float:left;}
+.coment .msg_tail .inputTxt p.right{width:355px;float:right;}
+.coment .msg_tail .inputTxt p.cRed{color:#ee5f38;padding-top:10px;float:left;line-height:30px;}
+.coment .msg_tail .inputTxt .cRed span,.coment .msg_tail .inputTxt #actIntegral{position:relative;left:0;left:0;}
+.coment .msg_tail .inputTxt span{position:absolute;left:100px;top:0;font-weight: bold;}

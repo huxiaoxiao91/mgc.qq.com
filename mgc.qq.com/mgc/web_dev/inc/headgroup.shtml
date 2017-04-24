@@ -1,0 +1,84 @@
+<script>STATIC_RESOURCE.addCssByInc(['/css/group.head.css']);</script>
+<!--修改团名-->
+<div class="groupname">
+    <div class="title title_name">
+        <span>修改团名</span>
+    </div>
+    <div class="content">
+        <span class="notice">警告:修改团名会消耗您100个炫豆</span>
+        <span class="head">新的团名：</span>
+        <span class="box"></span>
+        <input id="putGroupName" class="name" value="请输入团名" onfocus="if(this.value == '请输入团名'){this.value = '';this.style.color = '#424242';}" onblur="if(this.value == ''){this.value = '请输入团名';this.style.color = '#9b9b9b'}">
+        <a class="confirm">确定</a>
+    </div>
+</div>
+
+<!--更改支持主播-->
+<div class="anchor">
+    <div class="title title_change ">
+        <span>更改支持主播</span>
+    </div>
+    <div class="content">
+        <span class="notice">警告：更改支持的主播后，原本记录的贡献积分将会被清空，只能选择您关注过的主播。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;更改操作需要消耗200炫豆。</span>
+        <span class="head">新主播选择：</span>
+        <span class="box"></span>
+        <span class="name"></span>
+        <a id="anchorListSelList" class="list" data-select="false"></a>
+        <a class="confirm">确定</a>
+        <div id="anchorListSel" class="anchorList" style="display: none">
+            <ul></ul>
+        </div>
+    </div>
+</div>
+
+<div class="position">
+    <div class="title title_chief">
+        <span>团长传位</span>
+    </div>
+    <div class="content">
+        <span class="notice">警告：传位操作7天后将会把团长职位传给指定玩家，同时原团长将成为一名普通的团员。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;只能将团长职位传给入团7天以上的团员。</span>
+        <span class="head">新团长选择：</span>
+        <span class="box"></span>
+        <span class="name"></span>
+        <a id="memberListSelList" class="list" data-select="false"></a>
+        <span class="info" style="display: none">您的团长之位即将传给<span id="demised_chief_name">玩家昵称</span>。<br>剩余时间<span id="demiseTime"></span>,倒计时结束时，团长传位操作就会生效。</span>
+        <a class="confirm">传位</a>
+        <a class="cancel" style="display: none">取消传位</a>
+        <div id="memberListSel" class="memberList" style="display: none">
+            <ul></ul>
+        </div>
+    </div>
+</div>
+
+<!--解散后援团-->
+<div class="dismiss">
+    <div class="title title_dissolve">
+        <span>解散后援团</span>
+    </div>
+    <div class="content">
+        <span class="notice">警告：后援团解散后，所有团内的数值都将被清空，操作将在7天后生效，生效后不可逆。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;请在下框输入字母‘DISMISS’，然后点击解散按钮，来解散您的后援团。</span>
+        <span class="box"></span>
+        <input class="name">
+        <span class="info" style="display: none">您的后援团即将解散。<br>剩余时间<span id="dismissTime"></span>,倒计时结束时，后援团将自动解散。</span>
+        <a class="confirm">解散</a>
+        <a class="cancel" style="display: none">取消解散</a>
+    </div>
+</div>
+
+<!--主播列表模版-->
+<script id="anchorTmpl" type="text/x-jquery-tmpl">
+	<li data-id="${m_anchor}" data-nick="${m_anchor_nick}">
+        <span class="nick">${m_anchor_nick}</span>
+	</li>
+</script>
+
+<!--成员列表模版-->
+<script id="memberTmpl" type="text/x-jquery-tmpl">
+	<li data-id="${m_member_id}" data-nick="${m_member_nick}">
+        <span class="nick">${m_member_nick}</span>
+	</li>
+</script>
+
+<script>
+        HeadGroup.init();
+</script>

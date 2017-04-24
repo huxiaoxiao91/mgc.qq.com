@@ -1,0 +1,26 @@
+/*roomGuide*/
+.attention_guide,.attention_guide_c,.statement_guide,.statement_guide_c,.roomheat,.roomheat_c,.giftArea_guide,.register_guide,.register_guide .btn,.register_guide .btn:hover,.register_guide .btn:active,.register_guide .close,.register_guide .close:hover,.register_guide .close:active,.gift_guide_left,.gift_guide_center,.gift_guide_right{background: url(http://ossweb-img.qq.com/images/mgc/css_img/guide/newbie_guide.png?v=3_8_8_2016_15_4_final_3) no-repeat 0 0;display:none;}
+/*attention*/
+.attention_guide{ background-position:-1051px -29px;position:absolute;top:177px;left:-25px;width:214px;height:129px;z-index:5;}
+.attention_guide_c{ background-position:-1051px -29px;position:absolute;top:194px;left:-25px;width:214px;height:129px;z-index:5;}
+
+/*statement*/
+.statement_guide,.statement_guide_c{background-position:-1403px -29px;width:300px;height:139px;bottom:326px;position:absolute;right:15px;}
+.statement_guide_c{bottom:329px;}
+/**/
+.roomheat{background-position:-1021px -466px;width:456px;height:35px;top:370px;position:absolute;left:5px;z-index:5;}
+.roomheat_c{background-position:-1021px -521px;width:456px;height:35px;top:370px;position:absolute;left:5px;z-index:5;}
+.giftArea_guide{background-position:-1043px -196px;width:428px;height:143px;bottom: 176px;position: absolute;left: 94px;z-index: 6;}
+.gift_guide{width:614px;height:49px;bottom:36px;position:absolute;right:0;z-index:5;display:none;}
+.gift_guide_left{background-position:-1021px -392px;width:20px;height:49px;bottom:0;position:absolute;left:7px;z-index:5;display:inline-block;}
+.gift_guide_center{background: url(http://ossweb-img.qq.com/images/mgc/css_img/guide/guide_button.png?v=3_8_8_2016_15_4_final_3) repeat-x 0 0;width:567px;height:49px;bottom:0;position:absolute;right:20px;bottom:-1px;z-index:5;display:inline-block;}
+.gift_guide_right{background-position:-1515px -392px;width:20px;height:49px;bottom:0;position:absolute;right:0;z-index:5;display:inline-block;}
+/*register_guide*/
+.register_guide{background-position:-1029px -575px;width:478px;height:226px;top:137px;position:absolute;left:80px;z-index: 5;}
+.register_guide .btn{background-position:-1030px -910px;width:129px;height:36px;bottom:39px;position:absolute;left:234px;z-index: 5;display:block;}
+.register_guide .btn:hover{background-position:-1030px -850px;display:block;}
+.register_guide .btn:active{background-position:-1030px -970px;display:block;}
+.register_guide span{display:inline-block;position:absolute;top:60px;right:6px;width:20px;height:18px;display:block;}
+.register_guide .close{background-position:-1200px -858px;display:block;}
+.register_guide .close:hover{background-position:-1280px -858px;display:block;}
+.register_guide .close:active{background-position:-1240px -858px;display:block;}

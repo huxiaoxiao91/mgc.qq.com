@@ -1,0 +1,1131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="gbk">
+<meta name="robots" content="all">
+<meta name="author" content="Tencent-TGideas">
+<meta name="Copyright" content="Tencent">
+<meta name="Description" content="《QQ炫舞》最时尚浪漫的舞蹈游戏,2012年同时在线已突破260万!6月20日,QQ炫舞正式发布了3.0《我的演唱会》版本,开启全新大音乐舞蹈网游时代!更与青海卫视花儿朵朵、RTA组合，达成战略合作，引入了明星歌曲首发、明星游戏驻唱等全新活动形式。QQ炫舞有着最丰富的模式和玩法，最浪漫的交友平台，最华丽精美的画面表现，最紧跟潮流的版本开发迭代节奏，持续不断的为千万炫舞玩家，提供着最优质的游戏体验！" />
+<meta name="Keywords" content="炫舞梦工厂,梦工厂,QQ炫舞,炫舞,QQ炫舞官网,QQ炫舞官方下载,QQ炫舞下载,QQ炫舞官方网站" />
+<title>炫舞梦工厂-QQ炫舞官方网站-腾讯游戏-开启大音乐舞蹈网游时代</title>
+<!--link type="text/css" rel="stylesheet" href="web201504/css/comm.css?v=3_8_8_2016_15_4_final_3">
+<link type="text/css" rel="stylesheet" href="web201504/css/index.css?v=3_8_8_2016_15_4_final_3"-->
+<style>
+	.wrap_pop{height: 2000px;}
+	.wrap_pop a{display: block;float: left;width: 300px;height: 50px;color: #fff;text-align: center;line-height: 50px;background: #6c42c8;margin:20px 20px 0 0;}
+</style>
+<!-- 页面设计：jasonlong | 页面制作：yaoqli | 创建：2014-03-20  团队博客：http://tgideas.qq.com/ -->
+</head>
+<body>
+<div class="wrap_pop">
+	<a href="javascript:MGC.popFormsShow('pop0');">创建角色界面</a>
+	<a href="javascript:MGC.popFormsShow('pop1');">选择角色界面</a>
+	<a href="javascript:MGC.popFormsShow('pop2');">通用提示</a>
+	<a href="javascript:MGC.popFormsShow('pop3');">主播名片</a>
+	<a href="javascript:MGC.popFormsShow('pop4');">昵称修改</a>
+	<a href="javascript:MGC.popFormsShow('pop5');">开通贵族</a>
+	<a href="javascript:MGC.popFormsShow('pop6');">开通贵族续费</a>
+	<a href="javascript:MGC.popFormsShow('pop7');">梦工厂贵族</a>
+	<a href="javascript:MGC.popFormsShow('pop8');">每日工资领取</a>
+	<a href="javascript:MGC.popFormsShow('pop9');">任务奖励</a>
+	<a href="javascript:MGC.popFormsShow('pop20');">梦工厂名片</a>
+
+	<a href="javascript:MGC.popFormsShow('pop10');">主播任务 未/已领取</a>
+	<a href="javascript:MGC.popFormsShow('pop11');">主播任务 完成任务</a>
+	<a href="javascript:MGC.popFormsShow('pop12');">主播任务 无任务</a>
+</div>
+<div class="pop_shade"></div><!--遮罩层，一个页面引入一个可以共用-->
+<!--创建角色界面-->
+<div id="pop0" class="pop">
+	<a class="pop_close" href="javascript:MGC.popFormsHide();">关闭</a>
+	<p class="pop_title">创建角色</p>
+	<p class="pop_nick clearfix"><label>昵称：</label><input class="pop_sr" type="text" value="读取QQ昵称"><a href="javascript:;">验证</a> </p>
+	<p class="pop_nick_info">点击可修改昵称，最多12位字符</p>
+	<div class="pop_sex clearfix"><label>性别：</label><a href="javascript:;" class="current"></a><b class="pop_man"></b><span>帅哥</span><a href="javascript:;"></a><b class="pop_woman"></b><span>美女</span></div>
+	<a class="pop_enter" href="javascript:;">立即进入</a>
+</div>
+<!--选择角色界面-->
+<div id="pop1" class="pop">
+	<a class="pop_close" href="javascript:MGC.popFormsHide();">关闭</a>
+	<p class="pop_title">请选择角色</p>
+	<div class="pop_mgcjs">
+		<h5 class="pop_m_title">梦工厂角色</h5>
+		<a class="pop_djjr" href="javascript:;">点击进入</a>
+	</div>
+	<div class="pop_xwjs">
+		<h5 class="pop_m_title">炫舞角色</h5>
+		<div class="pop_precinct">
+			<ul class="current">
+				<li><a href="javascript:;" class="current">服务器01</a></li>
+				<li><a href="javascript:;">服务器02</a></li>
+				<li><a href="javascript:;">服务器03</a></li>
+				<li><a href="javascript:;">服务器04</a></li>
+				<li><a href="javascript:;">服务器05</a></li>
+				<li><a href="javascript:;">服务器06</a></li>
+				<li><a href="javascript:;">服务器07</a></li>
+			</ul>
+		</div>
+		<p class="pop_page">
+			<a href="javascript:;" class="pop_pre"></a>
+			<span>1/5</span>
+			<a href="javascript:;" class="pop_next"></a>
+		</p>
+	</div>
+    <div class="pop_xwTowjs">
+		<h5 class="pop_m_title">炫舞角色</h5>
+		<div class="pop_precinct">
+			<ul class="current">
+				<li><a href="javascript:;" class="current">服务器01</a></li>
+				<li><a href="javascript:;">服务器02</a></li>
+				<li><a href="javascript:;">服务器03</a></li>
+				<li><a href="javascript:;">服务器04</a></li>
+				<li><a href="javascript:;">服务器05</a></li>
+				<li><a href="javascript:;">服务器06</a></li>
+				<li><a href="javascript:;">服务器07</a></li>
+			</ul>
+		</div>
+		<p class="pop_page">
+			<a href="javascript:;" class="pop_pre"></a>
+			<span>1/5</span>
+			<a href="javascript:;" class="pop_next"></a>
+		</p>
+	</div>
+</div>
+<!--梦工厂名片-->
+<div id="pop20" class="pop_card">
+	<a class="pop_close" href="javascript:MGC.popFormsHide();">关闭</a>
+	<p class="pop_title">梦工厂名片</p>
+	<div class="pop_info">
+		<p class="pop_face pop_lv1"><img width="160" height="160" src="http://placehold.it/218x140" alt="安可ぃ德玛西亚"><i></i></p>
+		<div class="pop_details">
+			<ul class="clearfix">
+				<li class="p1"><strong>昵称：</strong><i class="pop_man"></i><span>名字是六个字字字字</span>[大区名称]</li>
+				<li class="p2"><strong>贵族身份：</strong>无</li>
+				<li class="p3"><strong>等级：</strong>LV99<p class="pd_progress"><span></span><i>123456789</i></p></li>
+				<li class="p4"><strong>财富值：</strong>9999999</li>
+				<li class="p5"><strong>个人签名：</strong><p>请输入文字上限为50。请输入文字上限为50。请输入文字上限
+					为50。请输入文字上限为50。请输入文字上限为50。</p></li>
+			</ul>
+		</div>
+	</div>
+	<div class="pop_lv_tab">
+		<table>
+			<thead>
+			<tr>
+				<th class="l">主播昵称</th>
+				<th class="c">亲密度</th>
+				<th class="r">守护关系</th>
+			</tr>
+			</thead>
+		</table>
+		<div class="tb_con">
+			<table>
+				<tbody>
+				<tr>
+					<td class="l">主播昵称八个汉字<span>直播中</span></td>
+					<td class="c">1234567890</td>
+					<td class="r"><i class="lv_icon_0"></i><a href="javascript:;" class="lv_links"></a></td>
+				</tr>
+				<tr>
+					<td class="l">主播昵称八个汉字<span>直播中</span></td>
+					<td class="c">1234567890</td>
+					<td class="r"><i class="lv_icon_1"></i><a href="javascript:;" class="lv_links"></a></td>
+				</tr>
+				<tr>
+					<td class="l">主播昵称八个汉字<span>直播中</span></td>
+					<td class="c">1234567890</td>
+					<td class="r"><i class="lv_icon_2"></i><a href="javascript:;" class="lv_links"></a></td>
+				</tr>
+				<tr>
+					<td class="l">主播昵称八个汉字<span>直播中</span></td>
+					<td class="c">1234567890</td>
+					<td class="r"><i class="lv_icon_3"></i><a href="javascript:;" class="lv_links"></a></td>
+				</tr>
+				<tr>
+					<td class="l">主播昵称八个汉字<span>直播中</span></td>
+					<td class="c">1234567890</td>
+					<td class="r"><i class="lv_icon_4"></i><a href="javascript:;" class="lv_links"></a></td>
+				</tr>
+				<tr>
+					<td class="l">主播昵称八个汉字<span>直播中</span></td>
+					<td class="c">1234567890</td>
+					<td class="r"><i class="lv_icon_5"></i><a href="javascript:;" class="lv_links"></a></td>
+				</tr>
+
+				<tr>
+					<td class="l">主播昵称八个汉字<span>直播中</span></td>
+					<td class="c">1234567890</td>
+					<td class="r"><i class="lv_icon_2"></i><a href="javascript:;" class="lv_links"></a></td>
+				</tr>
+				<tr>
+					<td class="l">主播昵称八个汉字<span>直播中</span></td>
+					<td class="c">1234567890</td>
+					<td class="r"><i class="lv_icon_0"></i><a href="javascript:;" class="lv_links"></a></td>
+				</tr>
+				</tbody>
+			</table>
+		</div>
+
+	</div>
+</div>
+<div class="pop_card pop_card2">
+	<a class="pop_close" href="javascript:MGC.popFormsHide();">关闭</a>
+	<p class="pop_title">梦工厂名片</p>
+	<div class="pop_info">
+		<p class="pop_face pop_lv1"><img width="160" height="160" src="http://placehold.it/218x140" alt="安可ぃ德玛西亚"><i></i></p>
+		<div class="pop_details">
+			<ul class="clearfix">
+				<li class="p1"><strong>昵称：</strong><i class="pop_man"></i><span>名字是六个字字字字</span>[大区名称]</li>
+				<li class="p2"><strong>贵族身份：</strong>无</li>
+				<li class="p3"><strong>等级：</strong>LV99<p class="pd_progress"><span></span><i>123456789</i></p></li>
+				<li class="p4"><strong>财富值：</strong>9999999</li>
+				<li class="p5"><strong>个人签名：</strong><p>请输入文字上限为50。请输入文字上限为50。请输入文字上限
+					为50。请输入文字上限为50。请输入文字上限为50。</p></li>
+			</ul>
+		</div>
+	</div>
+	<div class="pop_lv_tab">
+		<table>
+			<thead>
+			<tr>
+				<th class="l">主播昵称</th>
+				<th class="c">亲密度</th>
+				<th class="r">守护关系</th>
+			</tr>
+			</thead>
+		</table>
+		<div class="tb_con">
+			<table>
+				<tbody>
+				<tr>
+					<td class="l">主播昵称八个汉字<span>直播中</span></td>
+					<td class="c">1234567890</td>
+					<td class="r"><i class="lv_icon_0"></i><a href="javascript:;" class="lv_links"></a></td>
+				</tr>
+				<tr>
+					<td class="l">主播昵称八个汉字<span>直播中</span></td>
+					<td class="c">1234567890</td>
+					<td class="r"><i class="lv_icon_1"></i><a href="javascript:;" class="lv_links"></a></td>
+				</tr>
+				<tr>
+					<td class="l">主播昵称八个汉字<span>直播中</span></td>
+					<td class="c">1234567890</td>
+					<td class="r"><i class="lv_icon_2"></i><a href="javascript:;" class="lv_links"></a></td>
+				</tr>
+				<tr>
+					<td class="l">主播昵称八个汉字<span>直播中</span></td>
+					<td class="c">1234567890</td>
+					<td class="r"><i class="lv_icon_3"></i><a href="javascript:;" class="lv_links"></a></td>
+				</tr>
+				<tr>
+					<td class="l">主播昵称八个汉字<span>直播中</span></td>
+					<td class="c">1234567890</td>
+					<td class="r"><i class="lv_icon_4"></i><a href="javascript:;" class="lv_links"></a></td>
+				</tr>
+				<tr>
+					<td class="l">主播昵称八个汉字<span>直播中</span></td>
+					<td class="c">1234567890</td>
+					<td class="r"><i class="lv_icon_5"></i><a href="javascript:;" class="lv_links"></a></td>
+				</tr>
+
+				<tr>
+					<td class="l">主播昵称八个汉字<span>直播中</span></td>
+					<td class="c">1234567890</td>
+					<td class="r"><i class="lv_icon_2"></i><a href="javascript:;" class="lv_links"></a></td>
+				</tr>
+				<tr>
+					<td class="l">主播昵称八个汉字<span>直播中</span></td>
+					<td class="c">1234567890</td>
+					<td class="r"><i class="lv_icon_0"></i><a href="javascript:;" class="lv_links"></a></td>
+				</tr>
+				</tbody>
+			</table>
+		</div>
+
+	</div>
+</div>
+<div class="pop_card pop_card3">
+	<a class="pop_close" href="javascript:MGC.popFormsHide();">关闭</a>
+	<p class="pop_title">梦工厂名片</p>
+	<div class="pop_info">
+		<p class="pop_face pop_lv1"><img width="160" height="160" src="http://placehold.it/218x140" alt="安可ぃ德玛西亚"><i></i></p>
+		<div class="pop_details">
+			<ul class="clearfix">
+				<li class="p1"><strong>昵称：</strong><i class="pop_man"></i><span>名字是六个字字字字</span>[大区名称]</li>
+				<li class="p2"><strong>贵族身份：</strong>无</li>
+				<li class="p3"><strong>等级：</strong>LV99<p class="pd_progress"><span></span><i>123456789</i></p></li>
+				<li class="p4"><strong>财富值：</strong>9999999</li>
+				<li class="p5"><strong>个人签名：</strong><p>请输入文字上限为50。请输入文字上限为50。请输入文字上限
+					为50。请输入文字上限为50。请输入文字上限为50。</p></li>
+			</ul>
+		</div>
+	</div>
+	<div class="pop_lv_tab">
+		<table>
+			<thead>
+			<tr>
+				<th class="l">主播昵称</th>
+				<th class="c">亲密度</th>
+				<th class="r">守护关系</th>
+			</tr>
+			</thead>
+		</table>
+		<div class="tb_con">
+			<table>
+				<tbody>
+				<tr>
+					<td class="l">主播昵称八个汉字<span>直播中</span></td>
+					<td class="c">1234567890</td>
+					<td class="r"><i class="lv_icon_0"></i><a href="javascript:;" class="lv_links"></a></td>
+				</tr>
+				<tr>
+					<td class="l">主播昵称八个汉字<span>直播中</span></td>
+					<td class="c">1234567890</td>
+					<td class="r"><i class="lv_icon_1"></i><a href="javascript:;" class="lv_links"></a></td>
+				</tr>
+				<tr>
+					<td class="l">主播昵称八个汉字<span>直播中</span></td>
+					<td class="c">1234567890</td>
+					<td class="r"><i class="lv_icon_2"></i><a href="javascript:;" class="lv_links"></a></td>
+				</tr>
+				<tr>
+					<td class="l">主播昵称八个汉字<span>直播中</span></td>
+					<td class="c">1234567890</td>
+					<td class="r"><i class="lv_icon_3"></i><a href="javascript:;" class="lv_links"></a></td>
+				</tr>
+				<tr>
+					<td class="l">主播昵称八个汉字<span>直播中</span></td>
+					<td class="c">1234567890</td>
+					<td class="r"><i class="lv_icon_4"></i><a href="javascript:;" class="lv_links"></a></td>
+				</tr>
+				<tr>
+					<td class="l">主播昵称八个汉字<span>直播中</span></td>
+					<td class="c">1234567890</td>
+					<td class="r"><i class="lv_icon_5"></i><a href="javascript:;" class="lv_links"></a></td>
+				</tr>
+
+				<tr>
+					<td class="l">主播昵称八个汉字<span>直播中</span></td>
+					<td class="c">1234567890</td>
+					<td class="r"><i class="lv_icon_2"></i><a href="javascript:;" class="lv_links"></a></td>
+				</tr>
+				<tr>
+					<td class="l">主播昵称八个汉字<span>直播中</span></td>
+					<td class="c">1234567890</td>
+					<td class="r"><i class="lv_icon_0"></i><a href="javascript:;" class="lv_links"></a></td>
+				</tr>
+				</tbody>
+			</table>
+		</div>
+
+	</div>
+</div>
+<div class="pop_card pop_card4">
+	<a class="pop_close" href="javascript:MGC.popFormsHide();">关闭</a>
+	<p class="pop_title">梦工厂名片</p>
+	<div class="pop_info">
+		<p class="pop_face pop_lv1"><img width="160" height="160" src="http://placehold.it/218x140" alt="安可ぃ德玛西亚"><i></i></p>
+		<div class="pop_details">
+			<ul class="clearfix">
+				<li class="p1"><strong>昵称：</strong><i class="pop_man"></i><span>名字是六个字字字字</span>[大区名称]</li>
+				<li class="p2"><strong>贵族身份：</strong>无</li>
+				<li class="p3"><strong>等级：</strong>LV99<p class="pd_progress"><span></span><i>123456789</i></p></li>
+				<li class="p4"><strong>财富值：</strong>9999999</li>
+				<li class="p5"><strong>个人签名：</strong><p>请输入文字上限为50。请输入文字上限为50。请输入文字上限
+					为50。请输入文字上限为50。请输入文字上限为50。</p></li>
+			</ul>
+		</div>
+	</div>
+	<div class="pop_lv_tab">
+		<table>
+			<thead>
+			<tr>
+				<th class="l">主播昵称</th>
+				<th class="c">亲密度</th>
+				<th class="r">守护关系</th>
+			</tr>
+			</thead>
+		</table>
+		<div class="tb_con">
+			<table>
+				<tbody>
+				<tr>
+					<td class="l">主播昵称八个汉字<span>直播中</span></td>
+					<td class="c">1234567890</td>
+					<td class="r"><i class="lv_icon_0"></i><a href="javascript:;" class="lv_links"></a></td>
+				</tr>
+				<tr>
+					<td class="l">主播昵称八个汉字<span>直播中</span></td>
+					<td class="c">1234567890</td>
+					<td class="r"><i class="lv_icon_1"></i><a href="javascript:;" class="lv_links"></a></td>
+				</tr>
+				<tr>
+					<td class="l">主播昵称八个汉字<span>直播中</span></td>
+					<td class="c">1234567890</td>
+					<td class="r"><i class="lv_icon_2"></i><a href="javascript:;" class="lv_links"></a></td>
+				</tr>
+				<tr>
+					<td class="l">主播昵称八个汉字<span>直播中</span></td>
+					<td class="c">1234567890</td>
+					<td class="r"><i class="lv_icon_3"></i><a href="javascript:;" class="lv_links"></a></td>
+				</tr>
+				<tr>
+					<td class="l">主播昵称八个汉字<span>直播中</span></td>
+					<td class="c">1234567890</td>
+					<td class="r"><i class="lv_icon_4"></i><a href="javascript:;" class="lv_links"></a></td>
+				</tr>
+				<tr>
+					<td class="l">主播昵称八个汉字<span>直播中</span></td>
+					<td class="c">1234567890</td>
+					<td class="r"><i class="lv_icon_5"></i><a href="javascript:;" class="lv_links"></a></td>
+				</tr>
+
+				<tr>
+					<td class="l">主播昵称八个汉字<span>直播中</span></td>
+					<td class="c">1234567890</td>
+					<td class="r"><i class="lv_icon_2"></i><a href="javascript:;" class="lv_links"></a></td>
+				</tr>
+				<tr>
+					<td class="l">主播昵称八个汉字<span>直播中</span></td>
+					<td class="c">1234567890</td>
+					<td class="r"><i class="lv_icon_0"></i><a href="javascript:;" class="lv_links"></a></td>
+				</tr>
+				</tbody>
+			</table>
+		</div>
+
+	</div>
+</div>
+<div class="pop_card pop_card5">
+	<a class="pop_close" href="javascript:MGC.popFormsHide();">关闭</a>
+	<p class="pop_title">梦工厂名片</p>
+	<div class="pop_info">
+		<p class="pop_face pop_lv1"><img width="160" height="160" src="http://placehold.it/218x140" alt="安可ぃ德玛西亚"><i></i></p>
+		<div class="pop_details">
+			<ul class="clearfix">
+				<li class="p1"><strong>昵称：</strong><i class="pop_man"></i><span>名字是六个字字字字</span>[大区名称]</li>
+				<li class="p2"><strong>贵族身份：</strong>无</li>
+				<li class="p3"><strong>等级：</strong>LV99<p class="pd_progress"><span></span><i>123456789</i></p></li>
+				<li class="p4"><strong>财富值：</strong>9999999</li>
+				<li class="p5"><strong>个人签名：</strong><p>请输入文字上限为50。请输入文字上限为50。请输入文字上限
+					为50。请输入文字上限为50。请输入文字上限为50。</p></li>
+			</ul>
+		</div>
+	</div>
+	<div class="pop_lv_tab">
+		<table>
+			<thead>
+			<tr>
+				<th class="l">主播昵称</th>
+				<th class="c">亲密度</th>
+				<th class="r">守护关系</th>
+			</tr>
+			</thead>
+		</table>
+		<div class="tb_con">
+			<table>
+				<tbody>
+				<tr>
+					<td class="l">主播昵称八个汉字<span>直播中</span></td>
+					<td class="c">1234567890</td>
+					<td class="r"><i class="lv_icon_0"></i><a href="javascript:;" class="lv_links"></a></td>
+				</tr>
+				<tr>
+					<td class="l">主播昵称八个汉字<span>直播中</span></td>
+					<td class="c">1234567890</td>
+					<td class="r"><i class="lv_icon_1"></i><a href="javascript:;" class="lv_links"></a></td>
+				</tr>
+				<tr>
+					<td class="l">主播昵称八个汉字<span>直播中</span></td>
+					<td class="c">1234567890</td>
+					<td class="r"><i class="lv_icon_2"></i><a href="javascript:;" class="lv_links"></a></td>
+				</tr>
+				<tr>
+					<td class="l">主播昵称八个汉字<span>直播中</span></td>
+					<td class="c">1234567890</td>
+					<td class="r"><i class="lv_icon_3"></i><a href="javascript:;" class="lv_links"></a></td>
+				</tr>
+				<tr>
+					<td class="l">主播昵称八个汉字<span>直播中</span></td>
+					<td class="c">1234567890</td>
+					<td class="r"><i class="lv_icon_4"></i><a href="javascript:;" class="lv_links"></a></td>
+				</tr>
+				<tr>
+					<td class="l">主播昵称八个汉字<span>直播中</span></td>
+					<td class="c">1234567890</td>
+					<td class="r"><i class="lv_icon_5"></i><a href="javascript:;" class="lv_links"></a></td>
+				</tr>
+
+				<tr>
+					<td class="l">主播昵称八个汉字<span>直播中</span></td>
+					<td class="c">1234567890</td>
+					<td class="r"><i class="lv_icon_2"></i><a href="javascript:;" class="lv_links"></a></td>
+				</tr>
+				<tr>
+					<td class="l">主播昵称八个汉字<span>直播中</span></td>
+					<td class="c">1234567890</td>
+					<td class="r"><i class="lv_icon_0"></i><a href="javascript:;" class="lv_links"></a></td>
+				</tr>
+				</tbody>
+			</table>
+		</div>
+
+	</div>
+</div>
+<div class="pop_card pop_card6">
+	<a class="pop_close" href="javascript:MGC.popFormsHide();">关闭</a>
+	<p class="pop_title">梦工厂名片</p>
+	<div class="pop_info">
+		<p class="pop_face pop_lv1"><img width="160" height="160" src="http://placehold.it/218x140" alt="安可ぃ德玛西亚"><i></i></p>
+		<div class="pop_details">
+			<ul class="clearfix">
+				<li class="p1"><strong>昵称：</strong><i class="pop_man"></i><span>名字是六个字字字字</span>[大区名称]</li>
+				<li class="p2"><strong>贵族身份：</strong>无</li>
+				<li class="p3"><strong>等级：</strong>LV99<p class="pd_progress"><span></span><i>123456789</i></p></li>
+				<li class="p4"><strong>财富值：</strong>9999999</li>
+				<li class="p5"><strong>个人签名：</strong><p>请输入文字上限为50。请输入文字上限为50。请输入文字上限
+					为50。请输入文字上限为50。请输入文字上限为50。</p></li>
+			</ul>
+		</div>
+	</div>
+	<div class="pop_lv_tab">
+		<table>
+			<thead>
+			<tr>
+				<th class="l">主播昵称</th>
+				<th class="c">亲密度</th>
+				<th class="r">守护关系</th>
+			</tr>
+			</thead>
+		</table>
+		<div class="tb_con">
+			<table>
+				<tbody>
+				<tr>
+					<td class="l">主播昵称八个汉字<span>直播中</span></td>
+					<td class="c">1234567890</td>
+					<td class="r"><i class="lv_icon_0"></i><a href="javascript:;" class="lv_links"></a></td>
+				</tr>
+				<tr>
+					<td class="l">主播昵称八个汉字<span>直播中</span></td>
+					<td class="c">1234567890</td>
+					<td class="r"><i class="lv_icon_1"></i><a href="javascript:;" class="lv_links"></a></td>
+				</tr>
+				<tr>
+					<td class="l">主播昵称八个汉字<span>直播中</span></td>
+					<td class="c">1234567890</td>
+					<td class="r"><i class="lv_icon_2"></i><a href="javascript:;" class="lv_links"></a></td>
+				</tr>
+				<tr>
+					<td class="l">主播昵称八个汉字<span>直播中</span></td>
+					<td class="c">1234567890</td>
+					<td class="r"><i class="lv_icon_3"></i><a href="javascript:;" class="lv_links"></a></td>
+				</tr>
+				<tr>
+					<td class="l">主播昵称八个汉字<span>直播中</span></td>
+					<td class="c">1234567890</td>
+					<td class="r"><i class="lv_icon_4"></i><a href="javascript:;" class="lv_links"></a></td>
+				</tr>
+				<tr>
+					<td class="l">主播昵称八个汉字<span>直播中</span></td>
+					<td class="c">1234567890</td>
+					<td class="r"><i class="lv_icon_5"></i><a href="javascript:;" class="lv_links"></a></td>
+				</tr>
+
+				<tr>
+					<td class="l">主播昵称八个汉字<span>直播中</span></td>
+					<td class="c">1234567890</td>
+					<td class="r"><i class="lv_icon_2"></i><a href="javascript:;" class="lv_links"></a></td>
+				</tr>
+				<tr>
+					<td class="l">主播昵称八个汉字<span>直播中</span></td>
+					<td class="c">1234567890</td>
+					<td class="r"><i class="lv_icon_0"></i><a href="javascript:;" class="lv_links"></a></td>
+				</tr>
+				</tbody>
+			</table>
+		</div>
+
+	</div>
+</div>
+
+<!--投票-->
+<div id="pop11" class="pop pop_vote">
+	<a class="pop_close" href="javascript:MGC.popFormsHide();">关闭</a>
+	<p class="pop_title">投  票</p>
+	<div class="pop_vote_title">
+		<p class="p_vote_jxz">投票进行中</p>
+		<p>这里是投票内容，最多三十个字。吧啦啦啦啦，吧啦拉，巴拉吧拉。</p>
+		<p>最多三项</p>
+	</div>
+	<div class="pop_vote_con">
+		<ul>
+			<li class="current">
+				<a href="javascript:;"></a>
+				<div class="pv_list_option">
+					<p class="plo_top"><b>01.</b>选项内容最多需要容纳15个汉字。<span><strong>34.1% </strong>(123456)</span></p>
+					<p class="pd_progress"><span></span></p>
+					<ins></ins>
+				</div>
+			</li>
+			<li>
+				<a href="javascript:;"></a>
+				<div class="pv_list_option">
+					<p class="plo_top"><b>02.</b>选项内容最多需要容纳15个汉字。<span><strong>34.1% </strong>(123456)</span></p>
+					<p class="pd_progress"><span></span></p>
+				</div>
+			</li>
+			<li>
+				<a href="javascript:;"></a>
+				<div class="pv_list_option">
+					<p class="plo_top"><b>03.</b>选项内容最多需要容纳15个汉字。<span><strong>34.1% </strong>(123456)</span></p>
+					<p class="pd_progress"><span></span></p>
+				</div>
+			</li>
+			<li>
+				<a href="javascript:;"></a>
+				<div class="pv_list_option">
+					<p class="plo_top"><b>04.</b>选项内容最多需要容纳15个汉字。<span><strong>34.1% </strong>(123456)</span></p>
+					<p class="pd_progress"><span></span></p>
+				</div>
+			</li>
+			<li>
+				<a href="javascript:;"></a>
+				<div class="pv_list_option">
+					<p class="plo_top"><b>05.</b>选项内容最多需要容纳15个汉字。<span><strong>34.1% </strong>(123456)</span></p>
+					<p class="pd_progress"><span></span></p>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<a class="p_vote_btn" href="javascript:;">投票</a><!--已投票按钮class为“p_vote_btn_ed”-->
+</div>
+
+<!--投票结束-->
+<div class="pop pop_vote">
+	<a class="pop_close" href="javascript:MGC.popFormsHide();">关闭</a>
+	<p class="pop_title">投  票</p>
+	<div class="pop_vote_title">
+		<p class="p_vote_js">投票结束</p>
+		<p>这里是投票内容，最多三十个字。吧啦啦啦啦，吧啦拉，巴拉吧拉。</p>
+		<p>最多三项</p>
+	</div>
+	<div class="pop_vote_con">
+		<ul>
+			<li class="current">
+				<a href="javascript:;"></a>
+				<div class="pv_list_option">
+					<p class="plo_top"><b>01.</b>选项内容最多需要容纳15个汉字。<span><strong>34.1% </strong>(123456)</span></p>
+					<p class="pd_progress"><span></span></p>
+					<ins></ins>
+				</div>
+			</li>
+			<li>
+				<a href="javascript:;"></a>
+				<div class="pv_list_option">
+					<p class="plo_top"><b>02.</b>选项内容最多需要容纳15个汉字。<span><strong>34.1% </strong>(123456)</span></p>
+					<p class="pd_progress"><span></span></p>
+				</div>
+			</li>
+			<li>
+				<a href="javascript:;"></a>
+				<div class="pv_list_option">
+					<p class="plo_top"><b>03.</b>选项内容最多需要容纳15个汉字。<span><strong>34.1% </strong>(123456)</span></p>
+					<p class="pd_progress"><span></span></p>
+				</div>
+			</li>
+			<li>
+				<a href="javascript:;"></a>
+				<div class="pv_list_option">
+					<p class="plo_top"><b>04.</b>选项内容最多需要容纳15个汉字。<span><strong>34.1% </strong>(123456)</span></p>
+					<p class="pd_progress"><span></span></p>
+				</div>
+			</li>
+			<li>
+				<a href="javascript:;"></a>
+				<div class="pv_list_option">
+					<p class="plo_top"><b>05.</b>选项内容最多需要容纳15个汉字。<span><strong>34.1% </strong>(123456)</span></p>
+					<p class="pd_progress"><span></span></p>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<a class="p_vote_btn_ed" href="javascript:;">投票</a>
+</div>
+<!--无投票-->
+<div class="pop pop_vote">
+	<a class="pop_close" href="javascript:MGC.popFormsHide();">关闭</a>
+	<p class="pop_title">投  票</p>
+	<div class="pop_vote_title">
+		<p class="p_vote_js">投票结束</p>
+		<p>当前没有投票活动</p>
+	</div>
+</div>
+
+
+
+
+<!--通用提示-->
+<div id="pop2" class="pop">
+	<a class="pop_close" href="javascript:MGC.popFormsHide();">关闭</a>
+	<p class="pop_title">提示</p>
+	<p class="pop_tip_txt">该玩家不在线，无法查看名片信息。</p>
+	<a class="pop_enter" href="javascript:;">确定</a>
+</div>
+<!--主播名片-->
+<div id="pop3" class="pop pop_card">
+	<a class="pop_close" href="javascript:MGC.popFormsHide();">关闭</a>
+	<p class="pop_title">主播名片</p>
+	<dl class="pop_anchor_info clearfix">
+		<dt>
+		<div class="head_anchor"><img src="http://ossweb-img.qq.com/upload/webplat/info/x5/201408/1406886783_1436653066_25882_imageAddr.jpg?v=3_8_8_2016_15_4_final_3" width="190" height="190" alt="主播昵称" /></div>
+		<span class="fans">2586952</span>
+		<a href="#" class="btn_care" title="+ 关注">+ 关注</a>
+		</dt>
+		<dd class="w_470">昵称：<strong>MC哪哪真爱</strong></dd>
+		<dd>来自：<strong>中国</strong></dd>
+		<dd>主播积分：<strong>2953129175</strong></dd>
+		<dd>人气：<strong>2953129175</strong></dd>
+		<dd>星耀：<strong>2953129175</strong></dd>
+		<dd>守护数量：<strong>3676</strong></dd>
+		<dd>后援团数量：<strong>36</strong></dd>
+		<dd class="w_470 shuoming">
+			<p>你若盛开，蝴蝶自来！</p>
+			<p>群号：458794654</p>
+			<p>做好自己最重要！</p>
+		</dd>
+	</dl>
+	<div class="pop_about_anchor">
+		<div id="aninfo_tab" class="aninfo_tab">
+			<ul class="clearfix">
+				<li><a href="javascript:;" class="current">主播印象</a></li>
+				<li><a href="javascript:;">粉丝排名</a></li>
+			</ul>
+		</div>
+		<div class="aninfo_con" id="aninfo_con">
+			<!-- 主播印象 -->
+			<ul class="impress_con clearfix" style="display:block;">
+				<li>
+					<p>一共有<strong>25658</strong>名粉丝添加了对ta的对象</p>
+					<a href="#" class="addimpress">添加印象</a>
+				</li>
+				<li class="keywords clearfix">
+					<span class="keywords01">5%<strong>鬼畜攻</strong></span>
+					<span class="keywords02">11%<strong>搞笑</strong></span>
+					<span class="keywords03">25%<strong>大叔</strong></span>
+					<span class="keywords04">49%<strong>其他</strong></span>
+					<span class="keywords05">3%<strong>重口味</strong></span>
+					<span class="keywords06">7%<strong>性感</strong></span>
+				</li>
+				<li>
+					<p>您还不是Ta的守护。在获得<strong>9000</strong>亲密度，就可以为Ta的<strong>初级守护</strong>。</p>
+					<a href="#" class="knowmore">了解守护规则<i></i></a>
+				</li>
+			</ul>
+			<!--- //主播印象 -->
+			<!-- 粉丝排名 -->
+			<ul class="clearfix">
+				<li>
+					<table class="fans_tit">
+						<tr><th class="row1">玩家名</th><th class="row2">总亲密度</th><th class="row3">信息</th></tr>
+					</table>
+					<!-- 等级图标 icon_lv（1—6） 荣誉图标icon_honor（1—6） -->
+					<div class="fans_list">
+						<table>
+							<tr>
+								<td class="row1"><i class="icon_lv"></i><span>我是你李姐姐姐姐</span><i class="icon_honor icon_honor1" title="近卫">近卫</i></td>
+								<td class="row2">1234567890</td>
+								<td class="row3"><a href="#" class="icon_message" title="信息">信息</a></td>
+							</tr>
+							<tr>
+								<td class="row1"><i class="icon_lv icon_lv1" title="初级守护">初级守护</i><span>我是你李姐姐姐姐</span><i class="icon_honor"></i></td>
+								<td class="row2">1234567890</td>
+								<td class="row3"><a href="#" class="icon_message" title="信息">信息</a></td>
+							</tr>
+							<tr>
+								<td class="row1"><i class="icon_lv icon_lv2" title="中级守护">中级守护</i><span>我是你李姐姐姐姐</span><i class="icon_honor icon_honor2" title="骑士">骑士</i></td>
+								<td class="row2">1234567890</td>
+								<td class="row3"><a href="#" class="icon_message" title="信息">信息</a></td>
+							</tr>
+							<tr>
+								<td class="row1"><i class="icon_lv icon_lv3" title="高级守护">高级守护</i><span>昵称姐姐</span><i class="icon_honor icon_honor2" title="骑士">骑士</i></td>
+								<td class="row2">1234567890</td>
+								<td class="row3"><a href="#" class="icon_message" title="信息">信息</a></td>
+							</tr>
+							<tr>
+								<td class="row1"><i class="icon_lv icon_lv4" title="天使守护">天使守护</i><span>我是你李姐姐姐姐</span><i class="icon_honor icon_honor3" title="将军">将军</i></td>
+								<td class="row2">1234567890</td>
+								<td class="row3"><a href="#" class="icon_message" title="信息">信息</a></td>
+							</tr>
+							<tr>
+								<td class="row1"><i class="icon_lv icon_lv5" title="灵魂守护">灵魂守护</i><span>我是你李姐姐姐姐</span><i class="icon_honor icon_honor4" title="亲王">亲王</i></td>
+								<td class="row2">1234567890</td>
+								<td class="row3"><a href="#" class="icon_message" title="信息">信息</a></td>
+							</tr>
+							<tr>
+								<td class="row1"><i class="icon_lv icon_lv6" title="至尊守护">至尊守护</i><span>我是你李姐姐姐姐</span><i class="icon_honor icon_honor5" title="皇帝">皇帝</i></td>
+								<td class="row2">1234567890</td>
+								<td class="row3"><a href="#" class="icon_message" title="信息">信息</a></td>
+							</tr>
+						</table>
+					</div>
+				</li>
+			</ul>
+			<!-- //粉丝排名 -->
+		</div>
+	</div>
+</div>
+<!--昵称修改-->
+<div id="pop4" class="pop">
+	<a class="pop_close" href="javascript:MGC.popFormsHide();">关闭</a>
+	<p class="pop_title">昵称修改</p>
+	<div class="pop_name">
+		<p class="txt">在下方输入新昵称后，选择“确定”按钮，即可完成昵称修改。</p>
+		<p class="petname"><input type="text" value="" /></p>
+		<p class="tips"><i class="icon_warn"></i>该昵称不可使用，请您重新输入。</p>
+	</div>
+	<a class="pop_enter" href="javascript:;">确定</a>
+</div>
+<!--开通贵族-->
+<div id="pop5" class="pop">
+	<a class="pop_close" href="javascript:MGC.popFormsHide();">关闭</a>
+	<p class="pop_title">开通贵族</p>
+	<div class="pop_open">
+		<strong class="tit_open">请选择要开通的贵族身份：</strong>
+		<div class="select_box">
+			<div class="select_input"><span>近卫(30天)  500</span><i class="icon_mhb"></i></div><i class="pa icon_xd"></i>
+			<ul class="select_more">
+				<li class="current"><span>近卫(30天)  500</span><i class="icon_mhb"></i></li>
+				<li><span>近卫(30天)  500</span><i class="icon_mhb"></i></li>
+				<li><span>近卫(30天)  500</span><i class="icon_mhb"></i></li>
+				<li><span>近卫(30天)  500</span><i class="icon_mhb"></i></li>
+				<li><span>近卫(30天)  500</span><i class="icon_mhb"></i></li>
+			</ul>
+		</div>
+		<p class="tips">如果开通新的贵族身份，您身上原有的贵族身份会被系统直接收回开通贵族后，使用续费功能延期会有折扣哦~</p>
+	</div>
+	<div class="pop_btn_box clearfix">
+		<a href="#" class="btn_open">开通</a>
+		<a href="#" class="btn_close">关闭</a>
+	</div>
+</div>
+<!--开通贵族 续费 -->
+<div id="pop6" class="pop">
+	<a class="pop_close" href="javascript:MGC.popFormsHide();">关闭</a>
+	<p class="pop_title">开通贵族</p>
+	<div class="pop_open">
+		<strong class="tit_open">您的身份：<b>皇帝</b> <span>(28天)</span></strong>
+		<p class="tips">请选择您要续费的天数。时间越长折扣越高哦~</p>
+		<div class="select_box">
+			<div class="select_input"><span>30天<em>1200000</em>98000</span><i class="icon_xd"></i></div><i class="pa icon_mhb"></i>
+			<ul class="select_more">
+				<li class="current"><span>30天<em>1200000</em>98000</span><i class="icon_xd"></i></li>
+				<li><span>30天<em>1200000</em>98000</span><i class="icon_xd"></i></li>
+				<li><span>30天<em>1200000</em>98000</span><i class="icon_xd"></i></li>
+			</ul>
+		</div>
+
+	</div>
+	<div class="pop_btn_box clearfix">
+		<a href="#" class="btn_open">开通</a>
+		<a href="#" class="btn_close">关闭</a>
+	</div>
+</div>
+<!--梦工厂贵族 -->
+<div id="pop7" class="pop pop_mgc"><div class="mhb_tips_vip">梦幻币<br />通过签到、任务、等级成长等方式获得，可用来购买梦幻币礼物及贵族身份。</div>
+<div class="xd_tips_vip">炫豆<br />通过充值获得，可用来购买付费礼物、贵族身份等，消费炫豆还能够增加财富值哦！</div>
+	<a class="pop_close" href="javascript:MGC.popFormsHide();">关闭</a>
+	<p class="pop_title">梦工厂贵族</p>
+	<div class="bd">
+		<div class="tit_mgc">
+			<b>贵族特权</b>
+			<p class="f_right">
+				<a href="#" class="knowmore">更多<i></i></a>
+				<a href="#" class="pop_btn pop_btn_pay">充值</a>
+			</p>
+		</div>
+		<div class="pop_table">
+			<table width="100%">
+				<tr>
+					<td class="t_bold" width="14%"></td>
+					<td class="t_bold" width="16%">近卫</td>
+					<td class="t_bold" width="16%">骑士</td>
+					<td class="t_bold" width="18%">将军</td>
+					<td class="t_bold" width="18%">亲王</td>
+					<td class="t_bold" width="18%">皇帝</td>
+				</tr>
+				<tr>
+					<td class="t_bold">特殊标识</td>
+					<td><span class="b_icon_honor b_icon_honor1"></span></td>
+					<td><span class="b_icon_honor b_icon_honor2"></span></td>
+					<td><span class="b_icon_honor b_icon_honor3"></span></td>
+					<td><span class="b_icon_honor b_icon_honor4"></span></td>
+					<td><span class="b_icon_honor b_icon_honor5"></span></td>
+				</tr>
+				<tr>
+					<td class="t_bold">玩家列表字体</td>
+					<td><!--img src="web201504/images/font_style1.png?v=3_8_8_2016_15_4_final_3" width="70" height="20" alt="字体效果" /--></td>
+					<td><!--<img src="web201504/images/font_style2.png?v=3_8_8_2016_15_4_final_3" width="70" height="20" alt="字体效果" />--></td>
+					<td><!--<img src="web201504/images/font_style3.png?v=3_8_8_2016_15_4_final_3" width="70" height="20" alt="字体效果" />--></td>
+					<td><!--<img src="web201504/images/font_style4.png?v=3_8_8_2016_15_4_final_3" width="70" height="20" alt="字体效果" />--></td>
+					<td><!--<img src="web201504/images/font_style5.png?v=3_8_8_2016_15_4_final_3" width="70" height="20" alt="字体效果" />--></td>
+				</tr>
+				<tr>
+					<td class="t_bold">免费飞屏喇叭</td>
+					<td>每天<span class="t_red">1</span>个</td>
+					<td>每天<span class="t_red">2</span>个</td>
+					<td>每天<span class="t_red">5</span>个</td>
+					<td>每天<span class="t_red">10</span>个</td>
+					<td>每天<span class="t_red">30</span>个</td>
+				</tr>
+				<tr>
+					<td class="t_bold">人满房间特权</td>
+					<td>1次/天，低优先级</td>
+					<td><span class="t_red">3</span>次/天，低优先级</td>
+					<td>无限次数，<span class="t_red">中级</span>优先</td>
+					<td>无限次数，<span class="t_red">高级</span>优先</td>
+					<td>无限次数，<span class="t_red">最高</span>优先</td>
+				</tr>
+				<tr>
+					<td class="t_bold">隐身功能</td>
+					<td>无</td>
+					<td>无</td>
+					<td>有</td>
+					<td>有</td>
+					<td>有</td>
+				</tr>
+				<tr>
+					<td class="t_bold">房间热度加成</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="t_bold">飞屏喇叭效果</td>
+					<td><!--<img src="web201504/images/laba1.png?v=3_8_8_2016_15_4_final_3" width="86" height="43" alt="飞屏喇叭效果" />--></td>
+					<td><!--<img src="web201504/images/laba2.png?v=3_8_8_2016_15_4_final_3" width="86" height="43" alt="飞屏喇叭效果" />--></td>
+					<td><!--<img src="web201504/images/laba3.png?v=3_8_8_2016_15_4_final_3" width="86" height="43" alt="飞屏喇叭效果" />--></td>
+					<td><!--<img src="web201504/images/laba4.png?v=3_8_8_2016_15_4_final_3" width="86" height="43" alt="飞屏喇叭效果" />--></td>
+					<td><!--<img src="web201504/images/laba5.png?v=3_8_8_2016_15_4_final_3" width="86" height="43" alt="飞屏喇叭效果" />--></td>
+				</tr>
+				<tr>
+					<td class="t_bold">防止守护禁言</td>
+					<td>无</td>
+					<td>无</td>
+					<td>天使守护或以下</td>
+					<td>灵魂守护或以下</td>
+					<td>至尊守护或以下</td>
+				</tr>
+				<tr>
+					<td class="t_bold">每日工资加成</td>
+					<td>10%</td>
+					<td>20%</td>
+					<td>30%</td>
+					<td>40%</td>
+					<td>50%</td>
+				</tr>
+				<tr>
+					<td colspan="6" class="my_foot">
+						<p>我的身份    <span class="t_red">无</span></p>
+						<a href="#" class="pop_btn pop_btn_xufei">续费</a>
+						<a href="#" class="pop_btn pop_btn_open">开通</a>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<div class="pop_btn_box clearfix">
+		<a href="#" class="btn_close">取消</a>
+	</div>
+       
+</div>
+<!--每日工资领取-->
+<div id="pop8" class="pop">
+	<a class="pop_close" href="javascript:MGC.popFormsHide();">关闭</a>
+	<p class="pop_title">每日工资领取</p>
+	<p class="pop_gongzi">
+		领取成功！欢迎明天再来~<br>
+		提升等级或提升贵族后，每日工资将进一步提升。
+	</p>
+	<div class="pop_btn_box clearfix">
+		<a href="#" class="btn_open">确定</a>
+	</div>
+</div>
+<!--任务奖励-->
+<div id="pop9" class="pop">
+	<a class="pop_close" href="javascript:MGC.popFormsHide();">关闭</a>
+	<p class="pop_title">任务奖励</p>
+	<div class="pop_task_prize">
+		<p class="txt">你完成任务后奖励如下，请查收哦~</p>
+		<div class="list_taskprize">
+			<a class="task_pre" href="javascript:;">上一页</a>
+			<div class="task_list">
+				<ul class="clearfix">
+					<li>
+						<!--<img src="web201504/images/prize1.jpg?v=3_8_8_2016_15_4_final_3" width="88" height="88" alt="奖品名称" />-->
+						<p>1</p>
+					</li>
+					<li>
+						<!--<img src="web201504/images/prize2.jpg?v=3_8_8_2016_15_4_final_3" width="88" height="88" alt="奖品名称" />-->
+						<p>3天</p>
+					</li>
+					<li>
+						<!--<img src="web201504/images/prize3.jpg?v=3_8_8_2016_15_4_final_3" width="88" height="88" alt="奖品名称" />-->
+						<p>99</p>
+					</li>
+					<li>
+						<!--<img src="web201504/images/prize4.jpg?v=3_8_8_2016_15_4_final_3" width="88" height="88" alt="奖品名称" />-->
+						<p>1</p>
+					</li>
+					<li>
+						<!--<img src="web201504/images/prize5.jpg?v=3_8_8_2016_15_4_final_3" width="88" height="88" alt="奖品名称" />-->
+						<p>1</p>
+					</li>
+					<li>
+						<!--<img src="web201504/images/prize1.jpg?v=3_8_8_2016_15_4_final_3" width="88" height="88" alt="奖品名称" />-->
+						<p>1</p>
+					</li>
+					<li>
+						<!--<img src="web201504/images/prize2.jpg?v=3_8_8_2016_15_4_final_3" width="88" height="88" alt="奖品名称" />-->
+						<p>1</p>
+					</li>
+					<li>
+						<!--<img src="web201504/images/prize2.jpg?v=3_8_8_2016_15_4_final_3" width="88" height="88" alt="奖品名称" />-->
+						<p>1</p>
+					</li>
+				</ul>
+			</div>
+			<a class="task_next" href="javascript:;">下一页</a>
+		</div><!-- //list -->
+	</div>
+	<div class="pop_btn_box clearfix">
+		<a href="#" class="btn_open">确定</a>
+	</div>
+</div>
+
+
+<!--主播任务，未/已领取-->
+<div id="pop10" class="pop pop_anchor_task">
+	<a class="pop_close" href="javascript:MGC.popFormsHide();">关闭</a>
+	<p class="pop_title">主播任务</p>
+	<p class="pop_item_title"><strong>完成</strong>条件</p>
+	<ul class="list_cond line_bot">
+		<li>1. 献给主播1朵免费花（0/1）；</li>
+		<li>2. 不离开当前视频房间；</li>
+		<li>3. 在凌晨2:00前完成。</li>
+	</ul>
+	<p class="pop_item_title"><strong>任务</strong>奖励</p>
+	<div class="pop_task_prize">
+		<p class="txt">当你完成主播任务后，你将有机会获得以下奖品之一：</p>
+		<div class="list_taskprize">
+			<a class="task_pre" href="javascript:;">上一页</a>
+			<div class="task_list">
+				<ul class="clearfix">
+					<li>
+						<!--<img src="web201504/images/prize1.jpg?v=3_8_8_2016_15_4_final_3" width="88" height="88" alt="奖品名称" />-->
+						<p>1</p>
+					</li>
+					<li>
+						<!--<img src="web201504/images/prize2.jpg?v=3_8_8_2016_15_4_final_3" width="88" height="88" alt="奖品名称" />-->
+						<p>3天</p>
+					</li>
+					<li>
+						<!--<img src="web201504/images/prize3.jpg?v=3_8_8_2016_15_4_final_3" width="88" height="88" alt="奖品名称" />-->
+						<p>99</p>
+					</li>
+					<li>
+						<!--<img src="web201504/images/prize4.jpg?v=3_8_8_2016_15_4_final_3" width="88" height="88" alt="奖品名称" />-->
+						<p>1</p>
+					</li>
+					<li>
+						<!--<img src="web201504/images/prize5.jpg?v=3_8_8_2016_15_4_final_3" width="88" height="88" alt="奖品名称" />-->
+						<p>1</p>
+					</li>
+					<li>
+						<!--<img src="web201504/images/prize1.jpg?v=3_8_8_2016_15_4_final_3" width="88" height="88" alt="奖品名称" />-->
+						<p>1</p>
+					</li>
+					<li>
+						<!--<img src="web201504/images/prize2.jpg?v=3_8_8_2016_15_4_final_3" width="88" height="88" alt="奖品名称" />-->
+						<p>1</p>
+					</li>
+					<li>
+						<!--<img src="web201504/images/prize2.jpg?v=3_8_8_2016_15_4_final_3" width="88" height="88" alt="奖品名称" />-->
+						<p>1</p>
+					</li>
+				</ul>
+			</div>
+			<a class="task_next" href="javascript:;">下一页</a>
+		</div><!-- //list -->
+	</div>
+	<a href="#" class="btn_gettask">领取任务</a>
+	<!--a href="#" class="btn_gettask">放弃任务</a>
+	<a href="#" class="btn_gettask btn_gettask_dis">灰色不可点</a-->
+</div>
+<!--主播任务  完成任务 -->
+<div id="pop11" class="pop pop_anchor_task">
+	<a class="pop_close" href="javascript:MGC.popFormsHide();">关闭</a>
+	<p class="pop_title">主播任务</p>
+	<div class="pop_task_prize">
+		<p class="txt l_pd30">你完成了主播发布的任务，你获得了如下奖励：</p>
+		<div class="list_taskprize">
+			<a class="task_pre" href="javascript:;">上一页</a>
+			<div class="task_list">
+				<ul class="clearfix">
+					<li>
+						<!--<img src="web201504/images/prize1.jpg?v=3_8_8_2016_15_4_final_3" width="88" height="88" alt="奖品名称" />-->
+						<p>1</p>
+					</li>
+					<li>
+						<!--<img src="web201504/images/prize2.jpg?v=3_8_8_2016_15_4_final_3" width="88" height="88" alt="奖品名称" />-->
+						<p>3天</p>
+					</li>
+					<li>
+						<!--<img src="web201504/images/prize3.jpg?v=3_8_8_2016_15_4_final_3" width="88" height="88" alt="奖品名称" />-->
+						<p>99</p>
+					</li>
+					<li>
+						<!--<img src="web201504/images/prize4.jpg?v=3_8_8_2016_15_4_final_3" width="88" height="88" alt="奖品名称" />-->
+						<p>1</p>
+					</li>
+					<li>
+						<!--<img src="web201504/images/prize5.jpg?v=3_8_8_2016_15_4_final_3" width="88" height="88" alt="奖品名称" />-->
+						<p>1</p>
+					</li>
+					<li>
+						<!--<img src="web201504/images/prize1.jpg?v=3_8_8_2016_15_4_final_3" width="88" height="88" alt="奖品名称" />-->
+						<p>1</p>
+					</li>
+					<li>
+						<!--<img src="web201504/images/prize2.jpg?v=3_8_8_2016_15_4_final_3" width="88" height="88" alt="奖品名称" />-->
+						<p>1</p>
+					</li>
+					<li>
+						<!--<img src="web201504/images/prize2.jpg?v=3_8_8_2016_15_4_final_3" width="88" height="88" alt="奖品名称" />-->
+						<p>1</p>
+					</li>
+				</ul>
+			</div>
+			<a class="task_next" href="javascript:;">下一页</a>
+		</div><!-- //list -->
+	</div>
+	<a href="javascript:MGC.popFormsHide();" class="btn_gettask">关闭</a>
+</div>
+<!--主播任务  无任务 -->
+<div id="pop12" class="pop">
+	<a class="pop_close" href="javascript:MGC.popFormsHide();">关闭</a>
+	<p class="pop_title">主播任务</p>
+	<p class="pop_tip_txt">当前未发布主播任务</p>
+</div>
+<script src="http://ossweb-img.qq.com/images/js/jquery/jquery-1.9.1.min.js?v=3_8_8_2016_15_4_final_3"></script>
+<!--<script src="web201504/js/mgc.js?v=3_8_8_2016_15_4_final_3"></script>-->
+<script>
+	MGC.carousel("banner","ban_pic","ban_btn",300,5000);
+	MGC.carousel("r_carousel","rc_con","rc_btn",402,5000);
+	MGC.tabCon("fc_tab","fc_con");
+	MGC.personalData();
+</script>
+</body>
+</html>

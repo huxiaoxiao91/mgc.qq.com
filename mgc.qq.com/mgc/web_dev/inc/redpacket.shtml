@@ -1,0 +1,58 @@
+<!-- 红包 -->
+				<div id="rp_container">
+                    <div id="red_left" >
+                        <div class="red_packet" style="visibility: hidden">
+                        	<div class="rp_red"></div>
+                        	<div class="rp_sum">686868</div>
+                        	<div class="rp_name">redp80的红包</div>
+                        </div>
+                        <div class="red_packet" style="visibility: hidden"></div>
+                        <div class="red_packet" style="visibility: hidden"></div>
+                        <div class="red_packet" style="visibility: hidden"></div>
+                    </div>
+                    <div id="red_right" >
+                        <div class="red_packet" style="visibility: hidden"></div>
+                        <div class="red_packet" style="visibility: hidden"></div>
+                        <div class="red_packet" style="visibility: hidden"></div>
+                        <div class="red_packet" style="visibility: hidden"></div>
+                    </div>
+                    <div id="red_bottom" >
+                        <div class="red_small" style="visibility: hidden">
+                        	<a></a>
+                        </div>
+                        <div class="red_small" style="visibility: hidden"></div>
+                        <div class="red_small" style="visibility: hidden"></div>
+                    </div>
+                </div>
+
+
+<!-- 红包详情 -->
+<div class="pop" id="pop_red_packet">
+    <a href="javascript:;" class="pop_close">关闭</a>
+    <p class="pop_title">红包记录</p>
+    <div id="rp_record_container">
+    </div>
+</div>
+
+<!-- 红包详情 模板-->
+<script id="red_record_tmpl" type="text/x-jquery-tmpl">
+        <div class="rp_info">
+  		    <span class="rp_name"><b>${nick}</b>的红包</span><br>
+  		    <span class="rp_sum">红包总额：${total_money}点券</span><br>
+  		    <span class="rp_count">红包数量：${divide_count}个</span>
+  		    <span class="rp_more" onclick="window.open('http://x5.qq.com/act/a20150108jan/inti.htm')">了解更多>></span>
+  	    </div>
+  	    <div class="rp_record">
+  		    <p>抢红包记录</p>
+  		    <ul class="record_title"><li>玩家昵称</li><li>抢到点券</li></ul>
+  		    <div id="rp_record_list">
+  		    </div>
+  		    <span>被红包发起者屏蔽的玩家无法参与抢红包</span>
+  	    </div>
+  	    <a class="rp_close_btn" href="javascript:;">关闭</a>
+</script>
+
+
+<script id="red_one_record_tmpl" type="text/x-jquery-tmpl">
+                <ul class="one_record"><li>${nick}</li><li>${grab_count}</li></ul>
+</script>

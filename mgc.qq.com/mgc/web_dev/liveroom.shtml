@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta name="robots" content="all">
+    <meta name="author" content="Tencent-TGideas">
+    <meta name="Copyright" content="Tencent">
+    <meta name="Description" content="《QQ炫舞》最时尚浪漫的舞蹈游戏,2012年同时在线已突破260万!6月20日,QQ炫舞正式发布了3.0《我的演唱会》版本,开启全新大音乐舞蹈网游时代!更与青海卫视花儿朵朵、RTA组合，达成战略合作，引入了明星歌曲首发、明星游戏驻唱等全新活动形式。QQ炫舞有着最丰富的模式和玩法，最浪漫的交友平台，最华丽精美的画面表现，最紧跟潮流的版本开发迭代节奏，持续不断的为千万炫舞玩家，提供着最优质的游戏体验！" />
+    <meta name="Keywords" content="炫舞梦工厂,梦工厂,QQ炫舞,炫舞,QQ炫舞官网,QQ炫舞官方下载,QQ炫舞下载,QQ炫舞官方网站" />
+    <title>炫舞梦工厂-QQ炫舞官方网站-腾讯游戏-开启大音乐舞蹈网游时代</title>
+    <script type="text/javascript">
+    var _speedMark = new Date();
+    </script>
+    <!--#include virtual="/inc/staticloading.shtml"-->
+    <script>
+    STATIC_RESOURCE.addCssByLink(['/css/comm.room.css', '/css/room.liveroom.css', '/css/private.redpacket.css', '/css/room.luckydraw.css', '/css/room.mission.css', '/css/room.rankmeili.css', '/css/dreamworkscard.css', '/css/jquery.jscrollpane.css', '/css/room.roomGuide.css']);
+    </script>
+    <script src="script/lib/utils/jquery-1.9.1.min.js?v=3_8_8_2016_15_4_final_3"></script>
+    <script>
+    if (MgcAPI.SNSBrowser.IsX52()) {
+        var timer = setTimeout(function() {
+            var ready = false;
+            $(document).ready(function() {
+                ready = true;
+                clearTimeout(timer);
+            });
+            if (!ready) {
+                window.location.reload();
+            }
+        }, 10000);
+    }
+    </script>
+</head>
+
+<body>
+    <!--主题活动-->
+    <span class="april_fool_s_day_01"></span>
+    <span class="april_fool_s_day_02"></span>
+    <div class="hide-header">
+    </div>
+    <!--header start-->
+    <!--#include virtual="/inc/room_header.inc"-->
+    <!--header end-->
+    <!--首登礼包-->
+    <!--#include virtual="/inc/logingifts.shtml" -->
+    <!--签到-->
+    <!--#include virtual="/inc/sign.shtml" -->
+    <div class="content clearfix" id="content">
+        <!--主题活动-->
+        <span class="april_fool_s_day_05"></span>
+        <span class="april_fool_s_day_06"></span>
+        <span class="april_fool_s_day_07"></span>
+        <span class="april_fool_s_day_08"></span>
+        <!--右模块 start-->
+        <div class="side-right">
+            <!--<div class="layer-anchor">主播面板</div>-->
+            <div class="layer-anchor">
+                <div class="sl_info">
+                    <div class="si_con" id="anchorContainer">
+                        <div class="littleCaveolaeroom"><i class="littleCaveolaeroomShow">这里是主播的个人直播间哦</i></div>
+                        <p class="si_room"></p>
+                        <div class="si_face clearfix">
+                            <span class="si_face_links" id="si_face_links" href="javascript:;"><img src="http://ossweb-img.qq.com/images/mgc/css_img/headicon/default_female2.png?v=3_8_8_2016_15_4_final_3" width="85" height="85" alt=""><i></i></span>
+                            <div class="sf_details">
+                                <p class="sf_nic"><em></em><strong></strong></p>
+                                <!-- xw81945 贴边广告修改 调整主播面板 -->
+                                <!-- <p class="sf_flower pop_tips_rq hiddenAnchor" style="">读取中...</p> -->
+                                <p class="sf_heart pop_tips_rq hiddenAnchor" style="">读取中...</p>
+                                <p class="si_fans_num hiddenAnchor" style="">读取中...</p>
+                                <!-- xw81945 end -->
+                            </div>
+                            <span id="anchorCard" class="si_mp hiddenAnchor" style=""></span>
+                            <span class="si_fk hiddenAnchor" style=""></span>
+                        </div>
+                        <div class="anchor_level" id="anchor_level">
+                            <span id="anchor_level_temp" class="anchor_level_">1</span>
+                            <img class="anchor-up" src="http://ossweb-img.qq.com/images/mgc/css_img/video_room/anchor_up.png?v=3_8_8_2016_15_4_final_3">
+                        </div>
+                        <!--<div class="si_label pop_tips clearfix hiddenAnchor" style=""></div>-->
+                        <div class="attention">
+                            <div class="sus_tips_"></div>
+                            <div class="sus_tips_open_vip">喜欢Ta就为Ta开通贵族吧，开通贵族不仅有多种特权，还会有丰厚返利哦~</div>
+                            <a class="si_attention hiddenAnchor" href="javascript:void(0);" style="">关注</a>
+                            <a class="si_open_vip" href="javascript:void(0);">
+                                <p id="si_open_vip_swf_1">
+                                    <!--插入开通贵族特效效果-->
+                                </p>
+                                <span></span>
+                            </a>
+                        </div>
+                        <!-- <p class="si_fans_num hiddenAnchor" style="">位粉丝</p> -->
+                    </div>
+                    <!-- xw81945 贴边广告修改 调整主播面板 -->
+                    <!--主播经验动画效果-->
+                    <!-- <div class="expeffectflash" style="display: none">
+                        <p id="expeffectContent">
+                        </p>
+                    </div>
+                    <div class="anchor_level" id="anchor_level">
+                        <span id="anchor_level_temp" class="anchor_level_">1</span>
+                        <p id="is_bottleneck">升阶：
+                            <span class="bottle_progress">
+                                <span id="bottle_per" style="max-width: 100%"></span>
+                            </span>
+                        </p>
+                        <p id="pd_progress" class="pd_progress">
+                            <span id="anchor_Per"></span>
+                            <i id="anchor_exp"></i>
+                        </p>
+                    </div> -->
+                    <!-- xw81945 end -->
+                </div>
+                <div class="attention_guide commTips" id="attention_guide"></div>
+                <span class="anchor-hot"></span>
+            </div>
+            <div class="layer-ad">
+                <iframe scrolling="no" frameborder="no"></iframe>
+            </div>
+            <!--<div class="layer-chat">聊天</div>-->
+            <div class="layer-chat">
+                <!--#include virtual="/inc/chat.shtml" -->
+            </div>
+        </div>
+        <!--右模块 end-->
+        <!--中模块 start-->
+        <div class="side-middle">
+            <!--视频区-->
+            <div class="layer-video">
+                <div class="red_con">
+                </div>
+                <div class="video_con">
+                    <img class="video_con_bg" src="http://ossweb-img.qq.com/images/mgc/css_img/video_room/video_con.png?v=3_8_8_2016_15_4_final_3" />
+                    <div class="video_play">
+                        <!--<img class="video_play_bg" src="http://ossweb-img.qq.com/images/mgc/css_img/video_room/video_play.png?v=3_8_8_2016_15_4_final_3" />-->
+                        <div class="reminder_room" id="reminder_room" style="display: none;">
+                            <span class="close"></span>
+                            <div class="reminder_tips">
+                                <p>
+                                    主播休息了~
+                                </p>
+                                <p>
+                                    <strong>还有Ta
+                            </strong>在这里等你呢~<strong>去看看吧~<i class="video"></i></strong>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="video_light" hide="1" data-num="0" style="display: none;">
+                            <!--[if IE]>     <marquee width=478 scrollamount=2> <a><STRONG>&nbsp;</STRONG></a> </marquee> <![endif]-->
+                            <!--<span title="1" data-num="0"></span>-->
+                        </div>
+                        <div class="video_flash">
+                            <p id="LiveVideoSwfContainer">
+                                <!--插入flash-->
+                            </p>
+                            <div class="event-gift">
+                                <p id="eventGiftContainer">
+                                    <!--插入flash-->
+                                </p>
+                            </div>
+                            <!--节日活动-->
+                            <div class="fa-con" id="fa-con">
+                                <div class="fa-level-bottom-swf">
+                                    <p id="fa-level-bottom-swf"></p>
+                                </div>
+                                <div class="fa-side-level-1 fa-side" id="fa-side"></div>
+                                <div class="fa-level-1" id="fa-warp">
+                                    <div class="fa-wrap-child">
+                                        <span class="fa-end-time fa-end-level-1">结束时间：00月00日00点</span>
+                                        <span class="fa-send-one-gift" id="fa-send-one-gift"><b class="fa-mask"></b><span class="fa-gift-span"><span class="fa-gift-icon"><img class="fa-gift-img" src=""/></span><span class="fa-gift-txt">x1</span></span>
+                                        </span>
+                                        <span class="fa-send-more-gift" id="fa-send-more-gift"><b class="fa-mask"></b><span class="fa-gift-span"><span class="fa-gift-icon"><img class="fa-gift-img"  src=""/></span><span class="fa-gift-txt">x1</span></span>
+                                        </span>
+                                        <span class="fa-anchor-rank">主播排名：<span id="fa-anchor-rank-txt">0</span></span>
+                                        <span class="fa-recv-gifts-count">收到礼物数量：<span id="fa-recv-gifts-count-txt">0</span></span>
+                                        <a class="fa-more-infomation" id="fa-more-infomation" href="javascript:;" target="_blank">更多详情</a>
+                                        <a class="fa-contribute-list-btn" id="fa-contribute-list-btn" href="javascript:;"></a>
+                                        <a class="fa-slide-btn" id="fa-slide-btn" href="javascript:;" rel="1"><span class="icon-slide"></span></a>
+                                        <span class="fa-tips" id="fa-tips"></span>
+                                        <div class="fa-level-up-swf">
+                                            <p id="fa-level-up-swf"></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="video_pic" class="video_pic" style="display: none;">
+                                <img class="bg">
+                                <ul class="list">
+                                </ul>
+                                <div class="button">
+                                </div>
+                            </div>
+                            <div class="recommend_list video_recommend_list" style="display: none;">
+                                <div class="video_recommend_title">主播不在房间，更多精彩房间推荐给您~</div>
+                                <a id="rl_pre_small" class="rl_pre" href="javascript:;">上一页</a>
+                                <div class="rl_con">
+                                    <ul id="videoHotRecommRoomContainer" class="room-li-s clearfix">
+                                    </ul>
+                                </div>
+                                <a id="rl_next_small" class="rl_next rl_next_un" href="javascript:;">下一页</a>
+                            </div>
+                            <!-- 视频区-新手引导-登陆弹窗 -->
+                            <div class="register_guide_bg" id="register_guide"><span class="close"></span>
+                                <div class="register_guide">
+                                    <div id="register_guide_btn" class="btn"></div>
+                                </div>
+                            </div>
+                            <div class="gifteffectflash" style="display: none">
+                                <p id="gifteffectContent">
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video_title" style="display: none;"><span id="video_title_text"></span></div>
+                </div>
+                <!--主题活动-->
+                <span class="april_fool_s_day_09"></span>
+                <span class="april_fool_s_day_10"></span>
+            </div>
+            <div class="progress-bg">
+                <div class="progress">
+                    <div class="roomheat commTips" id="roomheat"></div>
+                    <div class="hotTips"></div>
+                    <div class="hot_title_Tips"></div>
+                    <div class="progress_hot_spar">
+                        <div id="last-king-edu"></div>
+                        <label onmouseover="MGC.susHotTitleTips(event,1,'抢座以及付费礼物可增加房间热度，从而开启宝箱。活动期间有额外奖励哦！');" onmouseout="MGC.susHotTitleTips(event,0);"></label>
+                        <div class="p_bar" id="boxHotContainer" onmouseover="MGC.susHotTips(event,1,'抢座以及付费礼物可增加房间热度，从而开启宝箱。活动期间有额外奖励哦！');" onmouseout="MGC.susHotTips(event,0);"></div>
+                        <div id="progressTime" class="progress_time">
+                            <span></span>
+                            <p id="progressTimeCountDown">融入奖励倒计时：<strong><i>2</i>：<i>00</i></strong></p>
+                        </div>
+                        <div id="hotbarEffect">
+                            <p id="hotbarEffect-p"></p>
+                        </div>
+                        <span class="rd_w"><a href="javascript:;" class="rd pop_tips" id="addHotContainer" style="display: none;"></a></span>
+                        <div class="opentipbox">
+                            <ul></ul>
+                        </div>
+                    </div>
+                    <div class="onlineNum">
+                        在线人数:<span></span>人
+                    </div>
+                    <div class="p_btn">
+                        <a href="javascript:;" class="tp">投票<span id="newVote" style="display: none;"><b></b><i>有新投票<ins></ins></i></span></a>
+                        <a href="javascript:;" onclick="MGC_CommRequest.getTaskInfo()" class="rw" id="anchorTask">主播任务<b id="newTask" class="newTask" style="display: none;"></b></a>
+                    </div>
+                </div>
+                <div class="rewardtip">
+                    <div class="background">
+                        <div class="left"></div>
+                        <div class="center"></div>
+                        <div class="right"></div>
+                    </div>
+                    <div class="tip">
+                    </div>
+                </div>
+            </div>
+            <!--礼物区-->
+            <div class="layer-gifts">
+                <div class="giftArea_guide commTips_gift" id="giftArea_guide"></div>
+                <div class="gift_guide commTips_gift" id="gift_guide">
+                    <div class="gift_guide_left commTips_gift"></div>
+                    <div class="gift_guide_center commTips_gift" id="gift_guide_center"></div>
+                    <div class="gift_guide_right commTips_gift"></div>
+                </div>
+                <div class="flash_heat">
+                    <div id="default_gift_bg" style="width:100%;height:100%;text-align: center;">
+                        <span style="display:inline-block;position:absolute;top:30%;left:0;width: 100%;height:20px;line-height:20px;font-size: 14px;color: #fff; letter-spacing:3px;">还没人送礼哦~宝贝们的礼物快快刷起来吧！</span>
+                        <img src="http://ossweb-img.qq.com/images/mgc/css_img/video_room/default_gift_bg.png?v=3_8_8_2016_15_4_final_3" width="100%" height="100%" />
+                    </div>
+                    <p id="GiftSwfContainer" style="width:100%;height:100%;">
+                        <!--flash-->
+                    </p>
+                </div>
+                <!-- 抽奖按钮 -->
+                <div id="draw_button" style="display:none;">
+                    <!-- 新手引导 -->
+                    <div id="draw_prompt" style="display:none;">
+                        <div id="prompt_close"></div>
+                        <div id="prompt_div">
+                            <span class="prompt_txt">大家好，<i>幸运转盘</i>&nbsp;隆重登场，
+                <br>
+                快试试谁的手气最好吧!</span>
+                        </div>
+                    </div>
+                    <div id="button_div"></div>
+                    <b id="icon_red" class="btn_prompt" style="display:none;"> </b>
+                    <b id="icon_new" class="btn_prompt" style="display:none;"></b>
+                </div>
+                <!-- 密令按钮 start -->
+                <div id="secret-order">
+                    <div id="secret-order-box-swf"></div>
+                    <div id="secret-order-box"></div>
+                    <div class="click-text">领取回馈</div>
+                    <!-- <div class="secret-order-btn-fade-count-down"><span class="mm"></span> : <span class="ss"></span></div> -->
+                    <div class="hover-tips">
+                        <div class="secret-order-title"></div>
+                        <div class="secret-order-content"></div>
+                    </div>
+                </div>
+                <!-- 密令按钮 end -->
+            </div>
+            <!--火箭礼物效果-->
+            <div class="dreamBoxEffect" style="display: none">
+                <p id="dreamBoxEffectContent">
+                </p>
+            </div>
+        </div>
+        <!--中模块 end-->
+        <!--左模块 start-->
+        <div class="side-left">
+            <div class="side_bar_panl">
+                <span class="side_bar_btn"></span>
+            </div>
+            <!--<div class="layer-onlines">在线列表</div>-->
+            <div class="layer-onlines">
+                <div class="sr_nest">
+                    <div class="tips"></div>
+                    <div id="sn_tab" class="sn_tab">
+                        <ul class="clearfix">
+                            <li class="t">
+                                <p href="javascript:;">在线列表</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="sn_con" class="sn_con s_con_card">
+                        <div class="s_con_card_wrap">
+                            <div class="sus_tips_list"></div>
+                            <div class="sus_tips_listLi"></div>
+                            <ul style="display: block" id="roleListContainer"></ul>
+                        </div>
+                    </div>
+                    <div class="sn_tips"></div>
+                    <div class="tipsShow" style="display: none;">主播公告</div>
+                </div>
+            </div>
+            <!--<div class="layer-guard">守护宝座</div>-->
+            <div class="layer-guard">
+                <!--抢座特效开始-->
+                <div class="vipGrabFlash">
+                    <p id="vipGrabContent"></p>
+                </div>
+                <!--抢座特效结束-->
+                <div class="seat">
+                    <div class="seattop">
+                        <span class="seatname">守护宝座</span>
+                        <a class="seattipbtn" onmouseover="window.mgc.popmanager.layerControlShow($m('.seat .tip1'),1,3);" onmouseout="window.mgc.popmanager.layerControlHide($m('.seat .tip1'),1,3);"></a>
+                        <a class="seatintrobtn target-blank" href="http://x5.qq.com/act/a20140306mar/page04.htm#1" target="_blank"></a>
+                    </div>
+                    <div class="seatlist">
+                        <ul>
+                            <li><img src="http://ossweb-img.qq.com/images/mgc/css_img/headicon/default_head_null.png?v=3_8_8_2016_15_4_final_3"> <i class="canseat"></i>
+                                <a style="cursor:auto" class="userbtn"></a>
+                                <a class="seatbtn"></a>
+                            </li>
+                            <li><img src="http://ossweb-img.qq.com/images/mgc/css_img/headicon/default_head_null.png?v=3_8_8_2016_15_4_final_3"> <i class="canseat"></i>
+                                <a style="cursor:auto" class="userbtn"></a>
+                                <a class="seatbtn"></a>
+                            </li>
+                            <li><img src="http://ossweb-img.qq.com/images/mgc/css_img/headicon/default_head_null.png?v=3_8_8_2016_15_4_final_3"> <i class="canseat"></i>
+                                <a style="cursor:auto" class="userbtn"></a>
+                                <a class="seatbtn"></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tip1" style="display: none;">
+                        超凡守护和天尊守护并且日财富值达到5000的玩家才能落座,当座位为空时可以花费炫豆抢座
+                    </div>
+                    <div class="tip2" style="display: none;"></div>
+                </div>
+            </div>
+            <!--<div class="layer-jiabinxi">嘉宾席</div>-->
+            <div class="layer-vipSeat">
+                <div class="sl_vip">
+                    <h2>嘉宾席</h2>
+                    <a class="seattipbtn" onmouseover="window.mgc.popmanager.layerControlShow($m('.sl_vip .tip1'),2,3);" onmouseout="window.mgc.popmanager.layerControlHide($m('.sl_vip .tip1'),2,3);"></a>
+                    <div class="sv_list">
+                        <ul id="vipContainer">
+                            <li class="vipShowTips"><img src="http://ossweb-img.qq.com/images/mgc/css_img/headicon/default_head_null.png?v=3_8_8_2016_15_4_final_3" width="65" height="65" alt="" style="">
+                                <p class="sv_0_c vipPopClass">抢座</p><i class="sv_0 vipPopClass"></i></li>
+                            <li class="vipShowTips"><img src="http://ossweb-img.qq.com/images/mgc/css_img/headicon/default_head_null.png?v=3_8_8_2016_15_4_final_3" width="65" height="65" alt="" style="">
+                                <p class="sv_0_c vipPopClass">抢座</p><i class="sv_0 vipPopClass"></i></li>
+                            <li class="vipShowTips"><img src="http://ossweb-img.qq.com/images/mgc/css_img/headicon/default_head_null.png?v=3_8_8_2016_15_4_final_3" width="65" height="65" alt="" style="">
+                                <p class="sv_0_c vipPopClass">抢座</p><i class="sv_0 vipPopClass"></i></li>
+                            <li class="vipShowTips"><img src="http://ossweb-img.qq.com/images/mgc/css_img/headicon/default_head_null.png?v=3_8_8_2016_15_4_final_3" width="65" height="65" alt="" style="">
+                                <p class="sv_0_c vipPopClass">抢座</p><i class="sv_0 vipPopClass"></i></li>
+                            <li class="vipShowTips"><img src="http://ossweb-img.qq.com/images/mgc/css_img/headicon/default_head_null.png?v=3_8_8_2016_15_4_final_3" width="65" height="65" alt="" style="">
+                                <p class="sv_0_c vipPopClass">抢座</p><i class="sv_0 vipPopClass"></i></li>
+                            <li class="vipShowTips"><img src="http://ossweb-img.qq.com/images/mgc/css_img/headicon/default_head_null.png?v=3_8_8_2016_15_4_final_3" width="65" height="65" alt="" style="">
+                                <p class="sv_0_c vipPopClass">抢座</p><i class="sv_0 vipPopClass"></i></li>
+                        </ul>
+                    </div>
+                    <div class="tip1" style="display: none;">
+                        嘉宾席抢座游戏酷炫来袭！
+                        <br />a)嘉宾席抢座全面升级！宝座不再是贵族专属，想坐哪里抢哪里，可以拥有6个座位哦！边看边玩，就是这么任性！
+                        <br />b)抢座成功伴随流星特效，赶紧试试~
+                        <br />c)贵族拥有免费抢座特权，亲王和皇帝还拥有座位保护时间哦！
+                    </div>
+                </div>
+            </div>
+            <!--div class="layer-fans">粉丝、守护</!--div-->
+            <div class="layer-fans">
+                <div class="sl_rank">
+                    <div id="sr_tab" class="sr_tab">
+                        <ul class="clearfix">
+                            <li class="pop_tips" style="position: static;"><a href="javascript:;" id="cjfs_li" onclick="MGC.tabCut('sr_tab','sr_con',0);" class="current">超级粉丝</a><i class="sr_r_tips">超级粉丝榜：显示7天内主播亲密度</i></li>
+                            <li class="pop_tips" style="position: static;"><a href="javascript:;" id="sh_li" onclick="MGC.tabCut('sr_tab','sr_con',1);">守护</a><i class="sr_l_tips">守护榜：<br />
+                                显示主播所有的天使及以上级别的守护的前10名，以及总亲密度</i></li>
+                        </ul>
+                    </div>
+                    <div id="sr_con" class="sr_con s_con_card">
+                        <!--超级粉丝-->
+                        <div class="sus_tips_list2"></div>
+                        <div class="sus_tips_short"></div>
+                        <ul style="display: block" id="fansContainer">
+                            <li class="defaultfanscontent" style="text-align:center;line-height:20px;margin-top:5px;">这里都是主播的超级粉丝哦
+                                <br />快和他们交个朋友吧！</li>
+                        </ul>
+                        <!--守护-->
+                        <ul style="display: none" id="guardContainer">
+                            <li class="defaultfanscontent" style="text-align:center;line-height:20px;margin-top:5px;">这里都是主播的超级粉丝哦
+                                <br />快和他们交个朋友吧！</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="zhuboliebiao" class="button_zhubolistnone">
+                    <a href="javascript:;"></a>
+                </div>
+                <div class="list_zhubolist">
+                    <div id="zhuboListWrapper">
+                        <ul id="zhuboListContainer">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--热门推荐 start-->
+        <div class="side-hot recommend">
+            <h2 class="recommend_title">热门推荐</h2>
+            <span class="line"></span>
+            <a class="recommend_more" href="show.shtml" target="_blank">更多</a>
+            <div class="recommend_list">
+                <a id="rl_pre" class="rl_pre" href="javascript:;">上一页</a>
+                <div class="rl_con">
+                    <ul id="HotRecommRoomContainer" class="room-li-s clearfix">
+                    </ul>
+                </div>
+                <a id="rl_next" class="rl_next rl_next_un" href="javascript:;">下一页</a>
+            </div>
+        </div>
+        <!--热门推荐 end-->
+        <!--footer start-->
+        <div class="side-footer">
+            <!--#include virtual="/inc/footer.inc"-->
+        </div>
+        <!--footer end-->
+        <!-- 飞屏开始 -->
+        <div id="fly" class="fly">
+            <!--普通:fly_pt,皇帝:fly_hd,亲王:fly_qw,将军:fly_jj,近卫:fly_jw,骑士:fly_qs,抢座：fly_qz,-->
+            <ul>
+                <li data-chars="1" data-num="0"></li>
+                <li data-chars="1" data-num="1"></li>
+                <li data-chars="1" data-num="2"></li>
+                <li data-chars="1" data-num="3"></li>
+                <li data-chars="1" data-num="4"></li>
+                <li data-chars="1" data-num="5"></li>
+                <li data-chars="1" data-num="6"></li>
+                <li data-chars="1" data-num="7"></li>
+                <li data-chars="1" data-num="8"></li>
+                <li data-chars="1" data-num="9"></li>
+            </ul>
+        </div>
+        <!-- 飞屏结束-->
+        <!-- 入场动画开始 -->
+        <div class="nobleAnimation" style="display: none;" onclick="return false;">
+            <p id="nobleContent">
+            </p>
+        </div>
+        <!-- 入场动画结束 -->
+    </div>
+    <script id="boxHotTmpl" type="text/x-jquery-tmpl">
+        <span class="bgSpan" style="width: ${width}px;"></span>
+        <div class="spanCover" style="width: ${width}px"><span class="showSpan2" style="width: ${width}px; margin: -2px 0 0 16px;">{{html iHtmlCover}}</span></div>
+        <div class="showSpanCover" style="width: ${width}px"><span class="showSpan" style="width: ${width}px; margin: -12px 0 0 16px;">{{html iHtml}}</span></div>
+    </script>
+    <!--界面公共元素(弹层、tips、模板等等，写明模块注释) start-->
+    <!--#include virtual="/inc/room_tmpl.shtml"-->
+    <!--#include virtual="/inc/minipay.shtml"-->
+    <!--界面公共元素(弹层、tips、模板等等，写明模块注释) start-->
+    <!-- 主播徽章公共tips -->
+    <div class="sus_badge_tips"></div>
+    <!--广告与幻灯片模板-->
+    <script id="adTmpl" type="text/x-jquery-tmpl">
+        <li data-id=${id} style="display:none;{{if id != -1}}cursor: pointer;{{/if}}">
+            {{if type == 2}}
+            <img data-id=${id} src="${src}" data-link="${link}" onerror="javascript:this.src='http://ossweb-img.qq.com/images/mgc/css_img/video_room/adDefault.png'"> {{else}}
+            <iframe data-id=${id} src="${src}" data-link="${link}" scrolling="no" frameborder="no"></iframe>
+            {{/if}} {{if id != -1}}
+            <a class="link" data-link="${link}"></a>
+            <a class="close"></a>
+            {{/if}}
+        </li>
+    </script>
+    <!--后援团团务-->
+    <script type="text/x-jquery-tmpl" id="SupportGroupTmpl">
+        <li id="task_group_${task_id}" class="support_group_${status}" onmouseover="RoomOption.ShowGroupRewardsTips(this)" onmouseout="RoomOption.HideGroupRewardsTips(this)" onclick="Flattery.GetGroupRewards(${task_id},'${description}')">
+            <span class="status_tips">{{if status==0}}
+                        现在还没有后援团成员完成这个团务<br>
+                完成条件：<br>
+                ${description}
+                    {{/if}}
+                    {{if status==2}}
+                        徽章已被玩家 ${first_finish_player}（${first_player_zone_name}）点亮<br>
+                完成条件：<br>
+                ${description}
+                    {{/if}}
+                    {{if status==1}}
+                        徽章已被玩家 ${first_finish_player}（${first_player_zone_name}）点亮<br>
+                完成条件：<br>
+                ${description}<br>
+                您已完成了这个团务
+                    {{/if}}
+            </span>
+        </li>
+    </script>
+    <!--房间捧场 END-->
+    <!-- 查看团务奖励START-->
+    <div id="GroupRewardsBox" class="pop"></div>
+    <script id="GroupRewardsBoxTmpl" type="text/x-jquery-tmpl">
+        <a href="javascript:;" class="pop_close">关闭</a>
+        <p class="pop_title">${title}</p>
+        <div class="pop_task_prize">
+            <p class="txt">${showTips}</p>
+            <div class="list_taskprize">
+                <div class="susw_tips"></div>
+                <div class="task_list">
+                    <ul class="clearfix">
+                        {{tmpl(rewards) "#GroupBoxGiftTmpl"}}
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="pop_btn_box clearfix">
+            <a class="btn_open" href="javascript:;">确定</a>
+        </div>
+    </script>
+    <!-- 查看团务奖励END-->
+    <!-- 获取宝箱奖励图片START-->
+    <script id="GroupBoxGiftTmpl" type="text/x-jquery-tmpl">
+        <li>
+            <span onmouseover='MGC.suswTips2(event,1,"${name}","${tips}");' onmouseout="MGC.suswTips2(event,0);" style='background: url(${url}) no-repeat #eadef9' width="90" height="90" alt="" /></span>
+            <p>${count_desc}</p>
+        </li>
+    </script>
+    <!-- 获取宝箱奖励图片END-->
+    <!-- 主播信息区域-面板模板 -->
+    <script id="anchorTmpl" type="text/x-jquery-tmpl">
+        <div class="littleCaveolaeroom"><i class="littleCaveolaeroomShow">这里是主播的个人直播间哦</i></div>
+        <p class="si_room"><span>${roomId}：</span><strong>${roomName}</strong></p>
+        <div class="si_face clearfix">
+            <span class="si_face_links" id="si_face_links" href="javascript:;">
+                <img src="${photoUrl}" width="85" height="85" alt=""><i></i></span>
+            <div class="sf_details">
+                <p class="sf_nic">{{if anchor_badge==0}}{{else}}<em></em>{{/if}}<strong>${name}</strong></p>
+                <p class="sf_flower pop_tips_rq hiddenAnchor" style="display: none;">${popularity}<i id="i_top"></i></p>
+                <p class="sf_heart pop_tips_rq hiddenAnchor" style="display: none;">${starlight}<i id="i_top_two"></i></p>
+            </div>
+            <span href="javascript:void(0);" id="anchorCard" class="si_mp hiddenAnchor" style="display: none;"></span><span class="si_fk hiddenAnchor" style="display: none;"></span>
+        </div>
+        <div class="si_label pop_tips clearfix hiddenAnchor" style="display: none;">{{html impression}}<i>可在主播名片中添加主播印象</i></div>
+        <div class="attention">
+            <div class="sus_tips_"></div>
+            <a class="si_attention hiddenAnchor" href="javascript:void(0);" style="display: none;">${follow}</a>
+        </div>
+        <p class="si_fans_num hiddenAnchor" style="display: none;">${followNum}</p>
+    </script>
+    <!--守护宝座列表模版-->
+    <script id="seatTmpl" type="text/x-jquery-tmpl">
+        <li data-seatid="${m_seat_id}">
+            <img src="${m_pic_url}">
+            <i class="{{if canseat}}canseat{{/if}}"></i> {{if m_take_cost
+            < 0}} <span>${m_nick}</span>
+                {{/if}}
+                <a style="{{if m_player_id == '0'}}cursor: auto; {{/if}}" class="userbtn" data-picurl="${m_pic_url}" data-playerid="${m_player_id}" data-seatid="${m_seat_id}" data-cost="${m_take_cost}" data-name="${m_nick}" data-zone="${m_zone}" data-sex="${m_gender}" data-inroom="${m_in_room}" data-viplevel="${m_vip_level}" data-guardlevel="${m_guard_level}" data-wealthlevel="${m_wealth_level}"></a>
+                {{if canseat}}
+                <a class="seatbtn" data-playerid="${m_player_id}" data-seatid="${m_seat_id}" data-cost="${m_take_cost}"></a>
+                {{/if}}
+        </li>
+    </script>
+    <!-- 贵宾席START-->
+    <script id="vipTmpl" type="text/x-jquery-tmpl">
+        <li class="${liClass}">
+            <img src="${pic_url||'http://ossweb-img.qq.com/images/mgc/css_img/headicon/default_head_null.png?v=3_8_8_2016_15_4_final_3'}" width="65" height="65" alt="" style=""></img>
+            <span class="${vipI}"></span>
+            <p zone="${zone}" zonename="${zoneName}" name="${nick||'抢座'}" class="${vipP} vipPopClass" onmouseover="MGC.susTipsLvList(event,1,'${level}|@abc${wealth_level}|@abc${video_room_wealth}|@abc${vipName}|@abc${num}|@abc${nickColor}|@abc${zone}',this,10,105,'sus_tips_LvList',3);" onmouseout="MGC.susTipsLvList(event,0,'',this,10,105,'sus_tips_LvList',3);" style="${vipIclass};">${nick||'抢座'}</p>
+            <i class="${vipI} vipPopClass" data-playerId="${player_id}" data-seatid="${index}" data-cost="${take_cost}" zone="${zone}" protect_time="${protect_time}" begin_time="${begin_time}" taken_cnt="${taken_cnt}" cost_seat="${cost_seat}" name="${nick||'抢座'}" style="${vipIclass}" onmouseover="MGC.susTipsLvList(event,1,'${level}|@abc${wealth_level}|@abc${video_room_wealth}|@abc${vipName}|@abc${num}|@abc${nickColor}|@abc${zone}',this,10,105,'sus_tips_LvList',3);" onmouseout="MGC.susTipsLvList(event,0,'',this,10,105,'sus_tips_LvList',3);"></i>
+            <span class="april_fool_s_day_04"></span>
+            <!--div>
+                <p>名字：<strong style="color: ${nickColor}">${playerName}</strong></p>
+                <p>等级：LV${video_level}</p>
+                <p>来源：${zoneName}</p>
+                <p>财富值：${wealth}</p>
+                <p>贵族身份：${vipName}</p>
+            </div-->
+        </li>
+    </script>
+    <!-- 贵宾席END-->
+    <!-- 主播列表START-->
+    <script id="zhuboListTmpl" type="text/x-jquery-tmpl">
+        <li>
+            <a href="transfer.shtml?roomId=${nest_id}&amp;source=7&module_type=0&page_capacity=30&room_list_pos=0" onclick="mgc.tools.EAS([{'e_c': 'mgc.enterroom.1','c_t':4}])" target="_blank">
+                <span class="level_span i_anchor_level_${levelClass}" style="background:url('http://ossweb-img.qq.com/images/mgc/css_img/common/anchor_level/${levelClass}.png?v=3_8_8_2016_15_4_final_3') no-repeat right center">
+                <i>${anchor_level}</i>
+                </span>
+                <img width="60" height="60" alt="主播头像" src="${pic_url}"><i></i>
+                <div><strong>${nest_name}</strong><span>房间id:<b>${nest_id}</b></span>房间人数:${on_line_count}人</div>
+                {{if nest_status==1}}
+                <span class="live">直播中</span> {{else nest_status==2}}
+                <span class="nolive">未直播</span> {{else nest_status==0}} {{/if}}
+            </a>
+        </li>
+    </script>
+    <!-- 主播列表END-->
+    <!--界面公共元素                                    end-->
+    <!--老版本js脚本 start-->
+    <div style="display: none;">
+        <script src="js/mgc_gifttip.js?v=3_8_8_2016_15_4_final_3"></script>
+        <script src="js/mgc.js?v=3_8_8_2016_15_4_final_3"></script>
+        <!--地址要变-->
+        <script src="js/mgc_dialog.min.js?v=3_8_8_2016_15_4_final_3"></script>
+        <script src="script/lib/utils/jquery.tmpl.min.js?v=3_8_8_2016_15_4_final_3"></script>
+        <script src="js/jquery/jquery.jscrollpane.min.js?v=3_8_8_2016_15_4_final_3"></script>
+        <script src="js/jquery/jquery.mousewheel.js?v=3_8_8_2016_15_4_final_3"></script>
+        <script src="js/utils/swfobject.js?v=3_8_8_2016_15_4_final_3"></script>
+        <script src="js/mgc_init.js?v=3_8_8_2016_15_4_final_3"></script>
+        <script src="js/mgc_popmanager.js?v=3_8_8_2016_15_4_final_3"></script>
+        <script src="js/mgc.common.js?v=3_8_8_2016_15_4_final_3"></script>
+        <script src="js/mgc_grab_seats.js?v=3_8_8_2016_15_4_final_3"></script>
+        <script src="js/mgc_fans_guildcard.js?v=3_8_8_2016_15_4_final_3" defer="defer"></script>
+        <script src="js/mgc_card.js?v=3_8_8_2016_15_4_final_3" defer="defer"></script>
+        <script src="js/mgc_anchorcard.js?v=3_8_8_2016_15_4_final_3" defer="defer"></script>
+        <script src="js/mgc_liveroom.js?v=3_8_8_2016_15_4_final_3"></script>
+        <script src="js/mgc_vote.js?v=3_8_8_2016_15_4_final_3"></script>
+        <script src="js/mgc_redpacket.js?v=3_8_8_2016_15_4_final_3"></script>
+        <script src="js/mgc_roomGuide.js?v=3_8_8_2016_15_4_final_3"></script>
+        <script>
+        MGC_Comm.ToDoClosePage();
+        </script>
+    </div>
+    <!--老版本js脚本 end-->
+    <!--新框架js脚本 start-->
+    <div style="display: none;">
+        <script data-main='script/room_entry_liveroom' src='script/lib/utils/require-2.1.20.min.js?v=3_8_8_2016_15_4_final_3' defer async></script>
+    </div>
+    <!--新框架js脚本 end-->
+    <!-- 飞屏SWF 不支持穿透;pointer-events:none -->
+    <div class="flyScreen" onclick="return false;" style="position: absolute; top:0px; left:0; z-index:938999; height: 1px; width: 1px;">
+        <p id="flyScreenContent">
+        </p>
+    </div>
+    <!-- 飞屏SWF end -->
+</body>
+<script src="http://qqgameplatcdn.qq.com/social_hall/js/jquery.js?v=3_8_8_2016_15_4_final_3"></script>
+<script>
+if (MgcAPI.SNSBrowser.IsQQGame()) {
+    STATIC_RESOURCE.addJsByScript(['script/ui/control/mgc_app_extend.js']);
+}
+</script>
+
+</html>
+<!--[if !IE]>|xGv00|fead803f8b05f49d3d51040dd4f0fb72<![endif]-->

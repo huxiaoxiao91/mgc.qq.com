@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="GB2312"?>
+
+<!--
+	这个配置是新加的！
+-->
+
+
+<VideoGiftCfg>
+	<!-- gift_type 1梦工厂经验 2梦幻币 3梦工厂礼物 -->
+	<!-- 梦工厂经验 -->
+	<GiftData id="0" gift_type="1">
+	<Name>经验</Name>
+	<Icon>video_exp.png</Icon>
+    <Intro>可以增加自己的梦工厂经验值，提升自己的梦工厂等级</Intro>
+	</GiftData>
+
+	<!-- 梦幻币 -->
+	<GiftData id="0" gift_type="2">
+	<Name>梦幻币</Name>
+	<Icon>video_money.png</Icon>
+    <Intro>梦幻币可以购买梦幻币礼物和梦幻币贵族</Intro>
+	</GiftData>
+	
+	<!-- 梦工厂礼物  荧光棒-->
+	<GiftData id="30" gift_type="3">
+	<Name>荧光棒</Name>
+	<Icon>item_23.png</Icon>
+    <Intro>str_live_gift_detail_8</Intro>
+	</GiftData>
+	
+	<!-- 梦工厂礼物  鼓掌-->
+	<GiftData id="31" gift_type="3">
+	<Name>鼓掌</Name>
+	<Icon>item_24.png</Icon>
+    <Intro>str_live_gift_detail_9</Intro>
+	</GiftData>
+	
+	<!-- 梦工厂礼物  v587-->
+	<GiftData id="32" gift_type="3">
+	<Name>v587</Name>
+	<Icon>item_25</Icon>
+    <Intro>str_live_gift_detail_6</Intro>
+	</GiftData>
+</VideoGiftCfg>

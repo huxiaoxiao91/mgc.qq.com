@@ -1,0 +1,20 @@
+<html>
+<head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=GBK">
+    <script>
+        document.domain = "qq.com";
+        var a = window;
+        for (var i = 0; i < 3; i++) {
+            a = a.parent;
+            if (a != null && typeof a != "undefined" && typeof a.ptlogin2_onClose == "function" && typeof a.LoginedCallback == "function") {
+                a.ptlogin2_onClose();
+                a.LoginedCallback();
+                break;
+            }
+        }
+</script>
+</head>
+<body>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!--名片-->
+<div class="card_tips" id="cardTipContainer"></div>
+
+<script id="cardTipTmpl" type="text/x-jquery-tmpl">
+        <div class="card_head clearfix">
+            <div class="head_info">
+                <img width="68" height="68" alt="" src="${_portrait_url}">
+                <span class="cover"></span>
+                <span class="male ${_sexFemale}"></span>
+            </div>
+            <div class="name_info">
+                <span class="ni_nick" style="color: ${_nickColor}">${_nickName}</span>
+                <i anchorid="${anchorId}" class="${_cardClass}"></i>
+                {{if wealth_level!=0}}<i class="wealth_level"  style="background:url(http://ossweb-img.qq.com/images/mgc/css_img/common/wealth_level/${wealth_level}.png?v=3_8_8_2016_15_4_final_3) no-repeat center center;" ></i>{{else}}{{/if}}
+                {{if _guard_level!=0}}<i class="icon_lv"  style="background:url('http://ossweb-img.qq.com/images/mgc/css_img/common/guard/${_guard_level}.png?v=3_8_8_2016_15_4_final_3') no-repeat center center;">${guardlevelShow}</i>{{else}}{{/if}}
+                {{if _vip_level!=0 || _vip_level !=""}}<i class="icon_honor"  style="background:url('http://ossweb-img.qq.com/images/mgc/css_img/common/nobility/${_vip_level}.png?v=3_8_8_2016_15_4_final_3') no-repeat center center;margin-left:4px;">${viplevelShow}</i>{{else}}{{/if}}
+                {{if isMobileManager}}<i class="icon_mobile_admin" style="background: url(http://ossweb-img.qq.com/images/mgc/css_img/common/mobile_admin.png?v=3_8_8_2016_15_4_final_3) no-repeat center center; background-size: cover;"></i>{{/if}}
+            </div>
+        </div>
+        {{if !isSelf && playerType != 2}}
+            <ul class="list_btn">
+                {{if playerType==-100}}
+                <li><a href='javascript:copyToClipBoard();'>复制昵称</a></li>
+                {{else}}
+                <li><a class="privitechat" receiverId='${_targetId}' receiverName='${_nickName}' receiverZoneName='${_talkAreaName}' receiverPlayerType='${playerType}' href='javascript:;'>私 聊</a></li>
+                {{/if}}
+            </ul>
+        {{else !isSelf}}
+            <ul class="list_btn">
+            <li><a class="privitechat" receiverId='${_targetId}' receiverName='${_nickName}' receiverZoneName='${_talkAreaName}' receiverPlayerType='${playerType}' href='javascript:;'>私 聊</a></li>
+            <li><a href='javascript:copyToClipBoard();'>复制昵称</a></li>
+            {{if canInvite}}
+                <li><a id='invitationBtn' data_targetId='${_targetId}' data_showAreaName='${_talkAreaName}' href='javascript:fansInvited();'>后援团邀请</a></li>
+            {{/if}}
+            {{if isIgnore}}
+                <li><a class='ignore' name='${player_name}'playerId='${_targetId}' area='${zone_name}' isIgnore='false' href='javascript:;'>取消屏蔽</a></li>
+            {{else}}
+                <li><a class='ignore' name='${player_name}' playerId='${_targetId}' area='${zone_name}' isIgnore="true" href="javascript:;">屏 蔽</a></li>
+            {{/if}}
+            {{if !mgc.tools.is_show_room() && !isMobileManager}}
+                {{if banable}}
+                    <li><a class='forbidden' playerId='${_targetId}' name='${player_name}' area='${zone_name}' href='javascript:;'>禁 言</a></li>
+                    <li><a class='cancelForbidden' playerId='${_targetId}' name='${player_name}' area='${zone_name}' href='javascript:;'>取消禁言</a></li>
+                {{else unbanable}}
+                    <li><a class='cancelForbidden' playerId='${_targetId}' name='${player_name}' area='${zone_name}' href='javascript:;'>取消禁言</a></li>
+                {{/if}}
+            {{/if}}
+                </ul>
+        {{/if}}
+</script>

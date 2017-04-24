@@ -1,0 +1,230 @@
+<!--此处装入活动任务模板-->
+<script id="actTmpl" type="text/x-jquery-tmpl">
+                       {{if growthTask}}                    
+                    <tr>                   
+                                <td class="first" width="32%">
+                                        <span class="growup_icon"></span>
+							            <strong class="name">${name}<span class="t_red">（{{each(i,pro) progress}}${pro.cur_progress}/${pro.need_progress}{{/each}}）</span></strong>
+							            <p class="txt">事件描述：${desc}</p>
+						            </td>
+						            <td width="20%" class="act_time" valign="top">${tip}</td>                                    
+						            <td width="40%" id="actComent" >
+                                        {{tmpl(rewards) "#act_rewards_list_tmpl"}}							
+						            </td>
+						            <td width="10%">
+							            {{if status == 2}}
+							            <a href="javascript:;" class="btn_get">已领取</a>
+							            {{else progress[0].key == 8}}
+							            {{else progress[0].key == 9}}
+							            {{else status == 1}}
+							            <a href="javascript:;" onclick="getActRewards(this)" class="btn_get" get-data='{"act_id":${id},"category":3}'>领取</a>                        
+							            {{else}}
+							            <a href="javascript:;" class="btn_getun">领取</a>
+							            {{/if}}
+						            </td>
+					        </tr> 
+                    
+                    {{else}}
+                    <tr>    
+						<td width="32%">
+							<strong class="name">${name}<span class="t_red">（{{each(i,pro) progress}}${pro.cur_progress}/${pro.need_progress}{{/each}}）</span></strong>
+							<p class="txt">事件描述：${desc}</p>
+						</td>
+						<td width="20%" class="act_time" valign="top">${end_time}结束</td>
+						<td width="40%" id="actComent" >
+                            {{tmpl(rewards) "#act_rewards_list_tmpl"}}							
+						</td>
+						<td width="10%">
+							{{if status == 2}}
+							<a href="javascript:;" class="btn_get">已领取</a>
+							{{else progress[0].key == 8}}
+							{{else progress[0].key == 9}}
+							{{else status == 1}}
+							<a href="javascript:;" class="btn_get" get-data='{"act_id":${id},"category":0}'>领取</a>                        
+							{{else}}
+							<a href="javascript:;" class="btn_getun">领取</a>
+							{{/if}}
+						</td>
+					</tr>  
+                    {{/if}}  
+</script>
+<!--此处装入当天任务模板-->
+<script id="everyTmpl" type="text/x-jquery-tmpl">
+					<tr>
+						<td width="32%">
+							<strong class="name">${name}<span class="t_red">（{{each(i,pro) progress}}${pro.cur_progress}/${pro.need_progress}{{/each}}）</span></strong>
+							<p class="txt">事件描述：${desc}</p>
+						</td>
+						<td width="20%" valign="top"></td>
+						<td width="40%" id="act_dayComent" >
+                            {{tmpl(rewards) "#act_day_rewards_list_tmpl"}}							
+						</td>
+						<td width="10%">
+							{{if status == 2}}
+							<a href="javascript:;" class="btn_get">已领取</a>
+							{{else progress[0].key == 8}} 
+							{{else progress[0].key == 9}}  
+							{{else status == 1}}
+							<a href="javascript:;" class="btn_get" get-data='{"act_id":${id},"category":1}'>领取</a>                                 
+							{{else}}
+							<a href="javascript:;" class="btn_getun">领取</a>
+							{{/if}}
+						</td>
+					</tr>
+</script>
+<!--此处装入网页版任务模板-->
+<script id="webActTmpl" type="text/x-jquery-tmpl">
+					<tr>
+						<td class="first" width="32%">
+							<span class="head_icon"></span>
+							<strong class="name">${name}<span class="t_red">（{{each(i,pro) progress}}${pro.cur_progress}/${pro.need_progress}{{/each}}）</span></strong>
+							<p class="txt">事件描述：${desc}</p>
+						</td>
+						<td width="20%" class="act_time"  valign="top">${end_time}结束</td>
+						<td width="40%" id="act_web_Coment" >
+                            {{tmpl(rewards) "#act_web_rewards_list_tmpl"}}							
+						</td>
+						<td width="10%">
+							{{if status == 2}}
+							<a href="javascript:;" class="btn_get">已领取</a>
+							{{else progress[0].key == 8}} 
+							{{else progress[0].key == 9}}  
+							{{else status == 1}}
+							<a href="javascript:;" class="btn_get" get-data='{"act_id":${id},"category":2}'>领取</a>                                 
+							{{else}}
+							<a href="javascript:;" class="btn_getun">领取</a>
+							{{/if}}
+						</td>
+					</tr>
+</script>
+    <!--活动任务奖励模板-->
+    <script type="text/x-jquery-tmpl" id="act_rewards_list_tmpl">
+        <span class="bag">
+            {{if hasgame_act}}
+            {{if channel==4}}
+            <img src="${url}" alt="${name}${count_desc}" style="width:30px;height:30px;padding:0;margin-left:-1px;"/>
+            {{else}}
+            <img src="${url}" alt="${name}${count_desc}" style="width:40px;height:40px;padding:0;"/>
+            {{/if}}
+            
+            {{else qgame_act}}
+            <img src="${url}" onerror="this.src='http://ossweb-img.qq.com/images/mgc/css_img/common/game_default.png?v=3_8_8_2016_15_4_final_3'" alt="${name}${count_desc}" style="width:26px;height:26px;padding:0;margin: 1px 3px 0 0;float:left;"/>${count_desc}
+            {{else url.indexOf('items/item_video_exp.png')>=0}}
+            <i class="icon_jyz" alt="${count_desc}${name}" />${count_desc}
+            {{else url.indexOf('items/item_video_money.png')>=0}}
+            <i class="icon_mhb" alt="${count_desc}${name}" />${count_desc}
+            {{else url.indexOf('items/item_30.png')>=0}}
+            <i class="icon_xx" alt="${count_desc}${name}"  />${count_desc}
+            {{else url.indexOf('items/item_31.png')>=0}}
+            <i class="icon_gz" alt="${count_desc}${name}"  />${count_desc}
+            {{else url.indexOf('items/item_32.png')>=0}}
+            <i class="icon_v587" alt="${count_desc}${name}" />${count_desc}
+            {{else url.indexOf('items/item_200.png')>=0}}
+            <i class="icon_bk" alt="${count_desc}${name}" />${count_desc}
+            {{else url.indexOf('items/item_201.png')>=0}}
+            <i class="icon_yf" alt="${count_desc}${name}" />${count_desc}
+            {{else url.indexOf('items/item_202.png')>=0}}
+            <i class="icon_bbt" alt="${count_desc}${name}" />${count_desc}
+            <!-- 成长任务图标 -->
+            {{else url.indexOf('items/item_noble_5.png')>=0}}
+            <i class="icon_hd" alt="皇帝${count_desc}"  onmouseover="MGC.susStatesTips(event,1,'${count_desc}${name}');" onmouseout="MGC.susStatesTips(event,0);" />${count_desc}
+            {{else url.indexOf('items/item_noble_4.png')>=0}}
+            <i class="icon_qw" alt="亲王${count_desc}"  onmouseover="MGC.susStatesTips(event,1,'${count_desc}${name}');" onmouseout="MGC.susStatesTips(event,0);" />${count_desc}
+            {{else url.indexOf('items/item_noble_3.png')>=0}}
+            <i class="icon_jj" alt="将军${count_desc}"  onmouseover="MGC.susStatesTips(event,1,'${count_desc}${name}');" onmouseout="MGC.susStatesTips(event,0);" />${count_desc}
+            {{else url.indexOf('items/item_noble_2.png')>=0}}
+            <i class="icon_qs" alt="骑士${count_desc}"  onmouseover="MGC.susStatesTips(event,1,'${count_desc}${name}');" onmouseout="MGC.susStatesTips(event,0);" />${count_desc}
+            {{else url.indexOf('items/item_noble_1.png')>=0}}
+            <i class="icon_jw" alt="近卫${count_desc}"  onmouseover="MGC.susStatesTips(event,1,'${count_desc}${name}');" onmouseout="MGC.susStatesTips(event,0);" />${count_desc}
+            {{else url.indexOf('items/item_fly_1.png')>=0}}
+            <i class="icon_fs" alt="${count_desc}个飞屏"  onmouseover="MGC.susStatesTips(event,1,'${count_desc}${name}');" onmouseout="MGC.susStatesTips(event,0);" />${count_desc}
+            {{/if}} 
+        </span>      
+    </script>
+    <!--每日任务奖励模板-->
+    <script type="text/x-jquery-tmpl" id="act_day_rewards_list_tmpl">
+        <span class="bag">
+                {{if hasgame_day}}
+                    {{if channel==4}}
+                    <img src="${url}" alt="${name}${count_desc}" style="width:30px;height:30px;padding:0;margin-left:-1px;"/>
+                    {{else}}
+                    <img src="${url}" alt="${name}${count_desc}" style="width:40px;height:40px;padding:0;"/>
+                    {{/if}}
+                {{else qgame_day}}
+                <img src="${url}" onerror="this.src='http://ossweb-img.qq.com/images/mgc/css_img/common/game_default.png?v=3_8_8_2016_15_4_final_3'" alt="${name}${count_desc}" style="width:26px;height:26px;padding:0;margin: 1px 3px 0 0;float:left;"/>${count_desc}
+                {{else url.indexOf('items/item_video_exp.png')>=0}}
+                <i class="icon_jyz" alt="${count_desc}${name}" />${count_desc}
+                {{else url.indexOf('items/item_video_money.png')>=0}}
+                <i class="icon_mhb" alt="${count_desc}${name}" />${count_desc}
+                {{else url.indexOf('items/item_30.png')>=0}}
+                <i class="icon_xx" alt="${count_desc}${name}" />${count_desc}
+                {{else url.indexOf('items/item_31.png')>=0}}
+                <i class="icon_gz" alt="${count_desc}${name}" />${count_desc}
+                {{else url.indexOf('items/item_32.png')>=0}}
+                <i class="icon_v587" alt="${count_desc}${name}" />${count_desc}
+                {{else url.indexOf('items/item_200.png')>=0}}
+                <i class="icon_bk" alt="${count_desc}${name}" />${count_desc}
+                {{else url.indexOf('items/item_201.png')>=0}}
+                <i class="icon_yf" alt="${count_desc}${name}" />${count_desc}
+                {{else url.indexOf('items/item_202.png')>=0}}
+                <i class="icon_bbt" alt="${count_desc}${name}" />${count_desc}
+                {{/if}}
+        </span>           
+    </script>
+    <!--web任务奖励模板-->
+    <script type="text/x-jquery-tmpl" id="act_web_rewards_list_tmpl">
+        <span class="bag">
+                {{if hasgame_web}}
+                    {{if channel==4}}
+                    <img src="${url}" alt="${name}${count_desc}" style="width:30px;height:30px;padding:0;margin-left:-1px;"/>
+                    {{else}}
+                    <img src="${url}" alt="${name}${count_desc}" style="width:40px;height:40px;padding:0;"/>
+                    {{/if}}
+                {{else url.indexOf('items/item_video_exp.png')>=0}}
+                <i class="icon_jyz" alt="${count_desc}${name}" />${count_desc}
+                {{else url.indexOf('items/item_video_money.png')>=0}}
+                <i class="icon_mhb" alt="${count_desc}${name}" />${count_desc}
+                {{else url.indexOf('items/item_30.png')>=0}}
+                <i class="icon_xx" alt="${count_desc}${name}" />${count_desc}
+                {{else url.indexOf('items/item_31.png')>=0}}
+                <i class="icon_gz" alt="${count_desc}${name}" />${count_desc}
+                {{else url.indexOf('items/item_32.png')>=0}}
+                <i class="icon_v587" alt="${count_desc}${name}" />${count_desc}
+                {{else url.indexOf('items/item_200.png')>=0}}
+                <i class="icon_bk" alt="${count_desc}${name}" />${count_desc}
+                {{else url.indexOf('items/item_201.png')>=0}}
+                <i class="icon_yf" alt="${count_desc}${name}" />${count_desc}
+                {{else url.indexOf('items/item_202.png')>=0}}
+                <i class="icon_bbt" alt="${count_desc}${name}" />${count_desc}
+                {{/if}} 
+        </span>           
+    </script>
+<!-- 获取任务数据START-->
+<script id="boxGiftTmpl" type="text/x-jquery-tmpl">
+	<a href="javascript:;" class="pop_close">关闭</a>
+	<p class="pop_title">任务奖励</p>
+	<div class="pop_task_prize">
+		<p class="txt">${showTips}<span>${showTips_game}</span></p>
+		<div class="list_taskprize"><div class="susw_tips"></div>
+			<div class="task_list">
+				<ul class="clearfix">
+					{{tmpl(rewards) "#boxGiftImageTmpl"}}
+				</ul>
+			</div>
+		</div><!-- //list -->
+	</div>
+	<div class="pop_btn_box clearfix">
+		<a class="btn_open" href="javascript:;">确定</a>
+	</div>
+</script>
+<!-- 获取任务数据END-->
+<!-- 获取任务奖励图片START--> 
+<script id="boxGiftImageTmpl" type="text/x-jquery-tmpl">
+	<li  data="${num}">
+		 <span onmouseover='MGC.suswTips2(event,1,"${name}","${tips}");' onmouseout="MGC.suswTips2(event,0);" width="68" height="68" alt="">
+             {{if Qgame}}<img class='${url.indexOf("ktv.x5.qq.com") > 0 ? "game-img" : ""}' src="${url}" onerror="this.src='http://ossweb-img.qq.com/images/mgc/css_img/common/game_default.png?v=3_8_8_2016_15_4_final_3'"  width="66" height="66" />{{else}}
+            <img class='${url.indexOf("x52itemicon") > 0 ? "" : url.indexOf("ktv.x5.qq.com") > 0 ? "game-img" : ""}' src="${url}" width="66" height="66" />{{/if}}</span>
+            <p>${count_desc}</p>
+	</li>
+</script>
+<!-- 获取任务奖励图片END-->

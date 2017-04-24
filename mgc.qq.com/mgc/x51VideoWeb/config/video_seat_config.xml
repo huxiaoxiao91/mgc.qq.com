@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="gb2312" standalone="yes" ?>
+<VipSeatClientConfig>
+	<WhistleMsg>
+		<msg value="在座位上看表演就是不一样！！！"/>
+		<msg value="终于可以坐下来好好看表演了，你也来试试？"/>
+		<msg value="今儿，这座位我包了！"/>
+	</WhistleMsg>
+</VipSeatClientConfig>

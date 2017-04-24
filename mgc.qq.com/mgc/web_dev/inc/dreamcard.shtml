@@ -1,0 +1,104 @@
+<!--梦工厂名片-->
+<div id="cardInfoContainer" class="pop_card"></div>
+<!--梦工厂名片模板-->
+<script id="cardInfoTmpl" type="text/x-jquery-tmpl">
+        <a class="pop_close" href="javascript:showDialog.hide();">关闭</a>
+        <p class="pop_title">梦工厂名片</p>
+        <div class="pop_info">
+            <p class="pop_face pop_lv1">
+                <img width="140" height="140" src="${_portrait_url}" alt=""><i></i>
+            </p>
+            <div class="pop_details">
+                <ul class="clearfix">
+                    <li class="p1"><strong>昵称：</strong><i class="${_sexCardInfo}"></i><span>${_nickName}</span></li>
+                    <li class="p3"><strong>等级：</strong>LV${_videoLevel}<p class="pd_progress">{{if _levelPer==0}}<span style="border:none;background:url();"></span><i>${_currentExp}/${levelup_exp}</i>{{else levelup_exp==0}}<span style="width: ${_levelPer}"></span><i style="line-height:10px">max</i>{{else}}<span style="width: ${_levelPer}"></span><i>${_currentExp}/${levelup_exp}</i>{{/if}}</p>
+                    </li>
+                    
+                    <li class="p4"><strong>贵族：<i class="${roleGuizu}" style="background:url('http://ossweb-img.qq.com/images/mgc/css_img/common/nobility/${vip_level}.png?v=3_8_8_2016_15_4_final_3') no-repeat" ></i></strong>${_vip_name}</li>
+                    <li class="p3"><strong>财富：</strong><div class="dream_card_weath_tips"><i class="weath_level" style="background:url('http://ossweb-img.qq.com/images/mgc/css_img/common/wealth_level/${wealth_level}.png?v=3_8_8_2016_15_4_final_3') no-repeat"></i><em>财富值:${wealth}</em><p class="pd_progress">{{if wealth_level_exp==0}}<span style="border:none;background:url();"></span>{{else}}<span style="width: ${wealth_level_exp}"></span>{{/if}}<i>{{if wealth_levelup_exp==0}}${wealth}{{else}}${wealth_exp}/${wealth_levelup_exp}{{/if}}</i></p></div></li>
+                    {{if filename !='showroom.shtml'}}<li class="p4"><strong>后援团：</strong>{{if vg_name ==''}}无 {{if canInvite}} <a data_targetId='${_targetId}' data_showAreaName="${_showAreaName}" href="javascript:invitationSubmit();" class="invitationBtn">后援团邀请</a>  {{/if}} {{else}}<span>${vg_name}</span><i class="backGroup_card" vgid="${vgid}"></i>{{/if}}</li>{{/if}}
+                    <li class="p5"><fieldset><legend>个人签名：</legend><p>${signature}</p></fieldset>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="pop_tab_head">
+        	<ul>
+        		<li class="active">
+        			<a href="javascript:;">关注的主播</a>
+        		</li>
+        		<li>
+        			<a href="javascript:;">最爱的直播间</a>
+        		</li>
+        	</ul>
+        </div>
+        <div class="pop_lv_tab">
+            <table>
+                <thead>
+                    <tr>
+                        <th class="l">主播昵称</th>
+                        <th class="c">亲密度</th>
+                        <th class="r">守护关系</th>
+                    </tr>
+                </thead>
+            </table>
+            <div class="tb_con">
+                <table>
+                    <tbody>
+                        {{tmpl(followed_anchors) "#otherFollowAnchorTmpl"}}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="pop_lv_tab" style="display:none">
+            <table>
+                <thead>
+                    <tr>
+                        <th class="l">房间名称</th>
+                        <th class="c">成长积分</th>
+                        <th class="r">头衔等级</th>
+                    </tr>
+                </thead>
+            </table>
+            <div class="tb_con">
+                <table>
+                    <tbody>
+                        {{tmpl(love_nest_info_vec) "#loveLiveRoomTmpl"}}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </script>
+
+<!-- 他人名片-关注主播名片START-->
+    <script id="otherFollowAnchorTmpl" type="text/x-jquery-tmpl">
+        <tr>
+            <td class="l" style="text-align: left; padding-left: 54px;width:194px;">
+                <i style="background:url('http://ossweb-img.qq.com/images/mgc/css_img/common/anchor_level/${anchor_level_temp}.png?v=3_8_8_2016_15_4_final_3') no-repeat;" onmouseover="MGC.susTips(event,1,'主播等级：${anchor_level}');" onmouseout="MGC.susTips(event,0);" mgc_card_anchor="主播等级：${anchor_level}"  class="anchor_level"><i>${anchor_level}</i></i><label style="float:left; display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; width: 80px;">${anchor_name}</label>
+                {{if anchorStatus=="直播中"}}
+                <a target="_blank" href="transfer.shtml?roomId=${room_id}&source=7&module_type=0&page_capacity=30&room_list_pos=0" style="float: right;margin-right:15px;"><span>${anchorStatus}</span></a>
+                {{/if}}
+		</td>
+            <td class="c">${affinity}</td>
+            <td class="r"><i style="background:url('http://ossweb-img.qq.com/images/mgc/css_img/common/guard/${guard_level}.png?v=3_8_8_2016_15_4_final_3') no-repeat;" onmouseover="MGC.susTips(event,1,'${cardLevelShowTips}');" onmouseout="MGC.susTips(event,0);" mgc_card_guard="${cardLevelShowTips}" class="icon_lv icon_lv${guard_level}"></i><a href="javascript:void(0);" anchorid="${anchor_pstid}" class="lv_links icon_message"></a></td>
+        </tr>
+    </script>
+    <!-- 他人名片-关注主播名片END-->
+    <!-- 他人名片-最爱的直播间START-->
+    <script id="loveLiveRoomTmpl" type="text/x-jquery-tmpl">
+        <tr>
+            <td class="l" style="text-align: left; padding-left: 45px;width:194px;">
+                <label style="float: left; display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; width: 100px;">${nest_name}</label>
+                {{if is_live==true}}
+                <a target="_blank" href="transfer.shtml?roomId=${nest_id}&source=7&module_type=0&page_capacity=30&room_list_pos=0" style="float: right;margin-right:15px;"><span>直播中</span></a>
+                {{/if}}
+            </td>
+            <td class="c">${credits}</td>
+            {{if cardLevelShowTips==""}}
+            <td class="r"><i class="icon_headrank" style="background:url('http://ossweb-img.qq.com/images/mgc/css_img/common/title_level_small/${credits_level}.png?v=3_8_8_2016_15_4_final_3') no-repeat;"></i><a href="javascript:void(0);" anchorid="${anchor_id}" class="lv_links icon_message"></a></td>
+            {{else}}
+            <td class="r"><i onmouseover="MGC.susTips(event,1,'${cardLevelShowTips}');" onmouseout="MGC.susTips(event,0);" class="icon_headrank icon_headrank_${credits_level}"></i><a href="javascript:void(0);" anchorid="${anchor_id}" class="lv_links icon_message"></a></td>
+            {{/if}}
+        </tr>
+    </script>
+    <!-- 他人名片-最爱的直播间END-->

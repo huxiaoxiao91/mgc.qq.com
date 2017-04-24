@@ -1,0 +1,235 @@
+<link href="css/gifttip.css?v=3_8_8_2016_15_4_final_3" rel="stylesheet" />
+
+<div class="gifttip" style="display: none;">
+</div>
+
+<div class="giftrank" style="display: none;">
+	<div class="top">
+		<img class="avatar">
+		<i class="box"></i>
+		<span class="avatarbox"></span>
+		<span class="sex"></span>
+		<a class="close"></a>
+	</div>
+	<div id="starWeekResult" class="star_week_result" style="display: none;">
+
+	</div>
+	<div class="giftlist">
+		<ul>
+			<!--
+			<li>
+				<img class="gift" src="http://ossweb-img.qq.com/images/mgc/css_img/flash/gift/gift_2.png?v=3_8_8_2016_15_4_final_3">
+				<span class="count">9999</span>
+				<span class="rank">100</span>
+			</li>
+			<li>
+				<img class="gift" src="http://ossweb-img.qq.com/images/mgc/css_img/flash/gift/gift_2.png?v=3_8_8_2016_15_4_final_3">
+				<span class="count">9999</span>
+				<span class="rank">100</span>
+			</li>
+			<li>
+				<img class="gift" src="http://ossweb-img.qq.com/images/mgc/css_img/flash/gift/gift_2.png?v=3_8_8_2016_15_4_final_3">
+				<span class="count">9999</span>
+				<span class="rank">100</span>
+			</li>
+			<li>
+				<img class="gift" src="http://ossweb-img.qq.com/images/mgc/css_img/flash/gift/gift_2.png?v=3_8_8_2016_15_4_final_3">
+				<span class="count">9999</span>
+				<span class="rank">100</span>
+			</li>
+			<li>
+				<img class="gift" src="http://ossweb-img.qq.com/images/mgc/css_img/flash/gift/gift_2.png?v=3_8_8_2016_15_4_final_3">
+				<span class="count">9999</span>
+				<span class="rank">100</span>
+			</li>
+			-->
+		</ul>
+	</div>
+</div>
+
+<div class="giftquick" style="display: none;">
+	<img class="gift" src="http://ossweb-img.qq.com/images/mgc/css_img/flash/gift/gift_2.png?v=3_8_8_2016_15_4_final_3">
+	<span class="giftname">蓝玫瑰</span>
+	<input class="count" onkeyup="value=value.replace(/[^\d]/g,'')" value="1">
+	<span class="price">9999</span>
+	<i class="icon_coin"></i>
+	<a class="choosecount"></a>
+	<a class="send"></a>
+	<div class="countlist" style="display: none;">
+		<ul>
+
+		</ul>
+	</div>
+</div>
+
+<!--火箭礼物宝箱-->
+<div class="dreambox" style="display: none">
+	<span class="icon" style="display: none"></span>
+	<span class="count" style="display: none">*99</span>
+	<span class="reward" style="display: none">999999</span>
+	<span class="time" style="display: none">08:30</span>
+	<span class="tip" style="display: none">已领取</span>
+	<p id="dreamBoxContent">
+	</p>
+</div>
+
+<!--火箭礼物TIP-->
+<div class="dreamboxtip" style="display: none;">
+	<span class="text">梦幻宝箱还在倒计时中，请再耐心等待一会哦~</span>
+</div>
+
+<!-- 火箭飞屏模板 -->
+<script id="dreamFlyTmpl" type="text/x-jquery-tmpl">
+    <div class="dreamfly" data-room_id=${room_id}><i class="fly_hj_left"></i>
+        <p class="fly_hj">
+             [{{if wealth_level!=0}}<i class="wealth_level_${wealth_level}"></i>{{/if}}{{if guard_level!=0}}<i class="icon_lv icon_lv${guard_level}"></i>{{/if}}${player_name}{{if vip_level!=0}}<i class="icon_honor icon_honor${vip_level}" {{if vip_level == 0}} style="display:none;" {{else}} style="background:url('http://ossweb-img.qq.com/images/mgc/css_img/common/nobility/${vip_level}.png?v=3_8_8_2016_15_4_final_3') no-repeat; display:inline-block;"{{/if}}></i>{{/if}}]为<span>${room_id}房间的[${anchor_name}]</span>送上了<img src="http://ossweb-img.qq.com/images/mgc/css_img/video_room/fly/hj_icon.png?v=3_8_8_2016_15_4_final_3">X${rocket_cnt}，点击进入房间抢宝箱啊~
+        </p><i class="fly_hj_right"></i></div>
+</script>
+
+<!-- 火箭飞屏容器 -->
+<div class="dreamflyContainer">
+</div>
+
+<!-- 带倒计时的提示 -->
+<div class="pop dreamboxpop">
+	<a href="javascript:showDialog.hide();" class="pop_close">关闭</a>
+	<p class="pop_title">提示</p>
+	<div class="text">恭喜您抢到了点券X88888已发到您的游戏账户内，可通过游戏内邮件来进行收取。</div>
+	<div class="countdown">界面将在<span>30</span>秒后自动关闭</div>
+	<div class="button">
+		<a class="btn_record">查看记录</a>
+		<a class="btn_close">关闭</a>
+	</div>
+</div>
+
+<!-- 梦幻宝箱记录 -->
+<div class="pop dreamboxrecord">
+	<a href="javascript:showDialog.hide();" class="pop_close">关闭</a>
+	<p class="pop_title">梦幻宝箱记录</p>
+	<div class="info">
+		<span class="name"><i></i>的梦幻宝箱</span>
+		<span class="count">宝箱总额：<i></i></span>
+		<span class="reward_count">礼物数量：<i></i></span>
+	</div>
+	<div class="recordlist">
+		<span class="title">抢宝箱记录</span>
+		<div class="head">
+			<span class="name">玩家昵称</span>
+			<span class="count">抢到奖励</span>
+		</div>
+		<ul>
+		</ul>
+	</div>
+	<div class="page">
+		<a class="btn_pre"></a>
+		<span class="text">1/2</span>
+		<a class="btn_next"></a>
+	</div>
+	<a class="btn_close">关闭</a>
+</div>
+
+<!--宝箱记录模板-->
+<script id="dreamboxrecordlistTmpl" type="text/x-jquery-tmpl">
+	<li>
+		<span>${player_name}</span>
+		<span>${money}${money_str}</span>
+	</li>
+</script>
+
+<!--礼物tips模板-->
+<script id="countlistTmpl" type="text/x-jquery-tmpl">
+	<li data-count="${count}">${str}</li>
+</script>
+
+
+<!--礼物tips模板-->
+<script id="giftTipTmpl" type="text/x-jquery-tmpl">
+		{{if player_name != ""}}
+		<div class="named"><span>${player_name}</span></div>
+		{{/if}}
+	    <div class="first-child"><img src="${icon}"></div>
+	    <div class="last-child" {{if player_name != ""}}style="margin-top: 15px;"{{/if}}>
+	        <div class="first-child">
+	            <span class="giftname">${name}</span>
+                {{if price != 0}}
+	            <span class="giftprice">${price}</span>
+	            <span class="giftmoney">
+	            {{if type == 6}}
+	            梦幻币
+	            {{else type == 5}}
+	            个人积分
+	            {{else}}
+	            炫豆
+	            {{/if}}
+	            </span>
+                {{/if}}
+            </div>
+	        <div class="last-child">
+	            {{if type != 6 && id != 43}}<span class="giftintro">${intro}</span>{{/if}}
+	            {{if id == 43}}<span class="giftintro">【梦幻火箭】高大上的超级礼物！送给主播后会发<span style='color:#ffee79'>全服通告</span>并派出<span style='color:#ffee79'>礼物宝箱</span>！财富值+16666，亲密度+16666，主播经验+18333<span style='color:#ffee79'>(额外+10%)</span></span>{{/if}}
+	            {{if combo > 0}}
+	            <span class="combotip">送出不少于${combo}个触发霸屏特效</span>
+	            <span class="combotip">送出多组霸屏，触发连送特效</span>
+	            {{/if}}
+	            {{if type == 6}}
+	            {{if popularity > 0}}<span class="dreamtip">主播人气+${popularity}</span>{{/if}}
+	            <span class="dreamtip">主播经验+${anchorexp}</span>
+	            <span class="dreamtip">提高<span>玩家等级</span>和<span>财富等级</span>可增加<span>每日赠送上限</span></span>
+	            {{/if}}
+
+				{{if anchor_name != ""}}
+	            <span class="combotip">上周冠军主播:</span>
+	            <span class="combotip">${anchor_name}</span>
+				{{/if}}
+
+				{{if isStar}}
+                                <br>
+	            <span class="combotip">周星礼物:</span>
+	            <span class="combotip">送给亲爱的TA，一同抢占周星榜吧！</span>
+	            {{/if}}
+            </div>
+        </div>
+</script>
+
+
+<!--周星礼物模板-->
+<script id="giftRankTmpl" type="text/x-jquery-tmpl">
+	<li data-id="${gift_id}">
+		<img class="gift" src="${gift_icon}">
+		<span class="count">
+		     <span class="gift_count gift_name">${gift_name}</span>
+		     <span class="gift_count">
+		     	<i>共获得<b>${gift_cnt}</b>个</i>
+		     	{{if last_anchor_rank}}
+					 {{if rank == 1}}
+					 <i>,比第2名多<b>${gift_count_diff}</b>个</i>
+					 {{else}}
+					 <i>,距第${last_anchor_rank}名差<b>${gift_count_diff}</b>个</i>
+					 {{/if}}
+				{{/if}}
+		     </span>
+		</span>
+		<span class="rank">{{if rank>0}}第<b>${rank}</b>名{{else}}未上榜{{/if}}</span>
+	</li>
+</script>
+
+<script id="starWeekResultTmp" type="text/x-jquery-tmpl">
+		<span class="star_anchor_con clearfix">
+			<b>周星赛成绩：</b>
+			<i class="week_star_badge week_star_badge${grade}"></i>
+			{{each sub_level_array}}
+			<i class="week_star_level week_star_level_${$value} i_${$index}"></i>
+			{{/each}}
+			<i>${sub_level}级${grade_name}</i>
+		</span>
+		<span>
+			<span class="group_rank clearfix">
+				<i class="fl">总积分：<b>${total_score}</b></i>
+				<i class="fr">总排名：<b>${total_rank}</b></i>
+			</span>
+			<span class="group_rank clearfix">
+				<i class="fl">分组：<b>${group_name}</b></i>
+				<i class="fr">分组排名：<b>${sub_rank}</b></i>
+			</span>
+		</span>
+</script>

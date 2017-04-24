@@ -1,0 +1,34 @@
+/*抽奖样式*/
+#meili_close{background:url(http://ossweb-img.qq.com/images/mgc/css_img/video_room/draw.png?v=3_8_8_2016_15_4_final_3) no-repeat;}
+
+/*抽奖框样式*/
+#meili_div{height: 382px;width: 462px;position: absolute;background: url(http://ossweb-img.qq.com/images/mgc/css_img/video_room/skin1/sprite.png?v=3_8_8_2016_15_4_final_3) no-repeat -690px -272px;}
+#meili_close{background:url(http://ossweb-img.qq.com/images/mgc/css_img/video_room/skin1/sprite2.png?v=3_8_8_2016_15_4_final_3) no-repeat -132px -35px;width:20px;height:20px;display: block;position: absolute;right: 7px;top: 5px;text-indent: -9999px;cursor:pointer;}
+#meili_title{height: 60px;text-align: center;}
+#meili_topic{height: 26px;text-align: center;background: #fafafa;}
+#meili_topic dl{height: 26px;}
+#meili_topic dt{float: left;font-size: 13px;color: #ee6438;line-height: 26px;}
+#meili_topic .rank{width: 56px;height: 26px;}
+#meili_topic .head{width: 66px;height: 26px;}
+#meili_topic .name{width: 131px;}
+#meili_topic .total{width: 112px;}
+#meili_topic .level{width: 92px;}
+.bg_meili{height: 100px;}
+.bg_meili_txt{top: 126px;position: relative;text-align: center;text-indent: 5px;font-size: 20px;}
+#meiliContainer .head_pic{width: 46px;height: 46px;float: left;border: solid 5px #ffffff;border-radius: 28px;margin-top: 2px;}
+#meiliContainer b{float: left;height: 59px;width: 59px;text-align: center;color: #6a41c6;}
+#meiliContainer span{float: left;height: 30px;width: 30px;text-align: center;}
+#meiliContainer li{width: 100%;height: 59px;background-color: #ffffff;line-height: 59px;}
+#meiliContainer li.grey{background-color: #f3f3f3;}
+#meili_con{width: 457px;height: 295px;margin: 26px 0 0 1px;background-color: #ffffff;}
+#meiliContainer .room_name{width: 130px;margin-left: 6px;}
+#meiliContainer .room_score{width: 100px;margin-left: 8px;}
+#meiliContainer .room_level{margin: 15px 0 0 19px;}
+#meili_con .room_level_0{line-height: 15px;background: url(http://ossweb-img.qq.com/images/mgc/css_img/video_room/skin1/sprite.png?v=3_8_8_2016_15_4_final_3);width:51px;height:30px;color: #ffffff;position:relative;}
+#meili_con .room_level_1{line-height: 15px;background: url(http://ossweb-img.qq.com/images/mgc/css_img/video_room/skin1/sprite.png?v=3_8_8_2016_15_4_final_3);width:51px;height:30px;color: #ffffff;position:relative;}
+#meili_con .room_level_2{line-height: 15px;background: url(http://ossweb-img.qq.com/images/mgc/css_img/video_room/skin2/sprite.png?v=3_8_8_2016_15_4_final_3);width:51px;height:30px;color: #ffffff;position:relative;}
+#meili_con .room_level_3{line-height: 15px;background: url(http://ossweb-img.qq.com/images/mgc/css_img/video_room/skin3/sprite.png?v=3_8_8_2016_15_4_final_3);width:51px;height:30px;color: #ffffff;position:relative;}
+#meili_div #meiliContainer .room_level{line-height: 19px;width:60px;}
+#meili_div #meiliContainer .room_level_1{line-height: 17px;}
+
+#meiliContainer .room_level p{margin: 8px 0 0 14px;}

@@ -1,0 +1,115 @@
+/* pop 浠诲姟濂栧姳 */
+.pop_sign_prize{position:relative;margin:0 auto;padding:30px 45px;}
+.pop_sign_prize .txt{font-size:16px;padding:0 0 20px 30px;}
+.pop_sign_prize .txt span{line-height:16px;}
+.list_signkprize{width:490px;padding:0 30px;position:relative;}
+.list_signprize .sign_pre,.list_signprize .sign_next{width:20px;height:30px;display:block; text-indent:-999em;overflow:hidden;position:absolute;top:40px;}
+.list_signprize{width:490px;padding:0 30px;position:relative;}
+.list_signprize .sign_pre{left:5px;background-position:-180px -60px;}
+.list_signprize .sign_pre:hover{background-position:-228px -60px;}
+.list_signprize .sign_next{right:8px;background-position:-203px -60px;}
+.list_signprize .sign_next:hover{background-position:-251px -60px;}
+.sign_list{width:490px;height:120px;overflow:hidden;position:relative;}
+.sign_list li{width:88px;float:left;margin:2px 4px; box-shadow:1px 1px 1px #e5e3e7;}
+.sign_list span{display:block;width:90px;height:90px;margin:0 auto;background:#eadef9;}
+.sign_list p{ text-align:center;color:#6c42c8;background:#fff;font-size:16px;font-weight:bold;height:30px;width:90px;line-height:30px;overflow:hidden;}
+/*棣栫櫥绀煎寘 涓?绛惧埌*/
+.pop_logingifts .pop_close,.pop_sign .pop_close,.pop_logingifts .btn_receive,.pop_sign .pop_title,.pop_sign .pop_title span,.r_gou,.r_double,.sign_opt_rewards_li,.sign_opt_rewards_li p,.sign_opt_rewards_li ul li a,.sign_submit_btn{background:url(http://ossweb-img.qq.com/images/mgc/css_img/sign/icon.png?v=3_8_8_2016_15_4_final_3) no-repeat;}
+.susw_tips,.sign_tips {background: #d75fff;padding: 5px;color: #fff;position: absolute;z-index: 9999;top: 0;left: 0;border-radius: 5px;display: none;max-width:180px;word-spacing:160px;font-size:12px;}
+.icon_month_1 {background-position:-2px 0 !important;}
+.icon_month_2 {background-position:-46px 0 !important;}
+.icon_month_3 {background-position:-98px 0 !important;}
+.icon_month_4 {background-position:-148px 0 !important;}
+.icon_month_5 {background-position:-198px 0 !important;}
+.icon_month_6 {background-position:-248px 0 !important;}
+.icon_month_7 {background-position:-298px 0 !important;}
+.icon_month_8 {background-position:-348px 0 !important;}
+.icon_month_9 {background-position:-398px 0 !important;}
+.icon_month_10 {background-position:-461px 0 !important;}
+.icon_month_11 {background-position:-518px 0 !important;}
+.icon_month_12 {background-position:-570px 0 !important;}
+.icon_double_1 {background-position:-184px -61px !important;}
+.icon_double_4 {background-position:-271px -61px !important;}
+.icon_double_5 {background-position:-363px -61px !important;}
+.icon_double_3 {background-position:-447px -61px !important;}
+.icon_double_2 {background-position:-530px -61px !important;}
+.icon_yilingqu {background-position:-13px -160px !important;}
+.icon_bukelingqu {background-position:-172px -111px !important;}
+.icon_lingqu {cursor:pointer;}
+.icon_sign{background-position:-441px -167px !important;}
+.bgcolor1 {background-color:#ffd325;}
+.bgcolor2 {background-color:#ff9c00;color:#fff !important;}
+/*logingifts 棣栫櫥绀煎寘*/
+.pop_logingifts {width:640px;height:585px;border:none;background:url(http://ossweb-img.qq.com/images/mgc/css_img/sign/logingifts_bg.png?v=3_8_8_2016_15_4_final_3) no-repeat;box-shadow:none !important;}
+.pop_logingifts .pop_close{background-position:-628px -175px;right:22px;top:155px;}
+.pop_logingifts .pop_close:hover{background-position:-628px -210px;}
+.pop_logingifts .logingiftsContainer{margin-top:300px;}
+.pop_logingifts .logingiftsContainer .txt{width:536px;margin:0 auto;font:16px/20px "microsoft yahei"}
+.pop_logingifts .logingiftsContainer .list_taskprize{width:550px;margin:30px auto;}
+.pop_logingifts .btn_receive{background-position:-795px -10px;width:135px;height:55px;}
+.pop_logingifts .btn_receive:hover{background-position:-795px -80px;}
+.pop_logingifts .list_taskprize {height:100px;}
+.pop_logingifts .task_list {width:550px;height:95px;}
+.pop_logingifts .task_list ul{width:1000%;position:absolute;}
+.pop_logingifts .task_list li{width:71px;height:94px;margin:0 10px;background:#eadef9;overflow:hidden;}
+.pop_logingifts .task_list li span{display:block;height:72px;width:72px;overflow:hidden;}
+.pop_logingifts .task_list li img{margin:0 auto;}
+.pop_logingifts .task_list li img.h88{clip:rect(0,72px,72px,0);height:72px;margin-left:11px;position:relative;top:10px;}
+.pop_logingifts .task_list li p {height:22px;line-height:22px;position:relative;background:#fff;top:0;left:0;}
+.pop_logingifts .task_next{top:30px !important;right:15px !important;background-position:-251px -60px;}
+.pop_logingifts .task_pre{top:30px !important;left:13px !important;background-position:-223px -60px;}
+.pop_logingifts .task_next:hover{background-position:-251px -60px !important;}
+.pop_logingifts .task_pre:hover{background-position:-223px -60px !important;}
+.pop_logingifts .task_pre_un{background-position:-175px -60px;cursor:default;}
+.pop_logingifts .task_next_un{background-position:-203px -60px;cursor:default;}
+.pop_logingifts .task_pre_un:hover{background-position:-175px -60px !important;cursor:default;}
+.pop_logingifts .task_next_un:hover{background-position:-203px -60px !important;cursor:default;}
+/*sign 绛惧埌*/
+.pop_sign {width:925px;height:670px;border:none;background:url(http://ossweb-img.qq.com/images/mgc/css_img/sign/sign_bg_1.png?v=3_8_8_2016_15_4_final_3) no-repeat;box-shadow:none !important;padding-bottom:0 !important;}
+.pop_sign .pop_title{width:212px;height:50px;margin:0px auto;background-position:32px -50px;text-align:left !important;}
+.pop_sign .pop_title span{display:inline-block;width:45px;height:40px;margin-left:5px;margin-top:2px;}
+.pop_sign .pop_close{right:22px;top:65px;background-position:-672px -175px;}
+.pop_sign .pop_close:hover{background-position:-672px -211px;}
+.pop_sign .signContainer{}
+.pop_sign .signContainer .sign_rewards{width:534px;height:551px;float:left;margin:42px 0 0 25px;}
+.pop_sign .signContainer .sign_rewards ul{width:100%;height:100%;}
+.pop_sign .signContainer .sign_rewards ul li{width:88px;height:91px;float:left;position:relative;margin:0 1px 1px 0;}
+.pop_sign .signContainer .sign_rewards ul li .r_img{width:auto;height:60px;margin:7px auto 3px;}
+.pop_sign .signContainer .sign_rewards ul li .r_img_icon{margin:17px auto 11px;clip:rect(0,60px,60px,0);position:absolute;left:13px;top:0;}
+.pop_sign .signContainer .sign_rewards ul li .r_img_80h{height:90px;left:12px;top:4px;position:absolute;}
+.pop_sign .signContainer .sign_rewards ul li .r_gou{position:absolute;bottom:-6px;right:0px;z-index:4;width:33px;height:36px;display:inline-block;background-position:-622px -52px;}
+.pop_sign .signContainer .sign_rewards ul li .r_double{position:absolute;top:0px;left:0px;z-index:2;width:66px;height:30px;display:inline-block;}
+.pop_sign .signContainer .sign_rewards ul li .r_txt{display:inline-block;width:100%;height:21px;text-align:center;color:#6c42c8;position:absolute;left:0;bottom:0;}
+.pop_sign .signContainer .sign_rewards ul li .r_cover{position:absolute;top:0;left:0;z-index:3;width:100%;height:100%;opacity: 0.2;filter:alpha(opacity=20); background-color:#000;}
+.pop_sign .signContainer .sign_rewards ul li .r_flash_1{position:absolute;top:-10px;left:-16px;z-index:3;}
+.pop_sign .signContainer .sign_rewards ul li .r_flash_2{position:absolute;top:-10px;left:-12px;z-index:3;}
+.pop_sign .signContainer .sign_rewards ul li .r_mouse{position:absolute;top:0;left:0;z-index:5;width:100%;height:70px;background:#fff;opacity: 0;filter:alpha(opacity=0);}
+.pop_sign .signContainer .sign_opt{width:323px;height:552px;float:left;margin:40px 0 0 21px;}
+.pop_sign .signContainer .sign_opt .sign_opt_title{width:100%;height:30px;line-height:30px;font:14px/30px "microsoft yahei";color:#424242;}
+.pop_sign .signContainer .sign_opt .sign_opt_rewards{width:100%;height:470px;}
+.pop_sign .signContainer .sign_opt .sign_opt_rewards .sign_opt_rewards_li{width:100%;height:114px;background-position:-15px -274px;margin-bottom:2px;}
+.pop_sign .signContainer .sign_opt .sign_opt_rewards .sign_opt_rewards_li:not(:first-child){margin-top:1px;}
+.pop_sign .signContainer .sign_opt .sign_opt_rewards .sign_opt_rewards_li p{width:100%;height:30px;text-align:center;line-height:32px;background-position:5px -236px;color:#6c42c8;font:14px/32px "microsoft yahei";}
+.pop_sign .signContainer .sign_opt .sign_opt_rewards .sign_opt_rewards_li ul{width:auto;max-width:100%;height:85px;float:right;}
+.pop_sign .signContainer .sign_opt .sign_opt_rewards .sign_opt_rewards_li ul li{float:left;width:67px;height:80px;margin:0 5px;background-color:#e8d7fe;position:relative;}
+.pop_sign .signContainer .sign_opt .sign_opt_rewards .sign_opt_rewards_li ul li:last-child{background-color:transparent;margin-right:15px;}
+.pop_sign .signContainer .sign_opt .sign_opt_rewards .sign_opt_rewards_li ul li img{width:auto;height:60px;margin:1px auto;clip:rect(0,60px,60px,0);position:absolute;left:4px;top:0;}
+.pop_sign .signContainer .sign_opt .sign_opt_rewards .sign_opt_rewards_li ul li img.h80{height:80px;left:7px;}
+.pop_sign .signContainer .sign_opt .sign_opt_rewards .sign_opt_rewards_li ul li span{display:inline-block;width:100%;height:18px;text-align:center;color:#6c42c8;background-color:#fff;position:absolute;left:0;bottom:0;}
+.pop_sign .signContainer .sign_opt .sign_opt_rewards .sign_opt_rewards_li ul li a{display:inline-block;width:72px;height:31px;background-position:-13px -111px;margin-top:23px;}
+.pop_sign .signContainer .sign_opt .sign_opt_rewards .sign_opt_rewards_li ul li a:hover{background-position:-93px -111px;}
+.pop_sign .signContainer .sign_opt .sign_opt_bottom{width:100%;height:62px;}
+.pop_sign .signContainer .sign_opt .sign_opt_bottom p{width:165px;height:60px;line-height:60px;font:14px/60px "microsoft yahei";color:#424242;float:left;}
+.pop_sign .signContainer .sign_opt .sign_opt_bottom p b{font:20px/60px "microsoft yahei";color:#ef4f00;margin:0 10px;}
+.pop_sign .signContainer .sign_opt .sign_opt_bottom a{width:155px;height:61px;background-position:-100px -167px;float:left;position:relative;}
+.pop_sign .signContainer .sign_opt .sign_opt_bottom a:hover{background-position:-270px -167px;}
+.pop_sign .signContainer .sign_opt .sign_opt_bottom a object{position:absolute;z-index:2;}
+.pop_sign .signContainer .sign_opt .sign_opt_bottom a span{position:absolute;z-index:4;width:155px;height:61px;cursor:pointer;}
+
+/*nobleAnimation 璐垫棌鐧诲綍*/
+.nobleAnimation{width: 1262px;height: 669px;overflow: hidden;left:50%;right:50%;margin-left:-631px;position: absolute;top:64px;z-index: 9998;pointer-events:none ;}
+
+.invitationBtn{background:url(http://ossweb-img.qq.com/images/mgc/css_img/common/pop_sprite.png?v=3_8_8_2016_15_4_final_3) no-repeat;}
+.invitationBtn{width:90px;height:38px; line-height:38px;margin:0 0 0 5px;background-position:0 -326px;display:inline-block;font-weight:bold;color:#fff;vertical-align:middle; text-align:center;}
+.invitationBtn:hover{color:#ffe73d;}
+#rewardListContainer{}

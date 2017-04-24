@@ -1,0 +1,20 @@
+/**/
+.new_guard{width:100%;height:150px;margin:5px auto 5px;}
+.TVRip_1 .seat{position:relative; width:260px; height:150px; background: url(http://ossweb-img.qq.com/images/mgc/css_img/video_room/skin1/sprite.png?v=3_8_8_2016_15_4_final_3); background-position:-20px -316px;}
+.new_guard .seatlist{width: 252px;margin-left:5px;}
+.new_guard .seattop{width:260px; height:51px; position: relative;}
+.TVRip_1 .seatname{display: block; position: absolute; top: 8px; left:34px;width:68px;height:34px; font-weight: bold;font-size: 14px;background: url(http://ossweb-img.qq.com/images/mgc/css_img/video_room/skin1/sprite.png?v=3_8_8_2016_15_4_final_3); background-position:-330px -403px;color: #6c2900;font-size:0;}
+.TVRip_1 .seattipbtn{display: block; position: absolute; top:15px; left:108px; width: 20px; height: 20px; cursor: pointer; background: url(http://ossweb-img.qq.com/images/mgc/css_img/video_room/live_sprite_c.png?v=3_8_8_2016_15_4_final_3); background-position: -1241px -324px;}
+.new_guard .seatintrobtn{display:block;position:absolute;top:11px;left:142px;width:91px;height:28px;}
+.new_guard .seatlist li{display:inline-block; position:relative; vertical-align: top; width:74.5px; height:84px;margin:4px 4.5px;}
+.new_guard .seatlist li i{display: block; position: absolute; top: 0px; left:1px;width:74px; height:84px; background: url(http://ossweb-img.qq.com/images/mgc/css_img/video_room/skin1/guard_seat.png?v=3_8_8_2016_15_4_final_3); background-position:-18.5px -25px;}
+.new_guard .seatlist li i.canseat{background-position:-133.5px -25px;}
+.new_guard .seatlist li img{display:block; position: absolute; top:1px;left:8px;width:60px;height:60px;border-radius:50%;-webkit-border-radius:50%;-moz-border-radius:50%;-ms-border-radius:50%;}
+.new_guard .seatlist li span{display:block; position: absolute; top:62px; left: 7px; width:62px; height: 17px; line-height: 17px; text-align: center; color: #FFFFFF; font-size: 12px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+.new_guard .seatlist li a.userbtn{display:block; position: absolute; top:5px; left: 13px; width:53px; height: 75px; cursor: pointer;}
+.new_guard .seatlist li a.seatbtn{display: block;position:absolute;top:60px;left:6px;width:67px;height:20px;cursor:pointer;}
+.new_guard .seat .tip1{display: block; position: absolute; width:200px; height:60px; padding: 5px; top: -68px;left: 0; background: #d75fff;color: #fff;z-index: 9989; border-radius: 5px;}
+.new_guard .seat .tip2{display: block; position: absolute; width:178px; padding: 5px; top: 40px;left: 75px; background: #d75fff;color: #fff;z-index: 9989; border-radius: 5px;}
+.new_guard .seat .tip2 li{height:20px;}
+.new_guard .seat .tip2 li:first-child span{  overflow: hidden; text-overflow: ellipsis; display: block; width: 178px;white-space: nowrap;}
+.new_guard .seat .tip2 .cost{display: block;width: 170px;text-align: center;color: #FFF600; font-size: 14px; font-family: "microsoft yahei";}

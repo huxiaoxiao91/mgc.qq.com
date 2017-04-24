@@ -1,0 +1,129 @@
+<script>STATIC_RESOURCE.addCssByInc(['/css/group.my.css']);</script>
+<!--基础信息-->
+<div class="groupinfo">
+    <div class="head">
+        <span>基础信息</span>
+    </div>
+    <div class="left">
+        <span class="title">团公告</span>
+        <div class="mymain">
+            <div class="box">
+                <p id="vg_notice"></p>
+            </div>
+        </div>
+        <span class="tip">入团3天后，签到可获得<br/>个人积分和团资产</span>
+    </div>
+    <div class="info1">
+
+        <ul>
+            <li>
+                <span>后援团名：</span>
+                <span id="vg_name"></span>
+            </li>
+            <li>
+                <span onmouseover="MGC.susStateTipsGroup(event,1,'团成员在为我们的主播献炫豆礼物以及签到时，可获得团内资产，有贵族身份的团员会有更多的贡献');" onmouseout="MGC.susStateTipsGroup(event,0);">团资产：</span>
+                <span id="vg_wealth"></span>
+            </li>
+            <li>
+                <span>活跃排名：</span>
+                <span id="last_score_rank"></span>
+            </li>
+            <li>
+                <span onmouseover="MGC.susStateTipsGroup(event,1,'为我们的主播献炫豆礼物，以及每日签到可获得个人积分');" onmouseout="MGC.susStateTipsGroup(event,0);">个人积分：</span>
+                <span id="m_member_score"></span>
+            </li>
+        </ul>
+    </div>
+    <div class="info2">
+        <ul>
+            <li>
+                <span>成员数量：</span>
+                <span id="member_count"></span>
+            </li>
+            <li>
+                <span onmouseover="MGC.susStateTipsGroup(event,1,'每月1日清空重新累计。通过本团所支持主播的星级排名，以及团对主播的贡献，可获得活跃积分。有贵族身份的团员登录梦工厂也会增加本团的活跃积分');" onmouseout="MGC.susStateTipsGroup(event,0);">活跃积分：</span>
+                <span id="vg_score"></span>
+            </li>
+            <li>
+                <span>团内职务：</span>
+                <span id="m_position"></span>
+            </li>
+        </ul>
+        <span class="dismiss" style="display: none;"></span>
+        <span class="demise" style="display: none;"></span>
+    </div>
+    <div class="right">
+        <a class="sign">签到</a>
+        <a class="quit">退出后援团</a>
+        <a class="more target-blank" href="http://x5.qq.com/act/a20140603jun/page01.htm" target="_blank">了解更多>></a>
+    </div>
+</div>
+
+<!--我们的主播-->
+<div class="anchor">
+    <div class="head">
+        <span>我们的主播</span>
+    </div>
+    <div class="left"><div class="sus_tips_listLi2"></div>
+        <img id="anchorAvatarUrl"/>
+        <i id="anchor_level"></i><span id="anchor_name">主播名</span>
+        <a id="anchor_pstid" class="card" data-id=""></a>
+    </div>
+    <div class="center">
+        <ul>
+            <li>
+                <span onmouseover="MGC.susStateTipsGroup(event,1,'主播的后援团成员献炫豆礼物，以及后援团的助威功能，会增加主播的积分。主播积分每月1日清空重新累计');" onmouseout="MGC.susStateTipsGroup(event,0);">主播积分：</span>
+                <span id="anchor_score"></span>
+            </li>
+            <li>
+                <span onmouseover="MGC.susStateTipsGroup(event,1,'本团在这个月内为主播提供的积分');" onmouseout="MGC.susStateTipsGroup(event,0);">本团贡献：</span>
+                <span id="anchor_cont_score"></span>
+            </li>
+        </ul>
+    </div>
+    <div class="right">
+        <ul>
+            <li>
+                <span>积分排名：</span>
+                <span id="anchor_rank"></span>
+            </li>
+            <li>
+                <span onmouseover="MGC.susStateTipsGroup(event,1,'本月内主播为本团赋予的活跃积分福利');" onmouseout="MGC.susStateTipsGroup(event,0);">本团福利：</span>
+                <span id="anchor_give_score"></span>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="sus_tips"></div>
+<!--后援团成员列表-->
+<div class="member">
+    <div class="head">后援团成员列表</div>
+    <div class="title">
+        <span class="sex">性别</span>
+        <span class="name">昵称</span>
+        <span class="identity">贵族身份</span>
+        <span class="position">职位</span>
+        <!--span class="card">信息</span-->
+    </div>
+    <div class="list">
+        <div class="sus_tips_listLi"></div>
+        <ul>
+        </ul>
+    </div>
+</div>
+<div class="sus_tips_list2"></div>
+<!--成员列表模版-->
+<script id="memberTmpl" type="text/x-jquery-tmpl">
+	<li data-id="${m_member_id}">
+		<span class="sex"><i class="sex${m_member_sex}"></i></span>
+        <span class="name"><i class="nick_zone">{{if m_wealth_level==0}}{{else}}<i class="weath_level_${m_wealth_level}" onmouseover="MGC.susStateTips(event,1,'财富值：${m_wealth}',0,35)" onmouseout="MGC.susStateTips(event,0);" style="background:url('http://ossweb-img.qq.com/images/mgc/css_img/common/wealth_level/${m_wealth_level}.png?v=3_8_8_2016_15_4_final_3') no-repeat"></i>{{/if}}<i>${m_member_nick}</i></i></span>
+        <span class="identity"><i style="{{if m_member_vip == 0}}display:none{{else}}background:url('http://ossweb-img.qq.com/images/mgc/css_img/common/nobility/${m_member_vip}.png?v=3_8_8_2016_15_4_final_3') no-repeat{{/if}}" class="identity identity${m_member_vip}" onmouseover="MGC.susStateTips(event,1,'${vipName}',-5,35)" onmouseout="MGC.susStateTips(event,0);"></i></span>
+        <span class="position">${m_position_name}</span>
+        <!--span class="card"><a data-nick="${m_member_nick}" data-zone="${m_member_zone}"></a></span-->
+	</li>
+</script>
+
+<script>
+    MyGroup.init();
+
+</script>

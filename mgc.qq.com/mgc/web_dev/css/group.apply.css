@@ -1,0 +1,54 @@
+/**
+ * 
+ * 后援团审核申请css 2015-09-23
+ *
+**/
+.coment{background:#fbfbfb;width:755px;padding-left:20px;height:534px;overflow:hidden;}
+.backupGroup_list{padding:0;}
+.backupGroup_list .div{position:relative;width: 200px;height:42px;line-height:42px;padding-left:23px;color:#424242;text-align:left;font-size:14px;}
+.backupGroup_list .div .check,.backupGroup_list .div .uncheck{position:absolute;left:0;top:12px;height:19px;width:19px;background:url(http://ossweb-img.qq.com/images/mgc/css_img/fans_guild/group_icon.png?v=3_8_8_2016_15_4_final_3) no-repeat 0 0;}
+.backupGroup_list .div .check{background-position:-971px -120px;}
+.backupGroup_list .div .uncheck{background-position:-971px -143px;}
+.backupGroup_list th{border:1px solid #ccc;border-bottom:none;}
+.backupGroup_list td{text-align:center;border:1px solid #ccc;}
+.backupGroup_list .table{position:relative;max-height:430px;}
+.backupGroup_list .table .groupList{width:755px;height:430px;}
+.backupGroup_list .table ul li{overflow:hidden;clear:both;height:42px;line-height:42px;border-bottom:1px solid #e4e0e9;font-size:14px;color:#424242;}
+.backupGroup_list .table ul li span{float:left;display:block;height:42px;width:70px;line-height:42px;text-align:center;}
+.backupGroup_list .table ul li .sex,.backupGroup_list .table ul li.title,.backupGroup_list .table ul li .vip_level_1,.backupGroup_list .table ul li .vip_level_2,.backupGroup_list .table ul li .vip_level_3,.backupGroup_list .table ul li .vip_level_4,.backupGroup_list .table ul li .vip_level_5,.backupGroup_list .table ul li .msgBtn,.backupGroup_list .table ul li .msgBtn:hover,.backupGroup_list .table ul li .apply .tick,.backupGroup_list .table ul li .apply .fork,.backupGroup_list .table ul li .apply .ticked,.backupGroup_list .table ul li .apply .forked{background:url(http://ossweb-img.qq.com/images/mgc/css_img/fans_guild/group_icon.png?v=3_8_8_2016_15_4_final_3) no-repeat -5px -261px;height:30px;vertical-align:top;color:#fff;border-bottom:none;}
+.backupGroup_list .table ul li .vip_level_1,.backupGroup_list .table ul li .vip_level_2,.backupGroup_list .table ul li .vip_level_3,.backupGroup_list .table ul li .vip_level_4,.backupGroup_list .table ul li .vip_level_5{height:30px;vertical-align:top;color:#fff;border-bottom:none;}
+.backupGroup_list .table ul li.title span{border-right:1px solid #fff;height:30px;line-height:30px;font-size:15px;}
+.backupGroup_list .table ul li.title span:last-child{border-right:none;}
+.backupGroup_list .table ul li .sex{width:88px;}
+.backupGroup_list .table ul li .woman,.backupGroup_list .table ul li .man{width:88px;background:url(http://ossweb-img.qq.com/images/mgc/css_img/personal/personal_sprite.png?v=3_8_8_2016_15_4_final_3) no-repeat 0 0;height:42px;vertical-align:middle;}
+.backupGroup_list .table ul li .woman{background-position:-924px -30px;}
+.backupGroup_list .table ul li .man{background-position:-924px 8px;}
+.backupGroup_list .table ul li .nick{width:208px;}
+.backupGroup_list .table ul li .vip_level{width:154px;}
+.backupGroup_list .table ul li .vip_level_0,.backupGroup_list .table ul li .vip_level_1,.backupGroup_list .table ul li .vip_level_2,.backupGroup_list .table ul li .vip_level_3,.backupGroup_list .table ul li .vip_level_4,.backupGroup_list .table ul li .vip_level_5{width:22px;margin:10px 67px 0;height: 22px;}
+.backupGroup_list .table ul li .wealth{width:159px;}
+.backupGroup_list .table ul li .wealth i{left:521px;}
+
+/*170.backupGroup_list .table ul li .msg{width:131px;}*/
+.backupGroup_list .table ul li .msgBtn{background-position:-547px -142px;height:17px;width:30px;margin:13px 52px;}
+.backupGroup_list .table ul li .msgBtn:hover{background-position:-547px -121px;height:17px;width:30px;margin:13px 52px;}
+.backupGroup_list .table ul li .apply{width:141px;border-right:none;}
+.backupGroup_list .table #groupApplyList .apply{width:132px;}
+.backupGroup_list .table ul li .apply .tick,.backupGroup_list .table ul li .apply .ticked{display:block;width:24px;height:17px;margin:13px 3px 13px 48px;float:left;position:relative;}
+.backupGroup_list .table ul li .apply .tick{background-position:-485px -188px;}
+.backupGroup_list .table ul li .apply .tick:hover{background-position:-419px -188px;}
+.backupGroup_list .table ul li .apply .fork,.backupGroup_list .table ul li .apply .forked{display:block;float:left;position:relative;width:20px;height:17px;margin:13px 2px 13px 0;}
+.backupGroup_list .table ul li .apply .fork{background-position:-518px -188px;}
+.backupGroup_list .table ul li .apply .fork:hover{background-position:-452px -188px;}
+.sus_tips_listLi{background:#d75fff;padding:5px;color:#fff;position:absolute;z-index:9999;top:0;left:0;border-radius:5px;display:none;font-size:12px}
+
+.backupGroup_list .table ul li .wealth_level_1,.backupGroup_list .table ul li .wealth_level_2,.backupGroup_list .table ul li .wealth_level_3,.backupGroup_list .table ul li .wealth_level_4,.backupGroup_list .table ul li .wealth_level_5,.backupGroup_list .table ul li .wealth_level_6,.backupGroup_list .table ul li .wealth_level_7,.backupGroup_list .table ul li .wealth_level_8,.backupGroup_list .table ul li .wealth_level_9{position:absolute;left:618px;margin-top:6px;display:block;vertical-align:middle;color:#fff;font-size:12px;font-style:inherit;text-align:center;width: 27px;overflow:hidden;height: 30px;line-height: 33px;text-overflow:ellipsis;white-space: nowrap;}
+.backupGroup_list .table ul li .wealth_level_1{background-position: -4px -4px;}
+.backupGroup_list .table ul li .wealth_level_2{background-position: -36px -4px;}
+.backupGroup_list .table ul li .wealth_level_3{background-position: -66px -4px;}
+.backupGroup_list .table ul li .wealth_level_4{background-position: -189px -4px;}
+.backupGroup_list .table ul li .wealth_level_5{background-position: -96px -3px;}
+.backupGroup_list .table ul li .wealth_level_6{background-position: -127px -3px;}
+.backupGroup_list .table ul li .wealth_level_7{background-position: -159px -3px;}
+.backupGroup_list .table ul li .wealth_level_8{background-position: -221px -3px;}
+.backupGroup_list .table ul li .wealth_level_9{background-position: -251px -3px;}

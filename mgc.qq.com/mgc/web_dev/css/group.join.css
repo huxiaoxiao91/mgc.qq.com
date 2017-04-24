@@ -1,0 +1,71 @@
+/*加入后援团*/
+
+.searchgroup{position:relative; width: 792px;height: 50px; background-color: #fbfbfb;}
+.searchgroup span.input{position:absolute; display:block; width: 285px; height: 35px; line-height: 35px; left:20px; top:5px; background:url(http://ossweb-img.qq.com/images/mgc/css_img/fans_guild/group_icon.png?v=3_8_8_2016_15_4_final_3); background-position: -5px -350px;}
+.searchgroup input{width: 285px; height: 35px; border: 0; background-color: transparent;}
+.searchgroup a.find,.searchgroup a.all{position:absolute; display:block; width: 78px; height: 31px;top: 5px; left: 325px; vertical-align: middle; line-height: 31px; font-size: 16px; color: #FFFFFF; cursor: pointer; background:url(http://ossweb-img.qq.com/images/mgc/css_img/fans_guild/group_icon.png?v=3_8_8_2016_15_4_final_3); background-position: -9px -183px;}
+.searchgroup a.all{left: 415px;}
+.searchgroup a:hover{color: #ffe73d}
+.searchgroup span.tip{position:absolute;display:block;width:260px;height:20px;top:3px;left:505px;font-size:12px;color:#424242;}
+.searchgroup a.more{position:absolute;display:block;width:90px;height:19px;top:21px;left:593px;font-size:12px;color:#f08568;text-decoration:underline;cursor:pointer;}
+
+.grouplist{background-color: #fbfbfb;}
+.grouplist .title{width: 759px;position: relative;height: 31px; margin-left: 20px; line-height: 31px; text-align: left; background: url(http://ossweb-img.qq.com/images/mgc/css_img/fans_guild/group_icon.png?v=3_8_8_2016_15_4_final_3); background-position: -5px -261px;}
+.grouplist .title span{display: inline-block; vertical-align: top; color: #fff8ee; font-size: 15px; text-align: center; font-weight: bold;}
+.grouplist .title span.vg_name{width:142px; border-right: 1px solid #fff;}
+.grouplist .title span.chief_name{width:152px; border-right: 1px solid #fff;}
+.grouplist .title span.anchor_name{width:167px; border-right: 1px solid #fff;}
+.grouplist .title span.member_count{width:80px; border-right: 1px solid #fff;}
+.grouplist .title span.vg_score{text-indent: -15px;width:107px; border-right: 1px solid #fff;}
+.grouplist .title span.vg_total_score{text-indent: 2px;width:105px; border-right: 1px solid #fff;}
+
+.grouplist .list{width: 759px;min-height: 300px; margin-left: 20px; text-align: left;position:relative;}
+.grouplist li{height:42px; line-height: 43px; border-bottom: 1px solid #e4e0e9;}
+.grouplist li span{display: inline-block; vertical-align: top; color: #424242; font-size: 14px; text-align: center;margin-left: -2px;}
+.grouplist li span.vg_name{width:142px;overflow:hidden;}
+.grouplist li span.vg_name span{width: 90px; overflow: hidden; text-overflow: ellipsis;text-align: left;}
+.grouplist li span.chief_name{width:122px;padding-left:30px; overflow: hidden; text-overflow: ellipsis;}
+.grouplist li span.chief_name span{width: 125px; overflow: hidden; text-overflow: ellipsis;text-align: left;}
+.grouplist li span.anchor_name{width:112px;padding-left:55px; overflow: hidden; text-overflow: ellipsis;}
+.grouplist li span.anchor_name span{width: 110px; overflow: hidden; text-overflow: ellipsis;text-align: left;}
+.grouplist li span.anchor_name .anchor_level_bg{height:21px;display:inline-block;position:relative;margin:9px 4px 0 -63px;width:46px;z-index:2;background: url(http://ossweb-img.qq.com/images/mgc/css_img/fans_guild/anchor_level_bg.png?v=3_8_8_2016_15_4_final_3) no-repeat 0 0;}
+.grouplist li span.member_count{width:80px;}
+.grouplist li span.vg_score{width:107px;}
+.grouplist li span.vg_total_score{width:105px;}
+.grouplist li span.vg_name a{cursor: pointer;float: left;display:block; width: 30px; height: 17px; margin: 12px 0 0 18px; background: url(http://ossweb-img.qq.com/images/mgc/css_img/fans_guild/group_icon.png?v=3_8_8_2016_15_4_final_3); background-position: -547px -140px;}
+.grouplist li span.vg_name a:hover{background-position: -547px -119px;}
+
+.grouplist .bottom{width:792px; height:42px; text-align: center;margin: 10px auto;}
+.grouplist .bottom img{display:block; margin:0 auto; width:32px; height: 32px;}
+.grouplist .bottom span{color: #ccc; font-style: italic;}
+
+.grouplist .score,.grouplist .totalscore{display: block; position: absolute; width: 20px; height: 20px; background: url(http://ossweb-img.qq.com/images/mgc/css_img/fans_guild/group_icon.png?v=3_8_8_2016_15_4_final_3); cursor: pointer;}
+.grouplist .scoredefault{top: 5px; left: 625px;background-position: -618px -167px;}
+.grouplist .scoreup{top: 5px; left: 625px;background-position: -645px -183px;}
+.grouplist .scoredown{top: 5px; left: 625px;background-position: -618px -183px;}
+.grouplist .totalscoredefault{top: 5px; left: 730px;background-position: -618px -167px;}
+.grouplist .totalscoreup{top: 5px; left: 730px;background-position: -645px -183px;}
+.grouplist .totalscoredown{top: 5px; left: 730px;background-position: -618px -183px;}
+
+/*成员列表财富等级*/
+.grouplist li .weath_level_1,.grouplist li .weath_level_2,.grouplist li .weath_level_3,.grouplist li .weath_level_4,.grouplist li .weath_level_5,.grouplist li .weath_level_6,.grouplist li .weath_level_7,.grouplist li .weath_level_8,.grouplist li .weath_level_9{position:absolute;left:144px;margin-top:6px;display:inline-block;vertical-align:middle;color:#fff;font-size:12px;font-style:inherit;text-align:center;width: 27px;overflow:hidden;height: 30px;line-height: 33px;text-overflow:ellipsis;white-space: nowrap;}
+.grouplist li .weath_level_1{background-position: -4px -4px;}
+.grouplist li .weath_level_2{background-position: -36px -4px;}
+.grouplist li .weath_level_3{background-position: -66px -4px;}
+.grouplist li .weath_level_4{background-position: -189px -4px;}
+.grouplist li .weath_level_5{background-position: -96px -3px;}
+.grouplist li .weath_level_6{background-position: -127px -3px;}
+.grouplist li .weath_level_7{background-position: -159px -1px;}
+.grouplist li .weath_level_8{background-position: -221px -3px;}
+.grouplist li .weath_level_9{background-position: -251px -3px;}
+
+/*后援团主播等级*/ 
+.grouplist li .anchor_level{display:inline-block;position:absolute;left:295px;margin-top:8px;font-weight:100;color:#fff;font-size:12px;width:46px;font-style:inherit;text-align:right;overflow:hidden;height:25px;line-height:29px;text-overflow:ellipsis;white-space: nowrap;}
+.grouplist li .anchor_level_1 i,.grouplist li .anchor_level_2 i,.grouplist li .anchor_level_3 i,.grouplist li .anchor_level_4 i,.grouplist li .anchor_level_5 i,.grouplist li .anchor_level_6 i,.grouplist li .anchor_level_7 i,.grouplist li .anchor_level_8 i,.grouplist li .anchor_level_9 i{text-align:center;display:inline-block;width:29px;font-style:inherit;}
+.grouplist li .anchor_level_1 i{width:36px;}
+.grouplist li .anchor_level_2 i{width:33px;}
+.grouplist li .anchor_level_4 i{width:30px;}
+.grouplist li .anchor_level_5 i{width:29px;}
+.grouplist li .anchor_level_6 i{width:28px;}
+.grouplist li .anchor_level_7 i{width:28px;}
+.grouplist li .anchor_level_8 i,.grouplist li .anchor_level_9 i{width:27px;}

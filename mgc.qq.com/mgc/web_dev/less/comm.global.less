@@ -1,0 +1,28 @@
+﻿@charset "UTF-8";
+/*
+*LESS Document
+*craete by 77
+*todo:less doc
+*/
+/*调试模式*/
+@debugger:true;
+/*静态资源版本号*/
+@static_resource_version:'3_8_8_2016_15_4_final_3';
+/*图片路径地址*/
+@img_path:'http://ossweb-img.qq.com/images/mgc/css_img/';
+/*extend background*/
+.background(@url,@repeat:no-repeat,@x:0,@y:0) {
+    background: url('@{img_path}@{url}?v=@{static_resource_version}') @repeat @x @y;
+}
+/*border-radius*/
+.border_radius(@all:0,@top:0,@right:0,@bottom:0,@left:0) when(@all>0) {
+    border-radius: @all;
+    -webkit-border-radius: @all;
+    -moz-border-radius: @all;
+}
+
+.border_radius(@all:0,@top:0,@right:0,@bottom:0,@left:0) when(@all=0) {
+    border-radius: @top @right @bottom @left;
+    -webkit-border-radius: @top @right @bottom @left;
+    -moz-border-radius: @top @right @bottom @left;
+}

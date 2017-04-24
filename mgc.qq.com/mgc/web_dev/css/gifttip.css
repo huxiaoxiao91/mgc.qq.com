@@ -1,0 +1,136 @@
+/*����tips*/
+
+.gifttip{position: absolute; width:330px; min-height:55px; background: #d75fff;z-index: 9989; border-radius: 5px; white-space: nowrap;}
+.gifttip>div{display: inline-block; vertical-align: top;}
+.gifttip>div.first-child{width:60px;}
+.gifttip>div.last-child{width:260px; margin-bottom: 10px;}
+.gifttip img{width:50px; height:50px; margin: 0 auto;}
+.gifttip>div.last-child>div.first-child{width:260px; height: 30px; line-height: 30px;}
+.gifttip>div.last-child>div.last-child{width:260px; min-height:25px;}
+
+.gifttip .giftname{color: #FFFFFF; font-size: 16px; font-family: "microsoft yahei"; font-weight: bold;}
+.gifttip .giftprice{margin: 0 10px 0 10px; color: #ffee79; font-size: 14px; font-family: "microsoft yahei"; font-weight: bold;}
+.gifttip .giftmoney{color: #d6f9fe; font-size: 14px; font-family: "microsoft yahei"; font-weight: bold;}
+.gifttip .giftintro{white-space:normal; color: #d6f9fe; font-size: 15px; font-family: "microsoft yahei"; font-weight: bold; width: 260px;}
+.gifttip .combotip{display:block; white-space:normal; color: #ffee79; font-size: 14px; font-family: "microsoft yahei";}
+.gifttip .dreamtip{display:block; white-space:normal; color: #d6f9fe; font-size: 14px; font-family: "microsoft yahei";}
+.gifttip .dreamtip>span{color:#94fe8b;}
+
+.gifttip .named{display: block; position: absolute; width: 170px; height:50px; top: -30px; left: -15px; background: url(http://ossweb-img.qq.com/images/mgc/css_img/video_room/live_sprite.png?v=3_8_8_2016_15_4_final_3); background-position: -1088px -408px;}
+.gifttip .named span{display: block; width: 100px; height: 20px; line-height: 20px; font-size: 14px; color: #FFFFFF; margin: 20px 0 0 50px; text-align: center; overflow: hidden; text-overflow: ellipsis;}
+
+.giftrank{position: absolute; width:310px; min-height:347px;max-height: 430px; z-index: 9989; white-space: nowrap; }
+.giftrank .top{width: 310px; height: 80px; position: relative;background: url(http://ossweb-img.qq.com/images/mgc/css_img/video_room/live_sprite.png?v=3_8_8_2016_15_4_final_3); background-position: -951px -548px;}
+.giftrank .top a{display:block; width: 20px; height: 20px; position: absolute; top: 10px; right: 10px; cursor: pointer; background: url(http://ossweb-img.qq.com/images/mgc/css_img/video_room/live_sprite.png?v=3_8_8_2016_15_4_final_3); background-position: -532px -451px;}
+.giftrank .top a:hover{background-position: -556px -451px;}
+.giftrank .avatar{position: absolute;left: 8px;top: 6px; width:70px; height:70px; }
+.giftrank .box{display: block; width: 77px; height: 77px; position: absolute; top: 2px; left: 5px; margin: 0; background: url(http://ossweb-img.qq.com/images/mgc/css_img/video_room/live_sprite.png?v=3_8_8_2016_15_4_final_3); background-position: -394px -529px;}
+.giftrank .star_week_result{width: 310px;height: 83px;background:url(http://ossweb-img.qq.com/images/mgc/css_img/video_room/star_week.png?v=3_8_8_2016_15_4_final_3);background-position: -328px -88px;}
+.star_week_result span{display: block;width:300px;height: 40px;position: relative;padding-left:10px;}
+.star_week_result span .group_rank{display: block;width:295px;height: 22px;line-height: 22px;padding-right:5px;padding-left: 0;}
+.star_week_result .star_anchor_con{height: 34px;position: relative;}
+.star_week_result span i{width: 108px;height: 20px;line-height: 20px;position: relative;font-style: normal;color: #606060;}
+.star_week_result span .fr{width: 100px;}
+.star_week_result span i b{color: #fb7125;font-weight: normal;font-size: 12px;}
+.star_week_result .star_anchor_con i,.star_week_result .star_anchor_con b{height: 28px;line-height: 44px;position: relative;float:left;font-size: 13px;color: #606060;}
+.star_week_result .star_anchor_con .week_star_badge{margin-right:4px; height: 29px;width: 34px;position: relative;display: inline-block;background: url(http://ossweb-img.qq.com/images/mgc/css_img/video_room/star_week.png?v=3_8_8_2016_15_4_final_3) center bottom;background-position: -23px -679px;}
+.star_week_result .star_anchor_con .week_star_badge1{background-position: -17px -680px;}
+.star_week_result .star_anchor_con .week_star_badge2{background-position: -51px -680px;}
+.star_week_result .star_anchor_con .week_star_badge3{background-position: -88px -680px;}
+.star_week_result .star_anchor_con .week_star_badge4{background-position: -124px -681px;}
+.star_week_result .star_anchor_con .week_star_badge5{background-position: -159px -680px;}
+.star_week_result span .week_star_level{position:absolute;left:100px;bottom:5px;width:11px;height:11px;background: url(http://ossweb-img.qq.com/images/mgc/css_img/video_room/star_week.png?v=3_8_8_2016_15_4_final_3) center bottom;background-position: -348px -410px;}
+.star_week_result span .week_star_level_0{background-position: -348px -410px;}
+.star_week_result span .week_star_level_1{background-position: -373px -410px;}
+.star_week_result span .week_star_level_2{background-position: -396px -410px;}
+.star_week_result span .week_star_level_3{background-position: -420px -410px;}
+.star_week_result span .week_star_level_4{background-position: -444px -410px;}
+.star_week_result span .week_star_level_5{background-position: -468px -410px;}
+.star_week_result span .week_star_level_6{background-position: -492px -410px;}
+.star_week_result span .week_star_level_7{background-position: -516px -410px;}
+.star_week_result span .week_star_level_8{background-position: -540px -410px;}
+.star_week_result span .week_star_level_9{background-position: -564px -410px;}
+.star_week_result span .i_0{left:108px;}
+.star_week_result span .i_1{left:112px;}
+.star_week_result span .i_2{left:118px;}
+.star_week_result span .i_3{left:124px;}
+.giftlist{width: 310px; height: 267px;background: url(http://ossweb-img.qq.com/images/mgc/css_img/video_room/live_sprite.png?v=3_8_8_2016_15_4_final_3); background-position: -951px -628px;}
+.giftlist li{width:308px; height:48px; position: relative;}
+.giftlist li span,.giftlist li img{display: block; position: absolute;}
+.giftlist li .gift{left: 4px; top: 6px;width:35px; height:35px;}
+.giftlist li .count{left: 42px; /*top: 10px;*/ width: 75px; text-align: center; color: #606060;}
+.giftlist li .count span{position: relative;text-align: left;height: 24px;line-height: 24px;}
+.giftlist li .count .gift_name{color: #606060;font-weight: bold;}
+.giftlist li .count span i{font-style: normal;}
+.giftlist li .count span i b{color: #fb7125;font-weight: normal;}
+.giftlist li .rank{right:4px; top: 0px; width: 60px;height: 24px;line-height: 24px; text-align: right; font-weight: bold;color: #606060;}
+.giftlist li .rank b{color: #f00;}
+
+.giftquick{left: 300px; position: absolute; width:138px; height:225px; z-index: 9989; white-space: nowrap; background: url(http://ossweb-img.qq.com/images/mgc/css_img/video_room/live_sprite.png?v=3_8_8_2016_15_4_final_3); background-position: -252px -530px;}
+.giftquick img,.giftquick span,.giftquick input,.giftquick a,.giftquick div{display:block; position: absolute;}
+.giftquick .gift{width: 88px; height: 88px; top: 12px; left: 25px;}
+.giftquick .giftname{width: 88px; top: 102px; left: 25px; text-align: center; color: rgb(108, 66, 200); font-size: 16px; font-weight: bold;}
+.giftquick .count{width: 55px; top: 142px; left: 50px; text-align: center; color: #424242; font-size: 12px;  background-color: transparent; border: 0; height: 20px; font-family: microsoft yahei;}
+.giftquick .price{width: 55px; top: 166px; left: 50px; text-align: center; color: #424242; font-size: 12px;}
+.giftquick .choosecount{  width: 20px; height: 20px; top: 143px; left: 105px;}
+.giftquick .send{width: 88px; height: 28px; top: 193px; left: 28px; background-color: #666666;background: url(http://ossweb-img.qq.com/images/mgc/css_img/video_room/live_sprite.png?v=3_8_8_2016_15_4_final_3); background-position: -522px -474px;}
+.giftquick .send:hover{background-position: -522px -505px;}
+.giftquick .send:active{background-position: -522px -536px;}
+.giftquick .countlist{  width: 85px; background-color: #e8e8e8; top: 120px; left: 44px;}
+.giftquick .countlist li{cursor: pointer;}
+.giftquick .countlist li:hover{background-color: #F5F0FF; color: #6c42c8;}
+.giftquick .icon_coin{display: block; position: absolute; top: 168px; left: 103px; width: 24px; height: 20px; background: url(http://ossweb-img.qq.com/images/mgc/css_img/common/icon_sprite.png?v=3_8_8_2016_15_4_final_3) no-repeat; background-position: -137px -50px;}
+.giftquick .icon_coin_1{background-position: -136px -28px;}
+
+.dreambox{position: absolute; width: 119px; height: 143px; top:680px; left: 560px; z-index: 10;}
+.dreambox span{ display: block; position: absolute;}
+.dreambox .icon{width:80px; height: 80px; left: 10px; background-color: #00fec6;}
+.dreambox .count{width:30px; height: 30px; top: 0px; left: 70px;}
+.dreambox .reward{width:100px; text-align: center; top: 70px;}
+.dreambox .time{width:100px; text-align: center; top: 85px;}
+.dreambox .tip{width:100px; text-align: center; top: 85px;}
+
+.dreamboxtip{position: absolute; width:200px; color: #fff; padding: 5px; min-height:30px; background: #d75fff;z-index: 9989; border-radius: 5px;}
+
+.dreamflyContainer{position: absolute; top: 0px; width: 0px; height: 0px; overflow: hidden;}
+.dreamfly{line-height: 68px; font-size: 15px; text-align: center; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; font-weight: bold; position: absolute; display: block; z-index: 938000; cursor: pointer; -webkit-user-select: none;}
+.dreamfly .fly_hj,.dreamfly .fly_hj_right{margin-left: -5px;}
+.dreamfly img{display: inline-block; margin: 8px 0 0 0; vertical-align: top;}
+.dreamfly span{color:#563fff;}
+.fly_hj{color: #930098;background-image:url("http://ossweb-img.qq.com/images/mgc/css_img/video_room/fly/hj_center.png?v=3_8_8_2016_15_4_final_3");background-repeat: repeat-x;display: inline-block;vertical-align: top;}
+.fly_hj_left{width:135px;height:62px;background:url(http://ossweb-img.qq.com/images/mgc/css_img/video_room/fly/hj_left.png?v=3_8_8_2016_15_4_final_3) no-repeat 0 0;display: inline-block;}
+.fly_hj_right{width:135px;height:62px;background:url(http://ossweb-img.qq.com/images/mgc/css_img/video_room/fly/hj_right.png?v=3_8_8_2016_15_4_final_3) no-repeat 0 0;display: inline-block;}
+
+.dreamboxpop{}
+.dreamboxpop .text{width: 350px;margin: 50px auto; font-size: 16px;}
+.dreamboxpop .button{text-align: center;}
+.dreamboxpop .countdown{width: 500px; margin: 0 auto 10px; text-align: center; font-size: 14px;}
+.dreamboxpop .countdown span{color:#ee5f38;}
+.dreamboxpop .btn_record,.dreamboxpop .btn_close{width: 125px; height: 35px; display: inline-block; margin: 0 10px; border-radius: 4px; background: #6c42c8; font-size: 16px; line-height: 35px; color: #fff; text-align: center; cursor: pointer;}
+
+.dreamboxrecord{top: 0px; padding-bottom: 15px;width: 590px;}
+.dreamboxrecord .info{width: 630px; height: 120px;}
+.dreamboxrecord .info span{display: block; width: 520px; height: 30px; line-height: 30px; margin: 0 auto; font-size: 16px; text-indent: 25px;}
+.dreamboxrecord .info .name{height: 35px; line-height: 35px; font-size: 18px; padding: 10px 0 0 0;}
+.dreamboxrecord .info .name i{font-style: normal; font-weight: bold; color: #6a41c6;}
+.dreamboxrecord .info .count i,.dreamboxrecord .info .reward_count i{font-style: normal;}
+.dreamboxrecord .info .reward_count{ border-bottom: 1px solid #d4d4d4; padding: 0 0 15px;}
+.dreamboxrecord .recordlist{width: 520px; height: 400px; margin: 0 auto;}
+.dreamboxrecord .recordlist .title{display: block; width: 520px; height: 40px; line-height: 40px; margin: 0 auto;text-align: center; font-size: 18px; color: #424242;}
+.dreamboxrecord .recordlist .head{width: 520px; height: 37px; line-height: 37px; background: url(http://ossweb-img.qq.com/images/mgc/css_img/fans_guild/group_icon.png?v=3_8_8_2016_15_4_final_3); background-position: -5px -261px; white-space: nowrap;}
+.dreamboxrecord .recordlist .head span{display: inline-block; width: 260px; color: #fff8ee; border-right: 1px solid #fff; height: 37px; text-align: center; font-size: 15px; font-weight: bold;}
+.dreamboxrecord .recordlist li{width: 520px;  height: 30px; line-height: 30px; font-size: 14px; background-color: #e8e8e8; border-bottom: 1px solid #dcd4e5; white-space: nowrap;}
+.dreamboxrecord .recordlist li span{display: inline-block;  width: 260px; text-align: center; color: #424242;}
+.dreamboxrecord .page{width: 520px; height:25px; margin: 0 auto 15px; line-height:25px; text-align: center; padding: 5px 0 5px; border-bottom: 1px solid #d4d4d4;}
+.dreamboxrecord .page .text{display: inline-block; vertical-align: top; font-size: 14px; color: #6a41c6;}
+.dreamboxrecord .btn_pre,.dreamboxrecord .btn_next{width: 25px; height: 25px; display: inline-block; margin: 0 10px; font-size: 20px; line-height: 46px; color: #fff; text-align: center; cursor: pointer;   background: url(http://ossweb-img.qq.com/images/mgc/css_img/ranklist/ranklist_sprite.png?v=3_8_8_2016_15_4_final_3) no-repeat;}
+.dreamboxrecord .btn_pre{ background-position: -321px -35px;}
+.dreamboxrecord .btn_pre_disable{ background-position: -321px -96px;}
+.dreamboxrecord .btn_next{ background-position: -350px -35px;}
+.dreamboxrecord .btn_next_disable{ background-position: -350px -96px;}
+.dreamboxrecord .btn_close{width: 78px; height: 33px; display: block; margin: 0 auto; font-size: 14px; line-height: 30px; color: #fff; text-align: center; cursor: pointer;background: url(http://ossweb-img.qq.com/images/mgc/css_img/fans_guild/group_icon.png?v=3_8_8_2016_15_4_final_3); background-position: -9px -183px;}
+
+.dreamBoxEffect{width: 1024px;height: 662px;position: absolute; pointer-events: none; top:30px; left:0; z-index: 2;}
+.dreamBoxEffect p{position: relative;z-index: 2;}
+.fr{float: right;}
+.fl{float:left;}

@@ -1,0 +1,23 @@
+<!-- 魅力榜弹床 -->
+<div id="meili_div" style="display:none;">
+	<a id="meili_close">关闭</a>
+	<div id="meili_title">
+	</div>
+	<div id="meili_con">
+        <ul id="meiliContainer"></ul>
+	</div>
+</div>
+<script id="meiliTmpl" type="text/x-jquery-tmpl">
+	{{if liNum % 2 == 0 }}
+    <li class="white">
+    {{else}}
+    <li class="grey">
+    {{/if}}
+        <b class="${liClass}">${liNum}</b>
+        <img class="head_pic" src="${photo_url}" >
+        <i></i>
+        <span class="room_name">${room_name}</span>
+        <span class="room_score">${score}</span>
+        <span class="room_level room_level_${skin_id}" style="background:url('http://ossweb-img.qq.com/images/mgc/css_img/common/skin_level/${skin_id}.png?v=3_8_8_2016_15_4_final_3') no-repeat"><p>${skin_level}</p></span>
+    </li>
+</script>

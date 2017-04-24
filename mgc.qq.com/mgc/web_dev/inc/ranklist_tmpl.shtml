@@ -1,0 +1,359 @@
+<!--***************排行榜-模板****************-->
+<!--周星榜-周星榜-->
+<script id="rankitem_week_star_tmpl" class="anchor_week_star_tmpl" type="text/x-jquery-tmpl">
+    <li class="">
+            <b>${no}</b>
+            {{if !isExtend}}
+            {{if no<=3}}
+            <div class="anchor-name clearfix">
+                <img src="${portrait_url}" width="65" height="65" alt="">
+                <i hostId="${anchor_id}" class="icon_card_img"></i>
+                <span class="star_level star_level_${grade}">
+                {{if num > 1}}
+                <p class="two-num"><span class="level level${sub_level1} first"></span><span class="level level${sub_level2}"></span></p>
+                {{else}}
+                <p class="level level${sub_level}"></p>
+                {{/if}}
+                </span>
+                <span class="room_name_span room_info">
+                    <strong class="clearfix">
+                        <label hostId="${anchor_id}" class="icon_card">${anchor_nick}</label>
+                        {{if anchor_status==2}}
+                        <em>
+                            <a href="transfer.shtml?roomId=${room_id}" target="_blank">直播中</a>
+                        </em>
+                        {{/if}}
+                    </strong>
+                </span>
+            </div>
+            {{else}}
+            <div class="anchor-name clearfix">
+                <span class="star_level star_level_${grade}">
+                {{if num > 1}}
+                <p class="two-num"><span class="level level${sub_level1} first"></span><span class="level level${sub_level2}"></span></p>
+                {{else}}
+                <p class="level level${sub_level}"></p>
+                {{/if}}
+                </span>
+                <span class="room_name_span">
+                    <strong>
+                        <label hostId="${anchor_id}" class="icon_card">${anchor_nick}</label>
+                        {{if anchor_status==2}}                    
+                        <em>
+                            <a href="transfer.shtml?roomId=${room_id}" target="_blank">直播中</a>
+                        </em>
+                        {{/if}}
+                    </strong>
+                </span>
+            </div>
+            {{/if}}
+            <span class="rank_level">${sub_level}级${grade_name}</span>
+            <span class="score">{{if total_score > 999999}}999999+{{else}}${total_score}{{/if}}</span>
+            {{if no == 1}}<!-- 显示贡献王信息 -->
+            <div class="clearfix fansinfo">
+                <!-- <img class="gongxianwang" src="http://ossweb-img.qq.com/images/mgc/css_img/common/star_level/1.png?v=3_8_8_2016_15_4_final_3" alt=""> -->
+                <span class="gongxianwang"></span>
+                {{if contribution>0}}
+                <span class="fans-nick" hostId="${player_psid}">${player_nick}</span>
+                <span class="fans-contribute">贡献值</span>
+                {{if contribution>999999}}
+                <span class="contribute-num">999999+</span>
+                {{else}}
+                <span class="contribute-num">${contribution}</span>
+                {{/if}}
+                {{/if}}
+            </div>
+            
+            {{/if}}
+            {{/if}}
+    </li>
+</script>
+<!--主播榜-魅力榜-->
+<script id="rankitem_anchor_meili_tmpl" class="anchor_meili_tmpl" type="text/x-jquery-tmpl">
+    <li class="">
+            <b>${no}</b>
+            {{if !isExtend}}
+            {{if no<=3}}
+            <img src="${photo_url}" width="65" height="65" alt="">
+            <i hostId="${anchor_id}" class="icon_card_img"></i>
+            <span class="room_level room_level_${skin_id}" style="background:url('http://ossweb-img.qq.com/images/mgc/css_img/common/skin_level/${skin_id}.png?v=3_8_8_2016_15_4_final_3')"><p>${skin_level}</p></span>
+            <span class="room_name_span">
+                <strong>
+                    <label hostId="${anchor_id}" class="icon_card">${room_name}</label>
+                    {{if anchor_status==2}}
+                    <br />
+                    <em>
+                        <a href="transfer.shtml?roomId=${room_id}" target="_blank">直播中</a>
+                    </em>
+                    {{/if}}
+                </strong>
+            </span>
+            {{else}}
+            <span class="room_level room_level_${skin_id}" style="background:url('http://ossweb-img.qq.com/images/mgc/css_img/common/skin_level/${skin_id}.png?v=3_8_8_2016_15_4_final_3') no-repeat"><p>${skin_level}</p></span>
+            <span class="room_name_span">
+                <strong>
+                    <label hostId="${anchor_id}" class="icon_card">${room_name}</label>
+                    {{if anchor_status==2}}                    
+                    <em>
+                        <a href="transfer.shtml?roomId=${room_id}" target="_blank">直播中</a>
+                    </em>
+                    {{/if}}
+                </strong>
+            </span>
+            {{/if}}
+            <span class="rank_times rank_${rank_icon}_color">${m_order_change_abs}</span>
+            <span class="rank_icon rank_icon_${rank_icon}"></span>
+            <span class="r_poll">${score}</span>
+            {{/if}}
+    </li>
+</script>
+<!--主播榜-积分榜、星耀榜-前三名-->
+<!--主播榜-积分榜、星耀榜-三名以外-->
+<script id="rankitem_anchor_xingyao_tmpl" class="anchor_xingyao_tmpl" type="text/x-jquery-tmpl">
+    <li class="">
+        <b>${no}</b>
+        {{if !isExtend}}
+        {{if no<=3}}
+        <img src="${m_anchor_portrait_url}" width="65" height="65" alt="">
+        <i hostId="${anchorID}" class="icon_card_img"></i>
+        <span class="rank_level_span_top" style="margin-top: ${m_anchor_status==2?-10:-10}px">
+            <a class="i_anchor_level i_anchor_level_${Math.floor(anchor_level / 10) + 1}" style="background:url('http://ossweb-img.qq.com/images/mgc/css_img/common/anchor_level/${Math.floor(anchor_level / 10) + 1}.png?v=3_8_8_2016_15_4_final_3') no-repeat right 2px"><i>${anchor_level}</i></a>
+        </span>
+        <span class="m_anchor_name">
+            <strong>
+                <label style="margin-top: ${m_anchor_status==2?-1:-1}px" hostId="${anchorID}" class="icon_card">${m_anchor_name}</label>
+                {{if m_anchor_status==2}}
+                <br />
+                    <em>
+                        <a href="transfer.shtml?roomId=${m_room_id}" target="_blank">直播中</a>
+                    </em>
+                {{/if}}
+            </strong>
+        </span>
+        {{else}}
+        <span class="rank_level_span">
+            <a class="i_anchor_level i_anchor_level_${Math.floor(anchor_level / 10) + 1}" style="background:url('http://ossweb-img.qq.com/images/mgc/css_img/common/anchor_level/${Math.floor(anchor_level / 10) + 1}.png?v=3_8_8_2016_15_4_final_3') no-repeat right 2px"><i>${anchor_level}</i></a>
+        </span>
+        <span class="xy_anchor_rank">
+            <strong>
+                <label hostId="${anchorID}" class="icon_card">${m_anchor_name}</label>
+                {{if m_anchor_status==2}}                
+                    <em>
+                        <a href="transfer.shtml?roomId=${m_room_id}" target="_blank">直播中</a>
+                    </em>
+                {{/if}}
+            </strong>
+        </span>
+        {{/if}}
+        <span class="rank_times rank_${rank_icon}_color">${m_order_change_abs}</span>
+        <span class="rank_icon rank_icon_${rank_icon}"></span>
+        <span class="r_poll">${m_score}</span>
+        {{/if}}
+    </li>
+</script>
+<script id="rankitem_anchor_jifen_tmpl" class="anchor_jifen_tmpl" type="text/x-jquery-tmpl">
+    <li class="">
+        <b>${no}</b>
+        {{if !isExtend}}
+        {{if no<=3}}
+        <img src="${m_anchor_portrait_url}" width="65" height="65" alt="">
+        <i hostId="${m_anchor_id}" class="icon_card_img"></i>
+        <span class="rank_level_span_top" style="margin-top: ${m_anchor_status==2?-10:-10}px">
+            <a class="i_anchor_level i_anchor_level_${Math.floor(m_anchor_level / 10) + 1}" style="background:url('http://ossweb-img.qq.com/images/mgc/css_img/common/anchor_level/${Math.floor(m_anchor_level / 10) + 1}.png?v=3_8_8_2016_15_4_final_3') no-repeat right 2px"><i>${m_anchor_level}</i></a>
+        </span>
+        <span class="m_anchor_name">
+            <strong>
+                <label style="margin-top: ${m_anchor_status==2?-1:-1}px" hostId="${m_anchor_id}" class="icon_card">${m_anchor_name}</label>
+                {{if m_anchor_status==2}}
+                <br />
+                    <em>
+                        <a href="transfer.shtml?roomId=${m_room_id}" target="_blank">直播中</a>
+                    </em>
+                {{/if}}
+            </strong>
+        </span>
+        {{else}}
+        <span class="rank_level_span">
+            <a class="i_anchor_level i_anchor_level_${Math.floor(m_anchor_level / 10) + 1}" style="background:url('http://ossweb-img.qq.com/images/mgc/css_img/common/anchor_level/${Math.floor(m_anchor_level / 10) + 1}.png?v=3_8_8_2016_15_4_final_3') no-repeat right 2px"><i>${m_anchor_level}</i></a>
+        </span>
+        <span>
+            <strong>
+                <label hostId="${m_anchor_id}" class="icon_card">${m_anchor_name}</label>
+                {{if m_anchor_status==2}}                
+                    <em>
+                        <a href="transfer.shtml?roomId=${m_room_id}" target="_blank">直播中</a>
+                    </em>
+                {{/if}}
+            </strong>
+        </span>
+        {{/if}}
+        <span class="rank_times rank_${rank_icon}_color">${m_order_change_abs}</span>
+        <span class="rank_icon rank_icon_${rank_icon}"></span>
+        <span class="r_poll">${m_score}</span>
+        {{/if}}
+    </li>
+</script>
+<!--主播榜-亲密度-前三名-->
+<!--主播榜-亲密度-三名以外-->
+<script id="rankitem_anchor_qinmidu_tmpl" class="anchor_qinmidu_tmpl" type="text/x-jquery-tmpl">
+    <li class="">
+        <b>${no}</b>
+        {{if !isExtend}}
+        {{if no<=3}}
+        <div class="head_box">
+            <img src="${playerphoto}" width="65" height="65" alt="">
+            <i class="img_cover"></i>
+            <strong>${m_player_nick}</strong>
+        </div>
+        <div class="head_box">
+            <img src="${anchorPhotoUrl}" width="65" height="65" alt="">
+            <i class="img_cover icon_card_img" hostId="${m_anchor_id}" ></i>
+            <span class="rank_level_span_top">
+                <a class="i_anchor_level i_anchor_level_${Math.floor(anchor_level / 10) + 1}" style="background:url('http://ossweb-img.qq.com/images/mgc/css_img/common/anchor_level/${Math.floor(anchor_level / 10) + 1}.png?v=3_8_8_2016_15_4_final_3') no-repeat right 2px"><i>${anchor_level}</i></a>
+            </span>
+            <strong hostId="${m_anchor_id}" class="icon_card">${m_anchor_nick}</strong>
+        </div>
+        {{else}}
+        <div class="head_box">
+            <strong>${m_player_nick}</strong>
+        </div>
+        <div class="head_box">
+        	<span class="rank_level_span">
+                <a class="i_anchor_level i_anchor_level_${Math.floor(anchor_level / 10) + 1}" style="background:url('http://ossweb-img.qq.com/images/mgc/css_img/common/anchor_level/${Math.floor(anchor_level / 10) + 1}.png?v=3_8_8_2016_15_4_final_3') no-repeat right 2px"><i>${anchor_level}</i></a>
+            </span>
+            <strong hostId="${m_anchor_id}" class="icon_card">${m_anchor_nick}</strong>
+        </div>
+        {{/if}}
+        <span class="rank_times rank_${rank_icon}_color">${m_order_change_abs}</span>
+        <span class="rank_icon rank_icon_${rank_icon}"></span>
+        <span class="r_poll">${m_score}</span>
+        {{/if}}
+    </li>
+</script>
+<!--主播榜-等级榜-前三名-->
+<!--主播榜-等级榜-三名以外-->
+<script id="rankitem_anchor_dengji_tmpl" class="anchor_dengji_tmpl" type="text/x-jquery-tmpl">
+    <li class="">
+        <b>${no}</b>
+        {{if !isExtend}}
+        {{if no<=3}}
+        <img src="${anchor_url}" width="65" height="65" alt="">
+        <i hostId="${anchor_id}" class="icon_card_img"></i>
+        <span class="rank_level_span_top" style="margin-top: ${anchor_status==2?-10:-10}px">
+            <a class="i_anchor_level i_anchor_level_${Math.floor(level / 10) + 1}" style="background:url('http://ossweb-img.qq.com/images/mgc/css_img/common/anchor_level/${Math.floor(level / 10) + 1}.png?v=3_8_8_2016_15_4_final_3') no-repeat right 3px"><i>${level}</i></a>
+        </span>
+        <span class="m_anchor_name">
+            <strong>
+                <label style="margin-top: ${anchor_status==2?-1:-1}px" hostId="${anchor_id}" class="icon_card">${anchor_nick}</label>
+                {{if anchor_status==2}}
+                <br />
+                    <em>
+                        <a href="transfer.shtml?roomId=${room_id}" target="_blank">直播中</a>
+                    </em>
+                {{/if}}
+            </strong>
+        </span>
+        {{else}}
+        <span class="rank_level_span">
+            <a class="i_anchor_level i_anchor_level_${Math.floor(level / 10) + 1}" style="background:url('http://ossweb-img.qq.com/images/mgc/css_img/common/anchor_level/${Math.floor(level / 10) + 1}.png?v=3_8_8_2016_15_4_final_3') no-repeat right 3px"><i>${level}</i></a>
+        </span>
+        <span>
+            <strong>
+                <label hostId="${anchor_id}" class="icon_card">${anchor_nick}</label>
+                {{if anchor_status==2}}                
+                    <em>
+                        <a href="transfer.shtml?roomId=${room_id}" target="_blank">直播中</a>
+                    </em>
+                {{/if}}
+            </strong>
+        </span>
+        {{/if}}
+        <span class="r_poll">LV${level}</span>
+        {{/if}}
+    </li>
+</script>
+<!--粉丝榜-财富榜-->
+<script id="rankitem_fans_caifu_tmpl" class="fans_caifu_tmpl" type="text/x-jquery-tmpl">
+    <li class="">
+        <a href="javascript:;" style="cursor: default">
+            <b>${no}</b>
+            {{if !isExtend}}
+            <span class="i_rich_level i_rich_level_${m_wealth_level}" mgc_rich_level="${m_wealth_level}" mgc_rich_value="${m_video_wealth}" style="background:url('http://ossweb-img.qq.com/images/mgc/css_img/common/wealth_level/${m_wealth_level}.png?v=3_8_8_2016_15_4_final_3') no-repeat 2px center"></span>
+            <span>
+                <strong>
+                    <label>${m_player_nick}</label>
+                </strong>
+                <em class="source" style="cursor: default">${m_player_zone}</em>
+            </span>
+            <span class="rank_times rank_${rank_icon}_color">${m_order_change_abs}</span>
+            <span class="rank_icon rank_icon_${rank_icon}"></span>
+            <span class="r_poll">${m_score}</span>
+            {{/if}}
+        </a>
+    </li>
+</script>
+<!--粉丝榜-贵族榜-->
+<script id="rankitem_fans_guizu_tmpl" class="fans_guizu_tmpl" type="text/x-jquery-tmpl">
+    <li class="">
+        <a href="javascript:;" style="cursor: default">
+            <b>${no}</b>
+            {{if !isExtend}}
+            <span>
+                <strong>
+                    <label>${m_player_nick}</label>
+                </strong>
+                <em class="source" style="cursor: default">${m_player_zone}</em>
+            </span>
+            <span class="r_poll">${m_video_wealth}<ins class="icon_honor icon_honor${m_vip_level}" onmouseover="MGC.susStateTipsRanklist(event,1,'${m_vip_name}');" onmouseout="MGC.susStateTipsRanklist(event,0);" style="background:url('http://ossweb-img.qq.com/images/mgc/css_img/common/nobility/${m_vip_level}.png?v=3_8_8_2016_15_4_final_3') no-repeat 2px center">${m_vip_name}</ins></span>
+            {{/if}}
+        </a>
+    </li>
+</script>
+<!--粉丝榜-后援团-前三名-->
+<!--粉丝榜-后援团-三名以外-->
+<script id="rankitem_fans_houyuan_tmpl" class="fans_houyuan_tmpl" type="text/x-jquery-tmpl">
+    <li class="">
+        <b>${no}</b>
+        {{if !isExtend}}
+        {{if no<=3}}
+        <span class="support_group_strong">${m_guild_name}</span>
+        <div class="support_group_head_box">
+            <img src="${m_player_url}" width="65px" height="65px" alt="">
+            <i></i>
+            <strong class="support_Group_head_name">${m_guild_chairman}</strong>
+        </div>
+        <div class="support_group_head_box">
+            <img src="${m_anchor_portrait_url}" width="65px" height="65px" alt="">
+            <i hostId="${m_anchor_id}" class="icon_card_img"></i>
+            <strong class="support_Group_head_name icon_card" hostId="${m_anchor_id}">${m_anchor_name}</strong>
+        </div>
+        {{else}}
+        <span class="support_group">${m_guild_name}</span>
+        <div class="support_group_head_box">
+            <strong class="support_Group_head_name">${m_guild_chairman}</strong>
+        </div>
+        <div class="support_group_head_box">
+            <strong class="support_Group_head_name icon_card" hostId="${m_anchor_id}" >${m_anchor_name}</strong>
+        </div>
+        {{/if}}
+        <span class="r_poll">${m_active_score}</span>
+        {{/if}}
+    </li>
+</script>
+<!--粉丝榜-等级榜-->
+<script id="rankitem_fans_dengji_tmpl" class="fans_dengji_tmpl" type="text/x-jquery-tmpl">
+    <li class="">
+        <a href="javascript:;" style="cursor: default">
+            <b>${no}</b>
+            {{if !isExtend}}
+            <span>
+                <strong>
+                    <label>${m_nick}</label>
+                </strong>
+                <em class="source" style="cursor: default">${m_zone}</em>
+            </span>
+            <span class="r_poll r_polled">LV ${m_level}</span>
+            {{/if}}
+        </a>
+    </li>
+</script>

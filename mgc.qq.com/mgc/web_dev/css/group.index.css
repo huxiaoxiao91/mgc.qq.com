@@ -1,0 +1,25 @@
+/*后援团*/
+
+.main{width: 966px;min-height: 574px;height:auto;text-align: center; margin: 20px auto; white-space:nowrap;}
+
+.tab{width: 160px;height: 574px;display: inline-block; vertical-align: top;background-color: #fbfbfb;}
+.tab li{background:url(http://ossweb-img.qq.com/images/mgc/css_img/fans_guild/group_icon.png?v=3_8_8_2016_15_4_final_3); cursor: pointer;}
+.tab li.id1,.tab li.id2,.tab li.id3,.tab li.id4,.tab li.id10{margin-bottom: 10px;}
+.tab li.level1{background-position: -8px -120px; height: 44px;}
+.tab .level1.select{background-position: -275px -120px;}
+.tab li.level2{background-position: -220px -301px; height: 38px;}
+.tab .level2.select{background-position: -487px -301px;}
+.tab li span{font-size: 14px; display: block; text-align: left;text-indent: 12px;}
+.tab li span.level1{color: #FFFFFF; line-height: 44px;}
+.tab li span.level2{color: #6a41c6; line-height: 38px;}
+.tab li span.id5,.tab li span.id6,.tab li span.id7,.tab li span.id8{border-bottom: 1px solid #d7cce8;}
+/*anchor_tips*/
+.sus_badge_tips{background: #d75fff;padding: 5px;color: #fff;position: absolute;z-index: 10000;top: 0;left: 0;border-radius: 5px;display: none;width:123px;}
+
+.group{display: inline-block;background:#fbfbfb; margin-left: 10px; min-height: 574px;height:auto;width:792px;clear:both;}
+.group .groupHead{width: 792px;height: 40px; background:url(http://ossweb-img.qq.com/images/mgc/css_img/fans_guild/group_icon.png?v=3_8_8_2016_15_4_final_3);background-position: 10px 6px;background-color: #fbfbfb;}
+
+.group .groupContent{width: 792px;min-height: 534px;background-color: #fbfbfb;}
+.pop_sign_prize{position:relative;margin:0 auto;padding:30px 45px;}
+.sus_tips{background: #d75fff;padding: 5px;color: #fff;position: absolute;z-index: 10000;top: 0;left: 0;border-radius: 5px;display: none;}
+.jspHorizontalBar .jspDrag, .jspHorizontalBar .jspTrack{height:0 !important;}

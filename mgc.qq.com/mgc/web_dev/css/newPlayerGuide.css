@@ -1,0 +1,66 @@
+/*newGuide*/
+.pop_newPlayer{width:547px;height:239px;background:transparent;border:none;padding:0;margin-left:-273px;box-shadow:none;top:35%;-webkit-box-shadow:none;display:none;}
+.pop_newPlayer .bg{width:547px;height:239px;border:none;background:url(http://ossweb-img.qq.com/images/mgc/css_img/guide/newbie_guide_Qgame.png?v=3_8_8_2016_15_4_final_3) no-repeat -12px -262px;box-shadow:none !important;padding-bottom:0 !important;position:relative;}
+.pop_newPlayer .pop_close{right:-2px;top:138px;background-position:-628px -19px;width:100px;height:32px;position:absolute;}
+.pop_newPlayer .pop_close:hover{background-position: -528px -19px;}
+.pop_newPlayer .pop_close:active{background-position:-728px -19px;}
+.pop_newPlayer .guideBtn{position:absolute;width:305px;text-align:center;height:33px;right:0;bottom:48px;}
+.pop_newPlayer .guideBtn .leftBtn,.pop_newPlayer .guideBtn .leftBtn:hover,.pop_newPlayer .guideBtn .leftBtn:active,.pop_newPlayer .guideBtn .rightBtn,.pop_newPlayer .guideBtn .rightBtn:hover,.pop_newPlayer .guideBtn .rightBtn:active,.pop_newPlayer .guideBtn .centerBtn,.pop_newPlayer .guideBtn .centerBtn:hover,.pop_newPlayer .guideBtn .centerBtn:active{background:url(http://ossweb-img.qq.com/images/mgc/css_img/guide/newbie_guide_Qgame.png?v=3_8_8_2016_15_4_final_3) no-repeat 0 0;height:33px;line-height:33px;font-size:18px;color:#b32f09;}
+.pop_newPlayer .guideBtn .leftBtn,.pop_newPlayer .guideBtn .rightBtn{float:left;background-position:-1008px -184px;width:100px;}
+.pop_newPlayer .guideBtn .rightBtn{float:right;margin-right:45px;}
+.pop_newPlayer .guideBtn .leftBtn:hover,.pop_newPlayer .guideBtn .rightBtn:hover,.pop_newPlayer .guideBtn .centerBtn:hover{background-position:-1008px -146px;}
+.pop_newPlayer .guideBtn .leftBtn:active,.pop_newPlayer .guideBtn .rightBtn:active,.pop_newPlayer .guideBtn .centerBtn:active{background-position:-1008px -221px;}
+.pop_newPlayer .guideBtn .leftBtn a,.pop_newPlayer .guideBtn .rightBtn a,.pop_newPlayer .guideBtn .centerBtn a{font-size:18px;color:#b32f09;height:33px;line-height:33px;width:100px;display:inline-block;}
+.pop_newPlayer .guideBtn .centerBtn{background-position:-1008px -184px;width:100px;position: absolute;bottom: -73px;right: 118px;}
+#pop_newPlayerContainer2,#pop_newPlayerContainer3{position:absolute;left:213px;color: #fff;font-size: 12px;top:91px;background: #ff57aa;height: 20px;width: 323px;text-align: center;padding:25px 0;}
+/*biggiftBox*/
+.pop_newGift{width:637px;height:234px;background:transparent;border:none;margin-left:-318px;-webkit-box-shadow:none;box-shadow:none;padding:0;display:none;}
+.pop_newGift .bg{width:637px;height:234px;border:none;background:url(http://ossweb-img.qq.com/images/mgc/css_img/guide/newbie_guide_Qgame.png?v=3_8_8_2016_15_4_final_3) no-repeat -20px -574px;box-shadow:none !important;padding-bottom:0 !important;position:relative;-webkit-box-shadow:none;box-shadow:none;position:relative;}
+.pop_newGift .logingifts_title{height: 30px;width: 371px;background:#ff57aa;position: absolute;right: 32px;top: 45px;color: #fff;font-size: 12px;line-height: 28px;}
+.pop_newGift .title_top{top:13px;font-size:18px;text-align:center;color: #ffeb72;}
+.pop_newGift .logingifts_tips{height: 28px;width: 371px;background:#ff57aa;position: absolute;right: 32px;bottom: 45px;color: #fff;font-size: 12px;line-height: 23px;}
+.pop_newGift .pop_close{right:-2px;top:138px;background-position:-628px -19px;width:100px;height:32px;position:absolute;}
+.pop_newGift .pop_close:hover{background-position: -528px -19px;}
+.pop_newGift .pop_close:active{background-position:-728px -19px;}
+.pop_newGift .guideBtn{position:absolute;width:434px;text-align:center;height:32px;right:0;bottom:26px;}
+
+.pop_newGift .guideBtn .center,.pop_newGift .guideBtn .center:hover,.pop_newGift .guideBtn .center:active,#pop_newPlayer .guideBtn .center,#pop_newPlayer .guideBtn .center:hover,#pop_newPlayer .guideBtn .center:active,.pop_newGift .list_taskprize .task_pre,.pop_newGift .list_taskprize .task_next,.pop_newGift .list_taskprize .task_pre_un,.pop_newGift .list_taskprize .task_next_un{background:url(http://ossweb-img.qq.com/images/mgc/css_img/guide/newbie_guide_Qgame.png?v=3_8_8_2016_15_4_final_3) no-repeat 0 0;height:33px;line-height:33px;font-size:18px;color:#b32f09;}
+.pop_newGift .guideBtn .center,#pop_newPlayer .guideBtn .center{margin:0 auto;background-position:-1007px -184px;width:102px;}
+.pop_newGift .guideBtn .center:hover,#pop_newPlayer .guideBtn .center:hover{background-position:-1007px -146px;}
+.pop_newGift .guideBtn .center:active,#pop_newPlayer .guideBtn .center:active{background-position:-1007px -221px;}
+.pop_newGift .guideBtn .center a,#pop_newPlayer .guideBtn .center a{font-size:20px;color:#b32f09;height:33px;line-height:33px;width:102px;display:inline-block;}
+#pop_newPlayer .guideBtn .center a{font-size:17px;}
+#pop_newPlayer .guideBtn{position:absolute;width:317px;text-align:center;height:32px;right:33px;bottom:48px;}
+#pop_logingiftsGet .guideBtn{position:absolute;width:434px;text-align:center;height:32px;right:0;bottom:26px;}
+#pop_newPlayer .guideBtn{right:6px;}
+/* pop ÈÎÎñ½±Àø */
+.pop_task_prize{position:relative;margin:0 auto;padding:30px 45px;}
+.pop_task_prize .txt{font-size:16px;padding:0 0 20px 18px;}
+.pop_newGift .list_taskprize .task_pre,.pop_newGift .list_taskprize .task_next{width:20px;height:30px;display:block; text-indent:-999em;overflow:hidden;position:absolute;top:40px;}
+.pop_newGift .list_taskprize .task_pre{left:5px;background-position:-171px -60px;}
+.pop_newGift .list_taskprize .task_pre:hover{background-position:-219px -60px;}
+.pop_newGift .list_taskprize .task_next{right:8px;background-position:-203px -60px;}
+.pop_newGift .list_taskprize .task_next:hover{background-position:-251px -60px;}
+.pop_newGift .task_list{width:381px;height:88px;overflow:hidden;position:relative;}
+.pop_newGift .task_list li{background:#eadef9;width:68px;float:left;margin:2px 4px;box-shadow:none;overflow:hidden;}
+.pop_newGift .task_list img{display:block;margin:0 auto;background:transparent;}
+.pop_newGift .task_list li img.h88{clip:rect(0,68px,68px,0);height:68px;margin-left:10px;top:10px;position:relative;}
+.pop_newGift .task_list p{ text-align:center;color:#6c42c8;background:#fff;font-size:12px;font-weight:bold;height:20px;line-height:20px;overflow:hidden;}
+/*jingli*/
+.pop_newGift .list_taskprize{position: relative;right:-203px;bottom:-73px;width: 376px;height:90px;padding:0 29px;overflow:inherit;}
+.pop_newGift .list_taskprize .task_list{margin:-5px 0 0 -2px;}
+.pop_newGift .list_taskprize .task_pre{width:20px;height:23px;display:block;text-indent:-999em;overflow:hidden;position:absolute;top:35px;left:4px;background-position:-891px -813px;}
+.pop_newGift .list_taskprize .task_pre:hover{background-position:-891px -780px;}
+.pop_newGift .list_taskprize .task_next{width:20px;height:23px;display:block;text-indent:-999em;overflow:hidden;position:absolute;top:35px;right:5px;background-position:-846px -812px;}
+.pop_newGift .list_taskprize .task_next:hover{background-position:-846px -779px;}
+.pop_newGift .list_taskprize .task_pre_un,.pop_newGift .list_taskprize .task_pre_un:hover{background-position:-891px -846px;cursor:default;}
+.pop_newGift .list_taskprize .task_next_un,.pop_newGift .list_taskprize .task_next_un:hover{background-position:-846px -846px;cursor:default;}
+#logingiftsList,#logingiftsListGet{width:1000%;position:relative;}
+.pop_index{width: 637px;min-height: 160px;position: fixed;left: 50%;margin-left: -319px;top:20%;padding-bottom: 30px;display: none;z-index: 1000}
+#pop_newPlayer .bg{width:500px;background-position:-40px -846px;}
+#pop_newPlayer .pop_close{background:url(http://ossweb-img.qq.com/images/mgc/css_img/common/reminder_tips_Qgame.png?v=3_8_8_2016_15_4_final_3) no-repeat 0 0;}
+#pop_newPlayer .pop_close{right: -25px;top:54px;background-position:-527px -29px;width:48px;height:32px;position:absolute;z-index:-1;}
+#pop_newPlayer .pop_close:hover{background-position: -447px -29px;}
+#pop_newPlayer .pop_close:active{background-position:-607px -29px;}
+#pop_newPlayer_get,#pop_newPlayer_error{width: 547px;height: 239px;margin-left: -273.5px;top:35%;}
+#pop_newPlayer{width:547px;height:210px;position:absolute;top:-115px;margin:0;left:81px;display:none;}

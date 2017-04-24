@@ -1,0 +1,121 @@
+.sr_chat{width: 100%;height: 100%;position: relative;border-radius: 2px;}
+.sc_tab{position: relative;}
+.sc_tab ul{width:100%;}
+.sc_tab li{width: 160px;display: inline;}
+.sc_tab li a{width: 160px;border-radius: 2px 2px 0 0 ;}
+.sc_tab .chatMsgTips{background: url(http://ossweb-img.qq.com/images/mgc/css_img/common/header_sprite.png?v=3_8_8_2016_15_4_final_3) no-repeat -564px -327px;width: 11px;height: 11px;overflow: hidden;line-height: 0;font-size: 0;position: absolute;top: -3px;right: -2px;z-index:1;}
+.sn_tab li a, .sc_box_panl, .sc_face_pre, .sc_face_next, .sc_face_pre:hover, .sc_face_next:hover, .sc_face_pre_end, .sc_face_next_end, .sc_role, [class*="icon-checkbox-"]{background:url('http://ossweb-img.qq.com/images/mgc/css_img/video_room/live_sprite_c.png?v=3_8_8_2016_15_4_final_3') no-repeat 0 0;}
+.sn_tab li{float: left;width: 160px;height: 38px;position: relative;}
+.sn_tab li:first-child{margin-right: 1px;width: 160px;}
+.sn_tab li a{background-position: -275px -168px;width: 100%;height: 36px;display: block;color: #fafafa;text-align: center;font-size: 14px;font-weight: bold;line-height: 36px;position: absolute;top: 2px;}
+.sn_tab li .current{height: 38px;background: #fafafa;color: #6c2900;line-height: 40px;}
+.sc_con_panl {width:100%;height: 181px;padding-top: 5px;overflow: hidden;background-color: #fcfcf8;}
+.sc_con{width:301px;height: 100%;overflow: hidden;margin: 0 8px 0 14px;position: relative;}
+.sc_con ul{display: none;overflow: hidden; overflow-y:visible; width:289px;}
+.sc_con li{padding-bottom: 5px;}
+.sc_box{width: 100%;height: 120px;background-color:#fcfcf8;position: relative;border-radius:0 0 2px 2px;-webkit-border-radius:0 0 2px 2px;-moz-border-radius:0 0 2px 2px;-ms-border-radius:0 0 2px 2px;}
+.sc_box_panl {width: 295px;height:36px;background-position: -260px -131px;margin: 0 0 5px 13px;position:absolute;bottom: 0px;left: 0;background-color: #fff;}
+.sc_box_btn{display: block;width: 40px;height: 35px;cursor: pointer;float: left;position: relative;}
+.sc_box input{float:left;display:block;background:none;width: 185px;height:26px;margin: 4px 0;border: 0 none;color: #1c1c1c;font: 12px/26px "microsoft yahei";background:url('http://ossweb-img.qq.com/images/mgc/css_img/video_room/chat_msg_txt_bg.png?v=3_8_8_2016_15_4_final_3') no-repeat 0 2px;}
+.sc_box_un {background-position:-912px -365px;}
+.mask-gifts {position:absolute;top:5px;right: 8px;width:95px;height:15px;color:#723904;font-size:12px;line-height:14px;cursor:pointer;}
+.mask-gifts-tips {position: absolute; top: -30px; left: 158px;background: #d75fff;padding: 5px;color: #fff;border-radius: 5px;width: 144px; height: 20px;word-spacing:160px;font-size:12px;display:none;}
+.icon-checkbox-0, .icon-checkbox-1 {display:inline-block;width:14px;height:14px;vertical-align:text-top;margin:1px 3px 0 0;}
+.icon-checkbox-0 {background-position:-170px -500px;}
+.icon-checkbox-1 {background-position: -198px -500px;}
+/*惊喜宝箱*/
+.surprise-box {position:absolute;top:22px;right:5px;background-position: -258px -502px;width:85px;height: 50px;}
+.surprise-tips {position: absolute; top: -75px; left: -164px;background: #d75fff;padding: 5px;color: #fff;border-radius: 5px;width: 235px; height: 60px;word-spacing:160px;font-size:12px;display:none;}
+.surprise-open-tips {position: absolute; top: -32px; left: 30px;background: #d75fff;padding: 5px;color: #fff;border-radius: 5px;width: 50px; height: 20px;word-spacing:160px;font-size:12px;display:none;}
+.cb_fy{display: block;float: RIGHT;width: 55px;text-align: center;color: #fff;line-height: 30px;height: 30px;}
+.sc_role{height: 35px;position: absolute;top:37px;left: 14px;background-position: -630px -366px;}
+.sc_role_un {background-position:-772px -365px;}
+.scr_c,.scr_r{float: left;display: block;height: 35px;}
+.scr_r{width: 25px;cursor:pointer;}
+.scr_c{line-height: 33px;color: #d1832e;font-size: 14px;width:101px;margin-left: 13px;overflow:hidden;white-space: nowrap;text-overflow: ellipsis;}
+.sc_role_out{width: 175px;max-height: 157px;background: #ffd899;border-radius: 5px;position: absolute;bottom: 35px;left: 0;padding:5px 5px 5px 0;overflow: hidden;display: none;}
+/*私聊对象自适应*/
+.sc_role_out .jspContainer {
+position:inherit !important;
+max-height:94px !important;
+height:auto !important;
+}
+.sc_role_out .jspPane {
+position:inherit !important;
+height:auto !important;
+}
+.height-auto {height:auto !important;}
+.jspDrag {background:#fcb624 !important;}
+.logined_list .jspDrag{background-color:#ee5f38 !important;}
+.tb_con .jspDrag{background-color:#8d5cf8 !important;}
+.pop_anchor .jspDrag{background-color:#8d5cf8 !important;}
+.sc_role_list{width: 175px;max-height: 94px;}
+.sc_role_ul{width: 175px;height: 28px;font-weight:bold;}
+.sc_role li{height: 28px;line-height: 28px;color: #d1832e;font-size: 13px;width: 150px;margin: 3px 0 0 8px;text-indent:5px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;*float: left;cursor: pointer;}
+.sc_role li:hover{background: #d1832e;border-radius: 2px;color:#fff;}
+.sc_face_tab{height: 27px;margin-top: -27px;overflow: hidden;}
+.sc_face_tab li{float: left;width: 84px;height: 27px;margin-right: 1px;display: inline;box-shadow: 0px 0px 0px 0px #999;}
+.sc_face_tab a{display: block;width: 100%;height: 27px;background: #ce8139;border-radius:3px 3px 0 0 ;text-align: center;line-height: 27px;color: #fff;font-size: 13px;}
+.sc_face_tab .current{background: #fffdea;color:#ce8139;border-left: 1px solid #e8e8e8;border-top: 1px solid #e8e8e8;border-right: 1px solid #e8e8e8;}
+.sc_face_tab li.face_1,.sc_face_tab li.face_3,.sc_face_tab li.face_4 {width:60px;}
+.sc_face_out{border: 1px solid red;}
+.sc_face{width: 285px;height: 180px;background: #fffdea;border-radius:0 5px 5px 5px;position: absolute;top: -103px;right: 0;display: none;box-shadow:2px 0px 7px 0px #999;}
+.sc_face_con{position: relative;width: 275px;height:165px;display: none;overflow: hidden;}
+.sc_face_ban{position: absolute;width:1000%;height: 135px;}
+.sc_face_ban ul{float: left;width: 275px;height: 135px;padding: 5px 0 0 10px;}
+.sc_face_ban li{float: left;margin: 0 5px;display: inline;position: relative;width: 33px;height: 33px;cursor: pointer;}
+.sc_face_ban li em{display:inline-block;width:100%;height:100%;}
+.sc_face_ban li img{position: absolute;top: 6px;left: 4px;}
+.sc_face_ban li:hover{outline:1px solid #13a0e5;}
+.sc_face_page{position: relative;top: 140px;}
+.sc_face_num{font-size: 16px;color: #ce8139;margin-left: 20px;}
+.sc_face_num b{font-weight: normal;}
+.sc_face_btn{width: 64px;height: 24px;position: absolute;right: 20px;top: 0;}
+.sc_face_btn a{display: block;width:22px;height:22px;text-indent: -9999px;}
+.sc_face_pre{background-position:-727px -178px;float: left;}
+.sc_face_next{background-position:-756px -178px;float: right;}
+.sc_face_pre:hover{background-position:-854px -178px;float: left;}
+.sc_face_next:hover{background-position:-883px -178px;float: right;}
+.sc_face_pre_end{background-position:-789px -178px;float: left;}
+.sc_face_next_end{background-position:-817px -178px;float: right;}
+.sc_details{width: 100%;word-break:break-all;word-wrap:break-word;padding-left:0;line-height:20px;clear:both;}
+.sc_details img{display: inline;margin: 0 3px;}
+.nick-info {font-weight: bold;}
+.sc_label,.sc_label_cur,.talkPlayer{min-height: 24px;padding: 3px 0;font-weight: bold;cursor:pointer;}
+.player-name {display:inline-block;float:left;max-width: 301px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.sc_label span{display: block;float: right;padding-right: 30px;color: #979797;font-weight: normal;}
+.margintop3 {margin-top:3px;}
+/*聊天时间戳*/
+.nowtime{float: right;color: #797979;font-weight: normal;margin-right:18px;margin-top: 2px;vertical-align:middle;}
+/*免费礼物*/
+.freeGift{height: 40px;top:34px;position: absolute;left: 158px;width: 66px;}
+.freeGiftDisable{background-position: -1055px -134px;}
+.freeGift ul{width: 100%;height: 35px;text-align: center;}
+.freeGift li{width: 67px; height: 40px; cursor: pointer; display: inline-block; position: relative;background-image: url("http://ossweb-img.qq.com/images/mgc/css_img/video_room/live_sprite_c.png?v=3_8_8_2016_15_4_final_3"); background-position: -1069px -223px;}
+.freeGift li.hover{background-position: -1144px -223px;}
+.freeGift a.gift_1{width: 30px; height: 30px;background-image: url("http://ossweb-img.qq.com/images/mgc/css_img/video_room/live_sprite_c.png?v=3_8_8_2016_15_4_final_3"); background-position: -919px -178px;  left: 18px; top: 10px;position: absolute;}
+.freeGift a.gift_1_Disable{background-position: -969px -178px;}
+.freeGift a.gift_2{width: 35px; height: 35px;background-image: url("http://ossweb-img.qq.com/images/mgc/css_img/video_room/live_sprite_c.png?v=3_8_8_2016_15_4_final_3"); background-position: -1025px -178px;  left: 15px; position: absolute;}
+.freeGift a.gift_2_Disable{background-position: -1071px -178px;}
+.freeGift a.gift_3{width: 35px; height: 35px;background-image: url("http://ossweb-img.qq.com/images/mgc/css_img/video_room/live_sprite_c.png?v=3_8_8_2016_15_4_final_3"); background-position: -1118px -178px;  left: 15px; position: absolute;}
+.freeGift a.gift_3_Disable{background-position: -1162px -178px;}
+.freeGift a.gift_35{width: 35px; height: 35px;background-image: url("http://ossweb-img.qq.com/images/mgc/css_img/video_room/live_sprite_c.png?v=3_8_8_2016_15_4_final_3"); background-position: -1025px -178px;  left: 15px; position: absolute;}
+.freeGift a.gift_35_Disable{background-position: -1071px -178px;}
+.freeGift a.gift_36{width: 35px; height: 35px;background-image: url("http://ossweb-img.qq.com/images/mgc/css_img/video_room/live_sprite_c.png?v=3_8_8_2016_15_4_final_3"); background-position: -1118px -178px;  left: 15px; position: absolute;}
+.freeGift a.gift_36_Disable{background-position: -1162px -178px;}
+.freeGift .num{display:none;position: absolute; top: -2px; left: 38px; width: 18px; height: 18px; color: rgb(255, 255, 255);background-image: url("http://ossweb-img.qq.com/images/mgc/css_img/video_room/live_sprite_c.png?v=3_8_8_2016_15_4_final_3"); background-position: -1083px -51px;text-align: center; line-height: 17px;}
+.freeGift .send{width: 60px; height: 34px; display: block; color: #FFF;text-align: center; line-height: 34px; position: absolute;right: 5px;font-size: 15px;}
+.freeGift .sendDisable{cursor: auto;}
+.freeGiftTip{display:none; width: 245px; height: 88px; position: absolute; top: -51px; left: 10px;background-image: url("http://ossweb-img.qq.com/images/mgc/css_img/video_room/live_sprite_c.png?v=3_8_8_2016_15_4_final_3");}
+.freeGiftTip_1{background-position: -815px -216px;}
+.freeGiftTip_2{background-position: -4px -377px;}
+.freeGiftTip_3{background-position: -262px -377px;}
+.freeGiftTip_35{background-position: -4px -377px;}
+.freeGiftTip_36{background-position: -262px -377px;}
+.freeGiftTip span.leftTime{color: rgb(214, 249, 254); font-size: 14px; width: 190px; display: block; position: absolute; left: 48px; top: 25px;}
+.icon_gift{width: 30px; height: 30px;background-image: url("http://ossweb-img.qq.com/images/mgc/css_img/video_room/live_sprite_c.png?v=3_8_8_2016_15_4_final_3");}
+.icon_gift_1{background-position: -919px -178px;display: inline-block;margin-bottom: -10px;}
+.icon_gift_2{background-position: -1025px -178px;display: inline-block;margin-bottom: -10px;}
+.icon_gift_3{background-position: -1118px -178px;display: inline-block;margin-bottom: -10px;}
+.icon_gift_35{background-position: -1025px -178px;display: inline-block;margin-bottom: -10px;}
+.icon_gift_36{background-position: -1118px -178px;display: inline-block;margin-bottom: -10px;}

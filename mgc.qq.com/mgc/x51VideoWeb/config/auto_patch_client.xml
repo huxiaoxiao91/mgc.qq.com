@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="gb2312" standalone="yes" ?>
+<config>
+  <auto_patch_client>
+	<!--patch窗口显示的页面-->
+	<url>http://x5.qq.com/CommNews/static/inc/client_lb.shtml</url>
+	<url_adv>http://x5.qq.com/CommNews/static/inc/client_pic.htm</url_adv>
+
+	<download url="http://x5.qq.com/"/>
+
+    <!--版本服务器地址-->
+    <version_servers>   
+		<IDC name="内部测试服" provider="cmcc" group="电信" recommend="1">	
+			<addr ip="124.207.138.230" port="9861" />
+		</IDC>
+	</version_servers>
+  </auto_patch_client>
+</config>

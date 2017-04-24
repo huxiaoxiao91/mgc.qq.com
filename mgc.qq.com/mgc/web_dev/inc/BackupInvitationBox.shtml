@@ -1,0 +1,17 @@
+<div id="backupInvitation" class="pop" style="display:none;"><!--后援团邀请弹窗-->
+    <a id="backupInvitationCloseBtn" href="javascript:$m('#backupInvitation').hide();return false;" class="pop_close">关闭</a>
+    <p id="backupInvitationTitleP" class="pop_invitation_title">提示</p>
+    <div class="pop_invitation_tip_txt">
+        <div>
+            <p id="backupInvitationNoteP"></p>
+        </div>
+    </div>
+    <div style="font-size: 14px;height: 80px;text-align: center;">
+        <p id="countdown">倒计时！</p>
+    </div>
+    <div class="pop_btn_box clearfix">
+        <a id="seeSupportGroup" href="javascript:return false;" class="btn_open">查看后援团信息</a>
+        <a id="backupInvitationConfirmBtn" class="btn_open" href="javascript:$m('#backupInvitation').hide();return false;">接受</a>
+        <a id="backupInvitationCancelBtn" class="btn_close" href="javascript:$m('#backupInvitation').hide();return false;">拒绝</a>
+    </div>
+</div><!--[if !IE]>|xGv00|59d2b90f0beb1234b8e0ee6284c1d3a6<![endif]-->

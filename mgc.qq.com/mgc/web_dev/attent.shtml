@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta name="robots" content="all">
+    <meta name="author" content="Tencent-TGideas">
+    <meta name="Copyright" content="Tencent">
+    <meta name="Description" content="《QQ炫舞》最时尚浪漫的舞蹈游戏,2012年同时在线已突破260万!6月20日,QQ炫舞正式发布了3.0《我的演唱会》版本,开启全新大音乐舞蹈网游时代!更与青海卫视花儿朵朵、RTA组合，达成战略合作，引入了明星歌曲首发、明星游戏驻唱等全新活动形式。QQ炫舞有着最丰富的模式和玩法，最浪漫的交友平台，最华丽精美的画面表现，最紧跟潮流的版本开发迭代节奏，持续不断的为千万炫舞玩家，提供着最优质的游戏体验！" />
+    <meta name="Keywords" content="炫舞梦工厂,梦工厂,QQ炫舞,炫舞,QQ炫舞官网,QQ炫舞官方下载,QQ炫舞下载,QQ炫舞官方网站" />
+    <title>炫舞梦工厂-QQ炫舞官方网站-腾讯游戏-开启大音乐舞蹈网游时代</title>
+    <link type="text/css" rel="stylesheet" href="css/comm.css?v=3_8_8_2016_15_4_final_3">
+    <link type="text/css" rel="stylesheet" href="css/personal.css?v=3_8_8_2016_15_4_final_3">
+    <!-- 页面设计：sayonkang | 页面制作：yaoqli\guangji | 创建：2014-04-23  团队博客：http://tgideas.qq.com/ -->
+</head>
+<body>
+    <!--header s-->
+    <!--#include virtual="/inc/header.inc"-->
+    <!--header e-->
+    <!--签到-->
+    <!--#include virtual="/inc/sign.shtml" -->
+    <!-- content s -->
+    <div class="content clearfix">
+        <!-- side_nav s -->
+        <div class="side_nav">
+            <dl>
+                <dt>个人信息</dt>
+                <dd><a href="personal.shtml">基本资料</a></dd>
+                <dd><a href="avatar.shtml">头像设置</a></dd>
+            </dl>
+            <dl>
+                <dt>我的关注</dt>
+                <dd class="curent"><a href="attent.shtml">关注的主播</a></dd>
+            </dl>
+        </div>
+        <!-- //side_nav e -->
+        <!-- main s -->
+        <div class="main">
+            <h2 class="title tit_follow">关注的主播</h2>
+            <div class="box_info box_attent">
+                <table width="100%">
+                    <tr>
+                        <th width="36%">主播昵称</th>
+                        <th width="22%">亲密度</th>
+                        <th width="22%">守护关系</th>
+                        <th width="22%">操作</th>
+                    </tr>
+                </table>
+                <div class="list_attent">
+                    <table width="100%" id="i_attend_list">
+                    </table>
+                    <script type="x-jquery-tmpl" id="i_attend_tmpl">
+					<tr>
+						<td width="36%" class="row1">${m_anchor_nick}{{if m_status == 2}}<span class="zhibo"><a href="liveroom.shtml?roomId=${m_videoroom_id}}" target="_blank" style="color:#fff">直播中</a></span>{{/if}}</td>
+						<td width="22%">${affinity}</td>
+						<td width="22%"><span class="icon_lv icon_lv${guard_level}" title="${guardLevelStr}">{{if guard_level > 0}}${guardLevelStr}{{else}}无{{/if}}</span></td>
+						<td width="22%"><a href="javascript:;" class="del" cancel-data='{"m_anchor":"${m_anchor}","m_anchor_nick":"${m_anchor_nick}"}' onclick="DoCancel(this)">×</a></td>
+					</tr>
+				</script>
+                </div>
+                <!--缺少暂无关注的样式-->
+            </div>
+        </div>
+        <!-- //main e -->
+    </div>
+    <!-- //content e -->
+    <!--开通贵族-->
+    <div class="pop" id="open_vip">
+        <a href="javascript:;" onclick="MGC_Comm.HideAndClear(this)" class="pop_close">关闭</a>
+        <p class="pop_title">开通贵族</p>
+        <div class="pop_open">
+            <strong class="tit_open">请选择要开通的贵族身份：</strong>
+            <div class="select_box">
+                <div id="icon_kt" class="select_input"><span>近卫(30天)  500</span><i class="icon_mhb"></i></div>
+                <i class="pa icon_xd"></i>
+                <ul id="icon_kt_list" class="select_more">
+                </ul>
+            </div>
+            <p class="tips">如果开通新的贵族身份，您身上原有的贵族身份会被系统直接收回开通贵族后，使用续费功能延期会有折扣哦~</p>
+        </div>
+        <div class="pop_btn_box clearfix">
+            <a class="btn_open" href="javascript:CommOpenVip.ktVip();">开通</a>
+            <a class="btn_close" href="javascript:;" onclick="MGC_Comm.HideAndClear(this)">关闭</a>
+        </div>
+    </div>
+    <!--开通贵族续费-->
+    <div class="pop" id="renew_vip">
+        <a href="javascript:;" onclick="MGC_Comm.HideAndClear(this)" class="pop_close">关闭</a>
+        <p class="pop_title">续费贵族</p>
+        <div class="pop_open">
+            <strong class="tit_open">您的身份：<b id="myVipName">无</b> <span>(<label id="myVipDuration">0</label>天)</span></strong>
+            <p class="tips">请选择您要续费的天数。时间越长折扣越高哦~</p>
+            <div class="select_box">
+                <div id="icon_xf" class="select_input"><span>近卫(30天)  500</span><i class="icon_mhb"></i></div>
+                <ul id="icon_xf_list" class="select_more">
+                </ul>
+            </div>
+        </div>
+        <div class="pop_btn_box clearfix">
+            <a class="btn_open" href="javascript:CommOpenVip.xfVip();">续费</a>
+            <a class="btn_close" href="javascript:;" onclick="MGC_Comm.HideAndClear(this)">关闭</a>
+        </div>
+    </div>
+    <!--梦工厂贵族 -->
+    <div class="pop pop_mgc" id="mgc_vip">
+        <a href="javascript:showDialog.hide();" class="pop_close">关闭</a>
+        <p class="pop_title">梦工厂贵族</p>
+        <div class="bd">
+            <div class="tit_mgc">
+                <b>贵族特权</b>
+                <p class="f_right">
+                    <a class="knowmore" href="#">更多<i></i></a>
+                    <a class="pop_btn pop_btn_pay" href="#">充值</a>
+                </p>
+            </div>
+            <div class="pop_table">
+                <table width="100%">
+                    <tbody>
+                        <tr>
+                            <td width="14%" class="t_bold"></td>
+                            <td width="16%" class="t_bold">近卫</td>
+                            <td width="16%" class="t_bold">骑士</td>
+                            <td width="18%" class="t_bold">将军</td>
+                            <td width="18%" class="t_bold">亲王</td>
+                            <td width="18%" class="t_bold">皇帝</td>
+                        </tr>
+                        <tr>
+                            <td class="t_bold">特殊标识</td>
+                            <td><span class="b_icon_honor b_icon_honor1"></span></td>
+                            <td><span class="b_icon_honor b_icon_honor2"></span></td>
+                            <td><span class="b_icon_honor b_icon_honor3"></span></td>
+                            <td><span class="b_icon_honor b_icon_honor4"></span></td>
+                            <td><span class="b_icon_honor b_icon_honor5"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="t_bold">玩家列表字体</td>
+                            <td>
+                                <img width="70" height="20" alt="字体效果" src="http://ossweb-img.qq.com/images/mgc/css_img/vip_panel/font_style1.png?v=3_8_8_2016_15_4_final_3"></td>
+                            <td>
+                                <img width="70" height="20" alt="字体效果" src="http://ossweb-img.qq.com/images/mgc/css_img/vip_panel/font_style2.png?v=3_8_8_2016_15_4_final_3"></td>
+                            <td>
+                                <img width="70" height="20" alt="字体效果" src="http://ossweb-img.qq.com/images/mgc/css_img/vip_panel/font_style3.png?v=3_8_8_2016_15_4_final_3"></td>
+                            <td>
+                                <img width="70" height="20" alt="字体效果" src="http://ossweb-img.qq.com/images/mgc/css_img/vip_panel/font_style4.png?v=3_8_8_2016_15_4_final_3"></td>
+                            <td>
+                                <img width="70" height="20" alt="字体效果" src="http://ossweb-img.qq.com/images/mgc/css_img/vip_panel/font_style5.png?v=3_8_8_2016_15_4_final_3"></td>
+                        </tr>
+                        <tr>
+                            <td class="t_bold">免费飞屏喇叭</td>
+                            <td>每天<span class="t_red">1</span>个</td>
+                            <td>每天<span class="t_red">2</span>个</td>
+                            <td>每天<span class="t_red">5</span>个</td>
+                            <td>每天<span class="t_red">10</span>个</td>
+                            <td>每天<span class="t_red">30</span>个</td>
+                        </tr>
+                        <tr>
+                            <td class="t_bold">人满房间特权</td>
+                            <td>1次/天，低优先级</td>
+                            <td><span class="t_red">3</span>次/天，低优先级</td>
+                            <td>无限次数，<span class="t_red">中级</span>优先</td>
+                            <td>无限次数，<span class="t_red">高级</span>优先</td>
+                            <td>无限次数，<span class="t_red">最高</span>优先</td>
+                        </tr>
+                        <tr>
+                            <td class="t_bold">隐身功能</td>
+                            <td>无</td>
+                            <td>无</td>
+                            <td>有</td>
+                            <td>有</td>
+                            <td>有</td>
+                        </tr>
+                        <tr>
+                            <td class="t_bold">房间热度加成</td>
+                            <td>无</td>
+                            <td>无</td>
+                            <td>10热度/分钟</td>
+                            <td>50热度/分钟</td>
+                            <td>100热度/分钟</td>
+                        </tr>
+                        <tr>
+                            <td class="t_bold">飞屏喇叭效果</td>
+                            <td>
+                                <img width="86" height="43" alt="飞屏喇叭效果" src="http://ossweb-img.qq.com/images/mgc/css_img/vip_panel/laba1.png?v=3_8_8_2016_15_4_final_3"></td>
+                            <td>
+                                <img width="86" height="43" alt="飞屏喇叭效果" src="http://ossweb-img.qq.com/images/mgc/css_img/vip_panel/laba2.png?v=3_8_8_2016_15_4_final_3"></td>
+                            <td>
+                                <img width="86" height="43" alt="飞屏喇叭效果" src="http://ossweb-img.qq.com/images/mgc/css_img/vip_panel/laba3.png?v=3_8_8_2016_15_4_final_3"></td>
+                            <td>
+                                <img width="86" height="43" alt="飞屏喇叭效果" src="http://ossweb-img.qq.com/images/mgc/css_img/vip_panel/laba4.png?v=3_8_8_2016_15_4_final_3"></td>
+                            <td>
+                                <img width="86" height="43" alt="飞屏喇叭效果" src="http://ossweb-img.qq.com/images/mgc/css_img/vip_panel/laba5.png?v=3_8_8_2016_15_4_final_3"></td>
+                        </tr>
+                        <tr>
+                            <td class="t_bold">防止守护禁言</td>
+                            <td>无</td>
+                            <td>无</td>
+                            <td>天使守护或以下</td>
+                            <td>灵魂守护或以下</td>
+                            <td>至尊守护或以下</td>
+                        </tr>
+                        <tr>
+                            <td class="t_bold">每日工资加成</td>
+                            <td>10%</td>
+                            <td>20%</td>
+                            <td>30%</td>
+                            <td>40%</td>
+                            <td>50%</td>
+                        </tr>
+                        <tr>
+                            <td class="my_foot" colspan="6">
+                                <p>我的身份    <span class="t_red" id="myDegree">无</span></p>
+                                <a class="pop_btn pop_btn_xufei" href="javascript:;" id="xfVip">续费</a>
+                                <a class="pop_btn pop_btn_open" href="javascript:;" id="ktVip">开通</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="pop_btn_box clearfix">
+            <a class="btn_close" href="javascript:showDialog.hide();">取消</a>
+        </div>
+
+    </div>
+    <!--footer s-->
+    <!--#include virtual="/inc/footer.inc"-->
+    <!--#include virtual="/inc/minipay.shtml"-->
+    <!--footer e-->
+    <script src="script/lib/utils/jquery-1.9.1.min.js?v=3_8_8_2016_15_4_final_3"></script>
+    <script src="http://ossweb-img.qq.com/images/js/login/loginmanagerv3.js?v=3_8_8_2016_15_4_final_3"></script>
+    <script src="js/mgc_dialog.min.js?v=3_8_8_2016_15_4_final_3"></script>
+    <script src="http://ossweb-img.qq.com/images/js/comm/tgadshow.min.js?v=3_8_8_2016_15_4_final_3"></script>
+    <script type="text/javascript" src="script/lib/utils/jquery.tmpl.min.js?v=3_8_8_2016_15_4_final_3"></script>
+    <script type="text/javascript" src="js/utils/swfobject.js?v=3_8_8_2016_15_4_final_3"></script>
+    <script type="text/javascript" src="js/mgc_init.js?v=3_8_8_2016_15_4_final_3"></script>
+    <script type="text/javascript" src="js/mgc.js?v=3_8_8_2016_15_4_final_3"></script>
+    <script type="text/javascript" src="js/mgc_popmanager.js?v=3_8_8_2016_15_4_final_3"></script>
+    <script type="text/javascript" src="js/mgc.common.js?v=3_8_8_2016_15_4_final_3"></script>
+    <script type="text/javascript" src="js/mgc_attend.js?v=3_8_8_2016_15_4_final_3"></script>
+    <script type="text/javascript" src="js/mgc_sign.js?v=3_8_8_2016_15_4_final_3" defer="defer"></script>
+    <script type="text/javascript">
+        //页面初始化方法
+        var webInit = function() {
+            MGC_Comm.loginInfo(0);
+        };
+        MGC.personalData();
+</script>
+    <script>
+        $j('.list_attent tr').hover(function() {
+            $j(this).css({ background: '#fbf4e9' });
+        }, function() {
+            $j(this).css({ background: 'none' });
+        })
+</script>
+</body>
+</html>
+<!--[if !IE]>|xGv00|eae5e86a5f32daff002e8a902ffa0eb5<![endif]-->

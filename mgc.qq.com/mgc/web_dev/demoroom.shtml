@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="robots" content="all">
+    <meta name="author" content="Tencent-TGideas">
+    <meta name="Copyright" content="Tencent">
+    <meta name="Description" content="《QQ炫舞》最时尚浪漫的舞蹈游戏,2012年同时在线已突破260万!6月20日,QQ炫舞正式发布了3.0《我的演唱会》版本,开启全新大音乐舞蹈网游时代!更与青海卫视花儿朵朵、RTA组合，达成战略合作，引入了明星歌曲首发、明星游戏驻唱等全新活动形式。QQ炫舞有着最丰富的模式和玩法，最浪漫的交友平台，最华丽精美的画面表现，最紧跟潮流的版本开发迭代节奏，持续不断的为千万炫舞玩家，提供着最优质的游戏体验！" />
+    <meta name="Keywords" content="炫舞梦工厂,梦工厂,QQ炫舞,炫舞,QQ炫舞官网,QQ炫舞官方下载,QQ炫舞下载,QQ炫舞官方网站" />
+    <title>炫舞梦工厂-QQ炫舞官方网站-腾讯游戏-开启大音乐舞蹈网游时代</title>
+    <!--#include virtual="/inc/staticloading.shtml"-->
+    <script>STATIC_RESOURCE.addCssByLink(['/css/inside.css', '/css/jquery.jscrollpane.css']);</script>
+</head>
+<body>
+    <!--header s-->
+    <!--#include virtual="/inc/header.inc"-->
+    <!--header e-->
+    <!--#include virtual="/inc/role.shtml"-->
+    <div class="wrapper">
+        <div class="content">
+            <!--左边-->
+            <div class="si_back"></div>
+        </div>
+    </div>
+    <!--footer s-->
+    <!--#include virtual="/inc/footer.inc"-->
+    <!--footer e-->
+    <script data-main="script/main_entry_demoroom" src="script/lib/utils/require-2.1.20.min.js?v=3_8_8_2016_15_4_final_3" defer async></script>
+    <script type="text/javascript">
+        //一坨初始化
+        //MGC.fansRankList();
+        //MGC.personalData();
+        //MGC.mnsSelect("icon_report", "icon_report_list");
+        //MGC.facePackage();
+        //MGC.recommend();
+        //MGC.crosswise();
+        //MGC.adaptionScreen();
+    </script>
+</body>
+</html>
+<!--[if !IE]>|xGv00|fead803f8b05f49d3d51040dd4f0fb72<![endif]-->

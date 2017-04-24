@@ -1,0 +1,579 @@
+/*
+ @ add by fullspeed 2015-04-21
+*/
+.content{margin:0 auto;width:825px;padding:10px 0 70px 0;min-height:800px;_height:800px;font-size:14px;color:#6a41c6;}
+.rc_tab_tit{border-bottom:1px solid #864ff6; clear:both;}
+.rc_tab_tit li{padding-right:1px;float:left;width:180px;}
+.rc_tab_tit a{display:block;height:40px;line-height:40px; text-align:center;color:#864ff6;}
+.rc_tab_tit a:hover{color:#ff7d13;}
+.rc_tab_tit .current:hover{color: #ffffff;}
+.rc_tab_tit .current,.rc_title,.icon_how,.rank_con li em,
+.rank_con .first b,.rank_con .second b,.rank_con .third b,.rc_qmd li .icon_qmd,.list_page a,
+.rank_con .first i,.rank_con .second i,.rank_con .third i{ background:url(http://ossweb-img.qq.com/images/mgc/css_img/ranklist/ranklist_sprite.png?v=3_8_8_2016_15_4_final_3) no-repeat;}
+.supportGroup_tit{ background:url(http://ossweb-img.qq.com/images/mgc/css_img/fans_guild/group_icon.png?v=3_8_8_2016_15_4_final_3) no-repeat;}
+.rc_tab_tit .current{ background-position:0 0;color:#fff;}
+.supportGroup_tit{height:28px;position:relative;margin-bottom:5px;padding-left:125px;}
+/* rank_con 积分排行榜、新耀排行榜、亲密度排行榜 */
+.rank_con{width:400px;float:left;padding-top:40px;position:relative;}
+.rc_title{height:28px;width: 0;position:relative;margin-bottom:5px;padding-left:116px;}
+.rc_dengji .rc_title{width:300px;}
+.rc_title .pop_tips{padding:5px 15px;background:#6a41c6;color:#fff; text-align:center;width: 200px;position:absolute;left:40px;bottom:35px;border-radius:8px;display:none;}
+.supportGroup_tit .pop_tips{padding:5px 15px;background:#6a41c6;color:#fff; text-align:center;width:160px;position:absolute;left:50px;bottom:35px;border-radius:8px;display:none;}
+.rc_title .pop_tips i{position:absolute;left:80px;bottom:-9px; font-family:Verdana;font-size:16px;color:#6a41c6;}
+.rc_tit_qnd .pop_tips i{position:absolute;left:80px;bottom:-9px; font-family:Verdana;font-size:16px;color:#6a41c6;}
+.rc_tit_jifen{background-position:-529px 0;}
+.rc_tit_week_star{background: url(http://ossweb-img.qq.com/images/mgc/css_img/video_room/star_week.png?v=3_8_8_2016_15_4_final_3) no-repeat;background-position:-404px -248px;padding-left:139px;}
+.rc_tit_xy{background-position:-529px -37px;}
+.rc_tit_qnd{background-position:0 -148px;}
+.supportGroup_tit{background-position:-10px -77px;}
+.rc_tit_youshen{background-position:-528px -71px;padding-left:175px;}
+.rc_tit_yinhao{background-position:-528px -108px;padding-left:130px;}
+.rc_tit_caifu{background-position:0 -181px;}
+.rc_tit_guizu{background-position:-534px -181px;width: 320px;}
+.rc_tit_guizu .pop_tips{width:260px;}
+.rc_tit_wanjia{background-position:0 -210px;width: 320px;}
+.rc_tit_jifen .zbjf{width:125px;height:28px;float:right;text-indent:-999em;overflow:hidden;}
+.icon_how{width:24px;height:24px;float:left; text-indent:-999em;overflow:hidden;background-position:-269px 0;}
+.icon_how:hover{background-position:-407px 0;}
+.rc_jifen .first span.m_anchor_name,.rc_jifen .second span.m_anchor_name,.rc_jifen .third span.m_anchor_name{max-width: 78px;}
+.rc_jifen{float: right;}
+/* 主播等级榜s */
+/*.rc_dengji{float: right;}*/
+.rc_tit_dengji{background-position:0 -239px;}
+.rc_dengji li.first strong,.rc_dengji li.second strong,.rc_dengji li.third strong{padding-top: 9px;}
+.i_anchor_level{width: 46px;height: 25px; line-height: 17px;padding-top: 8px;text-align:right;color: #fff !important;position:relative;}
+.i_anchor_level i{text-align:center;display:inline-block;width:25px;line-height:19px;font-style:inherit;}
+.i_anchor_level_1 i{width:32px;line-height: 17px;}
+.i_anchor_level_2 i{width:34px;line-height: 17px;}
+.i_anchor_level_3 i{width:32px;line-height: 17px;}
+.i_anchor_level_4 i{width:25px}
+.i_anchor_level_5 i{width:28px;line-height: 17px;}
+.i_anchor_level_6 i{width:26px;line-height: 17px;}
+.i_anchor_level_7 i{width:26px;line-height: 19px;}
+#anchor_dengji_container .i_anchor_level i{line-height: 19px;}
+#anchor_xingyao_container .i_anchor_level i{line-height: 17px;}
+#anchor_qinmidu_container .i_anchor_level i{line-height: 17px;}
+#anchor_jifen_container .i_anchor_level i{line-height: 17px;}
+.i_anchor_level_8 i{width:26px}
+.i_anchor_level_9 i{width:28px}
+.i_rich_level_0{margin-top: -4px;line-height: 15px;text-align: center;padding-top: 9px;width: 27px;height: 23px;}
+.i_rich_level{margin-top: 0;line-height: 15px;text-align: center;padding-top: 9px;width: 27px;height: 30px;color: #fff !important;}
+.fans_con .caifu_con .i_rich_level{padding-left: 0px; padding-top: 0;}
+.fans_con .caifu_con .first .i_rich_level,.fans_con .caifu_con .second .i_rich_level,.fans_con .caifu_con .third .i_rich_level{margin-top: 17px;padding: 0; width: 27px; height: 30px;}
+.rc_con_info .rank,.rc_xy_info .rank,.rc_qmd_info .rank{width: 50px;text-indent: 6px;}
+.rc_week_star_info .rank{width: 50px;text-indent: 6px;}
+.fans_con .caifu_con li span.user_name{padding-left:10px;}
+
+.sus_tips{background: #d75fff;padding: 5px;color: #fff;position: absolute;z-index: 10000;top: 0;left: 0;border-radius: 5px;display: none;}
+.sus_tips i{font-style:inherit;}
+#dengji_con li .r_poll{padding-right: 30px;}
+.rank_con li span.rank_level_span{padding-left: 0;}
+.rank_con li span.rank_level_span_top{margin-left: 0;}
+.rc_con .rank_con li span strong{padding-left:3px;}
+.fans_con .rank_con li span strong{padding-left:0;}
+.fans_con .caifu_con li span strong{padding-left:5px;}
+/* 主播等级榜e */
+/* 房间魅力榜s */
+.rc_meili{float: right;}
+.rc_meili .pop_tips{left:81px;width:240px;}
+.rc_meili .rc_title{background:url(http://ossweb-img.qq.com/images/mgc/css_img/video_room/skin1/sprite2.png?v=3_8_8_2016_15_4_final_3) -135px -3px no-repeat;padding-left: 157px;}
+.rc_meili .icon_how{margin-top: 0;}
+.room_level{line-height: 15px;text-align:right;padding-top: 8px;width:51px;height:30px;color: #ffffff;position:relative;background: center center no-repeat;}
+.meili_con .room_level{padding-left: 0;}
+.meili_con .first .room_level,.meili_con .second .room_level,.meili_con .third .room_level{margin-top: 6px;padding: 0 0 0 0;}
+.meili_con .room_level p{margin: 0 17px;}
+.meili_con .first .room_level p,.meili_con .second .room_level p,.meili_con .third .room_level p{margin: 6px 15px;}
+.meili_con .first .room_level_2 p,.meili_con .second .room_level_2 p,.meili_con .third .room_level_2 p,.meili_con .first .room_level_3 p,.meili_con .second .room_level_3 p,.meili_con .third .room_level_3 p{line-height: 23px;}
+.meili_con .first .room_level_1 p,.meili_con .second .room_level_1 p,.meili_con .third .room_level_1 p{line-height: 21px;}
+.meili_con .room_level_1 p{line-height: 17px;}
+.meili_con .room_level_3 p{line-height: 19px;}
+.meili_con  .room_level{line-height: 18px;width:56px;}
+.rc_meili .rc_con_info .rank{width: 54px;text-indent: 6px;}
+.rc_meili .rc_con_info .name{width: 185px;text-indent: 29px;}
+.rc_meili .rc_con_info .score{width: 85px;text-align: right; margin-left: 17px;}
+.rc_meili .meili_con .first span strong,.rc_meili .meili_con .second span strong,.rc_meili .meili_con .third span strong{width: 75px;height: 40px;}
+.rc_meili .meili_con .first span strong label,.rc_meili .meili_con .second span strong label,.rc_meili .meili_con .third span strong label{max-width:75px;line-height:21px;}
+.rc_meili .meili_con .first span strong em{top:-1px;}
+.rc_meili .meili_con .first .room_name_span,.rc_meili .meili_con .second .room_name_span,.rc_meili .meili_con .third .room_name_span{padding-top: 13px;}
+.rc_meili li.first .rank_icon_nor,.rc_meili li.second .rank_icon_nor,.rc_meili li.third .rank_icon_nor{margin:12px 0 0 1px;}
+.rc_meili li.first .rank_icon_up,.rc_meili li.second .rank_icon_up,.rc_meili li.third .rank_icon_up{margin:12px 0 0 1px;}
+.rc_meili li.first .rank_icon_down,.rc_meili li.second .rank_icon_down,.rc_meili li.third .rank_icon_down{margin:12px 0 0 1px;}
+.rc_meili li.first .rank_times,.rc_meili li.second .rank_times,.rc_meili li.third .rank_times{margin:12px -10px 0 0;}
+
+.meili_con .explain{ font-style:italic;padding:1px 10px 5px 0;font-weight:bold;line-height: 24px;}
+.meili_con .tips2{ font-style:italic;padding:16px 10px 1px 0;font-weight:bold;}
+.meili_con .explain strong,.rank_con .tips2 strong{color:#ee5f38;font-weight:bold;font-style:italic;}
+/* 房间魅力榜e */
+.rank_con .rank_tab{width: auto;position:absolute;right:0;top:47px;}
+.rank_con .rank_tab li{width:53px;padding:0 0 0 1px;height:26px;border:0;line-height:26px;}
+.rank_con .rank_tab a{background:#f9f2fd;height:26px;display:block; text-align:center;color: #6a41c6;font-size: 14px;}
+.rank_con .rank_tab .current{color:#ed6039;background: #ede5ff;}
+.rank_con .bd{background:#ede5ff;padding:0 10px;position:relative;height: 625px;overflow: inherit;}
+.rc_qmd .bd{height: 627px;overflow: hidden;}
+.fans_con .rc_hyt .bd{height: 627px;}
+.rc_week_star .week_star_con {height:672px;}
+.rc_xy .xy_con {height:673px;}
+.rc_dengji .jf_con {height:673px;}
+.rc_meili .meili_con {height:673px;}
+.rc_jifen .jf_con {height:673px;}
+.rank_con .week_star_con ul{height:590px;}
+.rank_con .xy_con ul{height:630px;}
+.rank_con .jf_con ul{height:615px;}
+.rank_con .meili_con ul{height:545px;}
+.rank_con li{position:relative;float:left;font-size:12px;color:#606060;height:32px;padding:6px 0;width:100%;line-height:32px;border-bottom:1px solid #f7f6f7;}
+.rank_con li b{width:32px;height:32px;float:left;margin:0 40px 0 10px;font-size:28px; font-style:italic;font-weight:normal;color:#6a41c6; text-align:center;}
+.fans_con li b{margin-right: 48px;}
+.caifu_con li b{margin-right: 16px;}
+.rank_con li img{float:left;}
+.rank_con li a{color:#606060;display:block;}
+.rank_con li em{width:41px;height:17px; margin-bottom:4px; overflow:hidden;display:inline-block;background-position:-297px 0; text-indent:-999em; vertical-align:middle;cursor: pointer;}
+.fans_con li em{display: none;}
+.rank_con li span{/*width:105px;*/overflow:hidden;float: left;}
+.rc_caifu li span{max-width: 145px;}
+.xy_anchor_rank {max-width:138px;}
+/*.rank_con li i{width:65px;height:65px;position:absolute;left:60px;top:4px; background-position:0 -44px;}*/
+.rank_con li span strong{font-size:14px;color:#6a41c6;padding-left:3px;float:none;}
+.rank_con li .r_poll{float:right;}
+.rank_con li .r_polled{float:right;padding-right:20px;}
+.rank_con li.first .r_poll,.rank_con li.second .r_poll,.rank_con li.third .r_poll{padding-top:0;}
+.rank_con .first,.rank_con .second,.rank_con .third{height:65px;padding:4px 0;}
+.rank_con .first b,.rank_con .second b,.rank_con .third b{width:40px;height:65px;margin-right:28px;text-indent:-999em; background-position:-75px -43px;}
+.rank_con .first span,.rank_con .second span,.rank_con .third span{float:left;padding-left: 0px;line-height:20px;padding-top:15px;max-width: 150px;}
+.rank_con .second span,.rank_con .third span{line-height: 22px;}
+.rank_con .first em,.rank_con .second em,.rank_con .third em{margin-bottom:0;position: relative;top:-4px;}
+#anchor_xingyao_container .first span,#anchor_xingyao_container .second span,#anchor_xingyao_container .third span{max-width:75px;}
+.rank_con .first span strong,.rank_con .second span strong,.rank_con .third span strong{padding-left:0;float:none;font-weight:bold;display:block;width:auto;height:20px;}
+.rank_con .first span strong label,.rank_con .second span strong label,.rank_con .third span strong label{float:left;max-width:70px;height:20px;line-height:14px;overflow:hidden;text-overflow:ellipsis;white-space: nowrap;}
+.rank_con label {display:inline-block;max-width: 89px;text-overflow:ellipsis;overflow:hidden;vertical-align:middle;white-space:nowrap;margin-right: 0;}
+.rc_dengji label:hover,.rc_meili label:hover,.rc_xy label:hover,.rc_jifen label:hover{color:#ff7d13;cursor:pointer;}
+.fans_con .first span strong label,.fans_con .second span strong label,.fans_con .third span strong label,.fans_con label {max-width: 145px;}
+.rank_con li.first .r_poll,.rank_con li.second .r_poll,.rank_con li.third .r_poll{padding-top:12px;float:right;padding-left:0;max-width: 71px;text-overflow: ellipsis;}
+.rank_con .first i,.rank_con .second i,.rank_con .third i{background-position:0 -44px;width: 65px;height: 65px;display: block;position: absolute;left: 78px;}
+.rank_con .second b{ background-position:-125px -43px;}
+.rank_con .third b{ background-position:-175px -43px;}
+.rank_con .fourth b{ background-position:0 -111px;}
+.rank_con .fifth b{ background-position:-34px -111px;}
+.rank_con .sixth b{ background-position:-68px -111px;}
+.rank_con .seventh b{ background-position:-102px -111px;}
+.rank_con .eighth b{ background-position:-136px -111px;}
+.rank_con .ninth b{ background-position:-170px -111px;}
+.rank_con .tenth b{ background-position:-204px -111px;}
+.rank_con .eleventh b{ background-position:-238px -111px;}
+.rank_con .twelfth b{ background-position:-272px -111px;}
+.rank_con .first .i_anchor_level_1 i,.rank_con .second .i_anchor_level_1 i,.rank_con .third .i_anchor_level_1 i{height:20px;text-align:center;display:inline-block;width:15px;margin-left:-56px;font-style:inherit;background: none;}
+.rank_con .first .i_anchor_level_2 i,.rank_con .second .i_anchor_level_2 i,.rank_con .third .i_anchor_level_2 i{height:20px;text-align:center;display:inline-block;width:15px;line-height:16px;margin-left:-56px;font-style:inherit;background: none;}
+.rank_con .first .i_anchor_level_3 i,.rank_con .second .i_anchor_level_3 i,.rank_con .third .i_anchor_level_3 i{height:20px;text-align:center;display:inline-block;width:19px;margin-left:-56px;font-style:inherit;background: none;}
+.rank_con .first .i_anchor_level_4 i,.rank_con .second .i_anchor_level_4 i,.rank_con .third .i_anchor_level_4 i{height:20px;text-align:center;display:inline-block;width:21px;line-height: 18px;margin-left:-56px;font-style:inherit;background: none;}
+.rank_con .first .i_anchor_level_5 i,.rank_con .second .i_anchor_level_5 i,.rank_con .third .i_anchor_level_5 i{height:20px;text-align:center;display:inline-block;width:22px;line-height:18px;margin-left:-56px;font-style:inherit;background: none;}
+.rank_con .first .i_anchor_level_6 i,.rank_con .second .i_anchor_level_6 i,.rank_con .third .i_anchor_level_6 i{height:20px;text-align:center;display:inline-block;width:22px;line-height:18px;margin-left:-56px;font-style:inherit;background: none;}
+.rank_con #anchor_qinmidu_container .first .i_anchor_level i, .rank_con #anchor_qinmidu_container .second .i_anchor_level i, .rank_con #anchor_qinmidu_container .third .i_anchor_level i{line-height: 17px;}
+.rank_con .first .i_anchor_level_7 i,.rank_con .second .i_anchor_level_7 i,.rank_con .third .i_anchor_level_7 i{height:20px;text-align:center;display:inline-block;width:22px;line-height:18px;margin-left:-56px;font-style:inherit;background: none;}
+.rank_con .first .i_anchor_level_8 i,.rank_con .second .i_anchor_level_8 i,.rank_con .third .i_anchor_level_8 i{height:20px;text-align:center;display:inline-block;width:20px;line-height:18px;margin-left:-56px;font-style:inherit;background: none;}
+.rank_con .first .i_anchor_level_9 i,.rank_con .second .i_anchor_level_9 i,.rank_con .third .i_anchor_level_9 i{height:20px;text-align:center;display:inline-block;width:20px;line-height:18px;margin-left:-56px;font-style:inherit;background: none;}
+.rank_con .first .anchor_i_1 i,.rank_con .second .anchor_i_1 i,.rank_con .third .anchor_i_1 i{margin-left:21px;line-height:34px;font-style:inherit;}
+.rank_con .first .anchor_i_2 i,.rank_con .second .anchor_i_2 i,.rank_con .third .anchor_i_2 i{margin-left:21px;line-height:34px;font-style:inherit;}
+.rank_con .first .anchor_i_3 i,.rank_con .second .anchor_i_3 i,.rank_con .third .anchor_i_3 i{margin-left:25px;line-height:34px;font-style:inherit;}
+.rank_con .first .anchor_i_4 i,.rank_con .second .anchor_i_4 i,.rank_con .third .anchor_i_4 i{margin-left:26px;line-height:34px;font-style:inherit;}
+.rank_con .first .anchor_i_5 i,.rank_con .second .anchor_i_5 i,.rank_con .third .anchor_i_5 i{margin-left:27px;line-height:34px;font-style:inherit;}
+.rank_con .first .anchor_i_6 i,.rank_con .second .anchor_i_6 i,.rank_con .third .anchor_i_6 i{margin-left:27px;line-height:36px;font-style:inherit;}
+.rank_con .first .anchor_i_7 i,.rank_con .second .anchor_i_7 i,.rank_con .third .anchor_i_7 i{margin-left:30px;line-height:34px;font-style:inherit;}
+.rank_con .first .anchor_i_8 i,.rank_con .second .anchor_i_8 i,.rank_con .third .anchor_i_8 i{margin-left:30px;line-height:34px;font-style:inherit;}
+.rank_con .first .anchor_i_9 i,.rank_con .second .anchor_i_9 i,.rank_con .third .anchor_i_9 i{margin-left:30px;line-height:34px;font-style:inherit;}
+.rank_con .twelfth{border-bottom:0;}
+.rank_con li .source{margin-left:0; text-indent:5px;font-size:12px;height:auto;color:#606060;background:none;width:auto;max-width: 100px;height: 23px;line-height: 25px;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;}
+.rank_con li.first .source,.rank_con li.second .source,.rank_con li.third .source{ text-indent:0;}
+.rank_con .expect{padding:300px 0;font-size:24px; text-align:center;color:#c6c6c6;line-height:30px;font-weight:bold;height:100px;}
+.rank_con .tips{ font-style:italic;padding:2px 10px 15px 0;font-weight:bold;}
+.fans_con .tips{ font-style:italic;padding:17px 10px 15px 0;font-weight:bold;}
+.xy_con .tips{ font-style:italic;padding:9px 10px 15px 4px;font-weight:bold;}
+.rank_con .tips strong{color:#ee5f38;font-weight:bold;font-style:italic;}
+.caifu_con ul,.guizu_con ul,.wanjia_con ul{height:540px;}
+.aboutBtn {position:absolute;right:13px;bottom:15px;color:#ee5f38;font-size:14px;}
+.rc_con_info,.rc_week_star_info,.rc_xy_info,.rc_qmd_info,.rc_guild_info{background: #ede5ff;height: 30px;padding: 10px 0 0 10px;}
+/* 排行榜列名字背景 */
+.rc_qmd_info dl,.rc_guild_info dl,.rc_week_star_info dl,.rc_xy_info dl,.rc_con_info dl{height: 30px;padding: 3px 10px;margin:0 10px 0 0;background-image: url("http://ossweb-img.qq.com/images/mgc/css_img/common/button.png?v=3_8_8_2016_15_4_final_3");background-position: -419px -8px;}
+.rc_qmd_info dl,.rc_guild_info dl{background-position: -5px -243px;}
+.rc_qmd_info dt,.rc_guild_info dt,.rc_week_star_info dt,.rc_xy_info dt,.rc_con_info dt{float:left;font-size: 12px;color: #f00;padding: 0;line-height: 12px;}
+.rc_qmd .icon_card:hover{color:#ff7d13;cursor:pointer;}
+/* 排行榜列名字背景end */
+.rc_con_info .rank2{width:80px;}
+.rc_con_info .name{width: 220px;text-indent: 29px;}
+.rc_xy_info .name{width: 210px;text-indent: 29px;}
+.rc_week_star_info{padding-top: 11px; height: 20px;}
+.rc_week_star_info .name{width: 189px;text-indent: 33px;}
+.rc_week_star_info .level{width: 480px; text-align: center;}
+.rc_con_info .score{width: auto;text-indent:-14px; margin-left:11px;}
+.rc_caifu .rc_con_info .score{width: 85px;text-indent:13px; margin-left: 0;}
+.rc_xy_info .score{width: 68px;text-align: center; margin-left: 12px;}
+.rc_xy_info .score{text-indent: 6px;}
+.rc_week_star_info .score{width: 60px;text-align: center; margin-left: 0;text-indent: 6px;}
+.rc_dengji .score{text-indent: 30px;}
+.rc_con_info .zhubo{width: 230px;}
+.rc_con_info .wanjia{width:230px;}
+.rc_con_info .name2{width: 195px;text-indent: 0;}
+.rc_con_info .name3{width: 165px;}
+.rc_con_info .caifu{width: 87px; text-indent: 21px;}
+.rc_con_info .guizu{width: 26px;}
+.rc_con_info .paihang{width: 240px;}
+.rc_con_info .dengji{width: 30px;}
+.rc_con_info .yousheng{width: 190px;}
+.rc_con_info .houyuan{width: 105px;}
+.rc_guild_info .rank{width: 80px;text-indent: 5px;}
+.rc_guild_info .supportGroup{width: 190px;}
+.rc_guild_info .headName{width: 180px;text-indent: 15px;}
+.rc_guild_info .scoreName{width: 250px;text-indent: 15px;}
+.rc_qmd_info .score,.rc_guild_info .score,.rc_qmd_info .name,.rc_guild_info .name{width:300px; text-indent: 30px;}
+.rc_qmd_info .zqmd{width: 120px;text-indent: 55px;}
+.rc_guild_info .zqmd{width: 82px;text-indent: 20px;}
+.rc_yinhao,.rc_guizu{float:right;}
+.xy_con ul{display:none;}
+.rc_week_star .tips{height:14px; line-height: 14px; padding-bottom: 21px; font-style: inherit;color: #6a41c6; font-weight: bold; font-style: italic;padding-top: 0; padding-bottom: 18px;}
+.rc_jifen .tips,.rc_xy .tips{height:40px;}
+.rc_jifen li.first strong,.rc_jifen li.second strong,.rc_jifen li.third strong,.rc_xy li.first strong,.rc_xy li.second strong,.rc_xy li.third strong{padding-top: 9px;}
+/* rc_qmd 亲密度 重置 */
+.rc_qmd{clear:both;float:none;padding-top:40px;width:825px;position:relative;}
+.rc_qmd li .head_box{width:300px;float:left;position:relative;}
+.rc_qmd li .support_group_head_box{width:180px;float:left;position:relative;}
+.rc_qmd .support_group_head_box i{left:0;top:0;}
+.rc_qmd .head_box .img_cover{left:0;top:0;}
+.rc_tit_qnd{padding-left: 140px;}
+.rc_tit_qnd .pop_tips{left:65px;width:240px;}
+.rc_qmd li .icon_qmd{width:20px;float:left;padding:0;height:14px;margin-top:8px;background-position:-345px 0;}
+.rc_qmd li strong{float:left;font-size:14px;max-width:220px;overflow:hidden;height:30px;color:#6a41c6;padding-left:5px;text-overflow: ellipsis;}
+.clearfix_support_Group li strong{float:left;font-size:14px;max-width:180px;overflow:hidden;height:30px;color:#6a41c6;padding-left:10px;}
+.rc_qmd .clearfix_support_Group .clearfix li strong{float:left;font-size:14px;width:286px;overflow:hidden;height:30px;color:#6a41c6;padding-left:25px;font-weight:bold;}
+
+.rc_qmd .first strong,.rc_qmd .second strong,.rc_qmd .third strong{padding:15px 0 0 10px;font-weight:bold;font-size:14px;max-width:150px;overflow:hidden;height:30px;color:#6a41c6;left: 60px;}
+.rc_qmd .first .a_strong,.rc_qmd .second .a_strong,.rc_qmd .third .a_strong{left: 123px;}
+.fans_con .clearfix_support_Group .first strong,.fans_con .clearfix_support_Group .second strong,.fans_con .clearfix_support_Group .third strong{max-width:98px;text-overflow: ellipsis;}
+
+.rc_qmd .first .icon_qmd,.rc_qmd .second .icon_qmd,.rc_qmd .third .icon_qmd {margin-top:25px;}
+.rc_qmd li .count{width:auto;padding-left:50px;float:left;}
+.rc_qmd li.first .r_poll,.rc_qmd li.second .r_poll,.rc_qmd li.third .r_poll{padding-top:20px;}
+/* rc_youshen 优胜主播 */
+.rc_tit_youshen .pop_tips{left:100px;width:200px;}
+.rc_youshen li span strong{width:195px;}
+.list_page{ text-align:center;padding:10px 0 0 70px;height:25px;overflow:hidden;}
+.list_page a,.list_page span{float:left;margin:0 5px;height:25px;overflow:hidden;line-height:24px;}
+.list_page span{width:60px; text-align:center;}
+.list_page a{ text-indent:-999em;width:44px;}
+.list_page .homepage{background-position:-269px -35px;}
+.list_page .homepage:hover{background-position:-269px -65px;}
+.list_page .prev{width:25px;background-position:-321px -35px;}
+.list_page .prev:hover{width:25px;background-position:-321px -65px;}
+.list_page .next{width:25px;background-position:-350px -35px;}
+.list_page .next:hover{width:25px;background-position:-350px -65px;}
+.list_page .lastpage{background-position:-385px -35px;}
+.list_page .lastpage:hover{background-position:-385px -65px;}
+.list_page .un_homepage{background-position:-269px -96px;}
+.list_page .un_prev{width:25px;background-position:-321px -96px;}
+.list_page .un_next{width:25px;background-position:-350px -96px;}
+.list_page .un_lastpage{background-position:-385px -96px;}
+/* fans_con 粉丝榜重置 */
+/*.rc_guizu .icon_di{width:26px;height:26px;background-position:-374px 0;display:inline-block;margin-left:3px;}*/
+/*.fans_con .rank_con .first, .fans_con .rank_con .second,.fans_con .rank_con .third{  height: 32px; padding: 10px 0;}
+.fans_con .rank_con .first span,.fans_con .rank_con .second span,.fans_con .rank_con .third span{padding-top:5px;}
+.fans_con .rank_con .first span strong,.fans_con .rank_con .second span strong,.fans_con .rank_con .third span strong{display:inline;}
+.fans_con .rank_con .first b,.fans_con .rank_con .second b,.fans_con .rank_con .third b{width:32px;height:32px;margin-right:18px;}
+.fans_con .rank_con li.first .r_poll,.fans_con .rank_con li.second .r_poll,.fans_con .rank_con li.third .r_poll{padding-top:6px;}
+.fans_con .rank_con li.first .source,.fans_con .rank_con li.second .source,.fans_con .rank_con li.third .source{ text-indent:5px;}
+.fans_con .rank_con .first b{background-position:0 -111px;}
+.fans_con .rank_con .second b{background-position:-34px -111px;}
+.fans_con .rank_con .third b{background-position:-68px -111px;}*/
+.fans_con .first b,.fans_con .second b,.fans_con .third b{margin-right:40px;}
+.fans_con .qmd_con2 .first b,.fans_con .qmd_con2 .second b,.fans_con .qmd_con2 .third b{margin-right:28px;}
+.caifu_con .first b,.caifu_con .second b,.caifu_con .third b{margin-right:8px;}
+.rank_con li span strong{padding-left:25px;}
+.fans_con .rank_con .first span,.fans_con .rank_con .second span,.fans_con .rank_con .third span{padding:24px 0 0 0;overflow:hidden;}
+.fans_con .rank_con .qmd_con2 .first span,.fans_con .rank_con .qmd_con2 .second span,.fans_con .rank_con .qmd_con2 .third span{line-height:20px;padding-top:15px;max-width: 150px;}
+.fans_con .rank_con .qmd_con2 .first .r_poll,.fans_con .rank_con .qmd_con2 .second .r_poll,.fans_con .rank_con .qmd_con2 .third .r_poll{padding-top:20px;}
+#fans_guizu_container .first span,#fans_guizu_container .second span,#fans_guizu_container .third span{max-width:145px;}
+#fans_guizu_container li.first .r_poll,#fans_guizu_container li.second .r_poll,#fans_guizu_container li.third .r_poll{max-width:130px;}
+.fans_con .rank_con .clearfix_support_Group .first .support_group_strong,.fans_con .rank_con .clearfix_support_Group .second .support_group_strong,.fans_con .rank_con .clearfix_support_Group .third .support_group_strong{float: left;font-size: 14px;width: 185px;max-width: 185px;overflow: hidden;height: 30px;color: #6a41c6;text-align:left;font-weight: bold;text-overflow:ellipsis;}
+.fans_con .rank_con .clearfix_support_Group .support_group{float: left;font-size: 14px;width: 185px;overflow: hidden;height: 30px;color: #6a41c6;text-align:left;text-overflow: ellipsis;}
+.fans_con .rank_con .clearfix_support_Group .first span,.fans_con .rank_con .clearfix_support_Group .second span,.fans_con .rank_con .clearfix_support_Group .third span{padding: 20px 0 0 0;width: 74px;text-align: left;}
+.fans_con .rank_con .clearfix_support_Group li.first .r_poll,.fans_con .rank_con .clearfix_support_Group li.second .r_poll,.fans_con .rank_con .clearfix_support_Group li.third .r_poll{padding: 20px 30px 0 0;text-align: right;}
+.fans_con .rank_con .clearfix_support_Group span{padding: 0;width: 74px;text-align: left;padding-top: initial;}
+.fans_con .rc_hyt li .r_poll{padding: 0px 30px 0 0;text-align: right;}
+.rc_guizu li.first .r_poll,.rc_guizu li.second .r_poll,.rc_guizu li.third .r_poll{padding:24px 8px 0 0;}
+.rc_guizu .guizu_con .r_poll{padding-right:8px;}
+.rc_caifu li.first .r_poll,.rc_caifu li.second .r_poll,.rc_caifu li.third .r_poll,
+.rc_wanjia li.first .r_poll,.rc_wanjia li.second .r_poll,.rc_wanjia li.third .r_poll,
+.rank_icon,.rank_times{padding:24px 21px 0 0;}
+.rc_caifu li.first .r_poll,.rc_caifu li.second .r_poll,.rc_caifu li.third .r_poll{padding:24px 0 0 0;}
+.rc_guizu .r_poll ins{position:relative;top: -2px;margin:0 3px 0 25px;}
+.rc_caifu .rank2 {width: 99px;}
+.rc_caifu .name2 {width: 170px;}
+.rc_caifu .caifu_con b {margin-right:27px;width:40px;}
+ /* 梦工厂角色 */
+.pop_pre,.pop_next{background:url(http://ossweb-img.qq.com/images/mgc/css_img/common/pop_sprite.png?v=3_8_8_2016_15_4_final_3) no-repeat 0 0;}
+.pop_mgcjs{width: 480px;height: 90px;margin: 20px auto 0;border-bottom: 1px solid #d4d4d4;}
+.pop_m_title{color: #424242;font-size: 18px;font-weight: normal;}
+.pop_xwjs{width: 480px;margin: 20px auto 0;}
+.pop_precinct{width: 464px;height: 160px;margin:10px 0 0 8px;overflow: hidden;position: relative;}
+.pop_precinct_con{height: 160px;overflow: hidden;position: absolute;width: 1000%;left: 0;}
+.pop_precinct ul{width: 480px;float: left;}
+.pop_precinct li{width: 146px;float: left;margin: 0 12px 12px 0;}
+.pop_precinct li a{display: block;width: 146px;height: 39px;color: #424242;font-size: 14px;text-align: center;line-height: 39px;background-image: url("http://ossweb-img.qq.com/images/mgc/css_img/common/button.png?v=3_8_8_2016_15_4_final_3"); background-position: -6px -92px;}
+.pop_precinct li a:hover{color: #6c42c8;background-image: url("http://ossweb-img.qq.com/images/mgc/css_img/common/button.png?v=3_8_8_2016_15_4_final_3"); background-position: -166px -92px;}
+.pop_precinct li .current{border: 1px solid #6c42c8;color: #6c42c8;}
+.pop_page{height: 24px;margin-left: 200px;}
+.pop_pre,.pop_next{float:left;display:block;width:24px;height:24px;}
+.pop_pre{background-position:-63px -67px;}
+.pop_next{background-position:-88px -67px;}
+.pop_page span{float:left;display: block;width: 40px;height: 24px;line-height: 24px;text-align: center;color: #6a41c6;font-size: 14px;}
+.sus_tips_list{background: #d75fff;padding: 5px;color: #fff;position: absolute;z-index: 9999;top: 0;left: 0;border-radius: 5px;display: none;font-size:12px;width: 25px;}
+.first .rank_icon,.second .rank_icon,.third .rank_icon{margin: 24px 0 0 1px;}
+.rc_xy .xy_con .first .rank_icon,.rc_xy .xy_con .second .rank_icon,.rc_xy .xy_con .third .rank_icon{margin: 12px 0 0 1px;}
+.rc_xy .first .rank_times,.rc_xy .second .rank_times,.rc_xy .third .rank_times{margin:12px -10px 0 0;}
+.rc_qmd li.first .rank_icon_nor,.rc_qmd li.second .rank_icon_nor,.rc_qmd li.third .rank_icon_nor,.rc_qmd li.first .rank_icon_down,.rc_qmd li.second .rank_icon_down,.rc_qmd li.third .rank_icon_down,.rc_qmd li.first .rank_icon_up,.rc_qmd li.second .rank_icon_up,.rc_qmd li.third .rank_icon_up{margin:20px 0 0 1px;}
+.rc_qmd li.first .rank_times,.rc_qmd li.second .rank_times,.rc_qmd li.third .rank_times{margin:20px -10px 0 0;}
+.rc_jifen li.first .rank_icon_nor,.rc_jifen li.second .rank_icon_nor,.rc_jifen li.third .rank_icon_nor{margin:12px 0 0 1px;}
+.rc_jifen li.first .rank_icon_up,.rc_jifen li.second .rank_icon_up,.rc_jifen li.third .rank_icon_up{margin:12px 0 0 1px;}
+.rc_jifen li.first .rank_icon_down,.rc_jifen li.second .rank_icon_down,.rc_jifen li.third .rank_icon_down{margin:12px 0 0 1px;}
+.rc_jifen li.first .rank_times,.rc_jifen li.second .rank_times,.rc_jifen li.third .rank_times{margin:12px -10px 0 0;}
+.rc_guizu li.first .r_poll,.rc_guizu li.second .r_poll,.rc_guizu li.third .r_poll{max-width:130px;}
+.first .rank_times,.second .rank_times,.third .rank_times {margin:24px -10px 0 0;}
+.rank_icon{float:right !important;padding:0 !important;width:12px;height:20px;background: url(http://ossweb-img.qq.com/images/mgc/css_img/ranklist/rank_icon.png?v=3_8_8_2016_15_4_final_3) no-repeat;margin: 6px 0 0 1px;}
+.rank_icon_up {background-position:-46px -132px;}
+.rank_icon_up1 {background-position:-9px -132px;}
+.rank_icon_down {background-position:-26px -132px;}
+.rank_icon_nor {background-position:-66px -132px;}
+.rank_times {float:right !important;padding:0 !important;width: 38px;height:20px;font-size:12px !important;line-height:20px !important;margin:6px -10px 0 0;}
+.ranking_number {float:right !important;padding:0 !important;width: 38px;height:20px;font-size:12px !important;line-height:20px !important;margin:6px -10px 0 0;}
+.rank_up_color {color:#e83a37}
+.rank_up1_color {color:#fff55c}
+.rank_down_color {color:#67db6e}
+.rank_nor_color {color:#cccccc}
+.bg_none {width:385px;height:300px;margin:0 0 0 -3px;padding-top:150px;}
+.rc_qmd .bg_none {margin-left: 210px;}
+.bg_none .bg_none_img {display:block;width:190px;height:130px;background: url(http://ossweb-img.qq.com/images/mgc/css_img/ranklist/rank_icon_big.png?v=3_8_8_2016_15_4_final_3) no-repeat 5px 0;margin:0 auto;}
+.bg_none .bg_none_txt {display:block;width:100%;height:50px;font:24px/50px "microsoft yahei"; text-align:center;color:#aea0cd;font-weight:bold;margin-top:30px;}
+.m_anchor_name {padding-top:5px !important;}
+.m_anchor_name strong{height:40px !important;}
+.m_anchor_name strong label{float:none !important;}
+.m_anchor_name strong em{margin-left:0 !important;}
+
+/*
+ * 周星礼物榜
+ */
+.firstlist .title{position:relative; height:40px; margin: 35px 0 0 0; line-height: 40px; white-space: nowrap;}
+.firstlist .title span{text-indent: -9999px; display: inline-block; width: 125px; height: 30px; background: url(http://ossweb-img.qq.com/images/mgc/css_img/ranklist/ranklist_sprite.png?v=3_8_8_2016_15_4_final_3) no-repeat; background-position: -650px -38px;}
+.firstlist .title a{text-indent: -9999px; display: inline-block; float: none; width: 24px; height: 24px; background: url(http://ossweb-img.qq.com/images/mgc/css_img/ranklist/ranklist_sprite.png?v=3_8_8_2016_15_4_final_3) no-repeat; background-position: -269px 0;}
+.firstlist .title .right{display: inline-block; width: 668px; height: 30px; background: url(http://ossweb-img.qq.com/images/mgc/css_img/ranklist/ranklist_sprite.png?v=3_8_8_2016_15_4_final_3) no-repeat; background-position: -175px -266px;}
+.firstlist .center{white-space: nowrap;}
+.firstlist .title .pop_tips{display: none; padding: 5px 15px; line-height: 20px; background: #6a41c6; color: #fff; text-align: center; width: 240px; position: absolute; left: 20px; bottom: 50px; border-radius: 8px;}
+.firstlist .title .pop_tips1{ bottom: 42px;}
+.firstlist .title .pop_tips i{position: absolute; left: 115px; bottom: -9px; font-family: Verdana; font-size: 16px; color: #6a41c6;}
+.giftlist .title .pop_tips i{left: 140px;}
+
+.anchorlist {display:inline-block; width: 400px; height: 490px; vertical-align: top;}
+.anchorlist .anchortitle{width: 115px; height: 35px; line-height: 35px; background-color: #ede5ff; text-align: center; font-size:15px; font-weight: bold; color: #ed6039;}
+.anchorlist .anchorhead{height: 30px; line-height: 32px; background-color: #ede5ff;color: #ee6638; position: relative; z-index: 0;font-size: 12px;}
+.anchorhead i{display: block; position: absolute; top: 7px; left: 10px; width: 405px; height: 30px; z-index: -1; background-image: url("http://ossweb-img.qq.com/images/mgc/css_img/common/button.png?v=3_8_8_2016_15_4_final_3"); background-position: -419px -8px;}
+.anchorhead .giftname{margin-left: 25px;}
+.anchorhead .anchorname{margin-left: 44px;}
+.anchorhead .giftcount{margin-left: 160px;}
+.anchorhead .fanscount{margin-left: 191px;}
+.giftlist .anchorname{margin-left: 34px;}
+.giftlist .giftcount{margin-left: 162px;}
+.anchorlist .anchorlistcontainer{height: 375px; background-color: #ede5ff; position: relative;}
+.anchorlistcontainer li{width:390px; height: 75px; line-height: 75px; position: relative;  border-bottom: 1px solid #FFFFFF; margin-left: 5px;}
+.anchorlistcontainer li span{display: inline-block; vertical-align: top;}
+.anchorlistcontainer li .contribute_king{height: 27px;line-height: 27px;color: #ed6039;font-size: 14px;font-weight: bold;margin-left: 10px;}
+.anchorlistcontainer li img{display: inline-block; width: 64px; height: 64px;  vertical-align: middle;}
+.anchorlistcontainer li a{display: block; position: absolute; top: 9px; left: 4px; font-size: 12px; width: 46px;height: 26px;padding-top: 0;}
+.anchorlistcontainer li .anchor_con a{top: -2px;}
+.anchorlistcontainer li .fans_con a{top: -5px;left: 53px;}
+.anchorlistcontainer li .fans_con .waiting{top: 0px; left: 55px;font-size: 14px;}
+.anchorlistcontainer li .box{display: block; position: absolute; width: 65px; height: 65px; left: 78px; top: 6px; background: url(http://ossweb-img.qq.com/images/mgc/css_img/ranklist/ranklist_sprite.png?v=3_8_8_2016_15_4_final_3); background-position: 0 -44px; }
+.anchorlistcontainer li .box1{display: block; position: absolute; width: 35px; height: 30px; left: 69px; top: 40px; background: url(http://ossweb-img.qq.com/images/mgc/css_img/ranklist/ranklist_sprite.png?v=3_8_8_2016_15_4_final_3); background-position: -435px 0; }
+.anchorlistcontainer li .box2{width: 247px;height: 100%;}
+.anchorlistcontainer li .box3{height: 100%;}
+.anchorlistcontainer li .anchor_con,.anchorlistcontainer li .fans_con{width: 100%;height: 27px;line-height: 27px;position: relative;}
+.anchorlistcontainer li .online{display: block; position: absolute; width: 41px; height: 17px; left: 191px; top: 40px; margin-left: 0 !important;background: url(http://ossweb-img.qq.com/images/mgc/css_img/ranklist/ranklist_sprite.png?v=3_8_8_2016_15_4_final_3); background-position: -297px 0; }
+.anchorlistcontainer li .box2 .online{left: 197px; top: 53px; }
+.anchorlistcontainer li .gift{margin-left: 5px;}
+.giftlist .anchorlistcontainer li .box{left: 68px;}
+.giftlist li a{left: 135px;}
+.firstlist .anchorlistcontainer li .avatar{margin: -2px 0 0 5px;}
+.firstlist .anchorlistcontainer .i_anchor_level i{line-height: 33px;}
+.giftlist .anchorlistcontainer li .avatar{margin: -2px 0 0 -5px;}
+.anchorlistcontainer li .name{margin-left: 55px; max-width: 95px; line-height: 50px; font-size: 14px; font-weight: bold; color: #6a41c6;overflow: hidden; text-overflow: ellipsis;}
+.anchorlistcontainer li .anchor_con .name{line-height: 27px;}
+.anchorlistcontainer li .fans_con .name{margin-left: 40px;max-width: 84px;line-height: 27px;font-weight: normal;}
+.anchorlistcontainer li .weekStart_right{display:inline-block;float:right;margin-right: 21px;font-size: 12px;}
+.anchorlistcontainer li .first_right{float:right;margin-right:28px;}
+.anchorlistcontainer li .anchor_con .first_right,.anchorlistcontainer li .fans_con .first_right{margin-right:20px;}
+.anchorlistcontainer li .icon_card:hover{color:#ff7d13;cursor:pointer;}
+.anchorlistcontainer li .count{width: 60px; font-size: 12px; color: #606060;text-align: right;}
+.anchorlist .anchorfoot{height: 45px; line-height: 50px; background-color: #ede5ff; text-align: left; text-indent: 5px;font-size: 13px; font-style: italic;font-weight: bold;}
+.giftlist .anchorfoot{height: 40px; line-height: 35px;text-indent: 8px;}
+.anchorlistcontainer .rank_icon{margin: 28px 0 0 0; float:none !important;}
+.anchorlistcontainer .rank_times{margin: 28px 0 0 0; float:none !important;}
+.anchorlistcontainer .ranking_number{margin: 27px -100px 0 0; float:none !important;}
+
+.anchorlistcontainer .bg_1{display: none; position: absolute; top: 140px; left: 106px; width: 190px; height: 30px; background-image: url("http://ossweb-img.qq.com/images/mgc/css_img/ranklist/ranklist_sprite.png?v=3_8_8_2016_15_4_final_3"); background-position: -475px -221px;}
+.anchorlistcontainer .bg_2{display: block; position: absolute; top: 150px; left: 170px; width: 110px; height: 30px; background-image: url("http://ossweb-img.qq.com/images/mgc/css_img/ranklist/ranklist_sprite.png?v=3_8_8_2016_15_4_final_3"); background-position: -680px -221px;}
+.anchorlistcontainer .line_1{display: block; position: absolute; top: 304px; left: 5px; width: 390px; height: 75px; border-bottom: 1px solid #FFFFFF;}
+.anchorlistcontainer .line_2{display: block; position: absolute; top: 246px; left: 5px; width: 390px; height: 75px; border-bottom: 1px solid #FFFFFF;}
+
+.fanslist {margin-left: 20px;}
+.fanslist li .i_rich_level{  margin: 20px 0 0 5px;}
+.fanslist li .name{margin-left: 8px;margin-top: 13px;}
+.giftlist .li_4 .i_rich_level,.giftlist .li_5 .i_rich_level{  margin: 5px 0 0 5px;}
+.giftlist .li_4 .name,.giftlist .li_5 .name{margin-top: 0;}
+.fanslist li .zone{display: none; position: absolute; width: 100px; height: 20px; line-height: 20px; left: 198px; top: 35px; font-size:12px; color:#606060;}
+.giftlist .li_4 .zone,.giftlist .li_5 .zone{display: none; position: static; vertical-align: middle;}
+.fanslist li .count{margin-left: 9px;}
+
+.giftlist .title{height:50px; line-height: 50px;}
+.giftlist .title img{display: inline-block; width:50px; height:50px;}
+.giftlist .title span{text-indent: 0; line-height: 50px; height: 50px; width:auto; vertical-align: top; color: #6a41c6; font-size: 24px; background:url(about:blank);}
+.giftlist .title a{position: relative; top: -12px;}
+.giftlist .title .right{width: 686px; position: relative; top: -12px;}
+.right1 {width:680px !important;}
+.right2 {width:680px !important;}
+.right3 {width:680px !important;}
+
+.giftlist .li_4,.giftlist .li_5{height:46px; line-height: 46px;}
+.giftlist .li_4 a,.giftlist .li_5 a{position: static; display: inline-block;margin-top: 9px;margin-left: -8px;}
+.giftlist .li_4 .name,.giftlist .li_5 .name{margin-left: 5px; width: auto; max-width: 100px; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;font-weight: normal}
+.giftlist .li_4 .online,.giftlist .li_5 .online{margin-top: 0; vertical-align: middle;}
+.giftlist .li_4 .count,.giftlist .li_5 .count{position: absolute; left: 292px;}
+.giftlist .fanslist .li_4 .count,.giftlist .fanslist .li_5 .count{left: 281px;}
+
+.giftlist .li_4 .rank_icon,.giftlist .li_5 .rank_icon{position: absolute; left: 355px; top: -14px;}
+.giftlist .li_4 .rank_times ,.giftlist .li_5 .rank_times{position: absolute; left: 372px; top: -14px;}
+.giftlist .li_4 .ranking_number ,.giftlist .li_5 .ranking_number{position: absolute; left: 370px; top: -14px;}
+.giftlist .rank_1,.giftlist .rank_2,.giftlist .rank_3{margin: 5px 15px 0 15px;}
+.giftlist .rank_4,.giftlist .rank_5{margin: 0 15px 0 28px;}
+.giftlist .anchorlistcontainer{height: 325px;}
+.giftlist .anchorlist{height: 450px;}
+
+
+.nextweek {margin-top: 20px; width: 822px; height: 400px; background: url(http://ossweb-img.qq.com/images/mgc/css_img/ranklist/ranklist_sprite.png?v=3_8_8_2016_15_4_final_3); background-position: -71px -265px; }
+.nextweek .date {height: 32px; padding-top: 137px; line-height: 32px; text-align: center; color: #FFFFFF; font-size: 18px;}
+.nextweek .giftnotice { height: 120px; text-align: left; width: 585px; padding: 15px 0 0 128px; white-space: nowrap;}
+.giftnotice li{display: inline-block; width: 90px; height: 120px; text-align: center; margin-right: 34px;}
+.giftnotice img{width: 88px; height: 88px;}
+
+.rank_1,.rank_2,.rank_3{text-indent: -9999px; background: url(http://ossweb-img.qq.com/images/mgc/css_img/ranklist/ranklist_sprite.png?v=3_8_8_2016_15_4_final_3);}
+.rank_1{width:40px;height:65px; background-position: -75px -43px;}
+.rank_2{width:40px;height:65px; background-position: -125px -43px;}
+.rank_3{width:40px;height:65px; background-position: -175px -43px;}
+.rank_4,.rank_5{color: #6a41c6; font-size: 28px; font-style: italic; font-weight: normal;}
+.rank_4{width:32px;height:32px;}
+.rank_5{width:32px;height:32px;}
+.icon_card_img{cursor:pointer;}
+/*  |xGv00|d131c47589b4146733bf0f61b41028f0 */
+/*.clearfix:after{display: block;content: "";clear: both;}*/
+/*.clearfix{zoom:1;}*/
+/*周星榜*/
+.rc_week_star{width: 100%;}
+.star_level{width: 58px; height: 58px; position: relative; background-color: pink;}
+.rc_week_star .first .star_level, .rc_week_star .second .star_level, .rc_week_star .third .star_level{ padding-top: 0;}
+.star_level .level{position: absolute; right: 0; bottom: -10px; font-size: 10px; color: #fff; font-weight: bold; text-shadow: 0 0 5px #b73304;}
+.rc_week_star .first .room_info, .rc_week_star .second .room_info, .rc_week_star .third .room_info{padding-top: 10px;}
+.rc_week_star .week_star_con .first span strong, .rc_week_star .week_star_con .second span strong, .rc_week_star .week_star_con .third span strong{width: 200px; height:40px;}
+.rc_week_star .week_star_con .rank_level{cursor: default;font-size:14px; max-width: 100px; overflow:hidden;text-overflow:ellipsis;white-space: nowrap;}
+.rc_week_star .week_star_con .score{cursor: default; width: 76px;float: right;}
+.fansinfo{width: 100%; float: left;}
+.gongxianwang{margin-right: 30px;}
+.fans-nick{width:100px;}
+.fans-contribute{min-width: 200px;}
+.fl{float: left;}
+.fr{float: right;}
+#week_star_con .list_page{width: 248px; margin: 0 auto; padding-top: 0; padding-bottom: 16px; padding-left: 0;}
+#anchor_week_star_container .bg_none{width: 100%;}
+.rc_week_star_info dl{background: url(http://ossweb-img.qq.com/images/mgc/css_img/video_room/star_week.png?v=3_8_8_2016_15_4_final_3);
+    background-position: -11px -812px;}
+.bg_none .bg_nodata_img { display: block; width: 177px; height: 158px; background: url(http://ossweb-img.qq.com/images/mgc/css_img/video_room/star_week.png?v=3_8_8_2016_15_4_final_3) no-repeat 5px 0; background-position: -754px -10px; margin: 0 auto;}
+#anchor_week_star_container .star_level{width:35px;background: url(http://ossweb-img.qq.com/images/mgc/css_img/video_room/star_week.png?v=3_8_8_2016_15_4_final_3); margin-left: 15px;}
+#anchor_week_star_container .star_level_1{height: 25px; background-position: -19px -684px; margin-top: 0px; }
+#anchor_week_star_container .star_level_2{height: 25px; background-position: -53px -684px; margin-top: 0; }
+#anchor_week_star_container .star_level_3{height: 25px; background-position: -89px -684px; margin-top: 0; }
+#anchor_week_star_container .star_level_4{height: 27px; background-position: -122px -683px; margin-top: -3px; margin-left: 13px;}
+#anchor_week_star_container .star_level_5{height: 27px; background-position: -159px -681px; margin-top: -2px;}
+
+#anchor_week_star_container .first .star_level_1, #anchor_week_star_container .first .star_level_2, #anchor_week_star_container .first .star_level_3,#anchor_week_star_container .first .star_level_4,#anchor_week_star_container .first .star_level_5{margin-top: 0;}
+#anchor_week_star_container .second .star_level_1, #anchor_week_star_container .second .star_level_2, #anchor_week_star_container .second .star_level_3,#anchor_week_star_container .second .star_level_4,#anchor_week_star_container .second .star_level_5,#anchor_week_star_container .third .star_level_1, #anchor_week_star_container .third .star_level_2, #anchor_week_star_container .third .star_level_3,#anchor_week_star_container .third .star_level_4,#anchor_week_star_container .third .star_level_5{margin-top: 9px;}
+#anchor_week_star_container .first .level,#anchor_week_star_container .second .level,#anchor_week_star_container .third .level{bottom: 0px;}
+#anchor_week_star_container .first .star_level, #anchor_week_star_container .second .star_level, #anchor_week_star_container .third .star_level{margin-left: 8px;}
+#anchor_week_star_container .anchor-name{ width: 372px; display: block; float: left;}
+#anchor_week_star_container span{color: #6a41c6;font-size: 14px;}
+.fansinfo{position: absolute; top:30px; left: 0;}
+.fansinfo .gongxianwang{background: url(http://ossweb-img.qq.com/images/mgc/css_img/video_room/star_week.png?v=3_8_8_2016_15_4_final_3);
+    background-position: -662px -10px; width: 49px; height: 24px;position: absolute; top: 8px; left: 143px;}
+.fansinfo .fans-nick{ position: absolute; top: 0; left: 200px;}
+.fansinfo .fans-contribute{cursor: default; position: absolute; top: 0; left: 450px;}
+.fansinfo .contribute-num{cursor: default; position: absolute; top: 0; left: auto; right: 0}
+#anchor_week_star_container .score,#anchor_week_star_container .contribute-num{color: #000; text-align: right; margin-right: 16px;}
+#anchor_week_star_container .icon_card:hover{color: #ff7d13; cursor: pointer;}
+.star_level .level{width: 8px; height:10px;background: url(http://ossweb-img.qq.com/images/mgc/css_img/video_room/star_week.png?v=3_8_8_2016_15_4_final_3); bottom: 0;}
+.star_level .level0{background-position: -350px -410px;}
+.star_level .level1{background-position: -375px -410px;}
+.star_level .level2{background-position: -398px -410px;}
+.star_level .level3{background-position: -422px -410px;}
+.star_level .level4{background-position: -446px -410px;}
+.star_level .level5{background-position: -470px -410px;}
+.star_level .level6{background-position: -494px -410px;}
+.star_level .level7{background-position: -517px -410px;}
+.star_level .level8{background-position: -542px -410px;}
+.star_level .level9{background-position: -566px -410px;}
+.star_level .first.level0{background-position: -348px -410px;}
+.star_level .first.level1{background-position: -372px -410px;}
+.star_level .first.level2{background-position: -397px -410px;}
+.star_level .first.level3{background-position: -421px -410px;}
+.star_level .first.level4{background-position: -445px -410px;}
+.star_level .first.level5{background-position: -469px -410px;}
+.star_level .first.level6{background-position: -493px -410px;}
+.star_level .first.level7{background-position: -516px -410px;}
+.star_level .first.level8{background-position: -541px -410px;}
+.star_level .first.level9{background-position: -565px -410px;}
+.two-num{width: 16px; height: 10px; position: absolute; right: 0; bottom: 0;}
+.two-num .level {
+    position: relative;
+    float: left;
+    bottom: 0;
+}
+.rc_week_star_info dl{padding: 3px 15px 3px 8px;}
+.rc_week_star_info .score{float: right; text-align: right}
+#anchor_week_star_container .icon_card{max-width: 140px;}
+#anchor_week_star_container .first em, #anchor_week_star_container .second em, #anchor_week_star_container .third em{left: 8px;}
+#anchor_week_star_container .fans-nick{cursor: default;overflow: hidden; height: 20px; text-overflow: ellipsis; white-space: nowrap; padding-top:5px; }
+#anchor_week_star_container li{padding: 7px 0;}
+/*#anchor_week_star_container .first span, #anchor_week_star_container.second span, #anchor_week_star_container .third span{padding-top: 5px;}*/
+#anchor_week_star_container .second .icon_card, #anchor_week_star_container .third .icon_card{padding-top: 21px;}
+/*#anchor_week_star_container .first span{padding-top: 5px;}*/
+#anchor_week_star_container .first{padding: 3px 0;}
+#anchor_week_star_container .second, #anchor_week_star_container .third{padding: 4px 0;}
+#anchor_week_star_container .second .rank_level, #anchor_week_star_container .third .rank_level,#anchor_week_star_container .second .score, #anchor_week_star_container .third .score,#anchor_week_star_container .second .icon_card, #anchor_week_star_container .third .icon_card{padding-top:0;line-height: 65px;}
+#anchor_week_star_container .first span, #anchor_week_star_container.second span, #anchor_week_star_container .third span{padding-top: 9px;}
+#anchor_week_star_container .second .star_level, #anchor_week_star_container .third .star_level{padding-top: 0; margin-top: 16px;}
+#anchor_week_star_container .first .star_level{padding-top: 0;}
+.rc_week_star .rc_title{margin-bottom: 1px;}
+.rc_week_star .rank_tab{top: 43px;}
+#anchor_week_star_container .bg_none{padding-top: 191px;}
+#anchor_week_star_container .anchor-name{width: 369px;}
+
+#anchor_week_star_container .first .anchor-name,#anchor_week_star_container .second .anchor-name,#anchor_week_star_container .third .anchor-name{width: 372px;}
+
+#anchor_week_star_container .star_level_1 .level{right: 7px;}
+#anchor_week_star_container .star_level_2 .level{right: 3px;}
+#anchor_week_star_container .star_level_3 .level{right: 3px;}
+#anchor_week_star_container .star_level_4 .level{right: 1px;}
+#anchor_week_star_container .star_level_5 .level{right: 1px;}
+
+#anchor_week_star_container .star_level_1 .two-num{right: 7px;}
+#anchor_week_star_container .star_level_2 .two-num{right: 5px;}
+#anchor_week_star_container .star_level_3 .two-num{right: 4px;}
+#anchor_week_star_container .star_level_4 .two-num{right: 1px;}
+#anchor_week_star_container .star_level_5 .two-num{right: 1px;}
+#anchor_week_star_container .two-num .level{right: 0;}
+.rc_con:nth-child(2) .bg_none{margin: 0 auto;}
+#week_star_con .tips{display: none;}
+#anchor_week_star_container .second .room_info, #anchor_week_star_container .third .room_info, #anchor_week_star_container .second .room_info strong, #anchor_week_star_container .third .room_info strong, #anchor_week_star_container .second .room_info strong .icon_card, #anchor_week_star_container .third .room_info strong .icon_card{height: 65px; padding-top: 0;}
+#anchor_week_star_container .second .room_info strong em, #anchor_week_star_container .third .room_info strong em{margin-top: 25px;}
+#anchor_week_star_container .room_name_span{max-width: 200px;}
+.rc_tit_week_star .pop_tips{left: 64px;}

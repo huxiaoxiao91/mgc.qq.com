@@ -1,0 +1,56 @@
+/**/
+.layer-anchor-new{width:100%;height: 294px;background:url(http://ossweb-img.qq.com/images/mgc/css_img/video_room/skin1/sprite.png?v=3_8_8_2016_15_4_final_3) no-repeat -336px -20px;margin-bottom:3px;}
+/*主播头像*/
+.layer-anchor-new .si_face .si_face_links{display:block;position:relative;width:82px;height:82px;margin:-3px 0 0 21px;}
+.layer-anchor-new .si_face .si_face_links img{width:80px;height:80px;border-radius:50%;-webkit-border-radius:50%;-moz-border-radius:50%;-ms-border-radius:50%;}
+.layer-anchor-new .si_face .si_face_links i{width:90px;height:86px;background: url() no-repeat -292px -208px;display:inline-block;position:absolute;top:-1px;left:0;cursor:pointer;}
+.layer-anchor-new .si_face .si_face_links i.skin{width:95px;height:92px;background: url(http://ossweb-img.qq.com/images/mgc/css_img/video_room/skin1/sprite.png?v=3_8_8_2016_15_4_final_3) no-repeat -958px -685px;display: inline-block;  position: absolute;top:-7px;left:-5px;cursor:pointer;}
+/*房间号-房间名称*/
+.layer-anchor-new .si_room{overflow:hidden;white-space:nowrap;width:165px;height:33px;line-height:24px;font-size:14px;padding:7px 0 0 65px;font-weight: bold;color:#fff;}
+.layer-anchor-new .si_room span,.layer-anchor-new .si_room strong{left:0px;top:0px;font-size:15px;font-weight: bold;position:relative;display:inline-block;max-width:100px;height:24px;line-height: 26px;overflow: hidden;}
+.layer-anchor-new .si_room strong{font-size:14px;white-space:nowrap;text-overflow:ellipsis;}
+.layer-anchor-new .sf_details{margin:-82px 0 0 115px;height:99px;width:207px;}
+.layer-anchor-new .sf_details p.sf_nic{font-size:14px;width:135px;height:33px;display:inline-block;overflow:hidden;text-overflow:ellipsis;white-space: nowrap;}
+.layer-anchor-new .sf_details p.sf_nic strong{color:#fff;font-weight: bold;font-size:15px;}
+.layer-anchor-new .sf_details p.sf_flower,.layer-anchor-new .sf_details p.sf_heart{width:120px;margin:0 0 5px 0;height:24px;text-indent: 19px;line-height:16px;color: #fff;cursor: pointer;font-size:14px;}
+.layer-anchor-new .sr_details p{padding:5px 0 5px 10px;}
+/*房子图案区域tips*/
+.layer-anchor-new .littleCaveolaeroom{position:absolute;top:6px;left:21px;width:29px;height:25px;cursor: pointer;}
+.layer-anchor-new .littleCaveolaeroom i{display:none;background:#d75fff;color:#fefefe;font-size:12px;position:absolute;width:165px;border-radius:3px;font-style:normal;line-height:25px;padding:3px 0 0 6px;top:-55px;left:50px;top:10px;}
+/*星耀和主播人气*/
+.layer-anchor-new .sf_details p.sf_flower i,.layer-anchor-new .sf_details p.sf_heart i{display:none;background:#d75fff;color:#fefefe;font-size:12px;position:absolute;width:165px;border-radius:3px;font-style:normal;line-height:25px;padding:3px 0 0 6px;text-indent: 0;top:-55px;left:150px;top:198px;}
+.layer-anchor-new .si_face{height:85px;width:112px;padding-top:24px;padding-left:0;position:relative;}
+.layer-anchor-new .si_face #anchorCard{position:absolute;width:28px;height:16px;left:241px;top:57px;background: url(http://ossweb-img.qq.com/images/mgc/css_img/video_room/skin1/left_banner.png?v=3_8_8_2016_15_4_final_3) no-repeat -19px -167px;cursor: pointer;}
+.layer-anchor-new .si_face #anchorCard:hover{position:absolute;width:28px;height:16px;left:241px;top:57px;background:url(http://ossweb-img.qq.com/images/mgc/css_img/video_room/skin1/left_banner.png?v=3_8_8_2016_15_4_final_3) no-repeat -19px -245px;}
+.layer-anchor-new .si_face .si_fk{position:absolute;width:24px;height:21px;left:244px;top:86px;background: url(http://ossweb-img.qq.com/images/mgc/css_img/video_room/skin1/left_banner.png?v=3_8_8_2016_15_4_final_3) no-repeat -21px -194px;cursor:pointer;}
+.layer-anchor-new .si_face .si_fk:hover{position:absolute;width:24px;height:21px;left:244px;top:86px;background:url(http://ossweb-img.qq.com/images/mgc/css_img/video_room/skin1/left_banner.png?v=3_8_8_2016_15_4_final_3) no-repeat -21px -272px;}
+/*关注区域*/
+.layer-anchor-new .attention{height:31px;line-height:31px;width:123px;text-align:center;margin:-1px 0 0px 101px;background: url(http://ossweb-img.qq.com/images/mgc/css_img/video_room/live_info_c.png?v=3_8_8_2016_15_4_final_3) no-repeat -302px -573px;}
+.layer-anchor-new .attention:hover{height:31px;line-height:31px;width:123px;text-align:center;margin:-1px 0 0px 101px;background: url(http://ossweb-img.qq.com/images/mgc/css_img/video_room/live_info_c.png?v=3_8_8_2016_15_4_final_3) no-repeat -462px -573px;}
+.layer-anchor-new .attention a{display:inline-block;width:100%;height:100%;color:#fff;font-weight:bold;font-size:15px;}
+.layer-anchor-new .attention .sus_tips_{display:none;background:#d75fff;color:#fefefe;font-size:12px;position:absolute;width:180px;border-radius:3px;font-style:normal;line-height:25px;padding:0;top:-55px;left:21px;top:198px;}
+/*主播印象*/
+.layer-anchor-new .sl_info{position:relative;}
+.layer-anchor-new .sl_info .si_label{background: url() no-repeat -6px -581px;width:186px;padding:0 44px;height:23px;margin:11px auto 40px;line-height:22px;}
+.layer-anchor-new .sl_info .si_label span{color:#fff;font-size:12px;width:92px;display:inline-block;text-align:center;cursor:pointer;}
+.layer-anchor-new .sl_info .si_label i{display:none;background:#d75fff;color:#fefefe;font-size:12px;position:absolute;width:165px;border-radius:3px;font-style:normal;padding:3px 0 0 6px;top:-55px;left:73px;height:25px;top:198px;}
+/*粉丝数*/
+.layer-anchor-new .si_fans_num{background: url() no-repeat -11px -118px;margin:5px 0 0 102px;text-indent:0px;font-size:14px;height:30px;line-height:30px;color:#fff;}
+.layer-anchor-new .si_fans_num span{background: url(http://ossweb-img.qq.com/images/mgc/css_img/video_room/skin1/left_banner.png?v=3_8_8_2016_15_4_final_3) no-repeat -11px -118px;display:inline-block;height:30px;width:33px;vertical-align: middle;}
+/*主播等级*/
+.pd_progress {width:140px;height:7px;background:url(http://ossweb-img.qq.com/images/mgc/css_img/common/progress_a.png?v=3_8_8_2016_15_4_final_3) repeat-x;position:absolute;top:9px;left:84px;border:1px solid #ababab;border-radius:6px;overflow:hidden;behavior:url(PIE.htc);}
+.pd_progress span {display: block;position: absolute;top: -1px;left: -1px;background: url(http://ossweb-img.qq.com/images/mgc/css_img/common/progress_b.png?v=3_8_8_2016_15_4_final_3) repeat-x;height: 7px;width: 50%;border:1px solid #ff9000;border-radius:6px;behavior: url(PIE.htc);}
+.layer-anchor-new .anchor_level{width:250px;z-index:3;line-height:12px;margin-left:5px;position:relative;cursor:pointer;}
+.anchor_level p{top:3px;left: 70px;display:inline;width:175px;color:#d9bd3c;}
+.layer-anchor-new .anchor_level .pd_progress i{width:175px;text-align:center;line-height:8px;position:relative;top:-1px;height:9px;color:#932700;}
+.layer-anchor-new .anchor_level .pd_progress #max_i{line-height:4px;}
+#anchor_level_tips strong{line-height:17px;display:none;background: #d75fff;color: #fefefe;font-size: 12px;font-weight:inherit;position: absolute;width:270px;height:auto;z-index:2;border-radius: 3px;font-style: normal;padding:3px 6px 6px;top: 20px;left:180px;text-align:left;}
+#anchor_level_tips strong i{font-style:inherit;color:#94fe8b;}
+#anchor_level_tips strong b{font-weight:100;}
+#anchor_level_tips strong em{font-style:inherit;}
+.anchor_level #anchor_level_temp{margin:-7px 0 0 18px;display:none;}
+.anchor_level #anchor_level_temp i{float:left;padding-left:27px;margin-top:0;font-style: inherit;}
+#is_bottleneck,#i_is_bottleneck,#pd_progress,#max_span,#max_i,#spanW0,#anchor_Per,#anchor_exp,#exp_max,#exp_common{display:none;}
+#is_bottleneck{width:175px;}
+#is_bottleneck span{color:#fff;}
+#is_bottleneck img{display:inline-block;position:relative;top:-8px;vertical-align:top;width:28px;height:28px;}

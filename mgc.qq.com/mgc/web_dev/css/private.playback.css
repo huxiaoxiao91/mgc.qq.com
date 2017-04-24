@@ -1,0 +1,49 @@
+@charset "UTF-8";
+/*
+*page show style
+*craete by hxx
+*todo:show-style
+*/
+.show_con .show-playback.room-li-s li{
+	height: 138px;
+}
+#banner-pic{
+  width: 100%;
+  height: 111px;
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.room-li-s .room-li-a .room-img .icon-playback {
+  display: inline-block;
+  width: 55px;
+  line-height: 20px;
+  height: 20px;
+  _line-height: 20px;
+  font-size: 12px;
+  text-align: center;
+  background: #6a41c6;
+  color: #fff;
+  font-weight: normal;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background: url(http://ossweb-img.qq.com/images/mgc/css_img/fans_guild/group_icon.png?v=3_8_8_2016_15_4_final_3) no-repeat -936px -78px;
+}
+.show_con .playback-list.room-li-s li{
+  height: 138px;
+}
+#iframeBox{
+  border: 3px solid #6c42c8;
+}
+#iframeBox .playback-title{
+  height: 40px;
+  border-bottom: 1px solid #b5b5b5;
+  background: #f3f3f3;
+  color: #424242;
+  font-size: 18px;
+  line-height: 40px;
+  text-align: center;
+  font-weight: bold;
+}

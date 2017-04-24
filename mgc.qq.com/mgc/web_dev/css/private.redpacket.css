@@ -1,0 +1,39 @@
+/*红包样式*/
+#red_left,#red_right{/* height: 100%; */width: 1px;position: relative;}
+#red_left{float: left;}
+#red_right{float: right;/* margin-right: 61px; */}
+.red_packet{width: 101px;margin: 14px auto 0 auto;position:relative;z-index: 3;color: #f4e000;font-weight: bold;}
+#red_right .red_packet{left: -112px;}
+#red_left > .red_packet + .red_packet + .red_packet + .red_packet{left: 117px;top: -208px;}
+#red_bottom{width: 290px;height: 1px;top: 357px;left: 50%;margin-left: -145px;position: absolute;}
+.red_small{height: 58px;width: 43px;top: -60px;margin: 0 0 0 40px;float: left;border-radius: 2px;position: relative;z-index: 3;}
+.red_small a{cursor: pointer;display: block;height: 58px;width: 43px;background: url(http://ossweb-img.qq.com/images/mgc/css_img/video_room/live_sprite_c.png?v=3_8_8_2016_15_4_final_3);background-position:-12px -481px;}
+.red_small a:hover{background-position: -82px -481px;}
+.red_packet .rp_sum{height: 20px;width: 50px;position: absolute;top: -2px;left: 32px;text-align: center;}
+.red_packet .rp_red{height: 90px;width: 115px;position: relative;background: url(http://ossweb-img.qq.com/images/mgc/css_img/video_room/live_sprite_c.png?v=3_8_8_2016_15_4_final_3);background-position: -1086px -411px;}
+.red_packet .rp_red:hover{background-position: -514px -384px;}
+.red_packet .rp_red_x52{height: 90px;width: 115px;position: relative;background: url(http://ossweb-img.qq.com/images/mgc/css_img/video_room/live_sprite_c.png?v=3_8_8_2016_15_4_final_3);background-position: -139px -551px;}
+.red_packet .rp_red_x52:hover{background-position: -7px -551px;}
+.red_packet .rp_name{height: 20px;width: 117px;text-align: center;position: absolute;bottom: 0;}
+.red_packet .rp_name .rp-name-l {display: inline-block;max-width: 65px;height: 20px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+.red_packet .rp_name .rp-name-r {display: inline-block;overflow: hidden;}
+#pop_red_packet{height: 560px;width: 620px;}
+#rp_record_container{}
+.rp_info{height: 130px;border-bottom: 1px solid #b5b5b5;color: #424242;font-size: 14px;text-align: left;margin-left: 50px;width: 520px;}
+.rp_info .rp_name,.rp_info .rp_sum,.rp_info .rp_count,.rp_info .rp_more{position: relative;font-size: 15px;display: block;}
+.rp_info .rp_name{font-size: 16px;top: 25px;}
+.rp_info .rp_name b{color: #6a41c6;}
+.rp_info .rp_sum{top: 18px;}
+.rp_info .rp_count{top: 4px;}
+.rp_info .rp_more{color: #6a41c6;text-decoration: underline;float: right;cursor: pointer;}
+.rp_record{height: 354px;border-bottom: 1px solid #b5b5b5;color: #424242;font-size: 14px;text-align: center;margin-left: 50px;width: 520px;}
+.rp_record p{font-size: 16px;height: 40px;line-height: 40px;font-weight: bold;}
+.rp_record .record_title,.rp_record .record_title li,.rp_record .one_record,.rp_record .one_record li{float: left;height: 40px; line-height: 40px;}
+.rp_record .record_title{width: 520px;height: 37px; line-height: 37px;background: url(http://ossweb-img.qq.com/images/mgc/css_img/fans_guild/group_icon.png?v=3_8_8_2016_15_4_final_3); background-position: -5px -261px;}
+.rp_record .record_title li{width: 259px;color: #fff;border-right: 1px solid #fff;}
+#rp_record_list{height: 247px;width: 520px;}
+.rp_record .one_record{width: 520px;border-bottom: 1px solid #dcd4e5;}
+.rp_record .one_record li{width: 260px;background-color: #e8e8e8;}
+.rp_record span{text-align: left;color: #ee5f38;display: block;width: 520px;height: 38px;line-height: 38px;}
+.rp_close_btn{position: relative;top: 15px;left: 260px;display: block;width: 125px;height: 35px;vertical-align: middle;text-align: center;line-height: 35px;font-size: 15px;color: #FFFFFF;background: #6c42c8;}
+.rp_close_btn:hover{background:#592dba}

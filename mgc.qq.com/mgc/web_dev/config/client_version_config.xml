@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="gb2312" standalone="yes" ?>
+<config>
+  <client>
+    <versions>
+      <web version="version:387.2.23.2" giftconfigurl="http://ossweb-img.qq.com/images/mgc/css_img/config/gift.xml" iconpath="http://ossweb-img.qq.com/images/mgc/css_img/flash/gift/gift_" />
+	  <gift version="version:388.2.27.1" giftconfigurl="http://ossweb-img.qq.com/images/mgc/css_img/config/gift.xml" imgdomain="" />
+	  <player version="version:383.2.16.1" />
+	  <surpriseTreasure version="version:388.2.27.1" />
+    </versions>
+  </client>
+</config>

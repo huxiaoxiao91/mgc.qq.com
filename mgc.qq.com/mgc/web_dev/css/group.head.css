@@ -1,0 +1,66 @@
+/*团长专属*/
+
+.groupname{width: 758px;height: 124px;margin-left:19px;}
+.groupname .title{display: inline-block; vertical-align: top; width:39px;height:124px; background-color: #f3f3f3; border-radius:8px 0 0 8px;}
+.groupname .title span{display:block; width: 15px; height:auto; white-space: normal; font-size:15px; color: #6a41c6; font-weight: bold; margin: 0 0 0 12px;}
+.groupname .content{display: inline-block; position: relative; vertical-align: top; margin:0 0 0 5px; padding:0 0 0 0; text-align:left; width:714px;height: 124px; min-height: 124px; background-color: #f3f3f3;border-radius:0 8px 8px 0;}
+.groupname .notice{position:absolute; top:20px; left:60px; font-size: 12px; color: #ee5f38;}
+.groupname .head{position:absolute; top:75px; left:60px; font-size: 15px; color: #424242; }
+.groupname .box{display:block; position:absolute; width: 285px;height: 48px; top: 66px; left:160px; background: url(http://ossweb-img.qq.com/images/mgc/css_img/fans_guild/group_icon.png?v=3_8_8_2016_15_4_final_3); background-position: -366px -213px;}
+.groupname .name{position:absolute; width: 240px;height: 30px; top: 71px; left:180px; font-family: "microsoft yahei"; font-size: 15px; color: #9b9b9b; line-height: 30px; border: 0; background-color: transparent;}
+
+.anchor{width: 758px;height: 124px; margin-left:19px;margin-top:8px;}
+.anchor .title{display: inline-block; vertical-align: top; width: 39px;height: 124px; background-color: #f3f3f3; border-radius:8px 0 0 8px;}
+.anchor .title span{display:block; width: 15px; height: auto; white-space: normal; font-size:15px; color: #6a41c6; font-weight: bold; margin: 0 0 0 12px;}
+.anchor .content{display: inline-block; position: relative; vertical-align: top; margin: 0 0 0 5px; padding:0 0 0 0; text-align:left; width:714px;height: 124px; min-height: 124px; background-color: #f3f3f3;border-radius:0 8px 8px 0;}
+.anchor .notice{position:absolute; top:13px; left:60px; font-size: 12px; color: #ee5f38;}
+.anchor .head{position:absolute; top:75px; left:60px; font-size: 15px; color: #424242; }
+.anchor .box{display:block; position:absolute; width: 285px;height: 48px; top: 66px; left:160px; background: url(http://ossweb-img.qq.com/images/mgc/css_img/fans_guild/group_icon.png?v=3_8_8_2016_15_4_final_3); background-position: -366px -213px;}
+.anchor .name{position:absolute; width: 240px;height: 30px; top: 72px; left:180px; font-size: 15px; color: #424242; line-height: 30px; border: 0; background-color: transparent;}
+.anchor .list{display:block; position:absolute; width: 30px; height: 30px; top: 70px; left:402px; cursor: pointer;background: url(http://ossweb-img.qq.com/images/mgc/css_img/fans_guild/group_icon.png?v=3_8_8_2016_15_4_final_3); background-position: -618px -122px;}
+
+
+.position{width: 758px;height: 124px; margin-left:19px;margin-top:8px;}
+.position .title{display: inline-block; vertical-align: top; width: 39px;height: 124px; background-color: #f3f3f3;border-radius:8px 0 0 8px; }
+.position .title span{display:block; width: 15px; height:auto; white-space: normal; font-size: 15px; color: #6a41c6; font-weight: bold; margin: 0 0 0 12px;}
+.position .content{display: inline-block; position: relative; vertical-align: top; margin:0 0 0 5px; padding:0 0 0 0; text-align:left; width: 714px;height: 124px; min-height: 124px; background-color: #f3f3f3;border-radius:0 8px 8px 0;}
+.position .notice{position:absolute; top:13px; left:60px; font-size: 12px; color: #ee5f38;}
+.position .head{position:absolute; top:75px; left:60px; font-size: 15px; color: #424242; }
+.position .box{display:block; position:absolute; width: 285px;height: 48px; top: 68px; left:160px; background: url(http://ossweb-img.qq.com/images/mgc/css_img/fans_guild/group_icon.png?v=3_8_8_2016_15_4_final_3); background-position: -366px -213px;}
+.position .name{position:absolute; width: 240px;height: 30px; top: 73px; left:180px; font-size: 15px; color: #424242; line-height: 30px; border: 0; background-color: transparent;}
+.position .info{display:block; width:360px; height:45px; line-height:22px; text-align:center; position: absolute; top: 70px; left: 121px; color: #3878ee; font-size: 12px;}
+.position .list{display:block; position:absolute; width: 30px; height: 30px; top: 73px; left:402px; cursor: pointer;background: url(http://ossweb-img.qq.com/images/mgc/css_img/fans_guild/group_icon.png?v=3_8_8_2016_15_4_final_3); background-position: -618px -122px;}
+
+.dismiss{width: 758px;height: 124px; margin: 8px 0 0 19px;}
+.dismiss .title{display: inline-block; vertical-align: top; width: 39px;height: 124px; background-color: #f3f3f3;border-radius:8px 0 0 8px;  }
+.dismiss .title span{display:block; width: 15px; height:auto; white-space: normal; font-size: 15px; color: #6a41c6; font-weight: bold; margin: 0 0 0 12px;}
+.dismiss .content{display: inline-block; position: relative; vertical-align: top; margin: 0 0 0 5px; padding:0 0 0 0; text-align:left; width: 714px;height: 124px; min-height: 124px; background-color: #f3f3f3;border-radius:0 8px 8px 0;}
+.dismiss .notice{position:absolute; top:13px; left:60px; font-size: 12px; color: #ee5f38;}
+.dismiss .box{display:block; position:absolute; width: 285px;height: 48px; top: 68px; left:162px; background: url(http://ossweb-img.qq.com/images/mgc/css_img/fans_guild/group_icon.png?v=3_8_8_2016_15_4_final_3); background-position: -366px -213px;}
+.dismiss .name{position:absolute; width: 240px;height: 30px; top: 73px; left:180px; font-family: "microsoft yahei"; font-size: 15px; color: #424242; line-height: 30px; border: 0; background-color: transparent;}
+.dismiss .info{display:block; width:360px; height:45px; line-height:22px; text-align:center; position: absolute; top: 70px; left: 121px; color: #3878ee; font-size: 12px;}
+
+/*title-span名称居上高度*/
+.groupname .title_name{padding-top:22px;height:102px;}
+.anchor .title_change{padding-top:1px;height:122px;}
+.position .title_chief{padding-top:22px;height:102px;}
+.dismiss .title_dissolve{padding-top:11px;height:113px;}
+
+
+.anchorList{position:absolute;width:272px; height:161px; top: 107px; left:158px; z-index: 1; background: url(http://ossweb-img.qq.com/images/mgc/css_img/fans_guild/group_background.png?v=3_8_8_2016_15_4_final_3); background-position:-538px -184px;}
+.anchorList ul{width:250px;overflow:hidden;  height:auto; margin: 5px 0 5px 20px;}
+.anchorList li{width:238px; height:25px; line-height: 25px; color: #FFFFFF; font-size: 14px; padding: 6px 0 0 0; cursor: pointer;}
+.anchorList li:hover{background-color: #25a8e9;}
+
+.memberList{position:absolute; width:279px; height:165px; top: 105px; left:155px; z-index: 1; background: url(http://ossweb-img.qq.com/images/mgc/css_img/fans_guild/group_background.png?v=3_8_8_2016_15_4_final_3); background-position:-532px -180px;}
+.memberList ul{width:250px; height:auto; margin: 5px 0 0 20px;}
+.memberList li{width:250px; height:25px; line-height: 25px; color: #FFFFFF; font-size: 14px; margin: 4px 0 7px 0; cursor: pointer;}
+.memberList li:hover{background-color: #25a8e9;}
+.group #anchorListSel .jspVerticalBar, .group #memberListSel .jspVerticalBar {right: 0;}
+
+a.confirm{display:block; position:absolute; width: 120px; height: 36px;line-height:36px; top: 45px; left:569px; text-align: center;font-size: 17px; color: #FFFFFF; cursor: pointer;background: url(http://ossweb-img.qq.com/images/mgc/css_img/fans_guild/group_icon.png?v=3_8_8_2016_15_4_final_3);}
+a.confirmenabled{background-position: -1px -398px;}
+a.confirmenabled:hover{color: #ffe73d}
+a.confirmdisabled{background-position: -322px -408px;}
+a.cancel{display:block; position:absolute; width: 120px; height: 36px;line-height:36px; top: 45px; left:569px; text-align: center;font-size: 17px; color: #FFFFFF; cursor: pointer;background: url(http://ossweb-img.qq.com/images/mgc/css_img/fans_guild/group_icon.png?v=3_8_8_2016_15_4_final_3); background-position: -1px -398px;}
+a.cancel:hover{color: #ffe73d}

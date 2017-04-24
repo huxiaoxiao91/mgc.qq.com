@@ -1,0 +1,9 @@
+<link href="../css/roomGuide.css?v=3_8_8_2016_15_4_final_3" rel="stylesheet" />
+
+<script id="signRewardsImageTmpl" type="text/x-jquery-tmpl">
+    <li>
+        <span onmouseover='MGC.suswTips2(event,1,"${name}","${tips}");' onmouseout="MGC.suswTips2(event,0);" style="background:url(${url}) no-repeat 0 0 #eadef9;" width="90" height="90" alt="" /></span>
+        <p>${count_desc}</p>
+    </li>
+</script>
+

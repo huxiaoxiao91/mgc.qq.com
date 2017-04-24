@@ -1,0 +1,844 @@
+﻿<?xml version="1.0" encoding="GB2312"?>
+ <!-- 更改本文件时，必须同步调整 alienbrain://H3D-131/QQX5_Mainland/exe/server/config/video_anchor_pay_cfg.xml 调整主播分成 --> 
+ <!-- 更改本文件后，必须复制到 alienbrain://H3D-131/QQX5_Mainland/exe/VideoAdminClient/config/video_gift_config.xml 调同步主播端配置文件 --> 
+<VideoGiftCfg>
+	
+	<!-- 开启时间段配置 -->
+	<OpenPeriods>
+		<!--可见礼物ID列表，****ID间加间隔-->
+		<!--****如果有免费礼物的话，务必保证免费礼物位于首位-->
+		<!--****这里的顺序就是游戏中的显示顺序-->
+		<!--过期的应当删掉-->
+		<!--****不在任何时间段内则显示default列表-->
+		<!--ID为99的礼物，是活动专用礼物“选票” -->
+		<!--ID为100的礼物，是主播PK活动专用礼物“壕令”，只有在比赛中显示 -->
+		<default gifts="40 2 39 38 19 5 4 33 30 31 32" /> 
+		<period begint="2014-1-15 00:00:00" endt="2014-2-7 23:59:59" gifts="1 100 6 7 2 3 4 5" /> 
+		<period begint="2014-2-8 00:00:00" endt="2014-2-28 23:59:59" gifts="1 100 8 9 6 7 2 3 4 5" /> 
+		<period begint="2014-4-1 00:00:00" endt="2014-4-13 23:59:59" gifts="1 100 2 11 10 8 4 5 9 3" /> 
+		<period begint="2014-4-17 00:00:00" endt="2014-5-9 23:59:59" gifts="1 100 99 14 15 11 12 2 4" /> 
+		<period begint="2014-5-10 00:00:00" endt="2014-5-18 23:59:59" gifts="1 100 99 2 15 11 12 4 14 5" /> 
+		<period begint="2014-5-19 00:00:00" endt="2014-6-10 23:59:59" gifts="1 100 2 15 11 12 4 14 5" /> 
+		<period begint="2015-1-12 00:00:00" endt="2015-1-14 23:59:59" gifts="1 16 2 12 4 5 19" /> 
+	</OpenPeriods>
+	
+	<!--视频房间热度宝箱冷却状态时间-->
+	<TreasureBoxFreezeTime>120</TreasureBoxFreezeTime>
+	
+	<!--财富不同等级对应不同图标-->
+	<WealthLevelIcon>
+		<level wealth="0" icon="Znewui_spfjcjfsb4" name="1111" />
+		<level wealth="50000" icon="Znewui_spfjcjfsb3" name="2222" />
+		<level wealth="200000" icon="Znewui_spfjcjfsb2" name="3333" />
+		<level wealth="1000000" icon="Znewui_spfjcjfsb1" name="4444" />
+	</WealthLevelIcon>
+
+
+
+	<!-- gift_type 1免费 2普通 3魔法 4尊贵 5后援团礼物-->
+	
+	<!-- 荣耀翅膀 -->
+	<GiftData id="40" gift_type="2">
+	<Name>荣耀翅膀</Name>
+	<Icon>Znewui_shipinlipintb16</Icon>
+    <Intro>GiftTip_40</Intro>
+    <Price>1000</Price>
+    <Wealth>0</Wealth>
+    <Popularity>1</Popularity>
+    <Starlight>0</Starlight>
+    <Affinity>0</Affinity>
+    <CostMemberScore>5</CostMemberScore>	
+    <AddAnchorScore>1</AddAnchorScore>		
+    <AddGiftPoolHeight>0</AddGiftPoolHeight>
+    <UIInfoList>
+			<uiinfo count="1" path="1" uir="Znew_splwzllback" /> 
+			<uiinfo count="10" path="2" uir="Znew_splwzllback" />
+			<uiinfo count="30" path="3" uir="Znew_splwzllback" />
+    </UIInfoList>
+    <DropList> 
+			<item count="33" str=" 33 想亲亲你" />
+			<item count="66" str=" 66 顺心如意" />
+			<item count="199" str="199 恋情长久" />
+			<item count="521" str="521 真的爱你" />
+			<item count="1314" str="1314一生一世" />
+    </DropList>
+	</GiftData>	
+
+	<!-- 后援团礼物 -->
+	<GiftData id="16" gift_type="5">
+	<Name>后援团礼物</Name>
+	<Icon>Znewui_shipinlipintb16</Icon>
+    <Intro>LoveGift</Intro>
+    <Price>0</Price>
+    <Wealth>0</Wealth>
+    <Popularity>1</Popularity>
+    <Starlight>0</Starlight>
+    <Affinity>0</Affinity>
+    <CostMemberScore>5</CostMemberScore>	
+    <AddAnchorScore>1</AddAnchorScore>		
+    <AddGiftPoolHeight>0</AddGiftPoolHeight>
+    <UIInfoList>
+    	
+			<uiinfo count="50" path="1" uir="Znew_splwzllback" /> 
+			<uiinfo count="200" path="2" uir="Znew_splwzllback" />
+			<uiinfo count="500" path="3" uir="Znew_splwzllback" />
+    </UIInfoList>
+    <DropList> 
+    	
+			<item count="10" str=" 10 十全十美" /> 
+			<item count="33" str=" 33 想亲亲你" />
+			<item count="66" str=" 66 顺心如意" />
+			<item count="199" str="199 恋情长久" />
+			<item count="521" str="521 真的爱你" />
+			<item count="1314" str="1314一生一世" />
+    </DropList>
+	</GiftData>	
+
+	<!-- 蓝玫瑰 -->
+	<GiftData id="2" gift_type="2">
+		<Name>蓝玫瑰</Name>
+		<Icon>Znewui_shipinlipintb05</Icon>
+    <Intro>BlueRose</Intro>
+    <Price>1</Price>
+    <Wealth>1</Wealth>
+    <Popularity>0</Popularity>
+    <Starlight>1</Starlight>
+    <Affinity>1</Affinity>
+    <AddGiftPoolHeight>10</AddGiftPoolHeight>
+   
+    <UIInfoList>
+    	<!-- [count, count_next) 特效，UI底板，是否展示形象(0否1是)，isVipEffect是否显示vip特效(0否1是)-->
+			<uiinfo count="50" path="1" uir="Znew_splwlmgback" isVipEffect="1"/> 
+			<uiinfo count="200" path="2" uir="Znew_splwlmgback" isVipEffect="1"/>
+			<uiinfo count="500" path="3" uir="Znew_splwlmgback" isVipEffect="1"/>
+    </UIInfoList>
+    <DropList> 
+    	<!-- 下拉列表选项-->
+			<item count="10"   str="    10 十全十美" /> 
+			<item count="33"   str="    33 想亲亲你" />
+			<item count="66"   str="    66 顺心如意" />
+			<item count="199"  str="  199 恋情长久" />
+			<item count="521"  str="  521 真的爱你" />
+			<item count="1314" str="1314一生一世" />
+    </DropList>
+	</GiftData>
+
+	<!-- 花篮 -->
+	<GiftData id="4" gift_type="4">
+		<Name>花篮</Name>
+		<Icon>Znewui_shipinlipintb04</Icon>
+    <Intro>FlowerBasket</Intro>
+    <Price>199</Price>
+    <Wealth>199</Wealth>
+    <Popularity>0</Popularity>
+    <Starlight>199</Starlight>
+    <Affinity>199</Affinity>
+    <AddGiftPoolHeight>1990</AddGiftPoolHeight>
+    <NumForScrollInfo>20</NumForScrollInfo> <!-- 跑马灯显示需要的数量 大于或等于该值才显示-->
+    <showAction>HA_1309_shipinfngjian01</showAction>	<!-- 展示动作 -->
+    <showActionLength>3000</showActionLength> <!-- 展示动作长度 单位ms -->
+    <UIInfoList>
+    	<!-- [count, count_next) 特效，UI底板，是否展示形象(0否1是)，isVipEffect是否显示vip特效(0否1是)-->
+			<uiinfo count="2" path="1" uir="Znew_splwhlCback" isVipEffect="1"/> 
+			<uiinfo count="20" path="2" uir="Znew_splwhlCback" isVipEffect="1"/>
+			<uiinfo count="50" path="3" uir="Znew_splwhlCback" isVipEffect="1"/>
+    </UIInfoList>
+    <DropList> 
+    	<!-- 下拉列表选项-->
+			<item count="10" str=" 10 十全十美" /> 
+			<item count="33" str=" 33 想亲亲你" />
+			<item count="66" str=" 66 顺心如意" />
+			<item count="199" str="199 恋情长久" />
+			<item count="521" str="521 真的爱你" />
+			<item count="1314" str="1314一生一世" />
+    </DropList>
+	</GiftData>
+
+	<!-- 肥皂 -->
+	<GiftData id="18" gift_type="3">
+		<Name>肥皂</Name>
+		<Icon>Znewui_shipinlipintb18</Icon>
+    <Intro>Soap</Intro>
+    <Price>199</Price>
+    <Wealth>199</Wealth>
+    <Popularity>0</Popularity>
+    <Starlight>199</Starlight>
+    <Affinity>199</Affinity>
+    <AddGiftPoolHeight>1990</AddGiftPoolHeight>
+    <NumForScrollInfo>20</NumForScrollInfo> <!-- 跑马灯显示需要的数量 大于或等于该值才显示-->
+    <showAction>HA_1309_shipinfngjian01</showAction>	<!-- 展示动作 -->
+    <showActionLength>3000</showActionLength> <!-- 展示动作长度 单位ms -->
+    <UIInfoList>
+    	<!-- [count, count_next) 特效，UI底板，是否展示形象(0否1是)，isVipEffect是否显示vip特效(0否1是)-->
+			<uiinfo count="2" path="1" effectFullScreen="ui_effect/videoroom/videoroom_jfz_dj1_qp.spe" uir="znew_splwfzCAback" isVipEffect="1"/> 
+			<uiinfo count="20" path="2" effectFullScreen="ui_effect/videoroom/videoroom_jfz_dj2_qp.spe" uir="znew_splwfzCAback" isVipEffect="1"/>
+			<uiinfo count="50" path="3" effectFullScreen="ui_effect/videoroom/videoroom_jfz_dj3_qp.spe" uir="znew_splwfzCAback" isVipEffect="1"/>
+    </UIInfoList>
+    <DropList> 
+    	<!-- 下拉列表选项-->
+			<item count="10" str=" 10 十全十美" /> 
+			<item count="33" str=" 33 想亲亲你" />
+			<item count="66" str=" 66 顺心如意" />
+    </DropList>
+	</GiftData>
+
+
+	<!-- 烟花 -->
+	<GiftData id="5" gift_type="4">
+		<Name>烟花</Name>
+		<Icon>Znewui_shipinlipintb02</Icon>
+    <Intro>Fireworks</Intro>
+    <Price>499</Price>
+    <Wealth>499</Wealth>
+    <Popularity>0</Popularity>
+    <Starlight>499</Starlight>
+    <Affinity>499</Affinity>
+    <AddGiftPoolHeight>4990</AddGiftPoolHeight>
+    <NumForScrollInfo>2</NumForScrollInfo> <!-- 跑马灯显示需要的数量 大于或等于该值才显示-->
+    <showAction>HA_1309_shipinfngjian02</showAction>	<!-- 展示动作 -->
+    <showActionLength>3000</showActionLength> <!-- 展示动作长度 单位ms -->
+    <UIInfoList>
+    	<!-- [count, count_next) 特效，UI底板，是否展示形象(0否1是)，isVipEffect是否显示vip特效(0否1是)-->
+			<uiinfo count="1" path="1" uir="Znew_splwlhback" isVipEffect="1"/> 
+			<uiinfo count="5" path="2" uir="Znew_splwlhback" isVipEffect="1"/>
+			<uiinfo count="10" path="3" uir="Znew_splwlhback" isVipEffect="1"/>
+    </UIInfoList>
+    <DropList> 
+    	<!-- 下拉列表选项-->
+			<item count="10" str=" 10 十全十美" /> 
+			<item count="33" str=" 33 想亲亲你" />
+			<item count="66" str=" 66 顺心如意" />
+			<item count="199" str="199 恋情长久" />
+    </DropList>
+	</GiftData>
+
+	<!-- 钻戒 -->
+	<GiftData id="19" gift_type="4">
+		<Name>钻戒</Name>
+		<Icon>Znewui_shipinlipintb19</Icon>
+    <Intro>DiamondRing</Intro>
+    <Price>998</Price>
+    <Wealth>998</Wealth>
+    <Popularity>0</Popularity>
+    <Starlight>998</Starlight>
+    <Affinity>998</Affinity>
+    <AddGiftPoolHeight>9980</AddGiftPoolHeight>
+    <NumForScrollInfo>2</NumForScrollInfo> <!-- 跑马灯显示需要的数量 大于或等于该值才显示-->
+    <showAction>HA_1410_feiwen</showAction>	<!-- 展示动作 -->
+    <showActionLength>6000</showActionLength> <!-- 展示动作长度 单位ms -->
+    <showActionEffect>ui_effect/videoroom/videoroom_zuanjie_j_m.spe</showActionEffect> <!-- 钻戒展示动作特效 -->
+    <UIInfoList>
+    	<!-- [count, count_next) 特效，UI底板，是否展示形象(0否1是)，isVipEffect是否显示vip特效(0否1是)-->
+			<uiinfo count="1" path="1" uir="Znew_splwzjCback" isVipEffect="1"/> 
+			<uiinfo count="5" path="2" uir="Znew_splwzjCback" isVipEffect="1"/> 
+    </UIInfoList>
+    <DropList> 
+    	<!-- 下拉列表选项-->
+			<item count="10" str=" 10 十全十美" /> 
+			<item count="33" str=" 33 想亲亲你" />
+			<item count="66" str=" 66 顺心如意" />
+			<item count="199" str="199 恋情长久" /> 
+    </DropList>
+	</GiftData>
+
+	<!-- 小妖 -->
+	<GiftData id="14" gift_type="3">
+	<Name>小妖</Name>
+	<Icon>Znewui_shipinlipintb14</Icon>
+    <Intro>SmallDemon</Intro>
+    <Price>499</Price>
+    <Wealth>499</Wealth>
+    <Popularity>0</Popularity>
+    <Starlight>499</Starlight>
+    <Affinity>499</Affinity>
+    <AddGiftPoolHeight>4990</AddGiftPoolHeight>
+    <NumForScrollInfo>2</NumForScrollInfo> <!-- 跑马灯显示需要的数量 大于或等于该值才显示-->
+    <UIInfoList>
+    	<!-- [count, count_next) 特效，UI底板，是否展示形象(0否1是)，isVipEffect是否显示vip特效(0否1是)-->
+			<uiinfo count="1" path="1" effectFullScreen="ui_effect/videoroom/videoroom_xiaoyao_qp.spe" uir="Znew_ui_splwxiaoyaoback" isVipEffect="1"/> 
+			<uiinfo count="5" path="2" effectFullScreen="ui_effect/videoroom/videoroom_xiaoyao_qp2.spe" uir="Znew_ui_splwxiaoyaoback" isVipEffect="1"/>
+    </UIInfoList>
+    <DropList> 
+    	<!-- 下拉列表选项-->
+			<item count="10" str="10 十全十美" /> 
+			<item count="33" str=" 33 想亲亲你" />
+			<item count="66" str=" 66 顺心如意" />
+			<item count="199" str="199 恋情长久" />
+    </DropList>
+	</GiftData>
+
+	<!-- 梦幻币房间礼物 荧光棒 -->
+	<GiftData id="30" gift_type="6">
+		<Name>荧光棒</Name>
+		<Icon>Znewui_shipinlipintb23</Icon>
+    <Intro>GloSticks</Intro>
+    <Price>199</Price>
+    <Wealth>0</Wealth>
+    <Popularity>5</Popularity>
+    <Starlight>0</Starlight>
+    <Affinity>0</Affinity>
+    <AddGiftPoolHeight>0</AddGiftPoolHeight>
+    <Exp>0</Exp>
+    <UIInfoList>
+    	<!-- [count, count_next) 特效，UI底板，是否展示形象(0否1是)，isVipEffect是否显示vip特效(0否1是)-->
+			<uiinfo count="50" path="1" uir="znew_splwygbCAback" isVipEffect="1"/> 
+			<uiinfo count="80" path="2" uir="znew_splwygbCAback" isVipEffect="1"/>
+    </UIInfoList>
+    <DropList> 
+    	<!-- 下拉列表选项-->
+			<item count="10" str=" 10 十全十美" /> 
+			<item count="33" str=" 33 想亲亲你" />
+			<item count="66" str=" 66 顺心如意" />
+			<item count="199" str="199 恋情长久" />
+    </DropList>
+	</GiftData>
+
+	<!-- 梦幻币房间礼物 鼓掌 -->
+	<GiftData id="31" gift_type="6">
+			<Name>鼓掌</Name>
+		<Icon>Znewui_shipinlipintb25</Icon>
+    <Intro>Applause</Intro>
+    <Price>499</Price>
+    <Wealth>0</Wealth>
+    <Popularity>10</Popularity>
+    <Starlight>0</Starlight>
+    <Affinity>0</Affinity>
+    <AddGiftPoolHeight>0</AddGiftPoolHeight>
+    <Exp>0</Exp>
+    <UIInfoList>
+    	<!-- [count, count_next) 特效，UI底板，是否展示形象(0否1是)，isVipEffect是否显示vip特效(0否1是)-->
+			<uiinfo count="20" path="1" uir="znew_splwgzCAback" isVipEffect="1"/> 
+    </UIInfoList>
+    <DropList> 
+    	<!-- 下拉列表选项-->
+			<item count="10" str=" 10 十全十美" /> 
+			<item count="33" str=" 33 想亲亲你" />
+			<item count="66" str=" 66 顺心如意" />
+    </DropList>
+	</GiftData>
+
+	<!-- 梦幻币房间礼物 v587 -->
+	<GiftData id="32" gift_type="6">
+		<Name>v587</Name>
+		<Icon>Znewui_shipinlipintb24</Icon>
+    <Intro>MightyDomineering</Intro>
+    <Price>999</Price>
+    <Wealth>0</Wealth>
+    <Popularity>20</Popularity>
+    <Starlight>0</Starlight>
+    <Affinity>0</Affinity>
+    <AddGiftPoolHeight>0</AddGiftPoolHeight>
+    <Exp>0</Exp>
+    <UIInfoList>
+    	<!-- [count, count_next) 特效，UI底板，是否展示形象(0否1是)，isVipEffect是否显示vip特效(0否1是)-->
+			<uiinfo count="10" path="1" uir="znew_splwv587CAback" isVipEffect="1"/> 
+    </UIInfoList>
+    <DropList> 
+    	<!-- 下拉列表选项-->
+			<item count="10" str=" 10 十全十美" /> 
+    </DropList>
+	</GiftData>
+
+	<!-- 玛莎拉蒂 -->
+	<GiftData id="38" gift_type="4">
+		<Name>玛莎拉蒂</Name>
+		<Icon>Znewui_shipinlipintb31</Icon>
+    <Intro>Maserati</Intro>
+    <Price>3998</Price>
+    <UIInfoList>
+    	<!-- [count, count_next) 特效，UI底板，是否展示形象(0否1是)，isVipEffect是否显示vip特效(0否1是)-->
+			<uiinfo count="1" path="1"/> 
+			<uiinfo count="5" path="2"/>
+    </UIInfoList>
+    <DropList> 
+    	<!-- 下拉列表选项-->
+			<item count="10" str=" 10 十全十美" />
+			<item count="33" str=" 33 想亲亲你" />
+			<item count="66" str=" 66 顺心如意" />
+			<item count="199" str="199 恋情长久" /> 
+    </DropList>
+	</GiftData>
+	
+	<!-- 劳力士 -->
+	<GiftData id="39" gift_type="4">
+		<Name>劳力士</Name>
+		<Icon>Znewui_shipinlipintb32</Icon>
+    <Intro>Rolex</Intro>
+    <Price>199</Price>
+    <UIInfoList>
+    	<!-- [count, count_next) 特效，UI底板，是否展示形象(0否1是)，isVipEffect是否显示vip特效(0否1是)-->
+			<uiinfo count="2" path="1"/> 
+			<uiinfo count="20" path="2"/>
+			<uiinfo count="50" path="3"/>
+    </UIInfoList>
+    <DropList> 
+    	<!-- 下拉列表选项-->
+			<item count="10" str=" 10 十全十美" /> 
+			<item count="33" str=" 33 想亲亲你" />
+			<item count="66" str=" 66 顺心如意" />
+			<item count="199" str="199 恋情长久" />
+			<item count="521" str="521 真的爱你" />
+			<item count="1314" str="1314一生一世" />
+    </DropList>
+	</GiftData>
+
+
+
+	<!-- 糖果 -->
+	<GiftData id="3" gift_type="2">
+		<Name>糖果</Name>
+		<Icon>Znewui_shipinlipintb03</Icon>
+    <Intro>Sweet</Intro>
+    <Price>9</Price>
+    <Wealth>9</Wealth>
+    <Popularity>0</Popularity>
+    <Starlight>9</Starlight>
+    <Affinity>9</Affinity>
+    <AddGiftPoolHeight>90</AddGiftPoolHeight>
+    <UIInfoList>
+			<uiinfo count="10" path="1" uir="Znew_splwtgCback" isVipEffect="1"/> 
+			<uiinfo count="50" path="2" uir="Znew_splwtgCback" isVipEffect="1"/>
+			<uiinfo count="100" path="3" uir="Znew_splwtgCback" isVipEffect="1"/>
+    </UIInfoList>
+    <DropList> 
+			<item count="10" str="    10 十全十美" /> 
+			<item count="33" str="    33 想亲亲你" />
+			<item count="66" str="    66 顺心如意" />
+			<item count="199" str="  199 恋情长久" />
+			<item count="521" str="  521 真的爱你" />
+			<item count="1314" str="1314一生一世" />
+    </DropList>
+	</GiftData>
+
+	<!-- 鞭炮 -->
+	<GiftData id="6" gift_type="2">
+	<Name>鞭炮</Name>
+	<Icon>Znewui_shipinlipintb06</Icon>
+    <Intro>Firecracker</Intro>
+    <Price>1</Price>
+    <Wealth>1</Wealth>
+    <Popularity>0</Popularity>
+    <Starlight>1</Starlight>
+    <Affinity>1</Affinity>
+    <AddGiftPoolHeight>10</AddGiftPoolHeight>
+    <UIInfoList>
+			<uiinfo count="50" path="1" uir="Znew_ui_splwbianpaoCback" isVipEffect="1"/> 
+			<uiinfo count="200" path="2" uir="Znew_ui_splwbianpaoCback" isVipEffect="1"/>
+			<uiinfo count="500" path="3" uir="Znew_ui_splwbianpaoCback" isVipEffect="1"/>
+    </UIInfoList>
+    <DropList>
+			<item count="10" str="    10 十全十美" /> 
+			<item count="33" str="    33 想亲亲你" />
+			<item count="66" str="    66 顺心如意" />
+			<item count="199" str="  199 恋情长久" />
+			<item count="521" str="  521 真的爱你" />
+			<item count="1314" str="1314一生一世" />
+    </DropList>
+	</GiftData>
+
+	<!-- 财神 -->
+	<GiftData id="7" gift_type="3">
+	<Name>财神</Name>
+	<Icon>Znewui_shipinlipintb07</Icon>
+    <Intro>WealthGod</Intro>
+    <Price>499</Price>
+    <Wealth>499</Wealth>
+    <Popularity>0</Popularity>
+    <Starlight>499</Starlight>
+    <Affinity>499</Affinity>
+    <AddGiftPoolHeight>4990</AddGiftPoolHeight>
+    <NumForScrollInfo>2</NumForScrollInfo> 
+    <UIInfoList>
+			<uiinfo count="1" path="1" effectFullScreen="ui_effect/videoroom/videoroom_caishen_qp.spe" uir="Znew_ui_splwcaishenCback" isVipEffect="1"/> 
+			<uiinfo count="5" path="2" effectFullScreen="ui_effect/videoroom/videoroom_caishen_qp2.spe" uir="Znew_ui_splwcaishenCback" isVipEffect="1"/>
+    </UIInfoList>
+    <DropList>
+			<item count="10" str="10 十全十美" /> 
+    </DropList>
+	</GiftData>
+
+	<!-- 心形巧克力 -->
+	<GiftData id="8" gift_type="2">
+	<Name>心形巧克力</Name>
+	<Icon>Znewui_shipinlipintb08</Icon>
+    <Intro>HeartShapedChocolate</Intro>
+    <Price>1</Price>
+    <Wealth>1</Wealth>
+    <Popularity>0</Popularity>
+    <Starlight>1</Starlight>
+    <Affinity>1</Affinity>
+    <AddGiftPoolHeight>10</AddGiftPoolHeight>
+    <UIInfoList>
+			<uiinfo count="50" path="1" uir="Znew_ui_splwxinxingccCback" isVipEffect="1"/> 
+			<uiinfo count="200" path="2" uir="Znew_ui_splwxinxingccCback" isVipEffect="1"/>
+			<uiinfo count="500" path="3" uir="Znew_ui_splwxinxingccCback" isVipEffect="1"/>
+    </UIInfoList>
+    <DropList>
+			<item count="10" str="    10 十全十美" /> 
+			<item count="33" str="    33 想亲亲你" />
+			<item count="66" str="    66 顺心如意" />
+			<item count="199" str="  199 恋情长久" />
+			<item count="521" str="  521 真的爱你" />
+			<item count="1314" str="1314一生一世" />
+    </DropList>
+	</GiftData>
+
+	<!-- 天使 -->
+	<GiftData id="9" gift_type="3">
+	<Name>天使</Name>
+	<Icon>Znewui_shipinlipintb09</Icon>
+    <Intro>Angell</Intro>
+    <Price>499</Price>
+    <Wealth>499</Wealth>
+    <Popularity>0</Popularity>
+    <Starlight>499</Starlight>
+    <Affinity>499</Affinity>
+    <AddGiftPoolHeight>4990</AddGiftPoolHeight>
+    <NumForScrollInfo>2</NumForScrollInfo>
+    <UIInfoList>
+			<uiinfo count="1" path="1" effectFullScreen="ui_effect/videoroom/videoroom_tianshi_qp.spe.spe" uir="Znew_ui_splwtianshiCback" isVipEffect="1"/> 
+			<uiinfo count="5" path="2" effectFullScreen="ui_effect/videoroom/videoroom_tianshi_qp2.spe.spe" uir="Znew_ui_splwtianshiCback" isVipEffect="1"/>
+    </UIInfoList>
+    <DropList>
+			<item count="10" str="10 十全十美" /> 
+			<item count="33" str=" 33 想亲亲你" />
+			<item count="66" str=" 66 顺心如意" />
+			<item count="199" str="199 恋情长久" />
+    </DropList>
+	</GiftData>
+
+
+	<!-- 愚人节礼物 -->
+	<GiftData id="10" gift_type="2">
+	<Name>愚人节礼物</Name>
+	<Icon>Znewui_shipinlipintb10</Icon>
+    <Intro>AprilFoolGift</Intro>
+    <Price>1</Price>
+    <Wealth>1</Wealth>
+    <Popularity>0</Popularity>
+    <Starlight>1</Starlight>
+    <Affinity>1</Affinity>
+    <AddGiftPoolHeight>10</AddGiftPoolHeight>
+    <UIInfoList>
+			<uiinfo count="10" path="1" uir="Znew_splwyrjCAback" isVipEffect="1"/> 
+			<uiinfo count="50" path="2" uir="Znew_splwyrjCAback" isVipEffect="1"/>
+			<uiinfo count="100" path="3" uir="Znew_splwyrjCAback" isVipEffect="1"/>
+    </UIInfoList>
+    <DropList>
+			<item count="10" str="    10 十全十美" /> 
+			<item count="33" str="    33 想亲亲你" />
+			<item count="66" str="    66 顺心如意" />
+			<item count="199" str="  199 恋情长久" />
+			<item count="521" str="  521 真的爱你" />
+			<item count="1314" str="1314一生一世" />
+    </DropList>
+	</GiftData>
+
+	<!-- 点卷 -->
+	<GiftData id="15" gift_type="2">
+		<Name>点卷</Name>
+		<Icon>Znewui_shipinlipintb15</Icon>
+    <Intro>Ava</Intro>
+    <Price>1</Price>
+    <Wealth>1</Wealth>
+    <Popularity>0</Popularity>
+    <Starlight>1</Starlight>
+    <Affinity>1</Affinity>
+    <AddGiftPoolHeight>10</AddGiftPoolHeight>
+    <UIInfoList>
+			<uiinfo count="50" path="1" uir="Znew_ui_splwyuepiaoback" isVipEffect="1"/> 
+			<uiinfo count="200" path="2" uir="Znew_ui_splwyuepiaoback" isVipEffect="1"/>
+			<uiinfo count="500" path="3" uir="Znew_ui_splwyuepiaoback" isVipEffect="1"/>
+    </UIInfoList>
+    <DropList>
+			<item count="10" str="    10 十全十美" /> 
+			<item count="33" str="    33 想亲亲你" />
+			<item count="66" str="    66 顺心如意" />
+			<item count="199" str="  199 恋情长久" />
+			<item count="521" str="  521 真的爱你" />
+			<item count="1314" str="1314一生一世" />
+    </DropList>
+	</GiftData>
+
+	
+
+    <!-- 选票 -->
+	<!--<GiftData id="99" gift_type="2">
+	<Name>选票</Name>
+	<Icon>Znewui_shipinlipintb13</Icon>
+    <Intro>str_live_gift_detail_99</Intro>
+    <Price>1</Price>
+    <Wealth>0</Wealth>
+    <Popularity>0</Popularity>
+    <Starlight>0</Starlight>
+    <Affinity>0</Affinity>
+    <AddGiftPoolHeight>10</AddGiftPoolHeight>
+    <UIInfoList>
+			<uiinfo count="10" path="1" uir="Znew_splwxpCAback" isVipEffect="1"/> 
+    </UIInfoList>
+    <DropList> 
+			<item count="10" str=" 10 十全十美" /> 
+			<item count="33" str=" 33 想亲亲你" />
+			<item count="66" str=" 66 顺心如意" />
+			<item count="199" str="199 恋情长久" />
+			<item count="521" str="521 真的爱你" />
+			<item count="1314" str="1314一生一世" />
+    </DropList>
+	</GiftData>-->
+
+	
+	
+	<!-- hk礼物 -->
+	<GiftData id="11" gift_type="2">
+	<Name>hk</Name>
+	<Icon>Znewui_shipinlipintb11</Icon>
+    <Intro>Kitty</Intro>
+    <Price>1</Price>
+    <Wealth>1</Wealth>
+    <Popularity>0</Popularity>
+    <Starlight>1</Starlight>
+    <Affinity>1</Affinity>
+    <AddGiftPoolHeight>10</AddGiftPoolHeight>
+     <guardLevel>50</guardLevel>
+    <UIInfoList>
+			<uiinfo count="50" path="1" uir="Znew_splwshsCAback" isVipEffect="1"/> 
+			<uiinfo count="200" path="2" uir="Znew_splwshsCAback" isVipEffect="1"/>
+			<uiinfo count="500" path="3" uir="Znew_splwshsCAback" isVipEffect="1"/>
+    </UIInfoList>
+    <DropList>
+			<item count="10" str="    10 十全十美" /> 
+			<item count="33" str="    33 想亲亲你" />
+			<item count="66" str="    66 顺心如意" />
+			<item count="199" str="  199 恋情长久" />
+			<item count="521" str="  521 真的爱你" />
+			<item count="1314" str="1314一生一世" />
+    </DropList>
+	</GiftData>
+
+	
+	<!-- My Love -->
+	<GiftData id="12" gift_type="2">
+	<Name>My Love</Name>
+	<Icon>Znewui_shipinlipintb12</Icon>
+    <Intro>MyLove</Intro>
+    <Price>9</Price>
+    <Wealth>9</Wealth>
+    <Popularity>0</Popularity>
+    <Starlight>9</Starlight>
+    <Affinity>9</Affinity>
+    <AddGiftPoolHeight>90</AddGiftPoolHeight>
+    <UIInfoList>
+			<uiinfo count="10" path="1" uir="Znew_ui_splwcbaxAback" isVipEffect="1" /> 
+			<uiinfo count="50" path="2" uir="Znew_ui_splwcbaxAback"  isVipEffect="1" />
+			<uiinfo count="100" path="3" uir="Znew_ui_splwcbaxAback" isVipEffect="1" />
+    </UIInfoList>
+    <DropList>
+			<item count="10" str="    10 十全十美" /> 
+			<item count="33" str="    33 想亲亲你" />
+			<item count="66" str="    66 顺心如意" />
+			<item count="199" str="  199 恋情长久" />
+			<item count="521" str="  521 真的爱你" />
+			<item count="1314" str="1314一生一世" />
+    </DropList>
+	</GiftData>
+
+
+	<!-- 七夕情书 -->
+	<GiftData id="17" gift_type="2">
+		<Name>七夕情书</Name>
+		<Icon>Znewui_shipinlipintb17</Icon>
+    <Intro>LoveLetter</Intro>
+    <Price>9</Price>
+    <Wealth>9</Wealth>
+    <Popularity>0</Popularity>
+    <Starlight>9</Starlight>
+    <Affinity>9</Affinity>
+    <AddGiftPoolHeight>90</AddGiftPoolHeight>
+    <UIInfoList>
+			<uiinfo count="10" path="1" uir="Znew_splwqsCAback" isVipEffect="1"/> 
+			<uiinfo count="50" path="2" uir="Znew_splwqsCAback" isVipEffect="1"/>
+			<uiinfo count="100" path="3" uir="Znew_splwqsCAback" isVipEffect="1"/>
+    </UIInfoList>
+    <DropList>
+			<item count="10" str="    10 十全十美" /> 
+			<item count="33" str="    33 想亲亲你" />
+			<item count="66" str="    66 顺心如意" />
+			<item count="199" str="  199 恋情长久" />
+			<item count="521" str="  521 真的爱你" />
+			<item count="1314" str="1314一生一世" />
+    </DropList>
+	</GiftData>
+
+	
+	
+
+	<!-- 壕令 -->
+	<!--<GiftData id="100" gift_type="4">
+	<Name>壕令</Name>
+	<Icon>Znewui_shipinlipintb20</Icon>
+    <Intro>str_live_gift_detail_19</Intro>
+    <Price>998</Price>
+    <Wealth>998</Wealth>
+    <Popularity>0</Popularity>
+    <Starlight>998</Starlight>
+    <Affinity>998</Affinity>
+    <AddGiftPoolHeight>9980</AddGiftPoolHeight>
+    <NumForScrollInfo>1</NumForScrollInfo>
+    <showAction>HA_1409_haoling</showAction>
+    <showActionLength>4800</showActionLength> 
+    <showActionEffect>ui_effect/videoroom/videoroom_ling_j_m.spe</showActionEffect>
+    <UIInfoList>
+			<uiinfo count="1" path="ui_effect/videoroom/videoroom_ling_dj1.spe" uir="Znew_splwlpCback" isVipEffect="1"/> 
+    </UIInfoList>
+   <DropList> 
+			<item count="1" str="1 一心一意" /> 
+    </DropList>
+	</GiftData>-->
+	
+	
+	
+	<!-- 礼花弹 -->
+	<GiftData id="20" gift_type="3">
+		<Name>礼花弹</Name>
+		<Icon>Znewui_shipinlipintb21</Icon>
+    <Intro>DisplayShell</Intro>
+    <Price>699</Price>
+    <Wealth>699</Wealth>
+    <Popularity>0</Popularity>
+    <Starlight>699</Starlight>
+    <Affinity>699</Affinity>
+    <AddGiftPoolHeight>6990</AddGiftPoolHeight>
+    <NumForScrollInfo>2</NumForScrollInfo>
+    <UIInfoList>
+			<uiinfo count="1" path="1" effectFullScreen="ui_effect/videoroom/videoroom_baping_qp1.spe" uir="Znew_splwbqCback" isVipEffect="1"/> 
+			<uiinfo count="5" path="2" effectFullScreen="ui_effect/videoroom/videoroom_baping_qp2.spe" uir="Znew_splwbqCback" isVipEffect="1"/>
+			<uiinfo count="10" path="3" effectFullScreen="ui_effect/videoroom/videoroom_baping_qp3.spe" uir="Znew_splwbqCback" isVipEffect="1"/>
+    </UIInfoList>
+    <DropList>
+			<item count="1" str="  1 一心一意" /> 
+			<item count="5" str="  5 我只爱你" /> 
+			<item count="10" str="10 十全十美" /> 
+    </DropList>
+	</GiftData>
+	
+	<!-- 吃药吗 -->
+	<GiftData id="22" gift_type="3">
+		<Name>吃药吗</Name>
+		<Icon>Znewui_shipinlipintb22</Icon>
+    <Intro>TakeMedicine</Intro>
+    <Price>199</Price>
+    <Wealth>199</Wealth>
+    <Popularity>0</Popularity>
+    <Starlight>199</Starlight>
+    <Affinity>199</Affinity>
+    <AddGiftPoolHeight>1990</AddGiftPoolHeight>
+    <NumForScrollInfo>20</NumForScrollInfo>
+    <UIInfoList>
+			<uiinfo count="2" path="1" effectFullScreen="ui_effect/videoroom/videoroom_splw_yaowan01_qp.spe" uir="znew_splwcymCAback" isVipEffect="1"/> 
+			<uiinfo count="20" path="2" effectFullScreen="ui_effect/videoroom/videoroom_splw_yaowan02_qp.spe" uir="znew_splwcymCAback" isVipEffect="1"/>
+			<uiinfo count="50" path="3" effectFullScreen="ui_effect/videoroom/videoroom_splw_yaowan03_qp.spe" uir="znew_splwcymCAback" isVipEffect="1"/>
+    </UIInfoList>
+    <DropList>
+			<item count="10" str=" 10 十全十美" /> 
+			<item count="33" str=" 33 想亲亲你" />
+			<item count="66" str=" 66 顺心如意" />
+    </DropList>
+	</GiftData>
+
+	<!-- 么么哒 -->
+	<GiftData id="33" gift_type="2">
+		<Name>么么哒</Name>
+		<Icon>Znewui_shipinlipintb26</Icon>
+    <Intro>MeMeDa</Intro>
+    <Price>9</Price>
+    <Wealth>9</Wealth>
+    <Popularity>0</Popularity>
+    <Starlight>9</Starlight>
+    <Affinity>9</Affinity>
+    <AddGiftPoolHeight>90</AddGiftPoolHeight>
+    <Exp>9</Exp>
+    <NumForScrollInfo>1314</NumForScrollInfo>
+    <UIInfoList>
+    	<uiinfo count="1" path="1" uir="Znew_splwmmdCback" isVipEffect="1"/>
+    	<uiinfo count="66" path="2" uir="Znew_splwmmdCback" isVipEffect="1"/>
+    	<uiinfo count="1314" path="3" uir="Znew_splwmmdCback" isVipEffect="1"/>
+			</UIInfoList>
+    <DropList>
+			<item count="10" str="    10 十全十美" /> 
+			<item count="33" str="    33 想亲亲你" />
+			<item count="66" str="    66 顺心如意" />
+			<item count="199" str="  199 恋情长久" />
+			<item count="521" str="  521 真的爱你" />
+			<item count="1314" str="1314一生一世" />
+    </DropList>
+	</GiftData>
+	
+	<!-- 铭牌 -->
+  <GiftData id="34" gift_type="3">
+		<Name>铭牌</Name>
+		<Icon>Znewui_shipinlipintb27</Icon>
+    <Intro>NamePlate</Intro>
+    <Price>199</Price>
+    <Wealth>199</Wealth>
+    <Popularity>0</Popularity>
+    <Starlight>199</Starlight>
+    <Affinity>199</Affinity>
+    <AddGiftPoolHeight>1990</AddGiftPoolHeight>
+    <Exp>199</Exp>
+    <NumForScrollInfo>30</NumForScrollInfo>
+    <showAction>HA_1507_splw01</showAction>
+    <showActionLength>5466</showActionLength>
+    <UIInfoList>
+    	<uiinfo count="10" path="1" uir="Znew_splwmpCback" isVipEffect="1"/>
+    	<uiinfo count="30" path="2" effectFullScreen="ui_effect/videoroom/videoroom_mingpai_02_qp.spe" uir="Znew_splwmpCback" isVipEffect="1"/>
+			</UIInfoList>
+    <DropList>
+			<item count="10" str=" 10 十全十美" /> 
+			<item count="33" str=" 33 想亲亲你" />
+			<item count="66" str=" 66 顺心如意" />
+    </DropList>
+	</GiftData>
+
+	<!-- 金话筒 -->
+	  <GiftData id="37" gift_type="3">
+		<Name>金话筒</Name>
+		<Icon>Znewui_shipinlipintb27</Icon>
+		<Intro>GoldenMicrophone</Intro>
+		<Price>99</Price>
+		<UIInfoList>
+			<uiinfo count="5" path="1" />
+			<uiinfo count="40" path="2" />
+			<uiinfo count="99" path="3" />
+		</UIInfoList>
+		<DropList>
+				<item str=" 10 十全十美" count="10"/>
+				<item str=" 33 想亲亲你" count="33"/>
+				<item str=" 66 顺心如意" count="66"/>
+				<item str="199 恋情长久" count="199"/>
+				<item str="521 真的爱你" count="521"/>
+		</DropList>
+	</GiftData>
+
+	
+	
+	<!-- 飞屏哨子-->
+	<WhistleProp>
+	    <Price>199</Price> <!-- 飞屏哨子价格-->
+		<Wealth>199</Wealth> <!-- 飞屏哨子增加的财富值-->
+		<Starlight>199</Starlight> <!-- 飞屏哨子增加的主播星耀值-->
+		<Affinity>199</Affinity> <!-- 飞屏哨子增加的亲密度-->
+		<Popularity>0</Popularity> <!-- 飞屏哨子增加的人气值-->
+		<AddGiftPoolHeight>1990</AddGiftPoolHeight> <!-- 飞屏哨子增加的礼物池高度-->
+	</WhistleProp>
+		<!-- 超新星喇叭-->
+	<SuperStarHorn>
+	    <Price>199</Price> <!-- 超新星喇叭价格-->
+		<Wealth>199</Wealth> <!-- 超新星喇叭增加的财富值-->
+		<Starlight>0</Starlight> <!-- 超新星喇叭增加的主播星耀值-->
+		<Affinity>199</Affinity> <!-- 超新星喇叭增加的亲密度-->
+		<Popularity>0</Popularity> <!-- 超新星喇叭增加的人气值-->
+		<AddGiftPoolHeight>1990</AddGiftPoolHeight> <!-- 超新星喇叭增加的礼物池高度-->
+	</SuperStarHorn>
+		<!-- 免费礼物 -->
+	<FreeGift gain_interval="600" gain_limit="144" carry_limit="20" anchor_pk_gain_interval="120" anchor_pk_gain_per_update="4"/>
+</VideoGiftCfg>

@@ -1,0 +1,61 @@
+/**
+ * 
+ * 创建后援团css 2015-09-23
+ *
+**/
+
+/*创建后援团模块*/
+.main_coment{background:#fbfbfb;width:792px;height:534px;}
+.coment .groupMsg{margin:0px 10px 0 7px;position:relative;height:532px;float:left;}
+.coment .groupMsg input{font-family:'Microsoft YaHei';}
+.coment .groupMsg ul{padding:10px 10px 8px 10px;text-align:left;height:470px;}
+.coment .groupMsg ul li{height: 92px;}
+.coment .groupMsg ul .sectionLi{height:92px;}
+.coment .groupMsg ul li h3{height:50px;font-weight:inherit;line-height:50px;font-size:16px;text-indent:5px}
+.coment .groupMsg ul li input{background:url(http://ossweb-img.qq.com/images/mgc/css_img/fans_guild/group_icon.png?v=3_8_8_2016_15_4_final_3) no-repeat -363px -212px;width:285px;border:none;text-indent:20px;height:42px;line-height:42px;font-size:16px;color:#9b9b9b;}
+.coment .groupMsg ul li textarea{width:240px;height:228px;resize:none;background:url(http://ossweb-img.qq.com/images/mgc/css_img/fans_guild/group_background.png?v=3_8_8_2016_15_4_final_3) no-repeat -544px -354px;border:none;text-align:left;margin-left:4px;padding:15px 20px;font-size:16px;color:#424242;overflow:hidden;}
+.coment .groupMsg .select{width:285px;position:relative;border:none;height:48px;line-height:48px;font-size:16px;}
+.coment .groupMsg .select span{display:block;background:url(http://ossweb-img.qq.com/images/mgc/css_img/fans_guild/inputBg.png?v=3_8_8_2016_15_4_final_3) repeat-x 1px 2px;width:219px;height:47px;margin-left:20px;}
+.coment .groupMsg .select .selectLeft{display:block;background:url(http://ossweb-img.qq.com/images/mgc/css_img/fans_guild/group_icon.png?v=3_8_8_2016_15_4_final_3) no-repeat;background-position:-582px -115px;width:20px;height:47px;position:absolute;left:0;top:0;margin:0;}
+.coment .groupMsg .select .selectRight{display:block;background:url(http://ossweb-img.qq.com/images/mgc/css_img/fans_guild/group_icon.png?v=3_8_8_2016_15_4_final_3) no-repeat;width:47px;display:block;position:absolute;right:0;top:0;height:47px;background-position:-614px -115px;margin:0;cursor:pointer;}
+.coment .groupMsg .selectList{width:246px;min-height:48px;overflow:hidden;height: auto;margin:5px 0 5px 20px;padding:0;}
+.coment .groupMsg #selectListCon{display: none;position:relative;background:#59c8ff;width:280px !important;min-height:48px;overflow:hidden;height: 165px;border-radius:5px;margin-left:4px;padding:0;top: -5px;}
+#selectListCon .jspDrag{background:url(http://ossweb-img.qq.com/images/mgc/css_img/fans_guild/group_background.png?v=3_8_8_2016_15_4_final_3);background-position:-825px -188px;-moz-border-radius:10px;-webkit-border-radius:10px;border-radius:10px;}
+.coment .groupMsg .selectList li{position:relative;float:left;height:31px;display:block;width:246px;line-height:31px;font-size:14px;color:#fff;cursor:pointer;}
+.coment .groupMsg .selectList li:hover{background-color: #25a8e9;}
+.coment .groupMsg .creatBtn{display:inherit;margin:0 auto;height:31px;width:77px;background:url(http://ossweb-img.qq.com/images/mgc/css_img/fans_guild/group_icon.png?v=3_8_8_2016_15_4_final_3) no-repeat -9px -183px;border:none;color:#fff;letter-spacing:5px;font-size:16px;font-weight:700;}
+.coment .groupMsg .creatBtn:hover{color:#ffe73d;cursor:pointer;}
+.coment .grouprule{width:457px;height:509px;line-height:20px;font-size:12px;color:#fff;position:relative;float:left;margin:10px auto 5px;text-align:left;overflow:hidden;}
+.coment .grouprule h3{font-size:16px;color:#424242;font-weight:inherit;line-height:50px;}
+.coment .grouprule .rule{background:url(http://ossweb-img.qq.com/images/mgc/css_img/fans_guild/group_background.png?v=3_8_8_2016_15_4_final_3) no-repeat -11px -129px;width:452px;height:456px;}
+.coment .grouprule .ruleBox{height:576px;width:420px;padding:15px 10px 15px 20px;color:#424242;line-height:26px;font-size:14px;word-break:break-all;white-space:normal;}
+
+/*滚动条*/
+.jspContainer{overflow:hidden;position:relative;}
+.jspPane{position:absolute;}
+.jspVerticalBar{position:absolute;top:0;right:0;width:8px;height:100%;background:red}
+.jspHorizontalBar{position:absolute;bottom:0;left:0;width:100%;height:16px;background:red}
+.jspHorizontalBar *,.jspVerticalBar *{margin:0;padding:0}
+.jspCap{display:none}
+.jspHorizontalBar .jspCap{float:left}
+.jspTrack{background:#a37bfa;position:relative}
+.jspDrag{background:#a37bfa;position:relative;top:0;left:0;cursor:pointer}
+.jspHorizontalBar .jspDrag,.jspHorizontalBar .jspTrack{float:left;height:100%}
+.jspArrow{background:#50506d;text-indent:-20000px;display:block;cursor:pointer}
+.jspArrow.jspDisabled{cursor:default;background:#80808d}
+.jspVerticalBar .jspArrow{height:16px}
+.jspHorizontalBar .jspArrow{width:16px;float:left;height:100%}
+.jspVerticalBar .jspArrow:focus{outline:0}
+.jspCorner{background:#eeeef4;float:left;height:100%}
+* html .jspCorner{margin:0 -3px 0 0}
+.jspHorizontalBar,.jspTrack,.jspVerticalBar{background:0 0}
+.jspDrag{background:#a37bfa;-moz-border-radius:10px;-webkit-border-radius:10px;border-radius:10px}
+.jspDrag:hover,.jspTrack .jspActive,.jspTrack .jspHover{background:#8d5cf8}
+.jspArrow{-moz-border-radius:10px;-webkit-border-radius:10px;border-radius:10px}
+.jspHorizontalBar>.jspDisabled,.jspHorizontalBar>.jspDisabled:hover,.jspVerticalBar>.jspDisabled,.jspVerticalBar>.jspDisabled:hover{background-color:transparent}
+.jspVerticalBar .jspArrow{height:15px}
+.jspHorizontalBar .jspArrow{width:15px}
+.jspArrowUp{background-position:0 0}
+.jspArrowDown{background-position:-64px 0!important}
+.jspArrowLeft{background-position:-96px 0!important}
+.jspArrowRight{background-position:-32px 0!important}

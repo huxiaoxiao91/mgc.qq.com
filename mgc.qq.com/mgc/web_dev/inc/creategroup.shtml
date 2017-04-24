@@ -1,0 +1,58 @@
+<script>STATIC_RESOURCE.addCssByInc(['/css/group.create.css']);</script>
+<!--创建后援团-->
+<div class="main_coment">
+	<div class="coment">
+		<div class="groupMsg">
+			<ul>
+				<li>
+					<h3>请输入团名（500炫豆）：</h3>
+					<input type="text" id="putGroupName" value="请输入团名" onfocus="if(this.value == '请输入团名'){this.value = '';this.style.color = '#424242';}" onblur="if(this.value == ''){this.value = '请输入团名';this.style.color = '#9b9b9b'}" >
+				</li>
+				<li class="sectionLi">
+					<h3>请选择支持的主播（关注的主播）：</h3>	
+					<div class="select" id="anPstid"><i class="selectLeft"></i><span>&nbsp</span><i class="selectRight"></i></div>
+					<div id="selectListCon">
+						<ul class="selectList" id="selectList">
+							<li data="0">
+								主播名1
+							</li>
+							<li data="1">
+								主播名2
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<h3>请输入团简介：</h3>
+					<textarea id="createGroupinfo" rows="3" value="后援团简介" style=""></textarea>
+				</li>
+			</ul>
+
+			<input class="creatBtn"  type="button" value="创建">
+		</div>
+
+		<div class="grouprule">
+			<h3>后援团条例：</h3>
+			
+			<div class="rule"><div class="ruleBox">1.一个游戏人物只能参加或者创建一个后援团。创建后援团的人物，创建成功后自动成为该团的团长。<br>2.创建后援团，需要指定一个主播作为后援团支持的对象。后援团可以为主播提供支持，使主播获得更多的表演空间。<br>3.创建后援团需要消耗 500 个炫豆，请保证您的背包中有足够数量的炫豆。<br>4.后援团的名称必须符合法律的规定，不能包含任何色情，暴力，政治，宗教，侮辱性质的词汇，或其他知名注册公司，产品名称，以及任何违反相关法律规定之文字。<br>5.原则上后援团名称可以任意命名，以8个中文汉字，16个英文字母为限，团名称一旦确定通过，再次修改需要消耗一定数量的炫豆。<br>6.后援团名称需要保持唯一性，新申请的后援团不能和已有的团名称相似或相近，否则申请会被拒绝。<br>7.后援团创建后，可以制定自己的章程和口号。所有成员可以享受独立的聊天频道。<br>8.各后援团应当本着和谐互利的原则友好往来。运营单位支持各后援团之间积极进行各种友好活动和良性竞争。对于后援团之间发生的各种问题，原则上由各团成员自主解决。如有特殊需要，可以由团长和系统管理员联系，请求相关支持。<br>9.本条例未涉及到的问题参见国家相关法律法规，当本条例与国家法律法规冲突时，以国家法律法规为准。在本条例规定范围内，运营单位持有最终解释权。
+			</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--后援团关注主播列表模版-->
+
+<script id="selectListTmpl" type="text/x-jquery-tmpl">
+	<li data="${m_anchor}">${m_anchor_nick}</li>
+</script>
+<script>
+        CreateGroup.init();			
+		//$m('.rule').jScrollPane({ autoReinitialise: true,animateScroll:true});
+	  setTimeout(function(){
+		  $m('.rule').jScrollPane({ autoReinitialise: true, animateScroll: true, autoReinitialiseDelay: 100 });
+		  var scrollAPI_groupselectlist = $m('.rule').data('jsp');
+		  scrollAPI_groupselectlist.initScroll();
+	  },1)
+
+</script>

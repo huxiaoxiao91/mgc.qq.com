@@ -1,0 +1,33 @@
+<!-- Qgame大厅loading首页加载 -->
+<div id="loading_big"></div>
+<div id="pop_hot_lodding" class="hot_lodding">
+    <div class="flash">
+        <object type="application/x-shockwave-flash" width="100" height="20">
+            <param name="quality" value="high">
+            <param name="bgcolor" value="#000">
+            <param name="allowscriptaccess" value="always">
+            <param name="allowfullscreen" value="true">
+            <param name="allowFullScreenInteractive" value="true">
+            <param name="wmode" value="transparent">
+            <param name="movie" value="assets/loading.swf?v=3_8_8_2016_15_4_final_3" />
+        </object>
+    </div>
+</div>
+<div id="overlay_loading"></div>
+<div id="pop_hot_lodding_error" class="hot_lodding_error">
+    <img src="http://ossweb-img.qq.com/images/mgc/css_img/common/loadingsx.png?v=3_8_8_2016_15_4_final_3" width="94" height="71" alt="" />
+    <div class="notice">哎哟喂，服务器被挤爆啦！</div>
+    <div class="tips">点击刷新再用力挤一次~</div>
+    <a id="refreshBtn" href="javascript:;">刷 新</a>
+</div>
+<script>
+    var _filename = STATIC_RESOURCE.filename();     
+    if ((MgcAPI.SNSBrowser.IsQQGame() || MgcAPI.SNSBrowser.IsX52()) && (_filename == "index.shtml" || _filename == "")) {
+        $("#overlay_loading,#pop_hot_lodding").show();
+        $(window).resize(function() {
+            setTimeout(function() {
+                $("#overlay_loading").css("height", $(document).height());
+            }, 200);
+        });
+    }
+</script>

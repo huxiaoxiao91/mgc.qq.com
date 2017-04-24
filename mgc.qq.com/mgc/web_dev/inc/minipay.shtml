@@ -1,0 +1,110 @@
+<script type="text/javascript" charset="utf-8" src="http://imgcache.qq.com/bossweb/ipay/js/api/cashier.js?v=3_8_8_2016_15_4_final_3" async="async"></script>
+<script type="text/javascript" async="async">
+    if (!window.mgc)
+        window.mgc = {};
+    window.mgc.minipay = {
+        show: function() {
+            var obj = {
+                type: 'game',
+                codes: 'qxwwqp',
+                aid: 'MGC_QQGAME',
+                source: '15200',
+                amountType: 'month',
+                zIndex: 5000,
+                skin: 'minipay1',
+                width: 755,
+                height: 623,
+                hideBorder: false,
+                hideHeader: false,
+                hideCloseButton: false,
+                hideLeftSidebar: true,
+                preventDragging: true,
+                onLoad: function() {
+                    //重置title
+                    $('.cash_dialog_wrap .cash_dialog_header h3').replaceWith("<h4>充值炫豆</h4>");
+                    //添加层级管理器控制
+                    window.mgc.popmanager.layerControlShow($('.cash_dialog_wrap'), 8, 1, 1);
+                    $('.cash_dialog_wrap').centerDisp();
+                },
+                onFrameLoad: function() { },
+                onSuccess: function(opt) { alert("充值成功"); },
+                onClose: function(opt) {
+                    //隐藏层级管理
+                    window.mgc.popmanager.layerControlHide($('.cash_dialog_wrap'), 8, 1, 1);
+                },
+                onNotify: function (opt) { console.log("onNotify"); }
+            };
+
+            if(MgcAPI.SNSBrowser.IsX52())
+            {
+                obj.pf = 'ysdt.xd.minipay2';
+            }
+            else
+            {
+                //obj.actid = 'MA20160612102120033';
+                obj.pf = 'yxdt.xd.minipay';
+                obj.zoneid =  '30889';
+            }
+            cashier.dialog.buy(obj);
+        },
+        close: function() {
+            cashier.dialog.close();
+        }
+    }
+</script>
+<style>
+    /*重写快速充值样式*/
+    .cash_dialog_mask, .cash_dialog_wrap {
+        position: fixed;
+        top: 50% !important;
+        left: 50% !important;
+        margin-left: -328px;
+        margin-top: -286px;
+        width: 755px !important;
+    }
+
+        .cash_dialog_wrap .cash_dialog_header {
+            position: relative;
+            width: 755px;
+            height: 40px;
+            margin: 3px 3px 0 3px;
+            background: #fff;
+            border-bottom: 1px solid #b5b5b5;
+        }
+
+            .cash_dialog_wrap .cash_dialog_header h4 {
+                width: 100%;
+                height: 100%;
+                color: #424242;
+                font-size: 18px;
+                line-height: 40px;
+                text-align: center;
+                font-weight: bold;
+                padding: 0;
+            }
+
+            .cash_dialog_wrap .cash_dialog_header button {
+                position: absolute;
+                top: 10px;
+                right: 5px;
+                width: 24px;
+                height: 22px;
+                background: url(http://ossweb-img.qq.com/images/mgc/css_img/common/pop_sprite.png?v=3_8_8_2016_15_4_final_3) no-repeat -106px -44px;
+                text-indent: -9999px;
+            }
+
+                .cash_dialog_wrap .cash_dialog_header button:hover {
+                    background-position: -63px -44px;
+                }
+
+        .cash_dialog_wrap .cash_dialog_content {
+            margin: 0 -3px 3px 3px;
+        }
+
+        .cash_dialog_wrap .cash_dialog_border {
+            width: 761px !important;
+            height: 670px !important;
+            background: #6c42c8;
+            border-radius: 0;
+        }
+</style>

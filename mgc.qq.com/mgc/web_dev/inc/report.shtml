@@ -1,0 +1,32 @@
+<script>STATIC_RESOURCE.addCssByLink(['/css/report.css']);</script>
+<!--房间举报-->
+    <div class="pop" id="pop_report">
+        <a href="javascript:;" onclick="MGC_Comm.HideAndClear(this)" class="pop_close">关闭</a>
+        <p class="pop_title">房间举报</p>
+        <div class="room_box">
+            <p><span>房间名称：</span><label id="i_room_name"></label></p>
+            <p><span>艺人名称：</span><label id="i_anchor_name"></label></p>
+            <div class=" clearfix">
+                <p class="room_nr">举报类型：</p>
+                <div class="select_box">
+                    <div id="icon_report" class="select_input" data="5"><span>其它</span><i style="display: none"></i></div>
+                    <ul id="icon_report_list" class="select_more">
+                    </ul>
+                    <script id="report_list_tmpl" type="x-jquery-tmpl">
+					{{each(i,type) types}}
+					<li data="${type.value}">${type.name}</li>
+					{{/each}}
+                    </script>
+                </div>
+            </div>
+            <p><span>举报内容：</span></p>
+            <p class="petname">
+                <textarea rows="" cols="" name="" id="i_report_con"></textarea>
+            </p>
+            <!--<div class="room_tu"><img width="230" height="140" alt="" src="web201504/images/report.jpg?v=3_8_8_2016_15_4_final_3"></div>-->
+        </div>
+        <div class="pop_btn_box clearfix">
+            <a class="btn_open" href="javascript:DoReport.reportAnchor();">举报</a>
+            <a class="btn_close" href="javascript:;" onclick="MGC_Comm.HideAndClear(this)">取消</a>
+        </div>
+    </div>

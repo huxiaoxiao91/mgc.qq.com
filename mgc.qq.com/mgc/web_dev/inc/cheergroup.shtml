@@ -1,0 +1,61 @@
+<script>STATIC_RESOURCE.addCssByInc(['/css/group.cheer.css']);</script>
+<!--助威-->
+<div class="cheer">
+    <div class="title"><span>助威</span></div>
+    <div class="left"><div class="sus_tips_list2"></div>
+        <img id="anchorAvatarUrl"/>
+        <i id="anchor_level"></i><span id="anchor_name">主播等级主播名</span>
+        <a id="anchor_pstid" class="card" data-id=""></a>
+    </div>
+    <div class="center">
+        <ul>
+            <li>
+                <span>主播积分：</span>
+                <span id="anchor_score"></span>
+            </li>
+            <li>
+                <span>主播排名：</span>
+                <span id="anchor_rank"></span>
+            </li>
+            <li>
+                <span>本团贡献：</span>
+                <span id="anchor_cont_score"></span>
+            </li>
+            <li>
+                <span>后援团资产：</span>
+                <span id="vg_wealth"></span>
+            </li>
+        </ul>
+    </div>
+    <div class="right">
+        <span class="head">助威次数</span>
+        <span class="button">
+            <span class="input"><input class="count" onkeyup="value=value.replace(/[^\d]/g,'')" value="0"></span>
+            <a class="confirm">确定</a>
+        </span>
+        <span class="tip1">助威需要消耗280点团资产</span>
+        <span class="tip2">每次助威会为主播增加500点主播积分</span>
+        <span class="tip3">今日已助威<span id="today_ticket_acc"></span>次</span>
+    </div>
+</div>
+<div class="sus_tips"></div>
+<!--助威信息-->
+<div class="cheerinfo">
+    <div class="title"><span>助威详情</span></div>
+    <span class="box"></span>
+    <div class="list">
+        <ul>
+        </ul>
+    </div>
+</div>
+
+<!--助威列表模版-->
+<script id="cheerTmpl" type="text/x-jquery-tmpl">
+	<li data-id="${record_id_db}">
+        <span class="msg">${msg}</span>
+	</li>
+</script>
+
+<script>
+        CheerGroup.init();
+</script>

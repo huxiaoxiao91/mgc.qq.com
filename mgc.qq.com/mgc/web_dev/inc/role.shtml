@@ -1,0 +1,93 @@
+<script type="text/javascript" src="http://x5.qq.com/comm-htdocs/js/game_area/x5_server_select.js?v=3_8_8_2016_15_4_final_3"></script>
+<link href="css/role.css?v=3_8_8_2016_15_4_final_3" rel="stylesheet" />
+<div id="pop_player_login">
+    <!--遮罩-->
+    <div class="pop_shade"></div>
+    <!--创建角色-->
+    <div id="pop_player_create" class="pop">
+        <a class="pop_close" href="javascript:;">关闭</a>
+        <p class="pop_title">创建角色</p>
+        <p class="pop_nick clearfix">
+            <label>昵称：</label>
+            <input id="popSr" class="pop_sr" type="text" value="输入QQ昵称" />
+            <a class="color_words" href="javascript:return false;" style="width: 18px; height: 28px; line-height: 28px; margin-top: 8px;"></a>
+            <a href="javascript:;" id="checkDup">验证</a>
+        </p>
+        <p class="pop_nick_info">点击可修改昵称，最多12位字符</p>
+        <input type="hidden" value="1" id="userGender" />
+        <div class="pop_sex clearfix" id="SelectGender">
+            <label>性别：</label>
+            <a href="javascript:;" class="current" idx="1"></a>
+            <b class="pop_man"></b>
+            <span>帅哥</span>
+            <a href="javascript:;" idx="0"></a>
+            <b class="pop_woman"></b>
+            <span>美女</span>
+        </div>
+        <a class="pop_enter" href="javascript:;" id="doRegister">立即进入</a>
+    </div>
+
+    <!--首登改名-->
+    <div id="pop_changeName" class="pop">
+        <a class="pop_close" href="javascript:;">关闭</a>
+        <p class="pop_title">昵称修改</p>
+        <p class="tip">您的梦工厂角色昵称已被其他登录较早的用户抢注，请及时修改您的昵称~</p>
+        <p class="pop_nick clearfix">
+            <input class="pop_sr" type="text" value="输入QQ昵称" />
+            <a class="color_words" style="width: 18px; height: 28px; line-height: 28px; margin-top: 8px;"></a>
+            <a class="checkDup" href="javascript:;">验证</a>
+        </p>
+        <p class="pop_nick_info">点击可修改昵称，最多12位字符</p>
+        <a class="pop_enter" href="javascript:;">确定</a>
+    </div>
+
+    <!--选择角色-->
+    <div id="pop_player_select" class="pop">
+        <a class="pop_close" href="javascript:;">关闭</a>
+        <p class="pop_title">请选择角色</p>
+        <div class="pop_mgcjs_last" id="lastRole"  style="display: none;">
+            <h5 class="pop_m_title">上次登录</h5>
+            <a class="pop_djjr compatible_css3" href="javascript:;" style="display: none">创建角色</a>
+            <ul class="mgc-current-last">
+            </ul>            
+        </div>
+        <div class="pop_mgcjs" id="mgcRole" style="display: none;">
+            <h5 class="pop_m_title">梦工厂角色</h5>
+            <a class="pop_djjr compatible_css3" href="javascript:;" id="mgcCreateRole" style="display: none">创建角色</a>
+            <ul class="mgc-current">
+            </ul>
+            <p class="pop_sorry" id="mgcCreateRoleSorry" style="display: none;">抱歉，梦工厂角色暂未开放</p>
+        </div>
+        <div class="pop_xwjs" id="xwOne">
+            <h5 class="pop_m_title">QQ炫舞角色</h5>
+            <div class="pop_precinct" id="roleListGame">
+                <div class="pop_precinct_con">
+                    <ul class="current">
+                    </ul>
+                </div>
+                <p class="pop_precinct_no" style="display: none; text-align: center;">暂无QQ炫舞角色</p>
+            </div>
+            <p class="pop_page">
+                <a href="javascript:;" class="pop_pre"></a>
+                <span id="role_sum_tips"></span>
+                <a href="javascript:;" class="pop_next"></a>
+            </p>
+        </div>
+        <div class="pop_xwTwojs" id="xwTow">
+            <h5 class="pop_m_title">炫舞时代角色</h5>
+            <div class="pop_precinct" id="roleListGame2">
+                <div class="pop_precinct_con2">
+                    <ul class="currentTwo">
+                    </ul>
+                </div>
+                <p class="pop_precinct_no_two" style="display: none; text-align: center;">暂无炫舞时代角色</p>
+            </div>
+            <p class="pop_page2">
+                <a href="javascript:;" class="pop_pre_two"></a>
+                <span id="role_sum_tips2"></span>
+                <a href="javascript:;" class="pop_next_two"></a>
+            </p>
+        </div>
+    </div>
+</div>
+<!--[if !IE]>|xGv00|985d9ccacf239103ba11a7e40d3dcf16<![endif]-->

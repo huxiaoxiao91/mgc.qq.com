@@ -1,0 +1,29 @@
+﻿@charset "UTF-8";
+/*
+*page show style
+*craete by 77
+*todo:show-style
+*/
+.content{width: 965px;margin: -1px auto;}
+/*.con-rooms {overflow-x:hidden;}*/
+/*tab*/
+.show_tab .current,.show_room,.show_num{background:url(http://ossweb-img.qq.com/images/mgc/css_img/video_room/show_sprite.png?v=3_8_8_2016_15_4_final_3) no-repeat 0 0;}
+.show_tab{height: 30px;width: 100%;border-bottom: 1px solid #864ff6;margin: 10px 0 0; position: relative;overflow:hidden;}
+.show_tab .show_tab_ul{height: 100%;width:1000%;overflow:hidden;position:absolute;top:0;left:0;}
+.show_tab li{float: left;}
+.show_tab a{display: block;text-align: center;width: 115px;height: 30px;line-height: 30px;color: #864ff6;font-size: 14px;font-weight:bold;}
+.show_tab a:hover{color: #ff7d13;}
+.show_tab .current:hover{color: #ffffff;}
+.show_tab .current{background-position: -40px 0;color: #fff;}
+.pageUp,.pageDown,.pageUp_prev,.pageDown_prev,.pageUp:hover,.pageDown:hover{ background:url(http://ossweb-img.qq.com/images/mgc/css_img/common/header_sprite.png?v=3_8_8_2016_15_4_final_3) no-repeat;}
+.page-opt {position:absolute;right: 0px;top:0px;width: 50px;height: 30px;background-color: #fff;display:none}
+.pageUp{ background-position: -199px -3px;position: absolute;left: 0px;top:5px;width: 23px !important;height: 25px !important;}
+.pageUp:hover{background-position: -199px -31px;}
+.pageUp_prev{ background-position: -199px -59px;position: absolute;left: 0px;top:5px;width: 23px !important;height: 25px !important;}
+.pageDown{ background-position: -237px -3px;position: absolute;right: 0px;top:5px;width: 23px !important;height: 25px !important;}
+.pageDown:hover{background-position:-237px -31px;}
+.pageDown_prev{ background-position: -237px -59px;position: absolute;right: 0px;top:5px;width: 23px !important;height: 25px !important;}
+.show_con {width: 1000px;height:auto;margin-top:10px;}
+.show_con .room-li-s li {margin-right:31.3px;}
+.scroll-load {width:200px;height:40px;margin: 50px auto 0;text-align:center;color:#ccc;}
+.scroll-load img {margin:0 auto;}

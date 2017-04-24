@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="robots" content="all">
+    <meta name="author" content="Tencent-TGideas">
+    <meta name="Copyright" content="Tencent">
+    <meta name="Description" content="《QQ炫舞》最时尚浪漫的舞蹈游戏,2012年同时在线已突破260万!6月20日,QQ炫舞正式发布了3.0《我的演唱会》版本,开启全新大音乐舞蹈网游时代!更与青海卫视花儿朵朵、RTA组合，达成战略合作，引入了明星歌曲首发、明星游戏驻唱等全新活动形式。QQ炫舞有着最丰富的模式和玩法，最浪漫的交友平台，最华丽精美的画面表现，最紧跟潮流的版本开发迭代节奏，持续不断的为千万炫舞玩家，提供着最优质的游戏体验！" />
+    <meta name="Keywords" content="炫舞梦工厂,梦工厂,QQ炫舞,炫舞,QQ炫舞官网,QQ炫舞官方下载,QQ炫舞下载,QQ炫舞官方网站" />
+    <title>炫舞梦工厂-QQ炫舞官方网站-腾讯游戏-开启大音乐舞蹈网游时代</title>
+    <!--#include virtual="/inc/staticloading.shtml"-->
+    <script>
+        STATIC_RESOURCE.addCssByLink(['/css/comm.base.css', '/css/private.index.css', '/css/jquery.jscrollpane.css']);
+    </script>
+    <script src="script/lib/utils/jquery-1.11.3.min.js?v=3_8_8_2016_15_4_final_3"></script>
+</head>
+<body>
+    <!--#include virtual="/inc/index_loading.shtml"-->
+    <!--#include virtual="/inc/header.inc"-->
+    <!--#include virtual="/inc/role.shtml"-->
+    <!--首登礼包-->
+    <!--#include virtual="/inc/logingifts.shtml" -->
+    <!--签到-->
+    <!--#include virtual="/inc/sign.shtml" -->
+    <div class="content clearfix">
+        <!--banner s-->
+        <div id="banner" class="banner">
+            <ul class="ban_pic" id="topBanner">
+            </ul>
+            <div class="ban_btn" id="topBannerCarousel">
+            </div>
+        </div>
+        <!--banner e-->
+        <!--con-left s-->
+        <div class="con-left">
+            <!--热门推荐-->
+            <div class="room-list hot-room-list">
+
+                <!--新手引导开始-->
+                <div id="pop_newPlayer" class="pop_index pop_newPlayer">
+                    <div class="bg">
+                        <span class="pop_close"></span>
+                        <div id="pop_newPlayerContainer" class="clearfix signContainer">
+                            <div class="guideBtn">
+                                <div class="center"><a id="index_newPlayer_enter" href="javascript:showDialog.hide();">马上进入</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--新手引导结束-->
+
+                <h2 class="room-list-title"><a class="mgc-a-link mc-more" target="_blank" href="show.shtml"></a><span class="april_fool_s_day_11"></span></h2>
+                <div class="silde-hot-room-list" id="HotCarousel">
+                    <ul class="room-li-s no-event" id="SlideHotRoomListContainer">
+                    </ul>
+                    <div class="rc-btn" id="SlideHotCarousel">
+                    </div>
+                </div>
+                <div class="fixed-hot-room-list clearfix">
+                    <div class="rl-k"></div>
+                    <ul class="room-li-s" id="FixedHotRoomListContainer">
+                    </ul>
+                </div>
+            </div>
+            <!--娱乐表演-->
+            <div class="room-list yule-room-list">
+                <h2 class="room-list-title"><a class="mgc-a-link mc-more" id="ylby_more" target="_blank" href="show.shtml"></a><span class="april_fool_s_day_11"></span></h2>
+                <div class="show_tab" id="show_tab">
+                    <ul class="rc_tab_tit show_tab_ul clearfix" id="show_tab_ul">
+                    </ul>
+                    <div class="page-opt">
+                        <a class="pageUp" id="pageUp" href="javascript:;"></a>
+                        <a class="pageDown" id="pageDown" href="javascript:;"></a>
+                    </div>
+                </div>
+                <div class="fixed-yule-room-list clearfix show_con">
+                    <ul class="room-li-s" id="YuleRoomListContainer">
+                    </ul>
+                </div>
+            </div>
+            <!--新星主播-->
+            <div class="room-list star-room-list">
+                <h2 class="room-list-title"><a class="mgc-a-link mc-more" target="_blank" href="show.shtml#-2"></a><span class="april_fool_s_day_11"></span></h2>
+                <div class="fixed-star-room-list clearfix">
+                    <ul class="room-li-s" id="StarRoomListContainer">
+                    </ul>
+                </div>
+            </div>
+            <!--手机直播-->
+            <div class="room-list mobile-room-list">
+                <h2 class="room-list-title"><a class="mgc-a-link mc-more" target="_blank" href="show.shtml#-4"></a><span class="april_fool_s_day_11"></span></h2>
+                <div class="fixed-mibile-room-list clearfix">
+                    <ul class="room-li-s" id="MobileRoomListContainer">
+                    </ul>
+                </div>
+            </div>
+            <!--人气公会-->
+            <div class="room-list popularity-room-list">
+                <h2 class="room-list-title"><a class="mgc-a-link mc-more" target="_blank" href="show.shtml#-3"></a><span class="april_fool_s_day_11"></span></h2>
+                <div class="fixed-popularity-room-list clearfix">
+                    <ul class="room-li-s" id="PopularityRoomListContainer">
+                    </ul>
+                </div>
+            </div>
+            <!--房间面板模板-->
+            <script id="RoomListTmpl" type="text/x-jquery-tmpl">
+                <span class="out-of-room" data-module-type="${module_type}">
+                    {{if tag_name!="" && (status ==2) && (!bSuperRoom)}}
+                         <span class="icon-week-label">${tag_name}</span>
+                    {{else}}
+                        {{if is_star_gift_champion}}
+                            <span class="icon-week-star"></span>
+                        {{/if}}
+                    {{/if}}
+                </span>
+                <span class="room-list-box">
+                    <a class="mgc-a-link room-li-a" href="${url}" onclick="mgc.tools.EAS([{'e_c': 'mgc.enterroom.1','c_t':4},{'e_c': 'mgc.enterroom','c_t':4}])" target="_blank">
+                        <span class="room-img">
+                            <img src="${small_anchor_posing_url||roomLogoUrl|| (roomPics.length>0 ? roomPics[0] : '')||'http://ossweb-img.qq.com/images/mgc/css_img/common/mgc_auto.png?v=3_8_8_2016_15_4_final_3'}" alt="${anchorName}" vertical_live="{{if status==2 && small_anchor_posing_url==""}}${vertical_live}{{else}}false{{/if}}">
+                            {{if anchor_badge==0}}{{else}}<em mgc_data="${anchor_badge}"{{if is_big_badge == 1}} class="badge big_badge" style="background:url('http://ossweb-img.qq.com/images/mgc/css_img/common/anchor_badge_big/${anchor_badge}.png?v=3_8_8_2016_15_4_final_3') no-repeat;"{{else}} class="badge" style="background:url('http://ossweb-img.qq.com/images/mgc/css_img/common/anchor_badge_small/${anchor_badge}.png?v=3_8_8_2016_15_4_final_3') no-repeat;"{{/if}}></em>{{/if}}
+                            {{if bSuperRoom}}
+                                <span class="icon-showroom">演唱会</span>
+                            {{else star_anchor}}
+                                <b class="icon_star">星级</b>
+                            {{/if}}
+                            {{if is_anchor_pk_room}}
+                                <span class="icon-pk">PK比赛</span>
+                            {{/if}}
+                            <p class="total-number-sbar">
+                                {{if week_star_grade && week_star_sub_level && status==2}}
+                                     <span class="week_star_badge week_star_badge${week_star_grade}">
+                                        {{each sub_level}}
+                                        <i class="week_star_level week_star_level_${$value} i_${$index}"></i>
+                                        {{/each}}
+                                     </span>
+                                {{else isNest }}
+                                    {{if room_skin_level==0}}{{else}}<span class="roomGrad roomGrad_${room_skin_id}" style="background:url('http://ossweb-img.qq.com/images/mgc/css_img/common/skin_level/${room_skin_id}.png?v=3_8_8_2016_15_4_final_3')">${room_skin_level}</span>
+                                    {{/if}}
+                                {{/if}}
+                                <span class="total-number">${playerCount}人</span>
+                            </p>
+                            <span class="room-cover"><i class="icon-mic"></i></span>
+                        </span>
+                        <p class="show-anchor-name">
+                            <span class="anchor-name">{{if status == 2}}
+                                    ${anchorName}
+                                {{else}}
+                                    未开播
+                                {{/if}}
+                            </span>
+                            {{if (isNest && status == 2 && anchor_level_temp!=0) }}
+                                <i class="anchor-level anchor_level_${anchor_level_temp}" style="background:url('http://ossweb-img.qq.com/images/mgc/css_img/common/anchor_level/${anchor_level_temp}.png?v=3_8_8_2016_15_4_final_3')">
+                                    <label>${anchor_level}</label></i>
+                            {{/if}}
+                        </p>
+                        <p class="show-room-id">
+                            <span>ID: ${roomID}</span>
+                        </p>
+                    </a>
+                </span>
+            </script>
+        </div>
+        <!--con-left e-->
+        <!--con-right s-->
+        <div class="con-right">
+            <!-- 演唱会回放 -->
+            <div class="playback-module">
+                <div class="playback-title"></div>
+                <a href="playback.shtml" target="_blank" class="playback-pic" title="" id="playback-href">
+                    <img src="" width="219" height="96" id="playback-img"></a>
+            </div>
+            <!--梦工厂快报-->
+            <div class="bulletin">
+                <h2 class="bulletin_title">梦工厂快报</h2>
+                <a href="" target="_blank" class="bulletin_pic target-blank" title="" id="quick_href">
+                    <img src="" width="219" height="96" id="quick_img"></a>
+                <ul id="quickContainer">
+                </ul>
+                <script id="quickContainerTmpl" type="text/x-jquery-tmpl">
+                    {{each(i,quick) QUICK_TEXT}}
+                    <li><i></i><a class="target-blank" href="${quick.sAdUrl}" onclick="mgc.tools.EAS([{'e_c': 'mgc.quick.${i+1}','c_t':4}])" target="_blank" title="${quick.sDesc}">${sDesc}</a></li>
+                    {{/each}}
+                </script>
+            </div>
+            <!--星耀榜-->
+            <div class="ranking">
+                <h2 class="ranking_title">TOP10星耀榜</h2>
+                <div id="start_top10_tab" class="top_tab rank_tab">
+                    <ul class="clearfix">
+                        <li><a href="javascript:;" class="current">日</a></li>
+                        <li><a href="javascript:;">周</a></li>
+                        <li><a href="javascript:;">月</a></li>
+                        <li><a href="javascript:;">总</a></li>
+                    </ul>
+                </div>
+                <div class="ranking_con">
+                    <ul id="start_top10_container">
+                    </ul>
+                    <!--首页top10星耀榜-->
+                    <script id="start_top10_tmpl" class="start_top10_tmpl" type="text/x-jquery-tmpl">
+                        <li class="">{{if !isExtend}}
+                            {{if status == 2}}
+                            <a class="live" target="_blank" onclick="mgc.tools.EAS([{'e_c': 'mgc.enterroom.1','c_t':4},{'e_c': 'mgc.enterroom','c_t':4}])" href="transfer.shtml?roomId=${room_id}&source=7&module_type=0&page_capacity=30&room_list_pos=0">直播中</a>
+                            <a class="liveAll" target="_blank" onclick="mgc.tools.EAS([{'e_c': 'mgc.enterroom.1','c_t':4},{'e_c': 'mgc.enterroom','c_t':4}])" href="transfer.shtml?roomId=${room_id}&source=7&module_type=0&page_capacity=30&room_list_pos=0">
+                                <b></b>
+                                {{if no==1}}
+                                    <span class="april_fool_s_day_03"></span>
+                                <img src="${photoUrl}" width="70" height="75" alt="${name}" ><i class="icon_card_img" hostid="${anchorID}"></i><span><strong class="icon_card" hostid="${anchorID}">${name}</strong><br /><em class="starlight">${starlight}</em><label><em class="rank_times rank_${_icon}_color">${_order_change}</em><em class="rank_icon rank_icon_${_icon}"></em></label></span>
+                                {{else no==2}}
+                                    <span class="april_fool_s_day_04"></span>
+                                <img src="${photoUrl}" width="60" height="60" alt="${name}"><i class="icon_card_img" hostid="${anchorID}"></i><span><strong class="icon_card" hostid="${anchorID}">${name}</strong><br /><em class="starlight">${starlight}</em><label><em class="rank_times rank_${_icon}_color">${_order_change}</em><em class="rank_icon rank_icon_${_icon}"></em></label></span>
+                                {{else no==3}}
+                                    <span class="april_fool_s_day_04"></span>
+                                <img src="${photoUrl}" width="60" height="60" alt="${name}"><i class="icon_card_img" hostid="${anchorID}"></i><span><strong class="icon_card" hostid="${anchorID}">${name}</strong><br /><em class="starlight">${starlight}</em><label><em class="rank_times rank_${_icon}_color">${_order_change}</em><em class="rank_icon rank_icon_${_icon}"></em></label></span>
+                                {{else}}
+                                    <span class="april_fool_s_day_04"></span>
+                                <img src="${photoUrl}" width="50" height="50" alt="${name}"><i class="icon_card_img" hostid="${anchorID}"></i><span><strong class="icon_card" hostid="${anchorID}">${name}</strong><br /><em class="starlight">${starlight}</em><em class="rank_times rank_${_icon}_color">${_order_change}</em><em class="rank_icon rank_icon_${_icon}"></em></span>
+                                {{/if}}
+                            </a>
+                            {{else}}
+                            <a>
+                                <b></b>
+                                {{if no==1}}
+                                    <span class="april_fool_s_day_03"></span>
+                                <img src="${photoUrl}" width="70" height="75" alt="${name}" ><i class="icon_card_img" hostid="${anchorID}"></i><span><strong class="icon_card" hostid="${anchorID}">${name}</strong><br /><em class="starlight">${starlight}</em><label><em class="rank_times rank_${_icon}_color">${_order_change}</em><em class="rank_icon rank_icon_${_icon}"></em></label></span>
+                                {{else no==2}}
+                                    <span class="april_fool_s_day_04"></span>
+                                <img src="${photoUrl}" width="60" height="60" alt="${name}"><i class="icon_card_img" hostid="${anchorID}"></i><span><strong class="icon_card" hostid="${anchorID}">${name}</strong><br /><em class="starlight">${starlight}</em><label><em class="rank_times rank_${_icon}_color">${_order_change}</em><em class="rank_icon rank_icon_${_icon}"></em></label></span>
+                                {{else no==3}}
+                                    <span class="april_fool_s_day_04"></span>
+                                <img src="${photoUrl}" width="60" height="60" alt="${name}"><i class="icon_card_img" hostid="${anchorID}"></i><span><strong class="icon_card" hostid="${anchorID}">${name}</strong><br /><em class="starlight">${starlight}</em><label><em class="rank_times rank_${_icon}_color">${_order_change}</em><em class="rank_icon rank_icon_${_icon}"></em></label></span>
+                                {{else}}
+                                    <span class="april_fool_s_day_04"></span>
+                                <img src="${photoUrl}" width="50" height="50" alt="${name}"><i class="icon_card_img" hostid="${anchorID}"></i><span><strong class="icon_card" hostid="${anchorID}">${name}</strong><br /><em class="starlight">${starlight}</em><em class="rank_times rank_${_icon}_color">${_order_change}</em><em class="rank_icon rank_icon_${_icon}"></em></span>
+                                {{/if}}
+                            </a>
+                            {{/if}}
+                        {{/if}}
+                        </li>
+                    </script>
+                </div>
+            </div>
+            <ul id="yuliuad">
+            </ul>
+            <div class="s_ewm">
+                <dl>
+                    <dt>
+                        <img src="http://ossweb-img.qq.com/images/mgc/css_img/index/2vm_01.png?v=3_8_8_2016_15_4_final_3" alt="手机用户扫描立即下载" width="80" height="80" /></dt>
+                    <dd>手机用户<br />
+                        扫描立即下载</dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <img src="http://ossweb-img.qq.com/images/mgc/css_img/index/2vm_02.jpg?v=3_8_8_2016_15_4_final_3" alt="扫描关注公众号了解最新资讯" width="80" height="80" /></dt>
+                    <dd>扫描关注公众号<br />
+                        了解最新资讯</dd>
+                </dl>
+            </div>
+        </div>
+        <!--con-right e-->
+    </div>
+    <div class="sus_badge_tips"></div>
+    <!--footer s-->
+    <!--#include virtual="/inc/footer.inc"-->
+    <!--#include virtual="/inc/minipay.shtml"-->
+    <!--footer e-->
+    <!--#include virtual="/inc/dialog.shtml"-->
+    <!--#include virtual="/inc/vip.inc"-->
+    <!--#include virtual="/inc/susNav.inc"-->
+    <!--#include virtual="/inc/indexGuide.inc"-->
+    <!--#include virtual="/inc/ranklist_anchorCard.shtml"-->
+    <script>
+        STATIC_RESOURCE.addJsByScript(['http://ossweb-img.qq.com/images/js/eas/eas.js']);
+    </script>
+    <script type="text/javascript" src="js/mgc.common.js?v=3_8_8_2016_15_4_final_3"></script>
+    <script type="text/javascript" src="js/mgc_ranklist_anchorcard.js?v=3_8_8_2016_15_4_final_3"></script>
+    <script data-main="script/main_entry_index" src="script/lib/utils/require-2.1.20.min.js?v=3_8_8_2016_15_4_final_3" defer async></script>
+</body>
+<script src="http://qqgameplatcdn.qq.com/social_hall/js/jquery.js?v=3_8_8_2016_15_4_final_3"></script>
+<script>
+    if (MgcAPI.SNSBrowser.IsQQGame()) {
+        STATIC_RESOURCE.addJsByScript(['script/ui/control/mgc_app_extend.js']);
+    }
+    if (MgcAPI.SNSBrowser.IsQQGame() || MgcAPI.SNSBrowser.IsX52()) {
+        STATIC_RESOURCE.addJsByScript(['script/ui/control/mgc_index_extend.js']);
+    }
+</script>
+</html>
+<!--[if !IE]>|xGv00|f8a334809652709e0e8b887dc80c388b<![endif]-->

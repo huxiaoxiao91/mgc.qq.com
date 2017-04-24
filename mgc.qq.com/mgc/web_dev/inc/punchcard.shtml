@@ -1,0 +1,73 @@
+<!--打卡-UI-->
+<div id="pop_punch_card" class="pop pop_punch_card">
+    <a href="javascript:;" class="pop_close">关闭</a>
+    <p class="pop_title">打卡</p>
+    <div id="punchCardContainer" class="clearfix punchCardContainer">
+    </div>
+</div>
+<!-- 打卡-template-->
+<script type="text/x-jquery-tmpl" id="punchCardTmpl">
+    <div class="punch_card_tips"></div>
+    <div class="punch_card_left">
+        <p class="current_month">XXXX年XX月</p>
+        <div class="punch_card_rewards">
+            <ul id="punch_card_rewards_list">
+                {{tmpl(punch_day_list) "#punch_card_rewards_list_tmpl"}}
+            </ul>
+        </div>
+    </div>
+    <div class="punch_card_opt">
+        <div class="punch_card_opt_con">
+            <ul id="punch_card_opt_rewards" class="punch_card_opt_rewards">
+                {{tmpl(accumulate_rewards) "#punch_card_opt_rewards_tmpl"}}
+            </ul>
+        </div>
+        <div class="punch_card_opt_bottom">
+            <p class="opt_bottom_txt1">您今日还可为<b>10</b>个房间打卡，提升玩家等级，可为多个房间打卡哦~</p>
+            <p class="opt_bottom_txt2">${guardLevelName}及以上守护将获得<b>n</b>倍奖励</p>
+            <ul>
+                <li>
+                    <span class="punch_card_btn"></span>
+                    <span class="opt_bottom_txt3">已打卡<b>10</b>天</span>
+                </li>
+                <li>
+                    <span class="punch_card_btn_add"></span>
+                    <span class="opt_bottom_txt4">可补打卡<b>10</b>天</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</script>
+<script type="text/x-jquery-tmpl" id="punch_card_rewards_list_tmpl">
+    <li data-num="${num}" style="background-color: ${bgcolor}">{{if num>=0}}
+            ${num+1}
+            <span class="r_gou" style="display: ${is_punch_today?'block':'none'};"></span>
+        {{if is_today && !is_punch_today}}
+            <span class="r_punch_card_swf">
+                <object type="application/x-shockwave-flash" width="70" height="70">
+                    <param name="quality" value="high">
+                    <param name="bgcolor" value="#000">
+                    <param name="allowscriptaccess" value="always">
+                    <param name="allowfullscreen" value="true">
+                    <param name="allowFullScreenInteractive" value="true">
+                    <param name="wmode" value="transparent">
+                    <param name="movie" value="assets/gift_punch_card.swf?v=3_8_8_2016_15_4_final_3" />
+                </object>
+            </span>
+        {{/if}}
+        {{/if}}
+    </li>
+</script>
+<script type="text/x-jquery-tmpl" id="punch_card_opt_rewards_tmpl">
+    <li class="punch_card_opt_rewards_li">
+        <p><span class="opt_bar_left"></span><span class="opt_bar_right"></span>打卡<b>${days}</b>天奖励</p>
+        <ul>
+            {{tmpl(rewards) "#punch_card_opt_rewards_li_tmpl"}}
+        </ul>
+    </li>
+</script>
+<script type="text/x-jquery-tmpl" id="punch_card_opt_rewards_li_tmpl">
+    <li class="mouse_tips" data-name="${name}" data-tips="${tips}">
+        <img src="${url}" />
+    </li>
+</script>

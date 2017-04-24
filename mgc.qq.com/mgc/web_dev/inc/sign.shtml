@@ -1,0 +1,137 @@
+<!--签到-UI-->
+<div id="pop_sign" class="pop pop_sign" style="display: none;">
+    <a href="javascript:;" class="pop_close">关闭</a>
+    <p class="pop_title"><span class="icon_month_1"></span></p>
+    <div id="signContainer" class="clearfix signContainer">
+        <!--以下使用模板引擎-->
+    </div>
+    <!--成功提示tips-累计签到tips模板-->
+    <div class="signTip signTips_one"></div>
+    <div class="signTip signTips_two"></div>
+    <div class="signTip signTips_three"></div>
+    <div class="signTip signTips_four"></div>
+    <!--成功提示tips-每日签到tips-->
+    <div class="signTip signTips_day"></div>
+</div>
+<!-- 签到-template-->
+<script type="text/x-jquery-tmpl" id="signTmpl">
+    <div class="sign_tips"></div>
+    <div class="sign_rewards">
+        <ul id="sign_rewards_list">
+            {{tmpl(daily_rewards) "#sign_rewards_list_tmpl"}}
+        </ul>
+    </div>
+    <div class="sign_opt">
+        <div class="sign_opt_title">当您累计签到达到一定天数时，可获得以下奖励：</div>
+        <ul id="sign_opt_rewards" class="sign_opt_rewards">
+            {{tmpl(accumulate_rewards) "#sign_opt_rewards_tmpl"}}
+        </ul>
+        <div class="sign_opt_bottom">
+            <p>本月累计<b>${accumulate_day}</b>天</p>
+            <a class="sign_submit_btn {{if is_signin_today}} icon_sign {{/if}}">{{if !is_signin_today}}
+                <p id="sign_submit_btn_swf">
+                <!--插入签到效果-->
+                </p>
+                <span></span>
+                {{/if}}
+            </a>
+        </div>
+    </div>
+</script>
+<script type="text/x-jquery-tmpl" id="sign_rewards_list_tmpl">
+    <li data-num="${num}" class="{{if borderFlashShow > 0}}bgcolor1{{/if}}">{{if isTrue}}
+            {{if gameMark}}
+            <img class="r_img_80h" src="${url}" />
+        {{else Qgame}}
+            <img class="r_img" src="${url}" onerror="this.src='http://ossweb-img.qq.com/images/mgc/css_img/common/game_default.png?v=3_8_8_2016_15_4_final_3'" />
+        {{else}}
+            <img class="r_img" src="${url}" />
+        {{/if}}
+        <span class="r_gou" style="${isSign}"></span>
+        <span class="r_double${doubleIcon}" style="${isDouble}"></span>
+        <span class="r_txt{{if borderFlashShow > 0}} bgcolor2{{/if}}">${count_desc}</span>
+        <span class="r_cover" style="${isSign}"></span>
+        {{if borderFlashShow == 1}}
+            <span class="r_flash_1">
+                <object type="application/x-shockwave-flash" width="122" height="129">
+                    <param name="quality" value="high">
+                    <param name="bgcolor" value="#000">
+                    <param name="allowscriptaccess" value="always">
+                    <param name="allowfullscreen" value="true">
+                    <param name="allowFullScreenInteractive" value="true">
+                    <param name="wmode" value="transparent">
+                    <param name="movie" value="assets/border_1.swf?v=3_8_8_2016_15_4_final_3"/>
+                </object>
+            </span>
+        {{/if}}
+            {{if borderFlashShow == 2}}
+            <span class="r_flash_2">
+                <object type="application/x-shockwave-flash" width="112" height="109">
+                    <param name="quality" value="high">
+                    <param name="bgcolor" value="#000">
+                    <param name="allowscriptaccess" value="always">
+                    <param name="allowfullscreen" value="true">
+                    <param name="allowFullScreenInteractive" value="true">
+                    <param name="wmode" value="transparent">
+                    <param name="movie" value="assets/border_2.swf?v=3_8_8_2016_15_4_final_3"/>
+                </object>
+            </span>
+        {{/if}}
+            <span class="r_mouse mouse_tips" data-name="${name}" data-tips="${tips}"></span>
+        {{else}}
+            <i style="color: #0094ff; text-align: center; margin-top: 20px; display: inline-block;">${errorMsg}</i>
+        {{/if}}
+    </li>
+</script>
+<script type="text/x-jquery-tmpl" id="sign_opt_rewards_tmpl">
+    <li class="sign_opt_rewards_li" style='${ status!=0?"background-image:none !important;": ""}'>
+        <p>累计${days}天</p>
+        <ul>
+            {{tmpl(rewards) "#sign_opt_rewards_li_tmpl"}}
+            <li class="last-child"><a rel="${days}" data-coord="${index}"  class="${statusRecive}"></a></li>
+        </ul>
+    </li>
+</script>
+<script type="text/x-jquery-tmpl" id="sign_opt_rewards_li_tmpl">
+    <li>{{if isTrue}}
+            {{if gameMark}}
+            <img class="h80 mouse_tips" src="${url}" data-name="${name}" data-tips="${tips}" />
+        {{else Qgame}}
+            <img class="mouse_tips" src="${url}" onerror="this.src='http://ossweb-img.qq.com/images/mgc/css_img/common/game_default.png?v=3_8_8_2016_15_4_final_3'" data-name="${name}" data-tips="${tips}" />
+        {{else}}
+            <img class="mouse_tips" src="${url}" data-name="${name}" data-tips="${tips}" />
+        {{/if}}
+        <span>${count_desc}</span>
+        {{else}}
+            <i style="color: #0094ff; text-align: center; margin-top: 20px; display: inline-block;">${errorMsg}</i>
+        {{/if}}
+    </li>
+</script>
+<!--奖励结果-->
+<div id="rewards-dialog" class="pop">
+    <a href="javascript:;" class="pop_close">关闭</a>
+    <p class="pop_title">${title}</p>
+    <div class="pop_task_prize">
+        <p class="txt"><span class="pop_showtips">${showTips}</span><span class="pop_gametips">${showTips_game}</span></p>
+        <div class="list_taskprize">
+            <div class="susw_tips"></div>
+            <a id="task_pre" class="task_pre" href="javascript:;">上一页</a>
+            <div class="task_list">
+                <ul class="clearfix" id="rewardListContainer">
+                </ul>
+            </div>
+            <a id="task_next" class="task_next" href="javascript:;">下一页</a>
+        </div>
+    </div>
+    <div class="pop_btn_box clearfix">
+        <a class="btn_open" href="javascript:;">确定</a>
+    </div>
+</div>
+<!-- 奖励礼物结果数据START-->
+<script id="rewardListTmpl" type="text/x-jquery-tmpl">
+    <span class="mouse_tips" data-name="${name}" data-tips="${tips}" width="68" height="68">
+        <img class='${url.indexOf("x52itemicon") > 0 ? "" : url.indexOf("ktv.x5.qq.com") > 0 ? "game-img" : ""}' src="${url}" width="68" height="68" />
+    </span>
+    <p>${count_desc}</p>
+</script>
+<!--<script type="text/javascript" src="../js/mgc_sign.js?v=3_8_8_2016_15_4_final_3" defer="defer"></script>-->

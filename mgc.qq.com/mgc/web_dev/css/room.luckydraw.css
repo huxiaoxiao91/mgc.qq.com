@@ -1,0 +1,563 @@
+@charset "UTF-8";
+/*导入指令(Import)*/
+/*
+*LESS Document
+*craete by 77
+*todo:less doc
+*/
+/*调试模式*/
+/*静态资源版本号*/
+/*图片路径地址*/
+/*extend background*/
+/*border-radius*/
+/*
+*LESS Document
+*/
+/*抽奖样式*/
+#button_div,
+.btn_prompt,
+#draw_div,
+#prompt,
+.prize,
+.prize_ten,
+.star_one,
+.star_ten,
+.selected,
+.click_area,
+.click_area2,
+#prize_one p,
+.prize_ten p {
+  background: url(http://ossweb-img.qq.com/images/mgc/css_img/video_room/draw.png?v=3_8_8_2016_15_4_final_3) no-repeat;
+}
+/*按钮样式*/
+#draw_button {
+  height: 60px;
+  width: 68px;
+  position: absolute;
+  z-index: 2;
+  bottom: 30px;
+}
+#button_div {
+  position: absolute;
+  top: 8px;
+  width: 100%;
+  height: 52px;
+  cursor: pointer;
+  background-position: -1067px -676px;
+}
+#button_div:hover {
+  background-position: -1147px -676px;
+}
+#icon_red {
+  top: 1px;
+  left: 50px;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background-position: -1126px -732px;
+}
+#icon_new {
+  top: 0px;
+  left: 28px;
+  width: 40px;
+  height: 15px;
+  position: absolute;
+  background-position: -1072px -732px;
+}
+.btn_icon {
+  background: url(http://ossweb-img.qq.com/images/mgc/css_img/common/icon_sprite.png?v=3_8_8_2016_15_4_final_3) no-repeat -138px -49px;
+}
+/*新手提示样式*/
+#prompt_div,
+#prompt_close {
+  background: url(http://ossweb-img.qq.com/images/mgc/css_img/common/reminder_tips_Qgame.png?v=3_8_8_2016_15_4_final_3) no-repeat;
+}
+#draw_prompt {
+  height: 74px;
+  width: 195px;
+  position: absolute;
+  top: -46px;
+  left: -163px;
+}
+#prompt_div {
+  position: absolute;
+  width: 173px;
+  height: 74px;
+  background-position: -546px -144px;
+}
+#prompt_close {
+  position: absolute;
+  background-position: -466px -31px;
+  width: 30px;
+  height: 28px;
+  cursor: pointer;
+  left: 168px;
+}
+#prompt_close:hover {
+  background-position: -546px -31px;
+}
+#prompt_close:active {
+  background-position: -626px -31px;
+}
+#prompt_div .prompt_txt {
+  font-size: 12px;
+  color: #ffffff;
+  top: 8px;
+  position: absolute;
+  left: 6px;
+  line-height: 18px;
+  width: 170px;
+}
+#prompt_div .prompt_txt i {
+  font-style: normal;
+  font-size: 14px;
+  color: #ffff00;
+}
+/*抽奖框样式*/
+#draw_div {
+  height: 655px;
+  width: 607px;
+  position: absolute;
+}
+#draw_div.main_back {
+  background-position: -6px -6px;
+}
+#draw_div.result_back {
+  background-position: -617px -6px;
+}
+.draw_close {
+  background: url(http://ossweb-img.qq.com/images/mgc/css_img/common/pop_sprite.png?v=3_8_8_2016_15_4_final_3) no-repeat 0 0;
+}
+.draw_close {
+  width: 24px;
+  height: 22px;
+  background-position: -106px -44px;
+  display: block;
+  position: absolute;
+  right: 17px;
+  top: 15px;
+  text-indent: -9999px;
+  cursor: pointer;
+}
+.draw_close:hover {
+  width: 24px;
+  height: 22px;
+  background-position: -63px -44px;
+}
+/*抽奖框抽奖区域样式*/
+#draw_container,
+#draw_one_con,
+#draw_ten_con {
+  top: 73px;
+  left: 31px;
+  width: 546px;
+  height: 445px;
+  position: absolute;
+}
+.prize {
+  height: 113px;
+  width: 113px;
+  background-position: -683px -674px;
+  position: absolute;
+}
+.prize img {
+  top: 7px;
+  left: 17px;
+  width: 79px;
+  height: 79px;
+  position: absolute;
+}
+.prize span {
+  position: absolute;
+  top: 84px;
+  width: 100%;
+  text-align: center;
+  color: #ffffff;
+  font-size: 14px;
+  opacity: inherit;
+  filter: inherit;
+}
+.prize .video_free_barrage {
+  display: block;
+  top: 5px;
+  left: 6px;
+  width: 40px;
+  height: 42px;
+  background: url("http://ossweb-img.qq.com/images/mgc/css_img/video_room/rare.png?v=3_8_8_2016_15_4_final_3");
+}
+.prize .video_star_week {
+  display: block;
+  top: 68px;
+  left: 7px;
+  width: 52px;
+  height: 18px;
+  background: url("http://ossweb-img.qq.com/images/mgc/css_img/video_room/star_gift.png?v=3_8_8_2016_15_4_final_3");
+}
+.selected .video_free_barrage {
+  left: 3px;
+}
+.selected .video_star_week {
+  top: 69px;
+  left: 4px;
+}
+.prize em {
+  display: none;
+}
+.selected {
+  background-position: -925px -675px;
+}
+/*按钮样式*/
+.draw_btn {
+  position: absolute;
+  width: 166px;
+  height: 100px;
+}
+#draw_one {
+  left: 192px;
+  top: 118px;
+}
+#draw_ten {
+  left: 192px;
+  top: 225px;
+}
+.click_area {
+  position: absolute;
+  top: 7px;
+  width: 166px;
+  height: 75px;
+  cursor: pointer;
+}
+.click_area_free {
+  background-position: -7px -670px;
+}
+.click_area_free:hover {
+  background-position: -7px -750px;
+}
+.click_area_free2 {
+  background-position: -7px -830px;
+}
+.click_area_cost {
+  background-position: -179px -670px;
+}
+.click_area_cost:hover {
+  background-position: -179px -750px;
+}
+.click_area_cost2 {
+  background-position: -179px -830px;
+}
+#draw_ten .click_area,
+#draw_ten_again .click_area {
+  position: absolute;
+  top: 7px;
+  width: 166px;
+  height: 75px;
+  background-position: -347px -670px;
+  cursor: pointer;
+}
+#draw_ten .click_area:hover,
+#draw_ten_again .click_area:hover {
+  background-position: -347px -750px;
+  cursor: pointer;
+}
+#draw_ten .click_area2,
+#draw_ten_again .click_area2 {
+  position: absolute;
+  top: 7px;
+  width: 166px;
+  height: 75px;
+  background-position: -347px -830px;
+  cursor: pointer;
+}
+.btn_text {
+  position: absolute;
+  top: 81px;
+  left: 25px;
+  font-size: 13px;
+  color: #ffffff;
+}
+.btn_text b,
+.btn_text i {
+  font-style: normal;
+}
+#draw_ten i,
+#draw_ten_again i {
+  color: #ffff00;
+  text-overflow: ellipsis;
+  max-width: 65px;
+  height: 20px;
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+  font-weight: bold;
+}
+#draw_ten b,
+#draw_ten_again b {
+  display: inline-block;
+  overflow: hidden;
+}
+#draw_one .btn_text,
+#draw_one_again .btn_text {
+  position: absolute;
+  top: 79px;
+  left: 38px;
+  font-size: 13px;
+  color: #ffff00;
+  font-weight: bold;
+}
+#draw_ten .btn_text,
+#draw_ten_again .btn_text {
+  width: 91px;
+  text-align: center;
+}
+.btn_free {
+  position: absolute;
+  top: 79px;
+  left: 56px;
+  font-size: 13px;
+  display: none;
+  color: #ffff00;
+  font-weight: bold;
+}
+.btn_img {
+  position: absolute;
+  bottom: -3px;
+  left: 113px;
+  width: 26px;
+  height: 26px;
+}
+.prize_div {
+  position: absolute;
+  top: 35px;
+  left: 49px;
+  width: 64px;
+  height: 18px;
+  text-align: center;
+}
+.btn_icon {
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+}
+.btn_cost {
+  max-width: 46px;
+  font-size: 14px;
+  color: #ffffff;
+  line-height: 20px;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: top;
+}
+/*抽一次界面*/
+#draw_one_again {
+  left: 292px;
+  top: 325px;
+}
+#draw_one_rt {
+  left: 86px;
+  top: 325px;
+}
+#draw_one_rt .click_area,
+#draw_ten_rt .click_area {
+  position: absolute;
+  top: 7px;
+  width: 166px;
+  height: 75px;
+  background-position: -516px -670px;
+  cursor: pointer;
+}
+#draw_one_rt .click_area:hover,
+#draw_ten_rt .click_area:hover {
+  background-position: -516px -750px;
+  cursor: pointer;
+}
+#draw_one_rt .click_area2,
+#draw_ten_rt .click_area2 {
+  position: absolute;
+  top: 7px;
+  width: 166px;
+  height: 75px;
+  background-position: -516px -830px;
+  cursor: pointer;
+}
+#prize_one {
+  left: 214px;
+  top: 107px;
+}
+#flash_one {
+  left: 190px;
+  top: 82px;
+  display: none;
+  height: 160px;
+  width: 160px;
+  position: absolute;
+}
+.star_one {
+  height: 113px;
+  width: 113px;
+  position: absolute;
+  background-position: -799px -674px;
+}
+.star_one img,
+.star_one span,
+.star_one p {
+  display: none;
+}
+#prize_one p {
+  position: absolute;
+  top: 113px;
+  left: 0;
+  width: 116px;
+  height: 23px;
+  text-align: center;
+  color: #ffffff;
+  font-size: 15px;
+  background-position: -797px -921px;
+  line-height: 23px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+/*抽十次界面*/
+#draw_ten_again {
+  left: 292px;
+  top: 325px;
+}
+#draw_ten_rt {
+  left: 86px;
+  top: 325px;
+}
+.star_ten {
+  height: 94px;
+  width: 94px;
+  position: absolute;
+  background-position: -807px -811px;
+}
+.star_ten img,
+.star_ten span,
+.star_ten p {
+  display: none;
+}
+.flash_ten {
+  display: none;
+  height: 315px;
+  width: 580px;
+  top: 21px;
+  left: -19px;
+  position: absolute;
+}
+.prize_ten {
+  height: 94px;
+  width: 94px;
+  background-position: -691px -813px;
+  position: absolute;
+}
+.prize_ten img {
+  top: 3px;
+  left: 12px;
+  width: 69px;
+  height: 69px;
+  position: absolute;
+}
+.prize_ten span {
+  position: absolute;
+  top: 74px;
+  width: 100%;
+  text-align: center;
+  color: #ffffff;
+  font-size: 14px;
+  opacity: inherit;
+  filter: inherit;
+}
+.prize_ten .video_free_barrage {
+  display: block;
+  top: -1px;
+  left: -2px;
+  width: 40px;
+  height: 42px;
+  background: url("http://ossweb-img.qq.com/images/mgc/css_img/video_room/rare.png?v=3_8_8_2016_15_4_final_3");
+}
+.prize_ten .video_star_week {
+  display: block;
+  top: 57px;
+  left: -1px;
+  width: 52px;
+  height: 18px;
+  background: url("http://ossweb-img.qq.com/images/mgc/css_img/video_room/star_gift.png?v=3_8_8_2016_15_4_final_3");
+}
+.prize_ten em {
+  display: none;
+}
+.prize_ten p {
+  position: absolute;
+  top: 97px;
+  left: 0;
+  width: 93px;
+  height: 20px;
+  text-align: center;
+  color: #ffffff;
+  font-size: 15px;
+  background-position: -796px -952px;
+  line-height: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+/*抽奖记录样式*/
+#draw_record {
+  height: 115px;
+  width: 100%;
+  position: absolute;
+  top: 536px;
+}
+#record_title {
+  height: 31px;
+  width: 100%;
+  position: absolute;
+}
+#prompt {
+  position: absolute;
+  bottom: 4px;
+  right: 12px;
+  width: 87px;
+  height: 19px;
+  background-position: -694px -922px;
+}
+#record_list {
+  height: 68px;
+  width: 558px;
+  left: 25px;
+  top: 33px;
+  position: absolute;
+  overflow: hidden;
+}
+#record_list_con {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.record_prize {
+  color: #ED5F24;
+}
+.record_default {
+  font-size: 17px;
+  top: 25px;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}
+.record {
+  height: 17px;
+  font-size: 12px;
+}
+/*game端图片样式*/
+#draw_div .game-img {
+  padding: 11px 0 0 13px;
+}
+.effect_luck {
+  position: absolute;
+  top: 74px;
+  left: 28px;
+  width: 546px;
+  height: 445px;
+  pointer-events: none;
+}

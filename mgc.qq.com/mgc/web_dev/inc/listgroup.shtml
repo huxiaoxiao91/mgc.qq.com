@@ -1,0 +1,40 @@
+<script>STATIC_RESOURCE.addCssByInc(['/css/group.join.css']);</script>
+<!--搜索框-->
+<div class="searchgroup">
+    <span class="input"><input maxlength="16"></span>
+    <a class="find">查找</a>
+    <a class="all">全部</a>
+</div>
+
+<!--后援团列表-->
+<div class="grouplist">
+    <div class="title">
+        <span class="vg_name">后援团名</span><span class="chief_name">团长</span><span class="anchor_name">主播名</span><span class="member_count">当前人数</span><span class="vg_score">活跃积分</span><span class="vg_total_score">总积分</span>
+        <a data-type="default" class="score"></a>
+        <a data-type="default" class="totalscore"></a>
+    </div>
+    <div class="list"><div class="sus_tips_listLi"></div>
+        <ul>
+        </ul>
+    </div>
+    <div class="bottom">
+        <img style="display: none;" src="http://ossweb-img.qq.com/images/mgc/css_img/common/loading_normal.gif?v=3_8_8_2016_15_4_final_3">
+        <span style="display: none;">已经没有后援团了哦</span>
+    </div>
+</div>
+<div class="sus_tips"></div>
+<!--后援团列表模版-->
+<script id="groupTmpl" type="text/x-jquery-tmpl">
+	<li data-vgid="${vgid}">
+        <span class="vg_name"><a data-vgid="${vgid}"></a><span>${vg_name}</span></span>
+        <span class="chief_name"><i class='weath_level weath_level_${chief_wealth_level}' style="background:url('http://ossweb-img.qq.com/images/mgc/css_img/common/wealth_level/${chief_wealth_level}.png?v=3_8_8_2016_15_4_final_3') no-repeat" onmouseover="MGC.susStateTips(event,1,'财富值:${chief_wealth}',0,25)" onmouseout="MGC.susStateTips(event,0);"></i><span>${chief_name}</span></span>
+        <span class="anchor_name">{{if anchor_level_temp==0}}{{else}}<i class='anchor_level anchor_level_${anchor_level_temp}'   style="background:url('http://ossweb-img.qq.com/images/mgc/css_img/common/anchor_level/${anchor_level_temp}.png?v=3_8_8_2016_15_4_final_3') no-repeat right center"><i>${anchor_level}</i></i><span class="anchor_level_bg" onmouseover="MGC.susStateTips(event,1,'主播等级:${anchor_level}',0,50)" onmouseout="MGC.susStateTips(event,0);"></span>{{/if}}<span>${anchor_name}</span></span>
+        <span class="member_count">${member_count}/80</span>
+        <span class="vg_score">${vg_score}</span>
+        <span class="vg_total_score">${vg_total_score}</span>
+	</li>
+</script>
+
+<script>
+        JoinGroup.init();
+</script>

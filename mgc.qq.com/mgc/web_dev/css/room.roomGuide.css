@@ -1,0 +1,32 @@
+/*roomGuide*/
+.attention_guide,.attention_guide_c,.statement_guide,.statement_guide_c,.roomheat,.roomheat_c,.giftArea_guide,.register_guide,.register_guide .btn,.register_guide .btn:hover,.register_guide .btn:active,.register_guide_bg .close,.register_guide_bg .close:hover,.register_guide_bg .close:active,.gift_guide_left,.gift_guide_center,.gift_guide_right{background: url(http://ossweb-img.qq.com/images/mgc/css_img/guide/newbie_guide_Qgame.png?v=3_8_8_2016_15_4_final_3) no-repeat 0 0;display:none;}
+.register_guide_bg{background: url(http://ossweb-img.qq.com/images/mgc/css_img/guide/register_guide_bg.png?v=3_8_8_2016_15_4_final_3) repeat-x 0 43px;width:100%;height:183px;bottom:0;position: absolute;left:0;z-index: 6;display:none;}
+/*attention*/
+.attention_guide{background-position: -722px -3px;position:absolute;top:156px;left: 25px;width:140px;height: 107px;z-index:6;}
+.attention_guide_c{background-position: -722px -3px;position:absolute;top:159px;left: 26px;width:140px;height:107px;z-index:6;}
+
+/*statement*/
+.statement_guide,.statement_guide_c{background-position:-685px -129px;width:300px;height:116px;bottom:5px;position:absolute;right:9px;}
+.statement_guide_c{bottom:5px;}
+/**/
+.roomheat{background-position: -803px -517px;width: 330px;height:36px;bottom:0;position:absolute;left: 0px;z-index:6;}
+.roomheat_c{background-position:-848px -469px;width: 285px;height:36px;bottom:0;position:absolute;z-index:6;left:0;}
+.giftArea_guide{background-position: -739px -270px;width: 359px;height: 115px;bottom: 120px;position: absolute;left: 57px;z-index: 6;}
+.gift_guide{width:456px;height:52px;bottom:46px;position:absolute;right:0;z-index:5;display:none;}
+.gift_guide_left{background-position: -705px -399px;width:25px;height: 49px;bottom: -3px;position:absolute;left:0;z-index:5;display:inline-block;}
+.gift_guide_center{background: url(http://ossweb-img.qq.com/images/mgc/css_img/guide/guide_button.png?v=3_8_8_2016_15_4_final_3) repeat-x 0 2px;width:413px;height:52px;bottom:0;position:absolute;right:21px;bottom: -4px;z-index:5;display:inline-block;}
+.gift_guide_right{background-position: -1014px -399px;width:25px;height:49px;bottom: -3px;position:absolute;right:0;z-index:5;display:inline-block;}
+
+/*register_guide*/
+.register_guide{background-position: -720px -575px;position:relative;width: 373px;height: 181px;z-index: 6;margin:0 auto;display:block;}
+.register_guide .btn{background-position:-1005px -63px;width:104px;height:31px;bottom:36px;position:absolute;left:145px;z-index:6;display:block;}
+.register_guide .btn:hover{background-position:-1005px -13px;display:block;}
+.register_guide .btn:active{background-position:-1005px -113px;display:block;}
+.register_guide_bg span{display:inline-block;position:absolute;top:46px;right:3px;width:20px;height:18px;display:block;}
+.register_guide_bg .close{background-position:-725px -782px;display:block;}
+.register_guide_bg .close:hover{background-position:-765px -782px;display:block;}
+.register_guide_bg .close:active{background-position:-805px -782px;display:block;}
+
+/**/
+.guide_punchCard{background:url(http://ossweb-img.qq.com/images/mgc/css_img/video_room/skin1/sprite2.png?v=3_8_8_2016_15_4_final_3) no-repeat -3px -113px;width:218px;height:128px;z-index:6;display:none;position:absolute;top:37px;right:16px;}
+.guide_punchCard_login{background:url(http://ossweb-img.qq.com/images/mgc/css_img/video_room/skin1/sprite2.png?v=3_8_8_2016_15_4_final_3) no-repeat -3px -145px;width:218px;height:96px;z-index:6;display:none;position:absolute;top:69px;right:16px;}

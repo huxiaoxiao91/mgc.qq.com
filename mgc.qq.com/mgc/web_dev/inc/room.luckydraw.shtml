@@ -1,0 +1,132 @@
+<!-- 抽奖界面 -->
+<div id="draw_div" class="main_back" style="display:none;">
+	<a href="javascript:;" class="draw_close">关闭</a>
+	<div class="effect_luck">
+		<p id="effect_luck"></p>
+	</div>
+	<div id="draw_container">
+		<!--抽奖小view-->
+		<script type="text/x-jsrender" id="prize_tepl">
+			<div id="prize{{:numid}}" class="prize" tipsWidth="{{:tipsWidth}}"><img  src="{{:url}}"width="50" height="50" /><span>{{:count_desc}}</span><em>{{:prizeTips}}</em>
+			</div>
+		</script>
+		<div id="draw_one" class="draw_btn">
+			<div class="click_area click_area_cost">
+				<span class="prize_div"> <em class="btn_icon"></em> <em class="btn_cost">1001</em> </span>
+			</div>
+			<span class="btn_text"><b>23:59:59</b><i>后免费</i></span>
+			<span class="btn_free">本次免费</span>
+		</div>
+		<div id="draw_ten" class="draw_btn">
+			<div class="click_area">
+				<span class="prize_div"> <em class="btn_icon"></em> <em class="btn_cost">100x</em> </span>
+			</div>
+			<span class="btn_text"><b>必出</b><i>恶魔之鞭</i></span>
+			<img class="btn_img" src="http://ossweb-img.qq.com/images/mgc/css_img/items/item_5.png?v=3_8_8_2016_15_4_final_3">
+		</div>
+	</div>
+	<div id="draw_one_con" style="display:none">
+		<div id="prize_one" class="star_one"><img /><span>12</span><em></em>
+			<p>
+				恶魔之鞭
+			</p>
+		</div>
+		<div id="flash_one">
+			<div id="draw_flash_con">
+
+			</div>
+		</div>
+		<div id="draw_one_rt" class="draw_btn">
+			<div class="click_area"></div>
+		</div>
+		<div id="draw_one_again" class="draw_btn">
+			<div class="click_area click_area_cost">
+				<span class="prize_div"> <em class="btn_icon"></em> <em class="btn_cost">1001</em> </span>
+			</div>
+			<span class="btn_text"><b>23:59:59</b><i>后免费</i></span>
+			<span class="btn_free">本次免费</span>
+		</div>
+	</div>
+	<div id="draw_ten_con" style="display:none">
+		<div class="prize_ten"><img width="50" height="50" /><span>12</span><em></em>
+			<p>
+				恶魔之鞭
+			</p>
+		</div>
+		<div class="prize_ten"><img width="50" height="50" /><span>12</span><em></em>
+			<p>
+				恶魔之鞭
+			</p>
+		</div>
+		<div class="prize_ten"><img width="50" height="50" /><span>12</span><em></em>
+			<p>
+				恶魔之鞭
+			</p>
+		</div>
+		<div class="prize_ten"><img width="50" height="50" /><span>12</span><em></em>
+			<p>
+				恶魔之鞭
+			</p>
+		</div>
+		<div class="prize_ten"><img width="50" height="50" /><span>12</span><em></em>
+			<p>
+				恶魔之鞭
+			</p>
+		</div>
+		<div class="prize_ten"><img width="50" height="50" /><span>12</span><em></em>
+			<p>
+				恶魔之鞭
+			</p>
+		</div>
+		<div class="prize_ten"><img width="50" height="50" /><span>12</span><em></em>
+			<p>
+				恶魔之鞭
+			</p>
+		</div>
+		<div class="prize_ten"><img width="50" height="50" /><span>12</span><em></em>
+			<p>
+				恶魔之鞭
+			</p>
+		</div>
+		<div class="prize_ten"><img width="50" height="50" /><span>12</span><em></em>
+			<p>
+				恶魔之鞭
+			</p>
+		</div>
+		<div class="prize_ten"><img width="50" height="50" /><span>12</span><em></em>
+			<p>
+				恶魔之鞭
+			</p>
+		</div>
+		<div class="flash_ten">
+			<div id="flash_ten_con"></div>
+		</div>
+		<div id="draw_ten_rt" class="draw_btn">
+			<div class="click_area"></div>
+		</div>
+		<div id="draw_ten_again" class="draw_btn">
+			<div class="click_area">
+				<span class="prize_div"> <em class="btn_icon"></em> <em class="btn_cost">100x</em> </span>
+			</div>
+			<span class="btn_text"><b>必出</b><i>恶魔之鞭</i></span>
+			<img class="btn_img" src="http://ossweb-img.qq.com/images/mgc/css_img/items/item_5.png?v=3_8_8_2016_15_4_final_3">
+		</div>
+	</div>
+	<div id="draw_record">
+		<div id="record_title">
+			<div id="prompt"></div>
+		</div>
+		<div id="record_list">
+			<div id="record_list_con">
+				<div class="record_default">
+					<span>多种奖品拿到手软,快来体验吧!</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/x-jsrender" id="draw_record_tmpl">
+	<div class="record">
+	     <span class="record_user">{{:nick}}获得</span>&nbsp;<span class="record_prize">{{:prize}}</span>
+	</div>
+</script>

@@ -1,0 +1,18 @@
+﻿.yuan {
+    border: 2px solid #c40000;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    padding: 5px;
+    background: #FFF;
+    width: 330px;
+    height: 200px;
+    behavior: url(iecss3.htc);
+}
+#login_qq_face {
+     border: 2px solid #c40000;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    behavior: url(iecss3.htc);
+}

@@ -1,0 +1,75 @@
+<script>STATIC_RESOURCE.addCssByLink(['/css/groupcard.css']);</script>
+<!-- 后援团名片 -->
+<div class="pop pop_card_group" id="pop15">
+  <a href="javascript:;" class="pop_close">关闭</a>
+  <p class="pop_title">后援团名片</p>
+  <dl id="backupGroupTip1Container" class="pop_group_info clearfix"></dl>
+  <!--
+	<dl class="pop_anchor_info clearfix">
+		<dt>
+		<div class="head_anchor"><img src="http://ossweb-img.qq.com/upload/webplat/info/x5/201408/1406886783_1436653066_25882_imageAddr.jpg?v=3_8_8_2016_15_4_final_3" width="190" height="190" alt="主播昵称" /></div>
+		<span class="fans">2586952</span>
+		<a href="#" class="btn_care" title="+ 关注">+ 关注</a>
+		</dt>
+		<dd class="w_470">昵称：<strong>MC哪哪真爱</strong></dd>
+		<dd>来自：<strong>中国</strong></dd>
+		<dd>主播积分：<strong>2953129175</strong></dd>
+		<dd>人气：<strong>2953129175</strong></dd>
+		<dd>星耀：<strong>2953129175</strong></dd>
+		<dd>守护数量：<strong>3676</strong></dd>
+		<dd>后援团数量：<strong>36</strong></dd>
+		<dd class="w_470 shuoming">
+			<p>你若盛开，蝴蝶自来！</p>
+			<p>群号：458794654</p>
+			<p>做好自己最重要！</p>
+		</dd>
+	</dl>-->
+
+</div>
+<!-- 后援团名片START-->
+<script id="backupGroupInfoTmpl" type="text/x-jquery-tmpl">
+  <a class="pop_close" href="javascript:;">关闭</a>
+  <div class="pop_info">
+    <div class="pop_details">
+      <ul class="clearfix">
+        <li class="p1">
+          <strong>团名：</strong>
+          <i>${vg_name}</i>
+        </li>
+        <li class="p3">
+          <strong>总人数：</strong><i>${member_count}</i>/<i>${member_limit}</i></p>
+        </li>
+        <li class="p6">
+          <strong>支持主播：</strong><div class="anchor_icon_tips">{{if anchor_level_temp==0}}{{else}}<i class="anchor_level anchor_level_${anchor_level_temp}" style="background:url('http://ossweb-img.qq.com/images/mgc/css_img/common/anchor_level/${anchor_level_temp}.png?v=3_8_8_2016_15_4_final_3') no-repeat;"><i>${anchor_level}</i></i><em>主播等级:${anchor_level}</em>{{/if}}</div>${anchor_name}<i class="lv_links" anchorid="${anchor_pstid}"></i>
+        </li>
+        <li class="p3 p0">
+          <strong>团内资产：</strong>${vg_wealth}
+        </li>
+        <li class="p4 p0">
+          <strong>本月贡献：</strong>${anchor_cont_score}
+        </li>
+        <li class="p2">
+          <strong>活跃积分：</strong>${vg_score}
+        </li>
+        <li class="p4 p7">
+          <strong>总积分：</strong>${total_score}
+        </li>
+        <li class="p5">
+          <fieldset>
+            <legend>后援团简介：</legend>
+            <p>${vg_desc}</p>
+          </fieldset>
+        </li>
+      </ul>
+	    {{if myvgid == 0 }}
+		  <div class="applyBtn"><a href="javaScript:MGC_CommResponse.applyGroup('${vgId}');">申请加入</a></div><div class="cancelBtn"><a href="javascript:;">取消</a></div>
+        {{else myvgid == 1 }}
+            <div class="applyBtn"><a href="group.shtml?id=3">进入我的后援团</a></div><div class="cancelBtn"><a href="javascript:;">取消</a></div>
+        {{else myvgid == 2 }}
+            <div class="applyBtn"><a style="display:none;" href="group.shtml?id=3">进入我的后援团</a></div><div class="cancelBtn" style="float:none;right:inherit;width:100px;margin:22px auto 0;left: -28px;text-align:center;"><a href="javascript:;">取消</a></div>
+        {{/if}}
+      
+    </div>
+  </div>
+</script>
+<!-- 后援团名片END-->

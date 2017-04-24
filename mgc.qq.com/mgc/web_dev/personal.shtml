@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="robots" content="all">
+    <meta name="author" content="Tencent-TGideas">
+    <meta name="Copyright" content="Tencent">
+    <meta name="Description" content="《QQ炫舞》最时尚浪漫的舞蹈游戏,2012年同时在线已突破260万!6月20日,QQ炫舞正式发布了3.0《我的演唱会》版本,开启全新大音乐舞蹈网游时代!更与青海卫视花儿朵朵、RTA组合，达成战略合作，引入了明星歌曲首发、明星游戏驻唱等全新活动形式。QQ炫舞有着最丰富的模式和玩法，最浪漫的交友平台，最华丽精美的画面表现，最紧跟潮流的版本开发迭代节奏，持续不断的为千万炫舞玩家，提供着最优质的游戏体验！" />
+    <meta name="Keywords" content="炫舞梦工厂,梦工厂,QQ炫舞,炫舞,QQ炫舞官网,QQ炫舞官方下载,QQ炫舞下载,QQ炫舞官方网站" />
+    <title>炫舞梦工厂-QQ炫舞官方网站-腾讯游戏-开启大音乐舞蹈网游时代</title>
+    <!--#include virtual="/inc/staticloading.shtml"-->
+    <script>STATIC_RESOURCE.addCssByLink(['/css/comm.base.css', '/css/private.personal.css', '/css/jquery.jscrollpane.css']);</script>
+</head>
+<body>
+    <!--header s-->
+    <!--#include virtual="/inc/header.inc"-->
+    <!--header e-->
+    <!--签到-->
+    <!--#include virtual="/inc/sign.shtml" -->
+    <!-- content s -->
+    <div class="content clearfix">
+        <!-- side_nav s -->
+        <div id="side_nav" class="side_nav">
+            <dl>
+                <dt>个人信息</dt>
+                <dd class="current"><a href="javascript:;">基本资料</a></dd>
+                <dd><a href="javascript:;">头像设置</a></dd>
+            </dl>
+            <dl>
+                <dt>我的关注</dt>
+                <dd><a href="javascript:;">关注的主播</a></dd>
+                <dd><a href="javascript:;">我的票务</a></dd>
+            </dl>
+        </div>
+        <!-- //side_nav e -->
+        <!-- main s -->
+        <!--个人资料-->
+        <div style="display: block;" class="main">
+        	<div class="title">
+        		<div class="tit_info">基本资料</div><div class="title_tail">_</div>
+        	</div>
+            <div class="box_info">
+                <ul class="base_info line_bot clearfix">
+                    <li><strong>昵称：</strong><span id="i_nick_name"></span><a href="javascript:;" class="btn btn_revamp">修改</a></li>
+                    <li><strong>性别：</strong><span id="i_sex"></span><!--span class="male" >男</span><span class="female">女</span--></li>
+                    <li><strong>大区：</strong><span id="i_zone_name"></span></li>
+                    <li><strong>贵族身份：</strong><span id="i_honor"></span><span></span><span id="i_anchor-name"></span><span id="i_expire_time"></span></li>
+                    <li><strong>等级：</strong>LV<span id="i_video_level"></span><div class="exp_box">
+                        <p class="progress"><span id="i_level_exp" class="ing" style="width: 0%;"><i></i></span></p>
+                    </div>
+                    </li>
+                    <li><strong>梦幻币：</strong><span id="i_dream_money"></span><span class="icon_mhb" style="background:url(http://ossweb-img.qq.com/images/mgc/css_img/common/cash_classify/dream_money.png?v=3_8_8_2016_15_4_final_3) no-repeat">梦幻币</span></li>
+                    <li><strong>财富：</strong><div class="i_wealth_level_tips">
+                        <i id="i_wealth_level"></i><em id="i_wealth"></em>
+                        <div class="exp_box">
+                            <p class="progress"><span id="i_wealth_exp" class="ing" style="width: 0%;"><i></i></span></p>
+                        </div>
+                    </div>
+                    </li>
+                    <li><strong>炫豆余额：</strong><span id="i_balance_money"></span><span class="icon_xd" style="background:url(http://ossweb-img.qq.com/images/mgc/css_img/common/cash_classify/money_balance.png?v=3_8_8_2016_15_4_final_3) no-repeat">炫豆</span><a href="http://pay.qq.com/ipay/index.shtml?c=qxwwqp" target="_blank" onclick="mgc.tools.EAS([{'e_c': 'mgc.charge','c_t':4}])" class="btn btn_payfor">充值</a></li>
+
+
+                </ul>
+                <div class="box_sign line_bot">
+                    <strong>个人签名：</strong>
+                    <div class="bg_sign">
+                        <textarea name="" cols="" rows="" style="resize: none" id="i_signature">请输入文字，上限为32个汉字。</textarea>
+                    </div>
+                    <div id="mask"></div>
+                </div>
+                <div class="met_setting">
+                    <strong>消息设置：</strong>
+                    <!--p class="sett_mgc checked"><span class="box_check"></span>屏蔽梦工厂内的所有私聊信息（不包括来自主播和管理员的私聊）</p-->
+                    <p class="sett_mgc"><span class="box_check"></span>屏蔽梦工厂内的所有私聊信息（不包括来自主播和管理员的私聊）</p>
+                </div>
+                <a href="javascript:;" class="btn btn_save">保存</a>
+            </div>
+        </div>
+        <!--头像设置-->
+        <div class="main">
+        	<div class="title">
+        		<div class="tit_avat">头像设置</div><div class="title_tail">_</div>
+        	</div>
+            <div class="box_info clearfix">
+                <p id="AvatarFlashContent"></p>
+
+                <!-- 剪切至a.shtml -->
+            </div>
+        </div>
+        <!--关注的主播-->
+        <div class="main">
+        	<div class="title">
+        		<div class="tit_follow">关注的主播</div><div class="title_tail2">_</div>
+        	</div>
+            <div class="box_info box_attent">
+                <table>
+                    <tr>
+                        <th class="att_col1">主播昵称</th>
+                        <th class="att_col2">亲密度</th>
+                        <th class="att_col3">守护关系</th>
+                        <th class="att_col4">操作</th>
+                    </tr>
+                </table>
+                <div class="list_attent">
+                    <div class="sus_tips_lists"></div>
+                    <table id="i_attend_list">
+                    </table>
+                    <script type="x-jquery-tmpl" id="i_attend_tmpl">
+					<tr>
+						<td class="att_col1 row1"><span class="anchor_level_${anchor_level_temp}" style="background:url(http://ossweb-img.qq.com/images/mgc/css_img/common/anchor_level/${anchor_level_temp}.png?v=3_8_8_2016_15_4_final_3) no-repeat right center"><i>${anchor_level}</i></span><span class="att_name">${m_anchor_nick}</span>{{if m_status == 2}}<span class="zhibo"><a onclick="mgc.tools.EAS([{'e_c': 'mgc.enterroom.3','c_t':4},{'e_c': 'mgc.enterroom','c_t':4}])" href="transfer.shtml?roomId=${m_videoroom_id}&source=7" target="_blank" style="color:#fff">直播中</a></span>{{/if}}</td>
+						<td class="att_col2">${affinity}</td>
+						<td class="att_col3"><span class="icon_lv icon_lv${guard_level}" mgc_guard_level="${guardLevelStr}" {{if guard_level > 0}} style="background:url(http://ossweb-img.qq.com/images/mgc/css_img/common/guard/${guard_level}.png?v=3_8_8_2016_15_4_final_3) no-repeat right center"{{/if}}>{{if guard_level > 0}}${guardLevelStr}{{else}}无{{/if}}</span></td>
+						<td class="att_col4"><a href="javascript:;" class="del" m_anchor='${m_anchor}' m_anchor_nick='${m_anchor_nick}'>×</a><i class="del_tips">取消对主播关注</i></td>
+					</tr>
+				</script>
+                </div>
+                <!--缺少暂无关注的样式-->
+            </div>
+        </div>
+        <!--我的票务-->
+        <div class="main">
+        	<div class="title">
+        		<div class="tit_ticket">我的票务</div><div class="title_tail">_</div>
+        	</div>
+            <div class="box_info box_attent">
+            	<div class="fodong">
+                    <form>
+                        <select id="buyTickeTime" class="xuanze">
+                            <option value='0'>最近一个月内购买</option>
+                            <option value='1'>一个月之前购买</option>
+                        </select>
+                        <!-- <div class="sousuo_jihe">
+			    		<input class="sousuo_kuan" type="text" value="胡夏"/>
+				    	<b class="sousuo">搜索</b>
+				    </div> -->
+                    </form>
+                </div>
+                <table width="755px">
+                    <tbody>
+                        <tr>
+                            <th width="25%">购买时间</th>
+                            <th width="20%">绑定大区</th>
+                            <th width="15%">QQ号</th>
+                            <th width="15%">购买数量</th>
+                            <th width="15%">价格</th>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="list_attent">
+                    <table width="755px">
+                        <tbody id="ticketContent">
+                            <tr>
+                                <td align="center" colspan="5">抱歉，未查到订单信息。</td>
+                            </tr>
+                   <!--         <tr>
+						<td width="25%" class="row1">
+								<span style="float:left;display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;width:140px;">
+									2015年7月23日
+								</span>
+						</td>
+						<td width="20%">胡夏音乐会专场</td>
+						<td width="15%">65299365</td>
+						<td width="15%"><span class="" title="">100</span></td>
+						<td width="15%">
+							1000元
+						</td>
+					</tr>
+					
+					<tr>
+						<td width="30%" class="row1">
+								<span style="float:left;display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;width:140px;">
+									2015年7月23日
+								</span>
+						</td>
+						<td width="22%">胡夏音乐会专场</td>
+						<td width="22%"><span class="icon_lv icon_lv0" title="">100</span></td>
+						<td width="22%">
+							1000元
+						</td>
+					</tr>
+					<tr>
+						<td width="30%" class="row1">
+								<span style="float:left;display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;width:140px;">
+									2015年7月23日
+								</span>
+						</td>
+						<td width="22%">胡夏音乐会专场</td>
+						<td width="22%"><span class="icon_lv icon_lv0" title="">100</span></td>
+						<td width="22%">
+							1000元
+						</td>
+					</tr>
+					<tr>
+						<td width="30%" class="row1">
+								<span style="float:left;display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;width:140px;">
+									2015年7月23日
+								</span>
+						</td>
+						<td width="22%">胡夏音乐会专场</td>
+						<td width="22%"><span class="icon_lv icon_lv0" title="">100</span></td>
+						<td width="22%">
+							1000元
+						</td>
+					</tr>
+					<tr>
+						<td width="30%" class="row1">
+								<span style="float:left;display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;width:140px;">
+									2015年7月23日
+								</span>
+						</td>
+						<td width="22%">胡夏音乐会专场</td>
+						<td width="22%"><span class="icon_lv icon_lv0" title="">100</span></td>
+						<td width="22%">
+							1000元
+						</td>
+					</tr>-->
+                        </tbody>
+                    </table>
+                    <div class="fanye" style="display: none;">
+                        <a id="buyTickePre" href="javascript:void(0);">上一页</a>
+                        <a id="buyTickeNex" href="javascript:void(0);">下一页</a>
+                    </div>
+                    <div class="tishi">
+                        <strong>温馨提示：</strong>
+                        <p>1、购买成功后系统会自动发货，如发货失败24小时内会自动补发！</p>
+                        <p>2、如果网银（包括微信）重复付款或付款后订单取消，道具未到账，网银退款将在15个工作日内到账。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- //main e -->
+    </div>
+    <!-- //content e -->
+    <!--昵称修改-->
+    <div id="pop4" class="pop">
+        <a class="pop_close" href="javascript:;">关闭</a>
+        <p class="pop_title">昵称修改</p>
+        <div class="pop_name">
+            <p class="txt">在下方输入新昵称后，选择“确定”按钮，即可完成昵称修改。</p>
+            <p class="petname">
+                <input type="text" value="" id="i_edit_nick" />
+            </p>
+            <p class="tips" id="i_tips" style="display: none"><i class="icon_warn"></i>该昵称不可使用，请您重新输入。</p>
+        </div>
+        <a class="pop_enter" href="javascript:;" id="i_edit_btn">确定</a>
+    </div>
+    <!--贵族-->
+    <!--#include virtual="/inc/vip.inc" -->
+    <!--footer s-->
+    <!--#include virtual="/inc/footer.inc"-->
+    <!--#include virtual="/inc/minipay.shtml"-->
+    <!--#include virtual="/inc/susNav.inc"-->
+    <!--#include virtual="/inc/dialog.shtml" -->
+    <!--#include file="inc/role.shtml"-->
+    <!--footer e-->
+    <div class="common_tips"></div>
+    <div class="mhb_tips" style="display: none">
+        梦幻币<br />
+        通过签到、任务、等级成长等方式获得，可用来购买梦幻币礼物及贵族身份。
+    </div>
+    <div class="xd_tips" style="display: none">
+        炫豆<br />
+        通过充值获得，可用来购买付费礼物、贵族身份等，消费炫豆还能够增加财富值哦！
+    </div>
+    <script src="script/lib/utils/jquery-1.9.1.min.js?v=3_8_8_2016_15_4_final_3"></script>
+    <script type="text/javascript" src="js/mgc.js?v=3_8_8_2016_15_4_final_3"></script>
+    <script type="text/javascript" src="js/mgc_init.js?v=3_8_8_2016_15_4_final_3"></script>
+    <script type="text/javascript" src="js/mgc_dialog.min.js?v=3_8_8_2016_15_4_final_3"></script>
+    <script type="text/javascript" src="js/mgc_popmanager.js?v=3_8_8_2016_15_4_final_3"></script>
+    <script type="text/javascript" src="js/mgc.common.js?v=3_8_8_2016_15_4_final_3"></script>
+    <script data-main="script/main_entry_personal" defer async="true" src="js/utils/require-2.1.20.min.js?v=3_8_8_2016_15_4_final_3"></script>
+</body>
+</html>
+<!--[if !IE]>|xGv00|b4b94086fb7c3e029601ff1265d609c6<![endif]-->
+

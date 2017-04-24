@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta name="robots" content="all">
+    <meta name="author" content="Tencent-TGideas">
+    <meta name="Copyright" content="Tencent">
+    <meta name="Description" content="《QQ炫舞》最时尚浪漫的舞蹈游戏,2012年同时在线已突破260万!6月20日,QQ炫舞正式发布了3.0《我的演唱会》版本,开启全新大音乐舞蹈网游时代!更与青海卫视花儿朵朵、RTA组合，达成战略合作，引入了明星歌曲首发、明星游戏驻唱等全新活动形式。QQ炫舞有着最丰富的模式和玩法，最浪漫的交友平台，最华丽精美的画面表现，最紧跟潮流的版本开发迭代节奏，持续不断的为千万炫舞玩家，提供着最优质的游戏体验！" />
+    <meta name="Keywords" content="炫舞梦工厂,梦工厂,QQ炫舞,炫舞,QQ炫舞官网,QQ炫舞官方下载,QQ炫舞下载,QQ炫舞官方网站" />
+    <title>炫舞梦工厂-QQ炫舞官方网站-腾讯游戏-开启大音乐舞蹈网游时代</title>
+    <link type="text/css" rel="stylesheet" href="css/comm.css?v=3_8_8_2016_15_4_final_3">
+    <link type="text/css" rel="stylesheet" href="css/ranklist.css?v=3_8_8_2016_15_4_final_3">
+    <!-- 页面设计：sayonkang | 页面制作：yaoqli | 创建：2014-03-20  团队博客：http://tgideas.qq.com/ -->
+</head>
+<body>
+    <!--header s-->
+    <!--#include virtual="/inc/header.inc"-->
+    <!--header e-->
+    <!--签到-->
+    <!--#include virtual="/inc/sign.shtml" -->
+    <!--trunck-->
+    <!--banner s-->
+    <div id="banner" class="banner">
+        <ul class="ban_pic">
+            <li><a href="javascript:;">
+                <img src="http://ossweb-img.qq.com/images/mgc/css_img/b0_02.jpg?v=3_8_8_2016_15_4_final_3" width="1800" hidden="300" alt="炫舞梦工厂" /></a></li>
+            <li><a href="javascript:;">
+                <img src="http://ossweb-img.qq.com/images/mgc/css_img/b0_02.jpg?v=3_8_8_2016_15_4_final_3" width="1800" hidden="300" alt="炫舞梦工厂" /></a></li>
+            <li><a href="javascript:;">
+                <img src="http://ossweb-img.qq.com/images/mgc/css_img/b0_02.jpg?v=3_8_8_2016_15_4_final_3" width="1800" hidden="300" alt="炫舞梦工厂" /></a></li>
+            <li><a href="javascript:;">
+                <img src="http://ossweb-img.qq.com/images/mgc/css_img/b0_02.jpg?v=3_8_8_2016_15_4_final_3" width="1800" hidden="300" alt="炫舞梦工厂" /></a></li>
+            <li><a href="javascript:;">
+                <img src="http://ossweb-img.qq.com/images/mgc/css_img/b0_02.jpg?v=3_8_8_2016_15_4_final_3" width="1800" hidden="300" alt="炫舞梦工厂" /></a></li>
+        </ul>
+        <div class="ban_btn">
+            <span class="current"></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <!--banner e-->
+
+    <div class="content clearfix">
+        <ul class="rc_tab_tit clearfix">
+            <li><a href="anchor.shtml">主播榜</a></li>
+            <li><a href="fans.shtml" class="current">粉丝榜</a></li>
+            <li><a href="actlist.shtml">活动榜</a></li>
+        </ul>
+        <!-- rc_caifu S  -->
+        <div class="rank_con rc_caifu">
+            <div class="rc_title rc_tit_caifu">
+                <h2 class="hide">财富排行榜</h2>
+                <a href="javascript:;" class="icon_how">?</a>
+                <p class="pop_tips"><i>◆</i>根据玩家财富值排名</p>
+            </div>
+            <div class="bd">
+                <ul class="clearfix">
+                    <li class="first"><a href="#"><b>1</b><span><strong>萌牛奶</strong><em class="source">来源七个汉字位</em></span><span class="r_poll">19901票</span></a></li>
+                    <li class="second"><a href="#"><b>2</b><span><strong>萌牛奶</strong><em class="source">来源七个汉字位</em></span><span class="r_poll">19901票</span></a></li>
+                    <li class="third"><a href="#"><b>3</b><span><strong>AngelDay</strong><em class="source">来源七个汉字位</em></span><span class="r_poll">9999999999票</span></a></li>
+                    <li class="fourth"><a href="#"><b>4</b><span><strong>萌牛奶<em class="source">来源七个汉字位</em></strong></span><span class="r_poll">19901票</span></a></li>
+                    <li class="fifth"><a href="#"><b>5</b><span><strong>萌萌手萌萌兽<em class="source">来源七个汉字位</em></strong></span><span class="r_poll">19901票</span></a></li>
+                    <li class="sixth"><a href="#"><b>6</b><span><strong>旧版橙子<em class="source">来源七个汉字位</em></strong></span><span class="r_poll">9999999999票</span></a></li>
+                    <li class="seventh"><a href="#"><b>7</b><span><strong>萌牛奶<em class="source">来源七个汉字位</em></strong></span><span class="r_poll">19901票</span></a></li>
+                    <li class="eighth"><a href="#"><b>8</b><span><strong>星源小龙虾米没男<em class="source">来源七个汉字位</em></strong></span><span class="r_poll">19901票</span></a></li>
+                    <li class="ninth"><a href="#"><b>9</b><span><strong>萌牛奶<em class="source">来源七个汉字位</em></strong></span><span class="r_poll">19901票</span></a></li>
+                    <li class="tenth"><a href="#"><b>10</b><span><strong>萌牛奶<em class="source">来源七个汉字位</em></strong></span><span class="r_poll">19901票</span></a></li>
+                </ul>
+                <div class="list_page clearfix">
+                    <a href="#" class="homepage">首页</a>
+                    <a href="#" class="prev">上一页</a>
+                    <span>1/100</span>
+                    <a href="#" class="next">下一页</a>
+                    <a href="#" class="homepage">尾页</a>
+                </div>
+                <div class="tips">您尚未登录，无法查看本人排名</div>
+            </div>
+        </div>
+        <!-- //rc_caifu E -->
+        <!-- rc_guizu S  -->
+        <div class="rank_con rc_guizu">
+            <div class="rc_title rc_tit_guizu">
+                <h2 class="hide">贵族排行榜</h2>
+                <a href="javascript:;" class="icon_how">?</a>
+                <p class="pop_tips"><i>◆</i>根据玩家贵族身份和财富值共同排名</p>
+            </div>
+            <div class="bd">
+                <ul class="clearfix">
+                    <li class="first"><a href="#"><b>1</b><span><strong>萌牛奶</strong><em class="source">来源七个汉字位</em></span><span class="r_poll">19901票<i class="icon_lv icon_lv10" title="亲王">帝</i></span></a></li>
+                    <li class="second"><a href="#"><b>2</b><span><strong>萌牛奶</strong><em class="source">来源七个汉字位</em></span><span class="r_poll">19901票<i class="icon_lv icon_lv10" title="亲王">帝</i></span></a></li>
+                    <li class="third"><a href="#"><b>3</b><span><strong>AngelDay</strong><em class="source">来源七个汉字位</em></span><span class="r_poll">9999999999票<i class="icon_lv icon_lv10" title="亲王">帝</i></span></a></li>
+                    <li class="fourth"><a href="#"><b>4</b><span><strong>萌牛奶<em class="source">来源七个汉字位</em></strong></span><span class="r_poll">19901票<i class="icon_lv icon_lv10" title="亲王">帝</i></span></a></li>
+                    <li class="fifth"><a href="#"><b>5</b><span><strong>萌萌手萌萌兽<em class="source">来源七个汉字位</em></strong></span><span class="r_poll">19901票<i class="icon_lv icon_lv10" title="亲王">帝</i></span></a></li>
+                    <li class="sixth"><a href="#"><b>6</b><span><strong>旧版橙子<em class="source">来源七个汉字位</em></strong></span><span class="r_poll">9999999999票<i class="icon_lv icon_lv10" title="亲王">帝</i></span></a></li>
+                    <li class="seventh"><a href="#"><b>7</b><span><strong>萌牛奶<em class="source">来源七个汉字位</em></strong></span><span class="r_poll">19901票<i class="icon_lv icon_lv10" title="亲王">帝</i></span></a></li>
+                    <li class="eighth"><a href="#"><b>8</b><span><strong>星源小龙虾米没男<em class="source">来源七个汉字位</em></strong></span><span class="r_poll">19901票<i class="icon_lv icon_lv10" title="亲王">帝</i></span></a></li>
+                    <li class="ninth"><a href="#"><b>9</b><span><strong>萌牛奶<em class="source">来源七个汉字位</em></strong></span><span class="r_poll">19901票<i class="icon_lv icon_lv10" title="亲王">帝</i></span></a></li>
+                    <li class="tenth"><a href="#"><b>10</b><span><strong>萌牛奶<em class="source">来源七个汉字位</em></strong></span><span class="r_poll">19901票<i class="icon_lv icon_lv10" title="亲王">帝</i></span></a></li>
+                </ul>
+                <div class="list_page clearfix">
+                    <a href="#" class="homepage">首页</a>
+                    <a href="#" class="prev">上一页</a>
+                    <span>1/100</span>
+                    <a href="#" class="next">下一页</a>
+                    <a href="#" class="homepage">尾页</a>
+                </div>
+                <div class="tips">您的排名：<strong>906</strong>名</div>
+            </div>
+        </div>
+        <!-- //rc_guizu E -->
+        <!-- rc_guizu S  -->
+        <div class="rank_con rc_wanjia">
+            <div class="rc_title rc_tit_wanjia">
+                <h2 class="hide">玩家排行榜</h2>
+                <a href="javascript:;" class="icon_how">?</a>
+                <p class="pop_tips"><i>◆</i>玩家排行榜</p>
+            </div>
+            <div class="bd">
+                <ul class="clearfix">
+                    <li class="first"><a href="#"><b>1</b><span><strong>萌牛奶</strong><em class="source">来源七个汉字位</em></span><span class="r_poll">LV 99</span></a></li>
+                    <li class="second"><a href="#"><b>2</b><span><strong>萌牛奶</strong><em class="source">来源七个汉字位</em></span><span class="r_poll">LV 99</span></a></li>
+                    <li class="third"><a href="#"><b>3</b><span><strong>AngelDay</strong><em class="source">来源七个汉字位</em></span><span class="r_poll">LV 99</span></a></li>
+                    <li class="fourth"><a href="#"><b>4</b><span><strong>萌牛奶<em class="source">来源七个汉字位</em></strong></span><span class="r_poll">LV 99</span></a></li>
+                    <li class="fifth"><a href="#"><b>5</b><span><strong>萌萌手萌萌兽<em class="source">来源七个汉字位</em></strong></span><span class="r_poll">LV 99</span></a></li>
+                    <li class="sixth"><a href="#"><b>6</b><span><strong>旧版橙子<em class="source">来源七个汉字位</em></strong></span><span class="r_poll">LV 99</span></a></li>
+                    <li class="seventh"><a href="#"><b>7</b><span><strong>萌牛奶<em class="source">来源七个汉字位</em></strong></span><span class="r_poll">LV 99</span></a></li>
+                    <li class="eighth"><a href="#"><b>8</b><span><strong>星源小龙虾米没男<em class="source">来源七个汉字位</em></strong></span><span class="r_poll">LV 99</span></a></li>
+                    <li class="ninth"><a href="#"><b>9</b><span><strong>萌牛奶<em class="source">来源七个汉字位</em></strong></span><span class="r_poll">LV 99</span></a></li>
+                    <li class="tenth"><a href="#"><b>10</b><span><strong>萌牛奶<em class="source">来源七个汉字位</em></strong></span><span class="r_poll">LV 99</span></a></li>
+                </ul>
+                <div class="list_page clearfix">
+                    <a href="#" class="homepage">首页</a>
+                    <a href="#" class="prev">上一页</a>
+                    <span>1/100</span>
+                    <a href="#" class="next">下一页</a>
+                    <a href="#" class="homepage">尾页</a>
+                </div>
+                <div class="tips">您尚未登录，无法查看本人排名</div>
+            </div>
+        </div>
+        <!-- //rc_guizu E -->
+    </div>
+    <!--footer s-->
+    <!--#include virtual="/inc/footer.inc"-->
+    <!--#include virtual="/inc/minipay.shtml"-->
+    <!--footer e-->
+    <!--引入公用的页面-->
+    <!--#include file="/inc/susNav.inc"-->
+    <script src="script/lib/utils/jquery-1.9.1.min.js?v=3_8_8_2016_15_4_final_3"></script>
+    <script src="js/mgc.js?v=3_8_8_2016_15_4_final_3"></script>
+    <script type="text/javascript" src="js/mgc_sign.js?v=3_8_8_2016_15_4_final_3" defer="defer"></script>
+    <script>
+        MGC.carousel("banner", "ban_pic", "ban_btn", 300, 5000);
+        $j('.icon_how').hover(function() {
+            $j(this).parent().find('.pop_tips').show();
+        }, function() {
+            $j(this).parent().find('.pop_tips').hide();
+        })
+</script>
+</body>
+</html>
+<!--[if !IE]>|xGv00|79dc34cd78e070b81a64df3a73cbdf5e<![endif]-->
+</html><!--[if !IE]>|xGv00|35a90189fc60edf3d56d0eded89befe3<![endif]-->

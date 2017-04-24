@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=8">
+    <meta charset="UTF-8">
+    <meta name="robots" content="all">
+    <meta name="author" content="Tencent-TGideas">
+    <meta name="Copyright" content="Tencent">
+    <meta name="Description" content="《QQ炫舞》最时尚浪漫的舞蹈游戏,2012年同时在线已突破260万!6月20日,QQ炫舞正式发布了3.0《我的演唱会》版本,开启全新大音乐舞蹈网游时代!更与青海卫视花儿朵朵、RTA组合，达成战略合作，引入了明星歌曲首发、明星游戏驻唱等全新活动形式。QQ炫舞有着最丰富的模式和玩法，最浪漫的交友平台，最华丽精美的画面表现，最紧跟潮流的版本开发迭代节奏，持续不断的为千万炫舞玩家，提供着最优质的游戏体验！" />
+    <meta name="Keywords" content="炫舞梦工厂,梦工厂,QQ炫舞,炫舞,QQ炫舞官网,QQ炫舞官方下载,QQ炫舞下载,QQ炫舞官方网站" />
+    <title>炫舞梦工厂-QQ炫舞官方网站-腾讯游戏-开启大音乐舞蹈网游时代</title>
+    <!--#include virtual="/inc/staticloading.shtml"-->
+    <script>STATIC_RESOURCE.addCssByLink(['/css/jquery.jscrollpane.css','/css/comm.base.css', '/css/dreamworkscard.css', '/css/group.index.css']);</script>
+</head>
+<body>
+	<div id="cssTempDiv"></div>
+    <!--header s-->
+    <!--#include virtual="/inc/header.inc"-->
+    <!--header e-->
+    <!--签到-->
+    <!--#include virtual="/inc/sign.shtml" -->
+
+    <div class="main content clearfix">
+
+        <!--导航-->
+        <div class="tab">
+            <ul></ul>
+        </div>
+
+        <!--内容-->
+        <div class="group">
+            <!--后援团标题-->
+            <div class="groupHead">
+            </div>
+            <!--后援团内容-->
+            <div class="groupContent">
+            </div>
+        </div>
+
+    </div>
+
+    <!--导航模版-->
+    <script id="tabTmpl" type="text/x-jquery-tmpl">
+        <li class="id${id} level${level}" data-id="${id}" data-label="${label}" data-parent="${parent}" data-goto="${goto}" data-url="${url}">
+            <span class="id${id} level${level}">${label}</span>
+        </li>
+    </script>
+    <div class="sus_tips"></div>
+    <div class="sus_badge_tips"></div>
+    <!--footer s-->
+    <!--#include virtual="/inc/footer.inc"-->
+    <!--#include virtual="/inc/minipay.shtml"-->
+    <!--贵族-->
+    <!--#include virtual="/inc/vip.inc" -->
+    <!--footer e-->
+
+
+    <!--引入公用的页面-->
+    <!--#include virtual="/inc/susNav.inc"-->
+    <!--#include virtual="inc/role.shtml"-->
+    <!--#include virtual="/inc/dialog.shtml" -->
+    <!--#include virtual="/inc/vgCard.shtml" -->
+    <!--#include virtual="/inc/dreamcard.shtml" -->
+    <!--#include virtual="/inc/anchorcard.shtml"-->
+    <script src="script/lib/utils/jquery-1.9.1.min.js?v=3_8_8_2016_15_4_final_3"></script>
+    <script src="js/jquery/jquery.mousewheel.js?v=3_8_8_2016_15_4_final_3"></script>
+    <script src="js/jquery/jquery.jscrollpane.min.js?v=3_8_8_2016_15_4_final_3"></script>
+    <script src="http://ossweb-img.qq.com/images/js/login/loginmanagerv3.js?v=3_8_8_2016_15_4_final_3"></script>
+    <script src="js/mgc_dialog.min.js?v=3_8_8_2016_15_4_final_3"></script>
+    <script src="http://ossweb-img.qq.com/images/js/comm/tgadshow.min.js?v=3_8_8_2016_15_4_final_3"></script>
+    <script type="text/javascript" src="script/lib/utils/jquery.tmpl.min.js?v=3_8_8_2016_15_4_final_3"></script>
+    <script type="text/javascript" src="js/mgc.js?v=3_8_8_2016_15_4_final_3"></script>
+    <script type="text/javascript" src="js/utils/swfobject.js?v=3_8_8_2016_15_4_final_3"></script>
+    <script type="text/javascript" src="js/mgc_init.js?v=3_8_8_2016_15_4_final_3"></script>
+    <script type="text/javascript" src="js/mgc_dialog.min.js?v=3_8_8_2016_15_4_final_3"></script>
+    <script type="text/javascript" src="js/mgc_popmanager.js?v=3_8_8_2016_15_4_final_3"></script>
+    <script type="text/javascript" src="js/mgc.common.js?v=3_8_8_2016_15_4_final_3"></script>
+    <script type="text/javascript" src="js/mgc_group.js?v=3_8_8_2016_15_4_final_3"></script>
+    <script type="text/javascript" src="js/mgc_sign.js?v=3_8_8_2016_15_4_final_3" defer="defer"></script>
+    <script src="js/mgc_fans_guildcard.js?v=3_8_8_2016_15_4_final_3" defer="defer"></script>
+    <script src="js/mgc_card.js?v=3_8_8_2016_15_4_final_3" defer="defer"></script>
+    <script src="js/mgc_anchorcard.js?v=3_8_8_2016_15_4_final_3" defer="defer"></script>
+    <script type="text/javascript">
+        MGC_Comm.ToDoClosePage();
+    </script>
+    <script data-main="script/main_entry_room" src="script/lib/utils/require-2.1.20.min.js?v=3_8_8_2016_15_4_final_3" defer async></script>
+</body>
+</html>
+<!--[if !IE]>|xGv00|4aad5069fe6ec19f2333f1a1fc72db4a<![endif]-->

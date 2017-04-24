@@ -1,0 +1,866 @@
+@charset "UTF-8";
+/*导入指令(Import)*/
+/*
+*LESS Document
+*craete by 77
+*todo:less doc
+*/
+/*调试模式*/
+/*静态资源版本号*/
+/*图片路径地址*/
+/*extend background*/
+/*border-radius*/
+/*
+*page index style
+*craete by 77
+*todo:index-style
+*/
+.content {
+  width: 965px;
+  padding-bottom: 55px;
+  margin: -1px auto;
+}
+/*left room list start*/
+.con-left {
+  width: 728px;
+  float: left;
+}
+.room-list {
+  position: relative;
+  margin-bottom: 20px;
+}
+.room-list-title {
+  background: url('http://ossweb-img.qq.com/images/mgc/css_img/index/title_sprite.png?v=3_8_8_2016_15_4_final_3') no-repeat 0 0;
+  width: 100%;
+  height: 35px;
+  position: relative;
+}
+.hot-room-list .room-list-title {
+  background-position: 0 -20px;
+  margin-left: 2px;
+}
+.yule-room-list .room-list-title {
+  background-position: 0 -90px;
+}
+.star-room-list .room-list-title {
+  background-position: 0 -230px;
+}
+.popularity-room-list .room-list-title {
+  background-position: 0 -160px;
+}
+.mobile-room-list .room-list-title {
+  background-position: 0 -62px;
+}
+.room-list-title .mc-more {
+  display: inline-block;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  width: 50px;
+  height: 28px;
+}
+/*common room list tmpl style end*/
+.hot-room-list {
+  width: 100%;
+  height: 540px;
+  position: relative;
+}
+/*big hot room list start*/
+.silde-hot-room-list {
+  width: 346px;
+  height: 326px;
+  margin-left: 8px;
+  position: relative;
+  overflow: hidden;
+}
+.silde-hot-room-list .room-li-s {
+  position: absolute;
+  top: 0;
+  width: 1000%;
+}
+.silde-hot-room-list .room-li-s li {
+  width: 346px;
+  height: 326px;
+  background: #fff;
+  position: relative;
+  float: left;
+  overflow: hidden;
+  border: 1px solid #f5f5f5;
+}
+.silde-hot-room-list .room-li-s .room-li-a .room-img {
+  height: 279px;
+}
+.silde-hot-room-list .room-li-s .room-li-a .room-img img {
+  width: 346px;
+  height: 279px;
+  margin: 0 auto;
+}
+.rc-btn {
+  width: 100px;
+  height: 10px;
+  position: absolute;
+  right: 0px;
+  bottom: 8px;
+  text-align: right;
+  font-size: 0;
+  z-index: 10;
+}
+.rc-btn span {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background: #dedede;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  margin: 0 3px;
+  cursor: pointer;
+}
+.rc-btn .current {
+  background: #6a41c6;
+}
+/*big hot room list end*/
+/*small hot room list start*/
+.fixed-hot-room-list {
+  margin-top: -346px;
+  margin-bottom: -30px;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 20px;
+  margin-left: -22px;
+  padding-left: 30px;
+  height: 500px;
+}
+.fixed-hot-room-list .rl-k {
+  width: 346px;
+  height: 330px;
+  margin: 0 10px 4px 0;
+  float: left;
+}
+/*small hot room list end*/
+.yule-room-list .room-li-s,
+.star-room-list .room-li-s,
+.mobile-room-list .room-li-s,
+.popularity-room-list .room-li-s {
+  height: 345px;
+  width: 98%;
+  padding: 8px 0 0 8px;
+}
+/*yule room list start*/
+/*tab*/
+.show_tab .current,
+.show_room,
+.show_num {
+  background: url('http://ossweb-img.qq.com/images/mgc/css_img/video_room/show_sprite.png?v=3_8_8_2016_15_4_final_3') no-repeat 0 0;
+}
+.show_tab {
+  height: 30px;
+  width: 717px;
+  border-bottom: 1px solid #864ff6;
+  margin: 10px 0 0;
+  position: relative;
+  overflow: hidden;
+}
+.show_tab .show_tab_ul {
+  height: 100%;
+  width: 1000%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.show_tab li {
+  float: left;
+}
+.show_tab a {
+  display: block;
+  text-align: center;
+  width: 95px;
+  height: 30px;
+  line-height: 30px;
+  color: #864ff6;
+  font-size: 14px;
+  font-weight: bold;
+}
+.show_tab a:hover {
+  color: #ff7d13;
+}
+.show_tab .current:hover {
+  color: #ffffff;
+}
+.show_tab .current {
+  background-position: -40px 0;
+  color: #fff;
+}
+.pageUp,
+.pageDown,
+.pageUp_prev,
+.pageDown_prev,
+.pageUp:hover,
+.pageDown:hover {
+  background: url('http://ossweb-img.qq.com/images/mgc/css_img/common/header_sprite.png?v=3_8_8_2016_15_4_final_3') no-repeat 0 0;
+}
+.page-opt {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 50px;
+  height: 30px;
+  background-color: #fff;
+  display: none;
+}
+.pageUp {
+  background-position: -199px -3px;
+  position: absolute;
+  left: 0px;
+  top: 5px;
+  width: 23px !important;
+  height: 25px !important;
+}
+.pageUp:hover {
+  background-position: -199px -31px;
+}
+.pageUp_prev {
+  background-position: -199px -59px;
+  position: absolute;
+  left: 0px;
+  top: 5px;
+  width: 23px !important;
+  height: 25px !important;
+}
+.pageDown {
+  background-position: -237px -3px;
+  position: absolute;
+  right: 0px;
+  top: 5px;
+  width: 23px !important;
+  height: 25px !important;
+}
+.pageDown:hover {
+  background-position: -237px -31px;
+}
+.pageDown_prev {
+  background-position: -237px -59px;
+  position: absolute;
+  right: 0px;
+  top: 5px;
+  width: 23px !important;
+  height: 25px !important;
+}
+/*yule room list end*/
+/*left room list end*/
+/*right kuaibao、rank start*/
+.con-right {
+  width: 220px;
+  float: right;
+  /* overflow:hidden; */
+}
+/*kuai bao*/
+.bulletin {
+  width: 100%;
+  height: auto;
+  padding-top: 9px;
+}
+.bulletin .bulletin_title {
+  width: 123px;
+  height: 26px;
+  background: url('http://ossweb-img.qq.com/images/mgc/css_img/index/title_sprite.png?v=3_8_8_2016_15_4_final_3') no-repeat -221px -306px;
+  text-indent: -9999px;
+}
+#quickContainer {
+  background-color: #f5f5f5;
+  padding-bottom: 5px;
+}
+.bulletin li {
+  font-size: 14px;
+  height: 24px;
+  line-height: 24px;
+  position: relative;
+  padding-left: 10px;
+  width: 96%;
+  overflow: hidden;
+}
+.bulletin li a {
+  color: #2e2e2e;
+}
+.bulletin li a:hover {
+  text-decoration: underline;
+}
+.bulletin li i {
+  display: block;
+  width: 4px;
+  height: 4px;
+  font-size: 0;
+  line-height: 0;
+  overflow: hidden;
+  background: #6a41c6;
+  position: absolute;
+  left: 0;
+  top: 11px;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+}
+#yuliuad li {
+  margin-bottom: 10px;
+}
+/*rank con*/
+.ranking {
+  margin-top: 10px;
+  position: relative;
+}
+.ranking_title {
+  width: 160px;
+  height: 35px;
+  background: url('http://ossweb-img.qq.com/images/mgc/css_img/index/title_sprite.png?v=3_8_8_2016_15_4_final_3') no-repeat -5px -295px;
+  text-indent: -9999px;
+}
+.ranking_con {
+  width: 100%;
+  height: 705px;
+  background: #f7f7f7;
+  margin: 30px 0 20px 0;
+  padding-top: 10px;
+}
+.ranking_con ul {
+  width: 100%;
+  height: 100%;
+}
+.ranking_con li {
+  float: left;
+  display: inline;
+  position: relative;
+}
+.ranking_con li .live {
+  width: 42px;
+  height: 18px;
+  background: #ffb74f;
+  text-align: center;
+  color: #fff;
+  line-height: 18px;
+  display: block;
+  position: absolute;
+  z-index: 6;
+}
+.rank_tab {
+  width: auto;
+  position: absolute;
+  right: 0;
+  top: 40px;
+  background-color: #f7f7f7;
+}
+.rank_tab li {
+  width: 25px;
+  height: 25px;
+  border: 0;
+  line-height: 23px;
+  float: left;
+}
+.rank_tab a {
+  background: #ccc;
+  height: 23px;
+  display: block;
+  text-align: center;
+  color: #6a41c6;
+  font-size: 12px;
+}
+.rank_tab .current {
+  color: #ed6039;
+  background: #f7f7f7;
+}
+.first i,
+.second i,
+.third i,
+.fourth b,
+.fifth b,
+.sixth b,
+.seventh b,
+.eighth b,
+.ninth b,
+.tenth b,
+.fourth i,
+.fifth i,
+.sixth i,
+.seventh i,
+.eighth i,
+.ninth i,
+.tenth i {
+  background: url('http://ossweb-img.qq.com/images/mgc/css_img/index/rank_sprite.png?v=3_8_8_2016_15_4_final_3') no-repeat 0 0;
+  display: block;
+  position: absolute;
+  z-index: 2;
+}
+.first {
+  width: 83px;
+  height: 165px;
+  margin-left: 67px;
+}
+.first i {
+  width: 100%;
+  height: 100%;
+  background-position: -67px 0;
+}
+.first img {
+  position: absolute;
+  z-index: 1;
+  top: 8px;
+  left: 7px;
+  width: 70px;
+  overflow: hidden;
+}
+.first i:hover {
+  cursor: pointer;
+}
+.first span {
+  display: block;
+  position: absolute;
+  z-index: 3;
+  width: 76px;
+  height: 60px;
+  top: 100px;
+  left: 5px;
+  text-align: center;
+  color: #fff;
+}
+.first span strong {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: bold;
+  max-width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  line-height: 12px;
+  padding-top: 4px;
+}
+.first span strong:hover {
+  color: #ff7d13;
+  cursor: pointer;
+}
+.second {
+  width: 65px;
+  height: 150px;
+  margin: 16px 0 0 -150px;
+}
+.second i {
+  width: 100%;
+  height: 100%;
+  background-position: 0 -16px;
+}
+.third {
+  margin: 16px 0 0 2px;
+  width: 65px;
+  height: 150px;
+}
+.third i {
+  width: 100%;
+  height: 100%;
+  background-position: -153px -16px;
+}
+.second img,
+.third img {
+  position: absolute;
+  z-index: 1;
+  top: 6px;
+  left: 4px;
+  width: 56px;
+  overflow: hidden;
+}
+.second i:hover,
+.third i:hover {
+  cursor: pointer;
+}
+.second span,
+.third span {
+  display: block;
+  position: absolute;
+  z-index: 3;
+  width: 58px;
+  height: 60px;
+  top: 75px;
+  left: 5px;
+  text-align: center;
+  color: #fff;
+}
+.second span strong,
+.third span strong {
+  display: inline-block;
+  font-weight: bold;
+  line-height: 12px;
+  max-width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding-top: 4px;
+}
+.second span strong:hover,
+.third span strong:hover {
+  color: #ff7d13;
+  cursor: pointer;
+}
+.first label,
+.second label,
+.third label {
+  display: inline-block;
+  width: auto;
+  height: 20px;
+  margin: 0 auto;
+  margin-left: 0px;
+}
+.fourth,
+.fifth,
+.sixth,
+.seventh,
+.eighth,
+.ninth,
+.tenth {
+  width: 202px;
+  height: 75px;
+  border-bottom: 1px solid #e4e0e9;
+  margin-left: 8px;
+}
+.tenth {
+  border-bottom: 0 none;
+}
+.fourth b,
+.fifth b,
+.sixth b,
+.seventh b,
+.eighth b,
+.ninth b,
+.tenth b {
+  position: absolute;
+  top: 20px;
+  width: 36px;
+  height: 38px;
+}
+.fourth img,
+.fifth img,
+.sixth img,
+.seventh img,
+.eighth img,
+.ninth img,
+.tenth img {
+  position: absolute;
+  left: 40px;
+  top: 12px;
+  z-index: 1;
+  width: 50px;
+  overflow: hidden;
+}
+.fourth i:hover,
+.fifth i:hover,
+.sixth i:hover,
+.seventh i:hover,
+.eighth i:hover,
+.ninth i:hover,
+.tenth i:hover {
+  cursor: pointer;
+}
+.fourth i,
+.fifth i,
+.sixth i,
+.seventh i,
+.eighth i,
+.ninth i,
+.tenth i {
+  position: absolute;
+  left: 35px;
+  top: 7px;
+  z-index: 2;
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-position: -285px 0;
+}
+.fourth span,
+.fifth span,
+.sixth span,
+.seventh span,
+.eighth span,
+.ninth span,
+.tenth span {
+  display: block;
+  position: absolute;
+  left: 105px;
+  top: 18px;
+  color: #606060;
+  line-height: 12px;
+  width: 105px;
+}
+.fourth strong,
+.fifth strong,
+.sixth strong,
+.seventh strong,
+.eighth strong,
+.ninth strong,
+.tenth strong {
+  color: #6a41c6;
+  font-size: 14px;
+  font-weight: bold;
+  display: inline-block;
+  max-width: 105px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  padding-bottom: 10px;
+}
+.fourth strong:hover,
+.fifth strong:hover,
+.sixth strong:hover,
+.seventh strong:hover,
+.eighth strong:hover,
+.ninth strong:hover,
+.tenth strong:hover {
+  color: #ff7d13;
+  cursor: pointer;
+}
+.fourth .live,
+.fifth .live,
+.sixth .live,
+.seventh .live,
+.eighth .live,
+.ninth .live,
+.tenth .live {
+  left: 31px;
+  top: 0px;
+}
+.fourth b {
+  background-position: 0 -193px;
+}
+.fifth b {
+  background-position: -37px -193px;
+}
+.sixth b {
+  background-position: -74px -193px;
+}
+.seventh b {
+  background-position: -111px -193px;
+}
+.eighth b {
+  background-position: -148px -193px;
+}
+.ninth b {
+  background-position: -185px -193px;
+}
+.tenth b {
+  background-position: -222px -193px;
+}
+.first .live {
+  top: 0px;
+  left: 23px;
+}
+.second .live {
+  top: -7px;
+  left: 13px;
+}
+.third .live {
+  top: -7px;
+  left: 13px;
+}
+.bg_none {
+  width: 100%;
+  height: 500px;
+  margin: 0 auto;
+  padding-top: 200px;
+}
+.bg_none .bg_none_img {
+  display: block;
+  width: 120px;
+  height: 80px;
+  background: url('http://ossweb-img.qq.com/images/mgc/css_img/ranklist/rank_icon.png?v=3_8_8_2016_15_4_final_3') no-repeat 0 0;
+  margin: 0 auto;
+}
+.bg_none .bg_none_txt {
+  display: block;
+  width: 100%;
+  height: 50px;
+  font: 12px/50px "microsoft yahei";
+  text-align: center;
+  color: #aea0cd;
+  font-weight: bold;
+  margin-top: 30px;
+}
+.ranking_con li .liveAll {
+  display: block;
+  position: absolute;
+  z-index: 5;
+  background: url(about:blank);
+}
+.ranking_con li .liveAll:hover {
+  cursor: pointer;
+}
+.first .liveAll {
+  width: 100%;
+  height: 100%;
+}
+.second .liveAll {
+  width: 100%;
+  height: 100%;
+}
+.third .liveAll {
+  width: 100%;
+  height: 100%;
+}
+.fourth .liveAll,
+.fifth .liveAll,
+.sixth .liveAll,
+.seventh .liveAll,
+.eighth .liveAll,
+.ninth .liveAll,
+.tenth .liveAll {
+  width: 100%;
+  height: 100%;
+}
+.rank_icon {
+  float: right !important;
+  padding: 0 !important;
+  width: 12px;
+  height: 20px;
+  background: url('http://ossweb-img.qq.com/images/mgc/css_img/ranklist/rank_icon.png?v=3_8_8_2016_15_4_final_3') no-repeat 0 0;
+  margin: 0px 0px 0 0;
+}
+.rank_icon_up {
+  background-position: -46px -132px;
+}
+.rank_icon_up1 {
+  background-position: -9px -132px;
+}
+.rank_icon_down {
+  background-position: -26px -132px;
+}
+.rank_icon_nor {
+  background-position: -66px -132px;
+}
+.rank_times {
+  float: right !important;
+  padding: 0 !important;
+  width: auto;
+  min-width: 12px;
+  height: 20px;
+  font-size: 12px !important;
+  line-height: 20px !important;
+  margin: 0px 0px 0 0;
+}
+.rank_up_color {
+  color: #e83a37;
+}
+.rank_up1_color {
+  color: #fff55c;
+}
+.rank_down_color {
+  color: #67db6e;
+}
+.rank_nor_color {
+  color: #cccccc;
+}
+.first .starlight {
+  float: left;
+  width: 100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.second .starlight {
+  float: left;
+  width: 100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.third .starlight {
+  float: left;
+  width: 100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.first .rank_times,
+.second .rank_times,
+.third .rank_times {
+  min-width: 0;
+}
+/*二维码*/
+.s_ewm {
+  width: 100%;
+  height: 154px;
+  background-color: #f7f7f7;
+  margin-top: 10px;
+}
+.s_ewm dl {
+  width: 90px;
+  height: 140px;
+  float: left;
+  margin: 15px 0 0 13px;
+}
+.s_ewm dl dt {
+  margin-bottom: 5px;
+}
+.s_ewm dl dt img {
+  margin: 0 auto;
+}
+.s_ewm dl dd {
+  font-size: 12px;
+  text-align: center;
+}
+/*right kuaibao、rank end*/
+/*主题活动 start*/
+span.april_fool_s_day_11 {
+  display: none;
+  position: absolute;
+  top: 1px;
+  left: 118px;
+  width: 519px;
+  height: 29px;
+  background: url('http://ossweb-img.qq.com/images/mgc/css_img/activities/april_fool_s_day_11.png?v=3_8_8_2016_15_4_final_3') no-repeat 0 0;
+  pointer-events: none;
+}
+span.april_fool_s_day_03 {
+  display: none;
+  position: absolute;
+  top: -20px;
+  left: 20px;
+  width: 83px;
+  height: 49px;
+  background: url('http://ossweb-img.qq.com/images/mgc/css_img/activities/april_fool_s_day_03.png?v=3_8_8_2016_15_4_final_3') no-repeat 0 0;
+  pointer-events: none;
+}
+span.april_fool_s_day_04 {
+  display: none;
+  position: absolute;
+  top: -14px;
+  z-index: 3;
+  left: 18px;
+  width: 57px;
+  height: 35px;
+  background: url('http://ossweb-img.qq.com/images/mgc/css_img/activities/april_fool_s_day_04.png?v=3_8_8_2016_15_4_final_3') no-repeat 0 0;
+  pointer-events: none;
+}
+.fourth span.april_fool_s_day_04,
+.fifth span.april_fool_s_day_04,
+.sixth span.april_fool_s_day_04,
+.seventh span.april_fool_s_day_04,
+.eighth span.april_fool_s_day_04,
+.ninth span.april_fool_s_day_04,
+.tenth span.april_fool_s_day_04 {
+  top: -9px;
+  left: 49px;
+}
+span.act-dis-block {
+  display: block !important;
+}
+/*演唱会回放*/
+.playback-module {
+  margin-top: 8px;
+}
+.playback-module .playback-title {
+  width: 123px;
+  height: 26px;
+  background: url('http://ossweb-img.qq.com/images/mgc/css_img/fans_guild/group_icon.png?v=3_8_8_2016_15_4_final_3') no-repeat -900px -20px;
+  text-indent: -9999px;
+}
+.playback-module .playback-pic,
+.playback-module .playback-pic img {
+  width: 220px;
+  height: 111px;
+  display: block;
+  overflow: hidden;
+}
+/*主题活动 end*/

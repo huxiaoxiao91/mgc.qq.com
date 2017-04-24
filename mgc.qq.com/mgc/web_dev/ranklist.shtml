@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="robots" content="all">
+    <meta name="author" content="Tencent-TGideas">
+    <meta name="Copyright" content="Tencent">
+    <meta name="Description" content="《QQ炫舞》最时尚浪漫的舞蹈游戏,2012年同时在线已突破260万!6月20日,QQ炫舞正式发布了3.0《我的演唱会》版本,开启全新大音乐舞蹈网游时代!更与青海卫视花儿朵朵、RTA组合，达成战略合作，引入了明星歌曲首发、明星游戏驻唱等全新活动形式。QQ炫舞有着最丰富的模式和玩法，最浪漫的交友平台，最华丽精美的画面表现，最紧跟潮流的版本开发迭代节奏，持续不断的为千万炫舞玩家，提供着最优质的游戏体验！" />
+    <meta name="Keywords" content="炫舞梦工厂,梦工厂,QQ炫舞,炫舞,QQ炫舞官网,QQ炫舞官方下载,QQ炫舞下载,QQ炫舞官方网站" />
+    <title>炫舞梦工厂-QQ炫舞官方网站-腾讯游戏-开启大音乐舞蹈网游时代</title>
+    <!--#include virtual="/inc/staticloading.shtml"-->
+    <script>STATIC_RESOURCE.addCssByLink(['/css/comm.base.css', '/css/ranklist.css', '/css/jquery.jscrollpane.css']);</script>
+</head>
+<body>
+    <!--#include virtual="/inc/header.inc"-->
+    <!--#include virtual="/inc/role.shtml"-->
+    <!--首登礼包-->
+    <!--#include virtual="/inc/logingifts.shtml" -->
+    <!--签到-->
+    <!--#include virtual="/inc/sign.shtml" -->
+    <div class="content clearfix">
+        <ul id="rc_tab" class="rc_tab_tit clearfix">
+            <li><a href="javascript:;" class="current">周星赛榜</a></li>
+            <li><a href="javascript:;">主播榜</a></li>
+            <li><a href="javascript:;">粉丝榜</a></li>
+            <li><a href="javascript:;">周星礼物榜</a></li>
+        </ul>
+        <!--周星榜-->
+        <div class="rc_con clearfix" style="display: block;">
+            <!-- week-star Start  -->
+            <div class="rank_con rc_week_star">
+                <div class="not-start" style="display:none">赛季未开启，敬请期待</div>
+                <div class="no-result" style="display:none">赛季已开启，快来角逐王者桂冠</div>
+                <div class="rc_title rc_tit_week_star">
+                    <h2 class="hide">周星榜</h2>
+                    <a href="javascript:;" class="icon_how">?</a>
+                    <p class="pop_tips"><i>◆</i>根据主播的周星赛积分排名</p>
+                </div>
+                <div id="anchor_week_star_tab" class="week_star_tab rank_tab">
+                    <ul class="clearfix"></ul>
+                </div>
+                <div class="rc_week_star_info">
+                    <dl>
+                        <dt class="rank">名次</dt>
+                        <dt class="name">主播名</dt>
+                        <dt class="level">周星段位等级</dt>
+                        <dt class="score">总积分</dt>
+                    </dl>
+                </div>
+                <div class="bd week_star_con" id="week_star_con">
+                    <ul class="clearfix" style="display: block;" id="anchor_week_star_container">
+                    </ul>
+                    <div class="list_page clearfix" id="week_star_page">
+                    </div>
+                    <p class="tips">当前排行榜数据结算于<span class="date"></span></p>
+                </div>
+            </div>
+            <!-- week-star end -->
+        </div>
+        <!--主播榜-->
+        <div class="rc_con clearfix" style="display: none;">
+            <!-- rc_xy S  -->
+            <div class="rank_con rc_xy">
+                <div class="rc_title rc_tit_xy">
+                    <h2 class="hide">星耀排行榜</h2>
+                    <a href="javascript:;" class="icon_how">?</a>
+                    <p class="pop_tips"><i>◆</i>根据主播星耀值排名</p>
+                </div>
+                <div id="anchor_xingyao_tab" class="xy_tab rank_tab">
+                    <ul class="clearfix"></ul>
+                </div>
+                <div class="rc_xy_info">
+                    <dl>
+                        <dt class="rank">名次</dt>
+                        <dt class="name">主播名</dt>
+                        <dt class="score">今日星耀值</dt>
+                    </dl>
+                </div>
+                <div class="bd xy_con" id="xy_con">
+                    <ul class="clearfix" style="display: block;" id="anchor_xingyao_container">
+                    </ul>
+                    <p class="tips">日榜星耀值<strong>每天0点</strong>清空重新累计。</p>
+                </div>
+            </div>
+            <!-- //rc_xy E -->
+        	<!-- rc_meili S  -->
+            <div class="rank_con rc_meili">
+                <div class="rc_title rc_tit_meili">
+                    <h2 class="hide">房间魅力榜</h2>
+                    <a href="javascript:;" class="icon_how">?</a>
+                    <p class="pop_tips"><i>◆</i>根据房间魅力值排名</p>
+                </div>
+                <div id="anchor_meili_tab" class="meili_tab rank_tab">
+                    <ul class="clearfix"></ul>
+                </div>
+                <div class="rc_con_info">
+                    <dl>
+                        <dt class="rank">名次</dt>
+                        <dt class="name">房间名</dt>
+                        <dt class="score">今日魅力值</dt>
+                    </dl>
+                </div>
+                <div class="bd meili_con" id="meili_con_row">
+                    <ul class="clearfix" style="display: block;" id="anchor_meili_container">
+                    </ul>
+                    <div class="list_page clearfix" id="meili_page">
+                    </div>
+                    <p class="tips2">日榜星耀值<strong>每天0点</strong>清空重新累计。</p>
+                    <p class="explain"><strong>房间魅力榜是统计换肤后房间的魅力值。快去为你心爱的主播贡献魅力值吧！</strong></p>
+                </div>
+            </div>
+            <!-- //rc_meili E -->
+            <!-- rc_dengji S  -->
+            <div class="rank_con rc_dengji">
+                <div class="rc_title rc_tit_dengji">
+                    <h2 class="hide">主播等级榜</h2>
+                    <a href="javascript:;" class="icon_how">?</a>
+                    <p class="pop_tips"><i>◆</i>根据主播等级排名</p>
+                </div>
+                <div class="rc_con_info">
+                    <dl>
+                        <dt class="rank">名次</dt>
+                        <dt class="name">主播名</dt>
+                        <dt class="score">主播等级</dt>
+                    </dl>
+                </div>
+                <div class="bd jf_con" id="dengji_con">
+                    <ul class="clearfix" id="anchor_dengji_container">
+                    </ul>
+                </div>
+            </div>
+            <!-- //rc_dengji E -->
+            <!-- rc_jifen S  -->
+            <!--<div class="rank_con rc_jifen">-->
+                <!--<div class="rc_title rc_tit_jifen">-->
+                    <!--<h2 class="hide">积分排行榜</h2>-->
+                    <!--<a href="javascript:;" class="icon_how">?</a>-->
+                    <!--<p class="pop_tips"><i>◆</i>根据主播积分排名</p>-->
+                <!--</div>-->
+                <!--<div id="anchor_jifen_tab" class="jf_tab rank_tab">-->
+                    <!--<ul class="clearfix"></ul>-->
+                <!--</div>-->
+                <!--<div class="rc_con_info">-->
+                    <!--<dl>-->
+                        <!--<dt class="rank">名次</dt>-->
+                        <!--<dt class="name">主播名</dt>-->
+                        <!--<dt class="score">今日主播积分</dt>-->
+                    <!--</dl>-->
+                <!--</div>-->
+                <!--<div class="bd jf_con" id="jf_con">-->
+                    <!--<ul class="clearfix" id="anchor_jifen_container">-->
+                    <!--</ul>-->
+                    <!--<p class="tips">-->
+                        <!--主播积分<strong>每天0点</strong>清空重新累计。<br>-->
+                        <!--加入后援团，为主播贡献主播积分。-->
+                    <!--</p>-->
+                    <!--<a href="http://x5.qq.com/act/a20140603jun/page01.htm#5" target="_blank" class="aboutBtn target-blank">关于主播积分>></a>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!-- //rc_jifen E -->
+        </div>
+        <!--粉丝榜-->
+        <div class="rc_con fans_con clearfix" style="display: none">
+            <!-- rc_caifu S  -->
+            <div class="rank_con rc_caifu">
+                <div class="rc_title rc_tit_caifu">
+                    <h2 class="hide">财富排行榜</h2>
+                    <a href="javascript:;" class="icon_how">?</a>
+                    <p class="pop_tips"><i>◆</i>根据玩家财富值排名</p>
+                </div>
+                <div id="fans_caifu_tab" class="caifu_tab rank_tab">
+                    <ul class="clearfix"></ul>
+                </div>
+                <div class="rc_con_info">
+                    <dl>
+                        <dt class="rank rank2">名次</dt>
+                        <dt class="name name2">玩家名</dt>
+                        <dt class="score">财富值</dt>
+                    </dl>
+                </div>
+                <div class="bd caifu_con">
+                    <ul class="clearfix" id="fans_caifu_container">
+                    </ul>
+                    <div class="list_page clearfix" id="wealth_page">
+                    </div>
+                    <div class="tips" id="wealth_tips">
+                        <br>
+                    </div>
+                </div>
+            </div>
+            <!-- //rc_caifu E -->
+            <!-- rc_guizu S  -->
+            <div class="rank_con rc_guizu">
+                <div class="rc_title rc_tit_guizu">
+                    <h2 class="hide">贵族排行榜</h2>
+                    <a href="javascript:;" class="icon_how">?</a>
+                    <p class="pop_tips"><i>◆</i>根据玩家贵族身份和财富值共同排名</p>
+                </div>
+                <div class="rc_con_info">
+                    <dl>
+                        <dt class="rank rank2">名次</dt>
+                        <dt class="wanjia name3">玩家名</dt>
+                        <dt class="caifu">财富值</dt>
+                        <dt class="guizu">贵族</dt>
+                    </dl>
+                </div>
+                <div class="bd guizu_con">
+                    <div class="sus_tips_list"></div>
+                    <ul class="clearfix" id="fans_guizu_container">
+                    </ul>
+                    <div class="list_page clearfix" id="vip_page">
+                    </div>
+                    <div class="tips" id="vip_tips"></div>
+                </div>
+            </div>
+            <!-- //rc_guizu E -->
+            <!-- rc_qmd S -->
+            <div class="rank_con rc_qmd">
+                <div class="rc_title rc_tit_qnd">
+                    <h2 class="hide">亲密度排行榜</h2>
+                    <a href="javascript:;" class="icon_how">?</a>
+                    <p class="pop_tips"><i>◆</i>根据玩家与主播之间的亲密度排名</p>
+                </div>
+                <div id="anchor_qinmidu_tab" class="qmd_tab rank_tab">
+                    <ul class="clearfix"></ul>
+                </div>
+                <div class="rc_qmd_info">
+                    <dl>
+                        <dt class="rank">名次</dt>
+                        <dt class="name">玩家名</dt>
+                        <dt class="score">主播名</dt>
+                        <dt class="zqmd">日亲密度</dt>
+                    </dl>
+                </div>
+                <div class="bd qmd_con qmd_con2">
+                    <ul class="clearfix" id="anchor_qinmidu_container">
+                    </ul>
+                </div>
+            </div>
+            <!-- //rc_qmd  E -->
+            <!-- rc_qmd S -->
+            <div class="rank_con rc_qmd rc_hyt">
+                <div class="supportGroup_tit rc_tit_qnd">
+                    <h2 class="hide">后援团排行榜</h2>
+                    <a href="javascript:;" class="icon_how">?</a>
+                    <p class="pop_tips"><i>◆</i>根据后援团的活跃积分来排名</p>
+                </div>
+                <div class="rc_guild_info">
+                    <dl>
+                        <dt class="rank">名次</dt>
+                        <dt class="supportGroup">后援团名</dt>
+                        <dt class="headName">团长名</dt>
+                        <dt class="scoreName">主播名</dt>
+                        <dt class="zqmd">活跃积分</dt>
+                    </dl>
+                </div>
+                <div class="bd">
+                    <ul class="clearfix_support_Group" id="fans_houyuan_container">
+                    </ul>
+                </div>
+            </div>
+            <!-- //rc_qmd  E -->
+            <!-- rc_guizu S  -->
+            <!--<div class="rank_con rc_wanjia">-->
+                <!--<div class="rc_title rc_tit_wanjia">-->
+                    <!--<h2 class="hide">等级排行榜</h2>-->
+                    <!--<a href="javascript:;" class="icon_how">?</a>-->
+                    <!--<p class="pop_tips"><i>◆</i>根据玩家的梦工厂等级进行排名</p>-->
+                <!--</div>-->
+                <!--<div class="rc_con_info">-->
+                    <!--<dl>-->
+                        <!--<dt class="rank rank2">名次</dt>-->
+                        <!--<dt class="paihang">玩家名</dt>-->
+                        <!--<dt class="dengji">等级</dt>-->
+                    <!--</dl>-->
+                <!--</div>-->
+                <!--<div class="bd wanjia_con">-->
+                    <!--<ul class="clearfix" id="fans_dengji_container">-->
+                    <!--</ul>-->
+                    <!--<div class="list_page clearfix" id="lv_page">-->
+                    <!--</div>-->
+                    <!--<div class="tips" id="lv_tips"></div>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!-- //rc_guizu E -->
+        </div>
+
+        <!--周星礼物榜-->
+        <div class="rc_con" style="display:none">
+            <!--上周冠军榜-->
+            <div class="firstlist">
+                <div class="title">
+                    <span>上周冠军榜</span>
+                    <a class="icon_how" href="javascript:;">?</a>
+                    <i class="right right1"></i>
+                    <p class="pop_tips pop_tips1"><i>◆</i>根据上周送出或收到礼物数量排名</p>
+                </div>
+                <div class="center">
+                    <div class="anchorlist">
+                        <div class="anchortitle">
+                            <span>冠军主播</span>
+                        </div>
+                        <div class="anchorhead">
+                            <span class="giftname">礼物</span>
+                            <span class="anchorname icon_card" hostId="">主播名</span>
+                            <span class="giftcount fanscount">礼物数量</span>
+                            <i></i>
+                        </div>
+                        <div class="anchorlistcontainer">
+                            <i class="bg_1"></i>
+                            <i class="line_1"></i>
+                            <ul>
+                            </ul>
+                        </div>
+                        <div class="anchorfoot">每种周星礼物收到数量的第一名，在下周可进入周星冠军主播榜哦！</div>
+                    </div>
+
+                    <div class="anchorlist fanslist">
+                        <div class="anchortitle">
+                            <span>冠军粉丝</span>
+                        </div>
+                        <div class="anchorhead">
+                            <span class="giftname">礼物</span>
+                            <span class="anchorname">玩家名</span>
+                            <span class="giftcount">送出礼物数量</span>
+                            <i></i>
+                        </div>
+                        <div class="anchorlistcontainer">
+                            <i class="bg_1"></i>
+                            <i class="line_1"></i>
+                            <ul>
+                            </ul>
+                        </div>
+                        <div class="anchorfoot">每种周星礼物送出数量的第一名，在下周可进入周星冠军粉丝榜哦！</div>
+                    </div>
+                </div>
+            </div>
+
+            <!--冠军礼物主播模板-->
+            <script id="firstAnchorlistTmpl" type="text/x-jquery-tmpl">
+			<li class="clearfix">
+				<div class="box3 fl">
+				    <img class="gift" src="${gift_icon}">
+                    <img class="avatar" src="${portrait_url}">
+                    <i class="box icon_card_img"  hostId="${anchor_id}"></i>
+                    <i class="box1"></i>
+                </div>
+                <div class="box2 fr">
+                    <div class="anchor_con">
+                        <a class="i_anchor_level i_anchor_level_${anchor_level_temp}" {{if anchor_status != 2}}style="background:url('http://ossweb-img.qq.com/images/mgc/css_img/common/anchor_level/${anchor_level_temp}.png?v=3_8_8_2016_15_4_final_3') no-repeat right 2px"{{else}}style="background:url('http://ossweb-img.qq.com/images/mgc/css_img/common/anchor_level/${anchor_level_temp}.png?v=3_8_8_2016_15_4_final_3') no-repeat right 2px"{{/if}} ><i>${anchor_level}</i></a>
+                        <span class="name icon_card" hostId="${anchor_id}">${anchor_nick_str}</span>
+                        <span class="count first_right">${score}</span>
+                    </div>
+                    <div class="fans_con">
+                        <span class="contribute_king">MVP</span>
+                        {{if player_nick_str}}
+                         <a class="i_rich_level i_rich_level_${wealth_level}" style="background:url('http://ossweb-img.qq.com/images/mgc/css_img/common/wealth_level/${wealth_level}.png?v=3_8_8_2016_15_4_final_3') no-repeat" ></a>
+                        <span class="name" hostId="${anchor_id}" >${player_nick_str}</span>
+                        <span class="count first_right">${gift_contribution}</span>
+                        {{else}}
+                        <a class="waiting" style="" >敬请期待</a>
+                        {{/if}}
+                    </div>
+                    {{if anchor_status == 2}}
+                    <a class="online" href="transfer.shtml?roomId=${room_id}&param=${live_param}" target="_blank"></a>
+                    {{/if}}
+                </div>
+			</li>
+		    </script>
+
+            <!--冠军礼物粉丝模板-->
+            <script id="firstFanslistTmpl" type="text/x-jquery-tmpl">
+			<li>
+				<img class="gift" src="${gift_icon}">
+				<img class="avatar" src="${portrait_url}">
+				<i class="box"></i>
+				<i class="box1"></i>
+				<span class="i_rich_level i_rich_level_${wealth_level}" data-wealth_level="${wealth_level}" style="background:url('http://ossweb-img.qq.com/images/mgc/css_img/common/wealth_level/${wealth_level}.png?v=3_8_8_2016_15_4_final_3') no-repeat right 2px"></span>
+				<span class="name">${player_nick_str}</span>
+				<span class="zone">${zone_str}</span>
+				<span class="count first_right">${score}</span>
+			</li>
+		    </script>
+
+            <!--周星礼物榜-->
+            <div class="firstlist giftlist">
+                <ul>
+
+                </ul>
+            </div>
+
+            <!--无配置时周星礼物榜模板-->
+            <script id="nonegiftlistTmpl" type="text/x-jquery-tmpl">
+			<div class="title">
+					<span>本周周星</span>
+					<a class="icon_how" href="javascript:;" style="top:8px">?</a>
+					<i class="right right2" style="top:8px"></i>
+					<p class="pop_tips">根据送出或收到礼物数量排名</p>
+				</div>
+				<div class="center">
+					<div class="anchorlist">
+						<div class="anchortitle">
+							<span>周星主播</span>
+						</div>
+						<div class="anchorhead">
+							<span class="giftname">名次</span>
+							<span class="anchorname icon_card" hostId="${anchor_id}">主播名</span>
+							<span class="giftcount">收到礼物数量</span>
+							<i></i>
+						</div>
+						<div class="anchorlistcontainer">
+							<i class="bg_2"></i>
+							<i class="line_2"></i>
+							<ul>
+
+							</ul>
+						</div>
+						<div class="anchorfoot">前五名可以进入排行榜哦！</div>
+					</div>
+
+					<div class="anchorlist fanslist">
+						<div class="anchortitle">
+							<span>周星粉丝</span>
+						</div>
+						<div class="anchorhead">
+							<span class="giftname">名次</span>
+							<span class="anchorname">玩家名</span>
+							<span class="giftcount">送出礼物数量</span>
+							<i></i>
+						</div>
+						<div class="anchorlistcontainer">
+							<i class="bg_2"></i>
+							<i class="line_2"></i>
+							<ul>
+
+							</ul>
+						</div>
+						<div class="anchorfoot">前五名可以进入排行榜哦！</div>
+					</div>
+				</div>
+		</script>
+
+            <!--周星礼物榜模板-->
+            <script id="giftlistTmpl" type="text/x-jquery-tmpl">
+				<div class="title">
+					<img src="${gift_icon}">
+					<span>${gift_name}</span>
+					<a class="icon_how" href="javascript:;">?</a>
+					<i class="right right3"></i>
+					<p class="pop_tips">根据送出或收到礼物数量排名</p>
+				</div>
+				<div class="center">
+					<div class="anchorlist" data-giftid=${giftid}>
+						<div class="anchortitle">
+							<span>周星主播</span>
+						</div>
+						<div class="anchorhead">
+							<span class="giftname">名次</span>
+							<span class="anchorname icon_card" hostId="${anchor_id}">主播名</span>
+							<span class="giftcount">收到礼物数量</span>
+							<i></i>
+						</div>
+						<div class="anchorlistcontainer">
+							<i class="bg_1"></i>
+							<i class="line_2"></i>
+							<ul>
+
+							</ul>
+						</div>
+						<div class="anchorfoot">前五名可以进入排行榜哦！</div>
+					</div>
+
+					<div class="anchorlist fanslist" data-giftid=${giftid}>
+						<div class="anchortitle">
+							<span>周星粉丝</span>
+						</div>
+						<div class="anchorhead">
+							<span class="giftname">名次</span>
+							<span class="anchorname">玩家名</span>
+							<span class="giftcount">送出礼物数量</span>
+							<i></i>
+						</div>
+						<div class="anchorlistcontainer">
+							<i class="bg_1"></i>
+							<i class="line_2"></i>
+							<ul>
+
+							</ul>
+						</div>
+						<div class="anchorfoot">前五名可以进入排行榜哦！</div>
+					</div>
+				</div>
+		</script>
+
+            <!--周星礼物主播模板-->
+            <script id="giftAnchorlistTmpl" type="text/x-jquery-tmpl">
+			<li class="li_${rank}">
+				<span class="rank_${rank}">${rank}</span>
+				{{if rank<=3}}
+				<img class="avatar" src="${portrait_url}">
+				<i class="box icon_card_img"  hostId="${anchor_id}"></i>
+				{{/if}}
+				<a class="i_anchor_level i_anchor_level_${anchor_level_temp}" {{if anchor_status != 2}}style="top: 21px;background:url('http://ossweb-img.qq.com/images/mgc/css_img/common/anchor_level/${anchor_level_temp}.png?v=3_8_8_2016_15_4_final_3') no-repeat right 2px"{{else}} style="background:url('http://ossweb-img.qq.com/images/mgc/css_img/common/anchor_level/${anchor_level_temp}.png?v=3_8_8_2016_15_4_final_3') no-repeat right 2px" {{/if}}><i>${anchor_level}</i></a>
+				<span class="name icon_card"  hostId="${anchor_id}" {{if anchor_status != 2 && rank <= 3}}style="margin-top: 13px;"{{/if}}>${anchor_nick_str}</span>
+				{{if anchor_status == 2}}
+				<a class="online" href="transfer.shtml?roomId=${room_id}&param=${live_param}" target="_blank"></a>
+				{{/if}}
+                <div class="weekStart_right">
+				<span class="count">${score}</span>
+				<span class="rank_icon rank_icon_${icon}"></span>
+				{{if order_change != 0}}
+				<span class="ranking_number rank_${icon}_color">${order_change}</span>
+				{{/if}}
+                </div>
+			</li>
+		</script>
+
+            <!--周星礼物粉丝模板-->
+            <script id="giftFanslistTmpl" type="text/x-jquery-tmpl">
+			<li class="li_${rank}">
+				<span class="rank_${rank}">${rank}</span>
+				{{if rank<=3}}
+				<img class="avatar" src="${portrait_url}">
+				<i class="box"></i>
+				{{/if}}
+				<span class="i_rich_level i_rich_level_${wealth_level}" data-wealth_level="${wealth_level}" style="background:url('http://ossweb-img.qq.com/images/mgc/css_img/common/wealth_level/${wealth_level}.png?v=3_8_8_2016_15_4_final_3') no-repeat right 2px"></span>
+				<span class="name">${player_nick_str}</span>
+				<span class="zone">${zone_str}</span>
+                <div class="weekStart_right">
+				<span class="count">${score}</span>
+				<span class="rank_icon rank_icon_${icon}"></span>
+				{{if order_change != 0}}
+				<span class="ranking_number rank_${icon}_color">${order_change}</span>
+				{{/if}}
+                 </div>
+			</li>
+		</script>
+
+            <!--下周周星礼物-->
+            <div class="nextweek">
+                <div class="date">下周周星礼物 <span></span></div>
+                <div class="giftnotice">
+                    <ul>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!--下周礼物模板-->
+        <script id="nextweeklistTmpl" type="text/x-jquery-tmpl">
+		<li>
+			<img src="${gift_icon}">
+			<span>${gift_name}</span>
+		</li>
+	    </script>
+
+    </div>
+    <div class="sus_tips"></div>    
+    <!--footer s-->
+    <!--#include virtual="/inc/footer.inc"-->
+    <!--#include virtual="/inc/minipay.shtml"-->
+    <!--footer e-->
+    <!--#include virtual="/inc/vip.inc"-->
+    <!--#include virtual="/inc/susNav.inc"-->
+    <!--#include virtual="/inc/dialog.shtml"-->
+    <!--#include virtual="/inc/ranklist_tmpl.shtml"-->
+    <!--#include virtual="/inc/ranklist_anchorCard.shtml"-->
+    
+    <script src="script/lib/utils/jquery-1.11.3.min.js?v=3_8_8_2016_15_4_final_3"></script>
+    <script src="script/lib/utils/jquery.tmpl.min.js?v=3_8_8_2016_15_4_final_3"></script>
+    <script type="text/javascript" src="js/mgc.js?v=3_8_8_2016_15_4_final_3"></script>
+    <script type="text/javascript" src="js/mgc_init.js?v=3_8_8_2016_15_4_final_3"></script>
+    <script type="text/javascript" src="js/mgc_dialog.min.js?v=3_8_8_2016_15_4_final_3"></script>
+    <script type="text/javascript" src="js/mgc_popmanager.js?v=3_8_8_2016_15_4_final_3"></script>
+    <script type="text/javascript" src="js/mgc.common.js?v=3_8_8_2016_15_4_final_3"></script>
+
+    <script type="text/javascript" src="js/mgc_ranklist_anchorcard.js?v=3_8_8_2016_15_4_final_3"></script>
+    <script data-main="script/main_entry_ranklist" src="script/lib/utils/require-2.1.20.min.js?v=3_8_8_2016_15_4_final_3" defer async></script>
+</body>
+</html>
+
+<!--[if !IE]>|xGv00|da4e6d1280414a4534a72cf515c92f5c<![endif]-->

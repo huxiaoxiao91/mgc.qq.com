@@ -1,0 +1,45 @@
+/*职位管理*/
+
+.positiongroup{width: 792px;height:615px; padding-top: 10px; background-color: #fbfbfb; text-align: left;}
+
+.head{width: 754px;height: 30px; margin:10px 0 0 20px; line-height: 30px; text-align: left; background: url(http://ossweb-img.qq.com/images/mgc/css_img/fans_guild/group_icon.png?v=3_8_8_2016_15_4_final_3); background-position: -5px -261px;}
+.head span{display: inline-block; vertical-align: top; color: #fff8ee; font-size: 15px; text-align: center; font-weight: bold;}
+.head span.position{width:88px; border-right: 1px solid #fff;}
+.head span.name{width:277px; border-right: 1px solid #fff;}
+.head span.right{width:393px;}
+
+.positionContainer2{display: inline-block; vertical-align: top; margin:0 0 0 20px; width:370px;height: 600px;}
+.positionContainer2 li{width: 369px; height:42px; line-height: 42px; border-bottom: 1px solid #e4e0e9;}
+.positionContainer2 li span{display: inline-block; vertical-align: top; color: #424242; font-size: 14px; text-align: center;}
+.positionContainer2 li span.id{width:88px;}
+.positionContainer2 li span.name{width:186px;}
+.positionContainer2 li span.button{width:132px;}
+.positionContainer2 li span.name input{width: 120px; height:20px; border: 0; background-color: transparent; color: #424242; font-size: 12px; font-family: 'microsoft yahei';overflow: hidden;text-overflow: ellipsis;white-space: nowrap;-webkit-box-orient: vertical;-webkit-line-clamp: 2;}
+.positionContainer2 li.select{background-color: #f8f0e6}
+
+.positionContainer2 a{display: block; margin: 10px 0 0 5px; cursor: pointer; width: 62px; height:25px; font-size: 12px; color: #FFFFFF; line-height: 25px; background: url(http://ossweb-img.qq.com/images/mgc/css_img/fans_guild/group_icon.png?v=3_8_8_2016_15_4_final_3); background-position: -10px -226px;}
+.positionContainer2 a:hover{color: #ffe73d}
+
+.rightlist{height: 600px; display: inline-block; vertical-align: top; }
+.rightlist li{height:42px; line-height: 42px;}
+.rightlist li span{display: inline-block; vertical-align: top; color: #424242; font-size: 13px; text-align: left;}
+.rightlist li span.button{width:45px;}
+.rightlist li span.name{}
+.rightlist a.checkbox{display:block; margin: 10px 0 0 20px; width: 25px;height: 25px; background: url(http://ossweb-img.qq.com/images/mgc/css_img/fans_guild/group_icon.png?v=3_8_8_2016_15_4_final_3); background-position: -970px -140px;}
+.rightlist a.select{background-position: -970px -118px;}
+
+
+i.position{display:block; margin: 3px 0 0 30px; width: 35px;height: 35px; background: url(http://ossweb-img.qq.com/images/mgc/css_img/fans_guild/group_icon.png?v=3_8_8_2016_15_4_final_3); }
+i.position1{background-position: -475px -345px;}
+i.position2{background-position: -507px -345px;}
+i.position3{background-position: -540px -345px;}
+i.position4{background-position: -571px -345px;}
+i.position5{background-position: -602px -345px;}
+i.position6{background-position: -635px -345px;}
+i.position7{background-position: -476px -378px;}
+i.position8{background-position: -507px -378px;}
+i.position9{background-position: -538px -378px;}
+i.position10{background-position: -572px -378px;}
+i.position11{background-position: -614px -378px;}
+i.position12{background-position: -654px -378px;}
+i.position13{background-position: -482px -410px;}

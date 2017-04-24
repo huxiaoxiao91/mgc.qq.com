@@ -1,0 +1,38 @@
+<script>STATIC_RESOURCE.addCssByInc(['/css/group.info.css']);</script>
+<!--后援团管理-后援团信息--->
+
+<!--后援团内公告-->
+<div class="coment">
+    <div class="input_coment">
+        <h3>团内公告：</h3>
+        <textarea id='vgNotice' rows="3" value="" onfocus="if(this.value == '请输入内容，上限为80个汉字'){this.value = '';this.style.color = '#424242';}" onblur="if(this.value == ''){this.value = '请输入内容，上限为80个汉字';this.style.color = '#9b9b9b'}"></textarea>
+        <input style="display:none;" class="sureBtn" id='vgNoticeSubmit' type="button" value="确认修改" />
+
+    </div>
+
+<!--后援团简介-->
+<div class="input_coment">
+    <h3>后援团简介：</h3>
+    <textarea id='vgDesc' rows="3" value="" onfocus="if(this.value == '请输入内容，上限为80个汉字'){this.value = '';this.style.color = '#424242';}" onblur="if(this.value == ''){this.value = '请输入内容，上限为80个汉字';this.style.color = '#9b9b9b'}"></textarea>
+    <input style="display:none;" class="sureBtn" id="vgDescSubmit" type="button" value="确认修改" />
+
+</div>
+
+<!--后援团详情--> 
+  <div class="msg_tail">
+      <h3>后援团详情：</h3>
+      <div class="inputTxt" id="groupDetailsContainer" >
+          
+          <p class="left">活跃积分：<span id='activeIntegral'></span></p><p class="right">上月贡献：<span id='lastMonthContribute'></span></p>
+          <p class="left">本月贡献：<span id='thisMonthContribute'></span></p><p class="right">上月贡献排名：<span id='lastContributeRank'></span></p>
+          <p class="m10 cRed">根据您的主播上月排名，以及团的上月贡献排名，后援团在本月自动获得<span id='actIntegral'></span>点活跃积分<br />您的主播本月给予本团<span id="anchorGiveScore"></span>点活跃积分福利</p>  
+          
+          
+      </div>
+  </div>
+</div>
+
+
+<script>
+        GroupInfo.init();
+</script>

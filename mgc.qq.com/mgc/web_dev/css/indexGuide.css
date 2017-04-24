@@ -1,0 +1,14 @@
+/*indexGuide*/
+.pop_logingifts .pop_close,.pop_guide .pop_close,.pop_guide .pop_close:hover,.pop_guide .pop_close:active{background:url(http://ossweb-img.qq.com/images/mgc/css_img/common/reminder_tips_Qgame.png?v=3_8_8_2016_15_4_final_3) no-repeat 0 0;}
+.pop_guide {width: 512px;height: 223px;background:transparent;border:none;margin-left:-256px;padding: 0;top: 35%;display:none;}
+.pop_guide .bg{width: 512px;height: 224px;border:none;background: url(http://ossweb-img.qq.com/images/mgc/css_img/guide/newbie_guide_Qgame.png?v=3_8_8_2016_15_4_final_3) no-repeat -28px -10px;box-shadow:none !important;padding-bottom:0 !important;position:relative;}
+.pop_guide .pop_close,.pop_guide .pop_close:hover,.pop_guide .pop_close:active{right: -25px;top: 67px;background-position: -529px -29px;width: 47px;height:32px;position:absolute;}
+.pop_guide .pop_close:hover{background-position: -449px -29px;}
+.pop_guide .pop_close:active{background-position:-609px -29px;}
+.pop_guide .guideBtn{position:absolute;right:0;bottom: 20px;width: 325px;text-align:center;height:33px;}
+.pop_guide .guideBtn .center,.pop_guide .guideBtn .center:hover,.pop_guide .guideBtn .center:active{background:url(http://ossweb-img.qq.com/images/mgc/css_img/guide/newbie_guide_Qgame.png?v=3_8_8_2016_15_4_final_3) no-repeat 0 0;height:33px;line-height:33px;width:102px;margin:0 auto;font-size:16px;color:#b32f09;}
+.pop_guide .guideBtn .center{background-position:-1007px -184px;}
+.pop_guide .guideBtn .center:hover{background-position:-1007px -146px;}
+.pop_guide .guideBtn .center:active{background-position:-1007px -221px;}
+.pop_guide .guideBtn .center a{font-size:16px;color:#b32f09;height:33px;line-height:33px;width:102px;display:inline-block;}
+

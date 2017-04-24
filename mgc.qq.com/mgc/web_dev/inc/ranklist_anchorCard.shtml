@@ -1,0 +1,64 @@
+<script>STATIC_RESOURCE.addCssByLink(['/css/ranklist_anchorcard.css']);</script>
+<!-- 排行榜主播名片 -->
+    <div class="sus_anchor_tips">  
+        <div id="anchor_loadding">
+            <div class="text">努力加载中
+                <div class="flash">
+                <object type="application/x-shockwave-flash" width="80" height="20">
+                    <param name="quality" value="high">
+                    <param name="bgcolor" value="#000">
+                    <param name="allowscriptaccess" value="always">
+                    <param name="allowfullscreen" value="true">
+                    <param name="allowFullScreenInteractive" value="true">
+                    <param name="wmode" value="transparent">
+                    <param name="movie" value="assets/anchor_ranklist_loadding.swf?v=3_8_8_2016_15_4_final_3" />
+                </object>
+            </div>
+            </div>
+            
+        </div> 
+        <div id="anchor_error">加载失败，请<a href="javascript:MGC_CommRequest.getAnchorCard(hostId);">重试</a></div>      
+        <dl id="ranklist_anchorTipContainer" class="sus_anchor_tips_info clearfix"></dl>
+        
+        <!--
+            <dl id="ranklist_anchorTipContainer" class="sus_anchor_tips_info clearfix">
+                <dt><div class="head_anchor"><img src="http://113.108.77.71:80/qdancersec/PiajxSqBRaEKzdbHjsvwYoTcsibvtHQG4W3QicgFapE4OVwBgwOZBbXBSb3lp7J9Ev9xz4iahqHskdU/0?v=1467000520" width="123" height="123" alt="主播昵称"></div></dt>
+                <dd class="longW"><strong class="nick">会飞的汼</strong></dd>
+                <dd class="anchor_icon"><div class="anchor_card_level_tips"><i class="anchor_level_7"><i>60</i></i><em>主播等级:LV60<br>经验值:101349/1059500</em></div></dd>
+                <dd class="w_367 shuoming" style="height: 40px; display: block;">元帥微信：zhonglishuai0807实力绽放光芒  歌声带你飞翔<span class="ellipsisSpan" style="display: none;">...</span></dd>
+                <dd>粉丝数：<strong>17</strong></dd>
+                <dd>守护数：<strong>1683</strong></dd>
+                <dd>星耀值：<strong>73997159</strong></dd>
+                <dd>后援团个数：<strong>110</strong></dd>
+                <a href="javascript:void(0);" class="btn_care" title="" isfollow="1" name="会飞的汼" anchorid="1162545103">-已关注</a>
+                <a href="transfer.shtml?roomId=100004" target="_blank" id="A1">去Ta的直播间</a>
+            </dl>
+         -->
+    </div>
+
+	<!--主播弹框-基本信息START-->
+    <script id="ranklist_anchorTipTmpl" type="text/x-jquery-tmpl">
+        <dt>
+            <div class="head_anchor">
+                <img src="${photoUrl}" width="123" height="123" alt="主播昵称" />
+                <i></i>
+                <!--div class="head_deco head_deco_${nest_skin_info.room_skin_id}"></div-->               
+            </div>
+        </dt>
+        <dd class="longW"><strong class="nick">${name}</strong></dd><dd class="anchor_icon"><div class="anchor_card_level_tips">{{if anchor_level_temp==0}}{{else}}<i class="anchor_level anchor_level_${anchor_level_temp}" style="background:url('http://ossweb-img.qq.com/images/mgc/css_img/common/anchor_level/${anchor_level_temp}.png?v=3_8_8_2016_15_4_final_3') no-repeat right center"><i>${anchor_level}</i></i>{{/if}}</div></dd>
+        <dd class="w_367 shuoming"><div id="intro_one"></div><div id="intro_two"></div></dd>
+        <dd class="line"></dd>
+        <dd class="num"><span>粉丝数 :</span><strong class="fans">${followedAudiences}</strong></dd>
+        <dd class="num"><span>守护数 :</span><strong>${total_guard_cnt}</strong></dd>   
+        <dd class="num"><span>星耀值 :</span><strong>${starlight}</strong></dd>        
+        <dd class="num" id="gv"><span>后援团个数 :</span><strong>${vg_cnt}</strong></dd>
+        
+        {{if showSelfRoomLink}}
+        <a href="javascript:void(0);" class="btn_care" title="" isfollow="${isFollow}" name="${name}" anchorid="${anchorId}">${follow}</a>
+        <a href="transfer.shtml?roomId=${selfRoomId}" target="_blank" id="gotoCavFromCard">去Ta的直播间</a>
+        {{else}}
+        <a href="javascript:void(0);" class="btn_care w_long" title="" isfollow="${isFollow}" name="${name}" anchorid="${anchorId}">${follow}</a>
+        {{/if}}
+    </script>
+    
+    <!--主播弹框-基本信息END-->

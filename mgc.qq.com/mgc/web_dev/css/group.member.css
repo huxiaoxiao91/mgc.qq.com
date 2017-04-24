@@ -1,0 +1,38 @@
+/*成员管理*/
+
+.member{padding-top: 10px;padding-left:20px; background-color: #fbfbfb;width:755px;overflow:hidden;}
+.member div.title{width: 755px;height: 31px;line-height: 31px; text-align: left; background: url(http://ossweb-img.qq.com/images/mgc/css_img/fans_guild/group_icon.png?v=3_8_8_2016_15_4_final_3); background-position: -5px -261px;}
+.member div.title span{display: inline-block; vertical-align: top; color: #fff8ee; font-size: 15px; text-align: center; font-weight: bold;}
+.member div.title span.sex{width:100px; border-right: 1px solid #fff;}
+.member div.title span.name{width:235px; border-right: 1px solid #fff;}
+.member div.title span.ctrbt{width:173px; border-right: 1px solid #fff;}
+.member div.title span.position{width:132px; border-right: 1px solid #fff;text-indent: -10px;}
+.member div.title span.kick{width:94px;}
+
+.member div.list{position:relative; width: 755px;height: 482px; text-align: left;}
+.member .memberlist>li{height:42px; line-height: 42px; border-bottom: 1px solid #e4e0e9;}
+.member .memberlist li span{display: inline-block; vertical-align: top; color: #424242; font-size: 14px; text-align: center;overflow: hidden;text-overflow: ellipsis;white-space: nowrap; width: 90px;}
+.member .memberlist li span.sex{width:100px;}
+.member .memberlist li span.name{width:235px;}
+.member .memberlist li .nick_zone{padding-left:95px;text-align:left;font-style: inherit;display: block;width:137px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.member .memberlist li .nick_zone i{font-style:inherit;}
+.member .memberlist li span.ctrbt{width:173px;}
+.member .memberlist li span.position{width:127px;}
+.member .memberlist li span.kick{width:94px;}
+
+.member .memberlist li span.position a{display:block; width: 140px; height: 28px; margin: -33px 0 0 0; background: url(http://ossweb-img.qq.com/images/mgc/css_img/fans_guild/group_icon.png?v=3_8_8_2016_15_4_final_3); background-position: -325px -349px; cursor: pointer;}
+.member .memberlist li span.position a.select{background-position: -325px -378px;}
+.member .memberlist li span.kick a{display:block; width: 20px; height: 20px; margin: 12px 0 0 47px; background: url(http://ossweb-img.qq.com/images/mgc/css_img/fans_guild/group_icon.png?v=3_8_8_2016_15_4_final_3); background-position: -453px -187px; cursor: pointer;}
+.member .memberlist li span.kick a:hover{background-position: -518px -187px;}
+
+.positionContainer{position:absolute; width: 125px; height:125px; margin: -5px 0 0 522px; z-index: 1;background: url(http://ossweb-img.qq.com/images/mgc/css_img/fans_guild/group_icon.png?v=3_8_8_2016_15_4_final_3); background-position: -847px -301px;}
+.positionContainer .positionlist li{width: 125px; height:25px; line-height: 25px;}
+.positionContainer .positionlist a{display:block; width: 124px; height:25px; font-size: 14px; color: #FFFFFF; text-align: center; cursor: pointer;text-overflow:ellipsis;overflow: hidden;}
+.positionContainer .positionlist a:hover{background-color: #de582e;}
+.positionContainer .jspVerticalBar{right: 3px;}
+
+i.sex0{display:block; margin: 5px 36px; width: 25px;height: 30px; background: url(http://ossweb-img.qq.com/images/mgc/css_img/personal/personal_sprite.png?v=3_8_8_2016_15_4_final_3); background-position: -955px -34px;}
+i.sex1{display:block; margin: 5px 36px; width: 25px;height: 30px; background: url(http://ossweb-img.qq.com/images/mgc/css_img/personal/personal_sprite.png?v=3_8_8_2016_15_4_final_3); background-position: -955px 3px;}
+.sus_tips_listLi,.sus_tips_list2{background:#d75fff;padding:5px;color:#fff;position:absolute;z-index:9999;max-width:180px; white-space: normal;top:0;left:0;border-radius:5px;display:none;font-size:12px}
+/*成员列表财富等级*/
+.member .memberlist li span.name .weath_level_1,.member .memberlist li span.name .weath_level_2,.member .memberlist li span.name .weath_level_3,.member .memberlist li span.name .weath_level_4,.member .memberlist li span.name .weath_level_5,.member .memberlist li span.name .weath_level_6,.member .memberlist li span.name .weath_level_7,.member .memberlist li span.name .weath_level_8,.member .memberlist li span.name .weath_level_9{position:absolute;left:126px;margin-top:6px;display:inline-block;vertical-align:middle;color:#fff;font-size:12px;font-style:inherit;text-align:center;width: 27px;overflow:hidden;height: 30px;line-height: 33px;text-overflow:ellipsis;white-space: nowrap;}

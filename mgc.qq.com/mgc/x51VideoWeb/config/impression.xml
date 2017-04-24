@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="gb2312" ?>
+<!--主播印象-->
+<!--
+注意事项
+1、id的最大取值是63
+2、当删除一些印象、添加一些新印象时，新印象必须使用新的id，不能使用那些被删除的印象id
+   所以删除印象时，建议使用注释的方式
+-->
+
+
+<!--与之前xml所做的修改相信信息如下
+	name 属性直接修改为 印象的真实名称 如阳光，可爱等，而不是在是str_xxx字符串了
+-->
+<ImpressionList> 
+	<impression id ="1" name = "阳光"/>
+	<impression id ="2" name = "可爱"/>
+	<impression id ="3" name = "呆萌"/>
+	<impression id ="4" name = "性感"/>
+	<impression id ="5" name = "小清新"/>
+	<impression id ="6" name = "卡哇伊"/>
+	<impression id ="7" name = "治愈系"/>
+	<impression id ="8" name = "女王"/>
+	<impression id ="9" name = "王子"/>
+	<impression id ="10" name = "大叔"/>
+	<impression id ="11" name = "正太"/>
+	<impression id ="13" name = "傲娇受"/>
+	<impression id ="14" name = "搞笑"/>
+	<impression id ="15" name = "情歌王"/>
+	<impression id ="16" name = "天籁音"/>
+	<impression id ="17" name = "脱口秀"/>
+	<impression id ="18" name = "段子手"/>
+	<impression id ="19" name = "才艺达人"/>
+	<impression id ="20" name = "另类"/>
+	<impression id ="21" name = "霸气"/>
+	<impression id ="22" name = "腹黑"/>
+	<impression id ="23" name = "重口味"/>
+	<impression id ="24" name = "大叔控"/>
+	<impression id ="25" name = "软淑萌"/>
+	<impression id ="26" name = "肌肉男"/>
+	<impression id ="27" name = "虎比"/>
+	<impression id ="28" name = "逗比"/>
+	<impression id ="29" name = "如花"/>
+	<impression id ="30" name = "高冷"/>
+	<impression id ="31" name = "男神"/>
+	<impression id ="32" name = "呆萌"/>
+	<impression id ="33" name = "实力派"/>
+	<impression id ="34" name = "偶像派"/>
+	<impression id ="35" name = "duang"/>
+	<impression id ="36" name = "御姐"/>
+	<impression id ="37" name = "男人味"/>
+	<impression id ="38" name = "骨感美"/>
+	<impression id ="39" name = "烟花王"/>
+	<impression id ="40" name = "钻戒帝"/>
+	<impression id ="41" name = "萌萌哒"/>
+	<impression id ="42" name = "花篮哥"/>
+	<impression id ="43" name = "屌丝"/>
+	<impression id ="44" name = "高冷"/>
+	<impression id ="45" name = "坑货"/>
+	<impression id ="46" name = "霸道总裁"/>
+	<impression id ="47" name = "点券王子"/>
+	<impression id ="48" name = "闭卷大神"/>
+	<impression id ="49" name = "威猛先生"/>
+	<impression id ="50" name = "古灵精怪"/>
+	<impression id ="51" name = "男神经"/>
+	<impression id ="52" name = "女神经"/>
+	<impression id ="53" name = "蛇精病"/>
+	<impression id ="54" name = "职业坑"/>
+	<impression id ="55" name = "大白"/>
+	<impression id ="56" name = "暖男"/>
+	<impression id ="57" name = "有钱任性"/>
+	<impression id ="58" name = "我爱的人"/>
+	<impression id ="59" name = "犀利哥"/>
+	<impression id ="60" name = "吃货"/>
+	<impression id ="61" name = "小鲜肉"/>
+</ImpressionList>

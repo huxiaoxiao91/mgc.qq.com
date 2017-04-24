@@ -1,0 +1,43 @@
+/*punchcard*/
+.pop_punch_card .r_gou,.pop_punch_card .r_cover,.pop_punch_card .opt_bar_left,.pop_punch_card .opt_bar_right,.punch_card_btn,.punch_card_btn_add {background: url(http://ossweb-img.qq.com/images/mgc/css_img/video_room/punchcard.png?v=3_8_8_2016_15_4_final_3) no-repeat 0 0;}
+.pop_punch_card {display:none;width: 746px !important;height: 532px !important;border-width: 6px;padding-bottom:0;background:#fff;position: absolute;top: 80px;left: 5px;margin-left: 0;}
+.pop_punch_card .pop_title {height:64px;line-height:64px;font-size: 20px;}
+.pop_punch_card .pop_close {top:20px;}
+.punch_card_tips {display: none;background: #d75fff;padding: 5px;color: #fff;position: absolute;z-index: 9999;top: 0;left: 0;border-radius: 5px;max-width:180px;word-spacing:160px;font-size:12px;white-space:nowrap !important;}
+.pop_punch_card .punchCardContainer .punch_card_left{width: 422px;height: 460px;float:left;}
+.pop_punch_card .punchCardContainer .punch_card_left .current_month{width:100%;height:40px;text-align:center;font-size: 22px;color: #6c42c8;line-height:40px;}
+.pop_punch_card .punchCardContainer .punch_card_rewards{width:402px;height:402px;margin-left:11px;border:3px solid #9c80da;border-bottom-width:2px;border-right-width:2px;}
+.pop_punch_card .punchCardContainer .punch_card_rewards ul{width:100%;height:100%;}
+.pop_punch_card .punchCardContainer .punch_card_rewards ul li{width:66px;height:66px;float:left;position:relative;border-bottom:1px solid #9c80da;border-right:1px solid #9c80da;text-align:center;line-height:66px;color:#424242;font-size:20px;}
+.pop_punch_card .punchCardContainer .punch_card_rewards ul li .r_gou{position:absolute;bottom:-1px;right:-1px;z-index:2;width:28px;height:28px;display:inline-block;background-position: -6px -2px;}
+.pop_punch_card .punchCardContainer .punch_card_rewards ul li .r_cover{position:absolute;top:0px;left:0px;z-index:3;width:100%;height:100%;display:inline-block;background-position:-268px -3px;}
+.pop_punch_card .punchCardContainer .punch_card_rewards ul li .r_punch_card_swf{display:inline-block;position:absolute;top: -2px;left: -1px;width: 1px;height: 1px;z-index:3;}
+.pop_punch_card .punchCardContainer .punch_card_opt{width: 312px;height: 455px;margin-top: 3px;float:left;}
+.pop_punch_card .punchCardContainer .punch_card_opt .punch_card_opt_title{width:100%;height:30px;line-height:30px;font:14px/30px "microsoft yahei";color:#424242;}
+.pop_punch_card .punchCardContainer .punch_card_opt .punch_card_opt_con{width:100%;height: 308px;background-color: #eee;overflow:hidden;}
+.pop_punch_card .punchCardContainer .punch_card_opt .punch_card_opt_con .jspDrag {background:#8d5cf8 !important;}
+.pop_punch_card .punchCardContainer .punch_card_opt .punch_card_opt_rewards{width:100%;height: auto;background-color: #eee;}
+.pop_punch_card .punchCardContainer .punch_card_opt .punch_card_opt_rewards .punch_card_opt_rewards_li{width:100%;height: 101px;}
+.pop_punch_card .punchCardContainer .punch_card_opt .punch_card_opt_rewards .punch_card_opt_rewards_li:last-child{margin-bottom:5px;}
+.pop_punch_card .punchCardContainer .punch_card_opt .punch_card_opt_rewards .punch_card_opt_rewards_li p{width:100%;height: 26px;text-align:center;line-height: 26px;color:#6c42c8;font-size: 15px;}
+.pop_punch_card .punchCardContainer .punch_card_opt .punch_card_opt_rewards .punch_card_opt_rewards_li p .opt_bar_left{display:inline-block;width: 75px;height: 17px;float:left;margin: 5px 0 0 27px;background-position: -47px -10px;}
+.pop_punch_card .punchCardContainer .punch_card_opt .punch_card_opt_rewards .punch_card_opt_rewards_li p .opt_bar_right{display:inline-block;width: 80px;height: 17px;float:right;margin: 5px 18px 0 0;background-position: -47px -10px;}
+.pop_punch_card .punchCardContainer .punch_card_opt .punch_card_opt_rewards .punch_card_opt_rewards_li p b{font-size:15px;}
+.pop_punch_card .punchCardContainer .punch_card_opt .punch_card_opt_rewards .punch_card_opt_rewards_li ul{width: 276px;height: 75px;background-color: #f7f7f7;margin: 0 auto;}
+.pop_punch_card .punchCardContainer .punch_card_opt .punch_card_opt_rewards .punch_card_opt_rewards_li ul li{float:left;width: 66px;height: 66px;margin: 4px -5px 0px 22px;background-color:#e8d7fe;position:relative;}
+.pop_punch_card .punchCardContainer .punch_card_opt .punch_card_opt_rewards .punch_card_opt_rewards_li ul li img{width: 66px;height: 66px;}
+.pop_punch_card .punchCardContainer .punch_card_opt .punch_card_opt_bottom{width:100%;height: 73px;}
+.opt_bottom_txt1,.opt_bottom_txt2 {width: 100%;height: 40px;line-height: 22px;font-size: 15px;color:#424242;padding-left:5px;}
+.opt_bottom_txt1 b,.opt_bottom_txt2 b{color:#ef4f00;font-size: 20px;margin: 0 2px;font-weight: 400;}
+.opt_bottom_txt1 {}
+.opt_bottom_txt2 {font-size: 16px;line-height: 30px;}
+.opt_bottom_txt2 b{/* font-size: 29px; */}
+.pop_punch_card .punchCardContainer .punch_card_opt .punch_card_opt_bottom ul{width:100%;height:40px;}
+.pop_punch_card .punchCardContainer .punch_card_opt .punch_card_opt_bottom ul li{width:50%;float:left;text-align:center;}
+.punch_card_btn,.punch_card_btn_add {display:inline-block;width:114px;height:37px;margin:0 auto;}
+.punch_card_btn_yes {background-position: -5px -37px;cursor:pointer;}
+.punch_card_btn_no {background-position: -135px -37px;}
+.punch_card_btn_add_yes {background-position: -5px -87px;cursor:pointer;}
+.punch_card_btn_add_no {background-position: -135px -86px;}
+.opt_bottom_txt3,.opt_bottom_txt4 {display:inline-block;font-size: 13px;}
+.opt_bottom_txt3 b,.opt_bottom_txt4 b {color:#ef4f00;}

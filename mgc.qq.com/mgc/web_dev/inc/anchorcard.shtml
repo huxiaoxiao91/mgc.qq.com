@@ -1,0 +1,324 @@
+<script>STATIC_RESOURCE.addCssByLink(['/css/anchorcard.css']);</script>
+<!-- 主播名片 -->
+    <div class="pop_anchor pop_card_play" id="pop3">
+        <a href="javascript:showDialog.hide();" class="pop_close">关闭</a>
+        <p class="pop_title">主播名片</p>
+        <dl id="anchorTip1Container" class="pop_anchor_info clearfix"></dl>
+        <!--
+	<dl class="pop_anchor_info clearfix">
+		<dt>
+		<div class="head_anchor"><img src="http://ossweb-img.qq.com/upload/webplat/info/x5/201408/1406886783_1436653066_25882_imageAddr.jpg?v=3_8_8_2016_15_4_final_3" width="190" height="190" alt="主播昵称" /></div>
+		<span class="fans">2586952</span>
+		<a href="#" class="btn_care" title="+ 关注">+ 关注</a>
+		</dt>
+		<dd class="w_470">昵称：<strong>MC哪哪真爱</strong></dd>
+		<dd>来自：<strong>中国</strong></dd>
+		<dd>主播积分：<strong>2953129175</strong></dd>
+		<dd>人气：<strong>2953129175</strong></dd>
+		<dd>星耀：<strong>2953129175</strong></dd>
+		<dd>守护数量：<strong>3676</strong></dd>
+		<dd>后援团数量：<strong>36</strong></dd>
+		<dd class="w_470 shuoming">
+			<p>你若盛开，蝴蝶自来！</p>
+			<p>群号：458794654</p>
+			<p>做好自己最重要！</p>
+		</dd>
+	</dl>-->
+        <div class="pop_about_anchor">
+            <div class="aninfo_tab" id="aninfo_tab1">
+                <ul class="clearfix">
+                    <li><a onclick="MGC.tabCut('aninfo_tab1','aninfo_con1',0)" class="current" href="javascript:;">周星赛</a></li>
+                    <li><a onclick="MGC.tabCut('aninfo_tab1','aninfo_con1',1)" href="javascript:;" class="">主播印象</a></li>
+                    <li><a onclick="MGC.tabCut('aninfo_tab1','aninfo_con1',2)" href="javascript:;" class="">粉丝排名</a></li>
+                    <li><a onclick="MGC.tabCut('aninfo_tab1','aninfo_con1',3)" href="javascript:;" class="">后援团排名</a></li>
+                    <li><a onclick="MGC.tabCut('aninfo_tab1','aninfo_con1',4)" href="javascript:;" class="">主播徽章</a></li>
+                </ul>
+            </div>
+            <div id="aninfo_con1" class="aninfo_con">
+                <ul id="weekstarContainer" style="display: block;">
+                    <div id="weekstar-tips"><span></span></div>
+                </ul>
+                <!-- 主播印象 -->
+                <ul id="anchorTip2Container" class="impress_con clearfix" style="display: none;"></ul>
+                <!--
+			<ul class="impress_con clearfix" style="display:block;">
+				<li>
+					<p>一共有<strong>25658</strong>名粉丝添加了对ta的对象</p>
+					<a href="#" class="addimpress">添加印象</a>
+				</li>
+				<li class="keywords clearfix">
+					<span class="keywords01">5%<strong>鬼畜攻</strong></span>
+					<span class="keywords02">11%<strong>搞笑</strong></span>
+					<span class="keywords03">25%<strong>大叔</strong></span>
+					<span class="keywords04">49%<strong>其他</strong></span>
+					<span class="keywords05">3%<strong>重口味</strong></span>
+					<span class="keywords06">7%<strong>性感</strong></span>
+				</li>
+				<li>
+					<p>您还不是Ta的守护。在获得<strong>9000</strong>亲密度，就可以为Ta的<strong>初级守护</strong>。</p>
+					<a href="#" class="knowmore">了解守护规则<i></i></a>
+				</li>
+			</ul>-->
+                <!--- //主播印象 -->
+                <!-- 粉丝排名 -->
+                <ul class="clearfix" style="display: none;">
+                    <li>
+                        <table class="fans_tit">
+                            <tbody>
+                                <tr>
+                                    <th class="row1">玩家名</th>
+                                    <th class="row2">总亲密度</th>                                    
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!-- 等级图标 icon_lv（1—6） 荣誉图标icon_honor（1—6） -->
+                        <div class="fans_list">
+                            <table>
+                                <tbody id="fansCardContainer">
+                                </tbody>
+                            </table>
+                        </div>
+                    </li>
+                </ul>
+                <!-- //粉丝排名 -->
+                <!-- 后援团排名 -->
+                <ul class="clearfix" style="display: none;">
+                    <li>
+                        <table class="fans_tit">
+                            <tbody>
+                                <tr>
+                                    <th class="row1">后援团名</th>
+                                    <th class="row2">活跃积分</th>                                    
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!-- 等级图标 icon_lv（1—6） 荣誉图标icon_honor（1—6） -->
+                        <div class="fans_list">
+                            <table>
+                                <tbody id="backupGroupList">
+                                </tbody>
+                            </table>
+                        </div>
+                    </li>
+                </ul>
+                <!-- //后援团排名 -->
+
+                <!-- 主播徽章开始 -->
+                <ul class="clearfix" id="badgeUl" style="display: none;">
+                <li>
+                    <div class="line"></div>
+                        <table class="fans_tit">
+                            <tbody>
+                                <tr>
+                                    <th class="rowL">主播徽章代表主播获得的成就</th>                                    
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!-- 等级图标 icon_lv（1—6） 荣誉图标icon_honor（1—6） -->
+                        <div class="fans_list">                           
+                                <div id="badgeList">
+                                </div>
+                        </div>
+                    </li>
+                </ul>
+                <!-- 主播徽章结束 -->
+
+                <!-- 主播名片-主播徽章START  -->
+    <script id="badgeTmpl" type="text/x-jquery-tmpl">        
+            <li class="rowL">                         
+                  <span class="badge" mgc_data="${badge_id}" style="background:url('http://ossweb-img.qq.com/images/mgc/css_img/common/anchor_badge_big/${badge_id}.png?v=3_8_8_2016_15_4_final_3') no-repeat;"></span>          
+                
+            </li>
+    </script>
+
+    <!-- 主播名片-主播徽章END-->
+
+            </div>
+        </div>
+    </div>
+<!-- 主播名片-粉丝排行START-->
+    <script id="fansCardTmpl" type="text/x-jquery-tmpl">
+        <tr style="background: none repeat scroll 0% 0% transparent;">
+            <td class="row1"><i class="icon_lv icon_lv${guardLevel}"  onmouseover="MGC.susTips(event,1,'${guard_levelShow}');" onmouseout="MGC.susTips(event,0);"{{if guardLevel == 0}} style="float: left;" {{else}} style="float: left;background:url('http://ossweb-img.qq.com/images/mgc/css_img/common/guard/${guardLevel}.png?v=3_8_8_2016_15_4_final_3') no-repeat;" {{/if}}></i><i title="" class="icon_honor icon_honor${viplevel}" onmouseover="MGC.susTips(event,1,'${viplevelName}');" onmouseout="MGC.susTips(event,0);"{{if viplevel == 0}} style="float: left;" {{else}} style="float: left;background:url('http://ossweb-img.qq.com/images/mgc/css_img/common/nobility/${viplevel}.png?v=3_8_8_2016_15_4_final_3') no-repeat;" {{/if}}></i><span class="anchors_fans_name" style="color: ${nickColor};">${name}</span></td>
+            <td class="row2"><span>${qinmidu}</span><a title="信息" psid="${psid}" name="${name}" area="${zoneName}" class="icon_message" href="javascript:void(0);">信息</a></td>            
+        </tr>
+    </script>
+    <!-- 主播名片-粉丝排行END-->
+
+    <!-- 主播名片-后援团排行START-->
+    <script id="backupGroupTmpl" type="text/x-jquery-tmpl">
+        <tr style="background: none repeat scroll 0% 0% transparent;">
+            <td class="row1"><span class="anchors_group_name">${vg_name}</span></td>
+            <td class="row2"><span>${vg_score}</span><a title="信息" name="${name}" vgid="${vgid}" class="anchor_backGroup_card" href="javascript:void(0);">信息</a></td>            
+        </tr>
+    </script>
+    <!-- 主播名片-后援团排行END-->
+
+	<!--主播弹框-基本信息START-->
+    <script id="anchorTip1Tmpl" type="text/x-jquery-tmpl">
+        <dt>
+            <div class="head_anchor">
+                <img src="${photoUrl}" width="123" height="123" alt="主播昵称" />
+                <div class="head_deco head_deco_${nest_skin_info.room_skin_id}"></div>
+                <p class="total-fans-number">
+                    <span class="fans">${followedAudiences}</span>
+                </p>
+                
+            </div>
+            
+            <a href="javascript:void(0);" class="btn_care" title="" isfollow="${isFollow}" name="${name}" anchorid="${anchorId}">${follow}</a>
+            <a class="anchord_open_vip" href="javascript:void(0);">
+                <p id="si_open_vip_swf_3">
+                <!--插入开通贵族特效效果-->
+                </p>
+                <span></span>
+            </a>
+        </dt>
+        <dd class="longW">昵称：<strong class="nick">${name}</strong></dd><dd class="anchor_icon"><div class="anchor_card_level_tips">{{if anchor_level_temp==0}}{{else}}<i class="anchor_level anchor_level_${anchor_level_temp}" style="background:url('http://ossweb-img.qq.com/images/mgc/css_img/common/anchor_level/${anchor_level_temp}.png?v=3_8_8_2016_15_4_final_3') no-repeat left center"><i>${anchor_level}</i></i>
+        	
+            {{if is_bottleneck}}
+            <em>赠送炫豆礼物可帮助主播升阶哦<br>
+                已获得：${MGCData.bottleneck_count}</em>
+            <i class="bottleneck">升阶：
+                            <span class="bottle_progress">{{if bottle_per_anchor==0}}<span id="bottle_per_anchor" style="display: none"></span>{{else}}<span id="bottle_per_anchor" style="width: ${bottle_per_anchor}%; max-width: 100%"></span>{{/if}}
+                            </span></i>
+            {{else}}<em>主播等级:LV${anchor_level}<br />
+                {{if anchor_levelup_exp==-1}}经验值:max{{else}}经验值:${anchor_exp}/${anchor_levelup_exp}{{/if}}</em>
+            <p class="pd_progress" style="overflow: inherit;">{{if anchor_levelup_exp==-1}}<span style="width: 100%"></span><i style="line-height: 5px;">max</i>{{else}}{{if anchor_Per==0}}<span style="border: none; background: url();"></span>{{else}}<span style="width: ${anchor_Per}"></span>{{/if}}<i>${anchor_exp}/${anchor_levelup_exp}</i>{{/if}}{{/if}}</p>
+            {{/if}}
+        </div>
+    </dd>
+        <dd class="room_dd">
+            <div class="room_div">
+                <div class="room_icon">
+                    <span class="room_level room_level_${nest_skin_info.room_skin_id}" style="background:url('http://ossweb-img.qq.com/images/mgc/css_img/common/skin_level/${nest_skin_info.room_skin_id}.png?v=3_8_8_2016_15_4_final_3') no-repeat left center"><p>${nest_skin_info.room_skin_level}</p></span>
+                </div>
+                {{if nest_skin_info.room_skin_level==9}}
+                <p class="mission_progress">
+                    <span class="anchor_Per" style="width: 100%;"></span>
+                    <i class="anchor_exp" style="line-height: 3px;">max</i>
+                </p>
+                {{else}}
+                <p class="mission_progress">
+                    {{if nest_skin_info.current_charm==0}}<span style="border: none; background: url();"></span>{{else}}<span class="anchor_Per" style="width: ${nest_skin_info.current_charm/nest_skin_info.current_need_charm*100}%;"></span>{{/if}}
+                	{{if nest_skin_info.current_charm==nest_skin_info.current_need_charm}}<i class="anchor_exp" style="line-height: 3px;">max</i>{{else}}<i class="anchor_exp">${nest_skin_info.current_charm}/${nest_skin_info.current_need_charm}</i>{{/if}}
+                </p>
+                {{/if}}
+            </div>
+        </dd>
+        <dd>星耀：<strong>${starlight}</strong></dd>        
+        <dd>人气：<strong>${popularity}</strong></dd>
+        <dd>主播积分：<strong>${anchor_score}</strong></dd>
+        <dd>守护数量：<strong>${total_guard_cnt}</strong></dd>
+        <dd>来自：<strong>${from}</strong></dd>
+        <dd>后援团数量：<strong>${vg_cnt}</strong></dd>
+        <dd class="w_367 shuoming">{{html intro}}
+	
+	
+
+            <!-- 
+		<p>你若盛开，蝴蝶自来！</p>
+		<p>群号：458794654</p>
+		<p>做好自己最重要！</p>-->
+        </dd>
+        {{if showSelfRoomLink}}
+        <a href="transfer.shtml?roomId=${selfRoomId}" target="_blank" id="gotoCavFromCard">去Ta的直播间</a>
+        {{/if}}
+    </script>
+    <div id="anchor_room_tips">
+    </div>
+    <script id="anchorRoomTipsTmpl" type="text/x-jquery-tmpl">
+    	            <div class="room_topic">
+                        <div>房间皮肤主题：${room_name}</div>
+                    </div>
+                    <div class="room_value">
+                    	{{if room_skin_level==9}}
+                      	<div>总魅力值：${room_total_charm}</div>
+                      	{{/if}}
+                      	{{if charm_rank_order == -1}}
+                    	<div>魅力总榜排名：暂未上榜</div>
+                    	{{else}}
+						<div>魅力总榜排名：${charm_rank_order}</div>
+						{{/if}}
+                    </div>
+                    {{if room_skin_level==9}}
+    	            <div class="mission_content">
+                        <div>
+                        	<div class="room_need">今日房间还需：</div>
+                        	<div class="room_need_txt"><span>打卡：${current_punchin_count}/${total_punchin_count}</span><span>抢座：${current_takeseat_count}/${total_takeseat_count}</span></div>
+                        </div>
+                        <div class="mission_need_progress">
+                        	{{each(i,list) skin_task_info}}
+                            {{if i < 3}}
+                        	<div class="gift_need">
+                                <span class="mission_icon">
+                                    <img src="${list.gift_icon}"></span>
+                                <span>${current_count}/${total_count}</span>
+                        	</div>
+                        	{{/if}}
+                            {{/each}}
+                        </div>
+                    </div>
+                    {{/if}}
+    </script>	
+    <!--主播弹框-基本信息END-->
+
+    <!--主播弹框-印象START-->
+    <script id="anchorTip2Tmpl" type="text/x-jquery-tmpl">
+        <li>
+            <p>一共有<strong>${m_player_count}</strong>名粉丝添加了对ta的印象</p>
+            <a href="javascript:void(0);" anchorid="${anchorId}" class="addimpress">添加印象</a>
+        </li>
+        <li class="keywords clearfix">{{html impression}}
+        </li>
+    </script>
+    <!--主播弹框-印象END-->    
+
+	<!--添加主播印象-->
+    <div class="pop_anchor pop_card_play" id="pop_anchor">
+        <a href="javascript:;" class="pop_close">关闭</a>
+        <p class="pop_title">主播印象</p>
+        <div id="allImpression" class="add_keywords clearfix">
+            <div id="allImpressionContainer"></div>
+        </div>
+        <div class="pop_btn_box clearfix">
+            <a class="btn_open submitImpression" anchorid="0" href="javascript:void(0);">确定</a>
+            <a class="btn_close clearImpression" href="javascript:void(0);">重置</a>
+        </div>
+    </div>
+    <!-- 主播名片-编辑印象START-->
+    <script id="allImpressionTmpl" type="text/x-jquery-tmpl">
+        {{html impressionShowHtml}}
+    </script>
+    <!-- 主播名片-编辑印象END-->
+    <!-- 主播名片-周星赛START-->
+    <script id="weekstarMatchTmpl" type="text/x-jquery-tmpl">
+        <div id="weekstar-icon" class="clearfix">
+            {{each week_star_medals}}
+            <div class="weekstar-icon">
+
+                <!-- <img src="http://ossweb-img.qq.com/images/mgc/css_img/video_room/star_week.png?v=3_8_8_2016_15_4_final_3" alt="" index="${$index}" class="weekstar-icon${$index+1}"> -->
+                {{if $value.light_time != 0}}
+                <span index="${$index}" class="weekstar-icon-bg weekstar-icon${$index+1} lighting"></span>
+                <span class="rank-name lighting">${$value.grade_name}</span>
+                <span class="light-time lighting">${$value.light_time}点亮</span>
+                {{else}}
+                <span index="${$index}" class="weekstar-icon-bg weekstar-icon${$index+1}"></span>
+                <span class="rank-name">${$value.grade_name}</span>
+                <span class="light-time">未点亮</span>
+                {{/if}}
+                <span index="${$index}" class="hover-tips" style="display:none;">${$value.desc}</span>
+            </div>
+            {{/each}}
+        </div>
+        <div class="anchor-weekstar-level clearfix"><span class="bg bg${grade}">
+        {{if no > 1}}
+        <span class="two-num"><span class="rank-level level${sub_level1} first"></span><span class="rank-level level${sub_level2}"></span></span>
+        {{else}}
+        <span class="rank-level level${sub_level}"></span>
+        {{/if}}
+        </span><span class="des">${sub_level}级${grade_name}</span></div>
+        <div class="weekstar-rank-info clearfix"><span class="clearfix"><span>总积分&nbsp;:&nbsp;</span><span class="bolder">${total_score}</span></span> <span class="clearfix"><span>总排名&nbsp;:&nbsp;</span><span class="bolder"> ${total_rank}</span></span> <span class="clearfix"><span>分组&nbsp;:&nbsp;</span><span class="bolder group-name"> ${group_name}</span></span> <span class="clearfix"><span>分组排名&nbsp;:&nbsp;</span><span class="bolder"> ${sub_rank}</span></span></div>
+        <!--<p class="tips_w">${tips}<a href="${guardRuleUrl}" class="knowmore target-blank" target="__blank">了解守护规则<i></i></a></p>-->
+    </script>
+    <!-- 主播名片-周星赛END-->

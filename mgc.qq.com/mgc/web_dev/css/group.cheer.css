@@ -1,0 +1,55 @@
+/*后援团助威*/
+
+.cheer{width: 753px;height: 181px; text-align: left;margin-left:20px;border-bottom:1px solid #e4e0e9; }
+.cheer .title{width: 757px;height:45px; line-height:45px;}
+.cheer .title span{font-size: 16px; color: #6c42c8; font-weight: bold; margin:0;}
+
+.cheer .left{position:relative; width: 251px; height:125px; display: inline-block; vertical-align: top;}
+.cheer .left img{width:98px; height:98px; overflow:hidden; margin: 0 0 0 63px;}
+.cheer .left #anchor_level{display:block; position: absolute;height: 25px; top:101px; left:18px; font-size: 12px; color: #fff;overflow: hidden; text-overflow: ellipsis;}
+.cheer .left #anchor_name{display:block; position: absolute; width:112px; height: 30px; top:105px; left:75px; font-size: 14px; color: #424242; font-weight: bold; overflow: hidden; text-overflow: ellipsis;}
+.cheer .left a.card{display:block; position: absolute; width: 30px; height: 17px; top:107px; left:189px; background: url(http://ossweb-img.qq.com/images/mgc/css_img/fans_guild/group_icon.png?v=3_8_8_2016_15_4_final_3); background-position: -547px -140px; cursor: pointer;}
+.cheer .left a.card:hover{background-position: -547px -119px;}
+.cheer .left .anchor_level_1,.cheer .left .anchor_level_2,.cheer .left .anchor_level_3,.cheer .left .anchor_level_4,.cheer .left .anchor_level_5,.cheer .left .anchor_level_6,.cheer .left .anchor_level_7,.cheer .left .anchor_level_8,.cheer .left .anchor_level_9{color:#fff;font-size:12px;width:46px;font-style:inherit;text-align:right;overflow:hidden;height:25px;line-height:25px;text-overflow:ellipsis;white-space: nowrap;}
+.cheer .left .anchor_level_1 i,.cheer .left .anchor_level_2 i,.cheer .left .anchor_level_3 i,.cheer .left .anchor_level_4 i,.cheer .left .anchor_level_5 i,.cheer .left .anchor_level_6 i,.cheer .left .anchor_level_7 i,.cheer .left .anchor_level_8 i,.cheer .left .anchor_level_9 i{text-align:center;display:inline-block;width:28px;line-height:29px;font-style:inherit;}
+.cheer .left .anchor_level_1 i{width: 36px;}
+.cheer .left .anchor_level_2 i{width: 34px;}
+.cheer .left .anchor_level_3 i{width: 32px;}
+.cheer .left .anchor_level_4 i{width: 29px;}
+.cheer .left .anchor_level_5 i{width: 29px;}
+.cheer .left .anchor_level_6 i{width: 28px;}
+.cheer .left .anchor_level_7 i{width: 28px;}
+.cheer .left .anchor_level_8 i{width: 28px;}
+.cheer .left .anchor_level_9 i{width: 28px;}
+.sus_tips{background: #d75fff;padding: 5px;color: #fff;position: absolute;z-index: 10000;top: 0;left: 0;border-radius: 5px;display: none;}
+.cheer .center{width: 236px; height: 200px; display: inline-block; vertical-align: top;}
+.cheer .center ul{margin:0;}
+.cheer .center li{width: 250px; height:30px;line-height:19px;}
+.cheer .center li span{font-size: 14px; color: #424242;}
+.cheer .center li span:first-child{font-weight: bold;}
+#anchor_score,#anchor_rank,#anchor_cont_score{position: relative;left: 14px;}
+
+.cheer .right{width: 280px; height: 200px; display: inline-block; vertical-align: top;}
+.cheer .right span{display:block;}
+.cheer .right .head{height: 30px; padding:0; font-size: 16px; color: #424242;}
+.cheer .right .button{height:48px;}
+.cheer .right .tip1{height: 20px; margin: 0; line-height: 20px; font-size: 12px; color: #ee5f38;}
+.cheer .right .tip2{height: 27px; margin: -10px 0 0 0; line-height: 30px; font-size: 12px; color: #ee5f38;}
+.cheer .right .tip3{height: 20px; line-height: 20px; font-size: 12px; color: #ee5f38;}
+#today_ticket_acc{display:inline-block; width: 60px; text-align: center; font-size: 16px; font-weight: bold;}
+.cheer .right .input{width: 150px; height: 42px; background: url(http://ossweb-img.qq.com/images/mgc/css_img/fans_guild/group_icon.png?v=3_8_8_2016_15_4_final_3); background-position: -209px -213px;}
+.cheer .right input{width: 130px; height: 42px; margin: 0 0 0 10px; border: 0; background-color: transparent; line-height: 42px; font-size: 18px; color: #424242;}
+.cheer .right a.confirm{display:block; width:78px; height: 40px; margin: -37px 0 0 170px; text-align: center; line-height: 30px; font-size: 16px; color: #FFFFFF; cursor: pointer;background: url(http://ossweb-img.qq.com/images/mgc/css_img/fans_guild/group_icon.png?v=3_8_8_2016_15_4_final_3);}
+.cheer .right a.confirmenabled{background-position: -9px -183px;}
+.cheer .right a.confirmenabled:hover{color: #ffe73d}
+.cheer .right a.confirmdisabled{background-position: -109px -183px;}
+
+.cheerinfo{position:relative; width:755px;padding-left:20px; height: 350px; margin:0;text-align: left;}
+.cheerinfo .title{width: 755px;height: 38px; line-height: 38px;}
+.cheerinfo .title span{font-size:16px; color: #6c42c8; font-weight: bold; margin:0;}
+
+.cheerinfo .list{position:absolute; width: 750px;height: 279px; top: 51px; left:22px;}
+.cheerinfo .list li{width: 720px; height: 31px;margin-left: 15px;}
+.cheerinfo .list li span{font-size: 14px; color: #646464;}
+.cheerinfo .box{display:block; position:absolute; width: 765px;height: 297px; top: 38px; left:19px; background: url(http://ossweb-img.qq.com/images/mgc/css_img/fans_guild/group_background.png?v=3_8_8_2016_15_4_final_3); background-position: -8px -617px;}
+.sus_tips_list2{background:#d75fff;padding:5px;color:#fff;position:absolute;z-index:9999;white-space: normal;top:0;left:0;border-radius:5px;display:none;font-size:12px}

@@ -1,0 +1,13 @@
+<div id="CommonDialog" class="pop" style="display:none;"><!--通用弹窗-->
+    <a id="CloseBtn" class="pop_close">关闭</a>
+    <p id="TitleP" class="pop_title">提示</p>
+    <div class="pop_tip_txt">
+        <div>
+            <p id="NoteP"></p>
+        </div>
+    </div>
+    <div class="pop_btn_box clearfix">
+        <a id="ConfirmBtn" class="btn_open">确定</a>
+        <a id="CancelBtn" class="btn_close" style="display:none;">关闭</a>
+    </div>
+</div><!--[if !IE]>|xGv00|59d2b90f0beb1234b8e0ee6284c1d3a6<![endif]-->

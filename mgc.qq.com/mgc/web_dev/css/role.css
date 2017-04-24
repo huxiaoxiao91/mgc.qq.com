@@ -1,0 +1,53 @@
+/*登录大区列表*/
+
+#pop_player_select {width: 470px; height:auto;min-height:390px;padding-bottom:0px;}/*height:350px*/
+#pop_player_select .pop_mgcjs,#pop_player_select .pop_mgcjs_last {width: 470px; height: 80px; margin: 20px auto 0; border-bottom: 1px solid #d4d4d4;}
+#pop_player_select .pop_m_title {color: #424242; font-size: 15px; font-weight: normal; padding-left: 30px;}
+#pop_player_select #lastRole{height:47px;}
+#lastRole .mgc-current-last{height:34px;margin:-23px auto 0;}
+#pop_player_select .pop_djjr {display: block; width: 163px; height: 33px; margin: 10px auto 0; text-align: center; line-height: 32px; color: #424242; font-size: 14px; background-image: url("http://ossweb-img.qq.com/images/mgc/css_img/common/button.png?v=3_8_8_2016_15_4_final_3"); background-position: -5px -4px;}
+#pop_player_select .pop_djjr:hover{color: #fff;background-position: -209px -4px;}
+#pop_player_select .pop_xwjs,#pop_player_select .pop_xwTwojs {width: 470px; margin: 20px auto 0;border-bottom:1px solid #d4d4d4;}
+#pop_player_select .pop_xwjs{height:99px;}
+#pop_player_select .pop_xwTwojs{border-bottom:none;}
+#pop_player_select .pop_precinct {width: 400px; height: 76px; margin: 10px 0 0 35px; overflow: hidden; position: relative;}/*height：150px*/
+#pop_player_select .pop_precinct_con,#pop_player_select .pop_precinct_con2 { height: 33px; overflow: hidden; position: absolute; width: 1000%; left: 0;}/*height:130px*/
+#pop_player_select .pop_precinct ul{width: 400px; float: left; }
+.pop_mgcjs .mgc-current,.pop_mgcjs_last .mgc-current-last{margin: 10px auto;width: 130px; }
+#pop_player_select .pop_precinct li,.pop_mgcjs .mgc-current li ,.pop_mgcjs_last .mgc-current-last li {width: 120px; float: left; margin: 0 12px 12px 0;}
+#pop_player_select .pop_precinct li a,.pop_mgcjs .mgc-current li a ,.pop_mgcjs_last .mgc-current-last li a {display: block; width: 124px; height: 34px; color: #424242; font-size: 14px; text-align: center; line-height: 34px; background-image: url("http://ossweb-img.qq.com/images/mgc/css_img/common/button.png?v=3_8_8_2016_15_4_final_3"); background-position: -4px -92px;}
+#pop_player_select .pop_precinct li a:hover,.pop_mgcjs .mgc-current li a:hover,.pop_mgcjs_last .mgc-current-last li a:hover{color: #6c42c8;background-position: -165px -92px;}
+
+#pop_player_create {width: 425px; height: 250px; padding-bottom: 0;}
+#pop_player_create .pop_nick { color: #424242; margin: 25px 0 0 60px;}
+#pop_player_create .pop_nick label, #pop_player_create .pop_sex label {float: left;display: block; width: 66px; height: 40px; line-height: 40px; font-size: 16px;}
+#pop_player_create .pop_sex label {margin-top: 3px;}
+#pop_player_create .pop_sr {width: 173px;height: 41px; background-position: 0 -1px; display: block; float: left; border: 0 none; text-align: center; line-height: 40px; color: #9b9b9b; font-family: "microsoft yahei"; }
+#pop_player_create .color_words{cursor: pointer;width: 18px;height: 27px; background: url(http://ossweb-img.qq.com/images/mgc/css_img/common/pop_sprite.png?v=3_8_8_2016_15_4_final_3) no-repeat 0 0; background-position: -313px -61px;}
+#pop_player_create .color_words:hover{background-position: -346px -61px;}
+#pop_player_create .color_words:active{background-position: -377px -61px;}
+#pop_player_create .pop_nick a { color: #ee5f38; display: block; float: left; width: 70px; height: 20px; line-height: 20px; margin-top: 10px; padding-left: 10px; font-size: 12px; font-weight: bold; }
+#pop_player_create .pop_nick_info { text-align: center; color: #545454; height: 36px; line-height: 36px; }
+#pop_player_create .pop_sex { margin: 0 0 0 60px;}
+#pop_player_create .pop_sex a { width: 25px; height: 33px; display: block; float: left; margin-top: 6px;   background: url(http://ossweb-img.qq.com/images/mgc/css_img/common/pop_sprite.png?v=3_8_8_2016_15_4_final_3) no-repeat 0 0; background-position: 0 -42px;}
+#pop_player_create .pop_man, #pop_player_create .pop_woman { display: block; float: left; width: 32px; height: 33px; margin-top: 9px; background: url(http://ossweb-img.qq.com/images/mgc/css_img/common/pop_sprite.png?v=3_8_8_2016_15_4_final_3) no-repeat 0 0;}
+#pop_player_create .pop_man { background-position: -30px -42px;}
+#pop_player_create .pop_woman { background-position: -30px -76px;}
+#pop_player_create .pop_sex span { display: block; float: left; width: 54px; height: 46px; line-height: 46px; text-indent: 5px; font-size: 14px;}
+#pop_player_create .pop_sex .current {width: 25px; height: 33px; background: url(http://ossweb-img.qq.com/images/mgc/css_img/common/pop_sprite.png?v=3_8_8_2016_15_4_final_3) no-repeat 0 0; background-position: 0 -76px; }
+#pop_player_create .pop_enter { display: block; width: 100px; height: 36px; text-align: center; line-height: 36px; margin: 10px auto 0; background: #6c42c8; color: #f3f3f3; font-size: 15px; border-radius: 2px; }
+#pop_player_create .pop_enter:hover {background: #592dba;}
+
+#pop_changeName {width: 425px; height: 250px; padding-bottom: 0;}
+#pop_changeName .tip {width: 300px; margin: 10px auto 0 auto;}
+#pop_changeName .pop_nick { color: #424242; margin: 25px 0 0 110px;}
+#pop_changeName .pop_nick label, #pop_player_create .pop_sex label {float: left;display: block; width: 66px; height: 40px; line-height: 40px; font-size: 16px;}
+#pop_changeName .pop_sex label {margin-top: 3px;}
+#pop_changeName .pop_sr {width: 173px;height: 41px; background-position: 0 -1px; display: block; float: left; border: 0 none; text-align: center; line-height: 40px; color: #9b9b9b; font-family: "microsoft yahei"; }
+#pop_changeName .color_words{cursor: pointer;width: 18px;height: 27px; background: url(http://ossweb-img.qq.com/images/mgc/css_img/common/pop_sprite.png?v=3_8_8_2016_15_4_final_3) no-repeat 0 0; background-position: -313px -61px;}
+#pop_changeName .color_words:hover{background-position: -346px -61px;}
+#pop_changeName .color_words:active{background-position: -377px -61px;}
+#pop_changeName .pop_nick a { color: #ee5f38; display: block; float: left; width: 70px; height: 20px; line-height: 20px; margin-top: 10px; padding-left: 10px; font-size: 12px; font-weight: bold; }
+#pop_changeName .pop_nick_info { text-align: center; color: #545454; height: 36px; line-height: 36px; }
+#pop_changeName .pop_enter { display: block; width: 100px; height: 36px; text-align: center; line-height: 36px; margin: 10px auto 0; background: #6c42c8; color: #f3f3f3; font-size: 15px; border-radius: 2px; }
+#pop_changeName .pop_enter:hover {background: #592dba;}

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="gb2312" standalone="yes" ?>
+<VipSeatClientConfig>
+	<WhistleMsg>    
+		<msg value="我就坐这，不服来抢！"/>
+		<msg value="座上有我名，都起开！"/>
+		<msg value="不好意思，抢您座了，哈哈！"/>
+		<msg value="各位先站着，我坐会儿！"/>
+	</WhistleMsg>
+</VipSeatClientConfig>

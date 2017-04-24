@@ -1,0 +1,429 @@
+<div class="sr_chat">
+    <div id="sc_tab" class="sn_tab sc_tab">
+        <ul class="clearfix">
+            <li><a id="AllMsgChatBtn" href="javascript:;" class="bigTab current">全部聊天</a></li>
+            <li><a id="PrivateMsgChatBtn" href="javascript:;" class="bigTab">私聊</a><b class="chatMsgTips" style="display: none;"></b></li>
+            <li style="display: none;"><a id="FansGuildMsgChatBtn" href="javascript:;">后援团</a><b class="chatMsgTips" style="display: none;"></b></li>
+        </ul>
+    </div>
+    <div class="sc_con_panl">
+        <!--公告-->
+        <div class="noticeHot"></div>
+        <div class="notice" style="display: none;">
+            <span></span>
+            <div class="btnTip"></div>
+            <div class="tipsShow">主播公告</div>
+        </div>
+        <div id="sc_con" class="sc_con">
+            <!--公聊-->
+            <ul id="AllMsgChatContainer" style="display: block">
+                <li id="MsgChat_1">                    
+                    <p class="sc_details">
+                        <span class="nick-info" style="color: #6a41c6"><i class="icon_anchor"></i><span class="talkPlayer">管理员</span> 说：</span><span style="color: #232323;letter-spacing: 5px;">欢迎来到我的直播间！</span>
+                    </p>
+                </li>
+                <li id="MsgChat_1">                    
+                    <p class="sc_details">
+                        <span class="nick-info" style="color: #6a41c6"><i class="icon_anchor"></i><span class="talkPlayer">管理员</span> 说：</span><span style="color: #232323;letter-spacing: 5px;">等你好久了！</span>
+                    </p>
+                </li>
+                <li id="MsgChat_1">                    
+                    <p class="sc_details">
+                        <span class="nick-info" style="color: #6a41c6"><i class="icon_anchor"></i><span class="talkPlayer">管理员</span> 说：</span><span style="color: #232323;letter-spacing: 5px;">边看边聊哦~</span>
+                    </p>
+                </li>
+            </ul>
+            <!--私聊-->
+            <ul id="PrivateMsgChatContainer"></ul>
+            <!--后援团-->
+            <ul id="FansGuildMsgChatContainer"></ul>
+        </div>
+    </div>
+    <div class="sc_box">
+        <!--屏蔽免费礼物-->
+        <div class="mask-gifts" data-checked="0">
+            <span class="icon-checkbox-0"></span>屏蔽免费礼物
+        </div>
+        <div class="mask-gifts-tips">勾选后屏蔽免费礼物信息</div>
+        <!--惊喜宝箱-->
+        <div class="surprise-box">
+            <div id="surprise-box-swf"></div>
+            <div class="surprise-tips">请等待激活惊喜宝箱，每次激活需要房间中送出<span class="surprise-flower-count">1</span>朵鲜花，下一次需等待<span class="surprise-time-down">00:00</span>，今天还剩余<span class="surprise-times">1</span>次</div>
+            <div class="surprise-open-tips">点击打开</div>
+        </div>
+        <!--发言-->
+        <div class="sc_box_panl">
+            <a class="sc_box_btn" href="javascript:;"></a>
+            <input id="SendMsgChatBox" type="text" correct="true" value="">
+            <a id="SendMsgChatBtn" class="cb_fy" href="javascript:;"></a>
+        </div>
+        <!--所有人选框-->
+        <div class="sc_role" num="0">
+            <p id="SendMsgChatObject" class="scr_c">所有人</p>
+            <span class="scr_r" id="GetPrivateMsgChatListBtn"></span>
+            <div id="sc_role_out" class="sc_role_out">
+                <ul id="MsgChatObjectContainer" class="sc_role_list">
+                </ul>
+                <ul class="sc_role_ul">
+                    <li index="4" style="display: none;">后援团</li>
+                    <li index="0">所有人</li>
+                </ul>
+            </div>
+        </div>
+        <!--赠送免费礼物-->
+        <div class="freeGift">
+            <ul>
+            </ul>
+        </div>
+        <!--免费礼物提示框-->
+        <div class="freeGiftTip freeGiftTip_1" style="z-index: 929000; display: none;">
+            <span class="desc"></span>
+            <span class="leftTime">600秒后获得下一个礼物，每次全部送出</span>
+        </div>
+        <!--表情包-->
+        <div id="sc_face" class="sc_face">
+            <div id="sc_face_tab" class="sc_face_tab">
+                <ul>
+                    <li class="face_1"><a href="javascript:;" class="current">活动</a></li>
+                    <li class="face_2"><a href="javascript:;">守护专属</a></li>
+                    <li class="face_3"><a href="javascript:;">特权1</a></li>
+                    <li class="face_4"><a href="javascript:;">特权2</a></li>
+                </ul>
+            </div>
+            <!--活动-->
+            <div id="sc_face_act" style="display: block;" class="sc_face_con">
+                <div class="sc_face_ban">
+                    <ul class="clearfix">
+                        <li class="f00"></li>
+                        <li class="f01"></li>
+                        <li class="f02"></li>
+                        <li class="f03"></li>
+                        <li class="f04"></li>
+                        <li class="f05"></li>
+                        <li class="f06"></li>
+                        <li class="f07"></li>
+                        <li class="f08"></li>
+                        <li class="f09"></li>
+                        <li class="f10"></li>
+                        <li class="f11"></li>
+                        <li class="f12"></li>
+                        <li class="f13"></li>
+                        <li class="f14"></li>
+                        <li class="f15"></li>
+                        <li class="f16"></li>
+                        <li class="f17"></li>
+                        <li class="f18"></li>
+                        <li class="f19"></li>
+                        <li class="f20"></li>
+                        <li class="f21"></li>
+                        <li class="f22"></li>
+                        <li class="f23"></li>
+                    </ul>
+                    <ul class="clearfix">
+                        <li class="f24"></li>
+                        <li class="f25"></li>
+                        <li class="f26"></li>
+                        <li class="f27"></li>
+                        <li class="f28"></li>
+                        <li class="f29"></li>
+                        <li class="f30"></li>
+                        <li class="f31"></li>
+                        <li class="f32"></li>
+                        <li class="f33"></li>
+                        <li class="f34"></li>
+                        <li class="f35"></li>
+                        <li class="f36"></li>
+                        <li class="f37"></li>
+                        <li class="f38"></li>
+                        <li class="f39"></li>
+                        <li class="f40"></li>
+                        <li class="f41"></li>
+                        <li class="f42"></li>
+                        <li class="f43"></li>
+                        <li class="f44"></li>
+                        <li class="f45"></li>
+                        <li class="f46"></li>
+                        <li class="f47"></li>
+                    </ul>
+                    <ul class="clearfix">
+                        <li class="f48"></li>
+                        <li class="f49"></li>
+                        <li class="f50"></li>
+                        <li class="f51"></li>
+                        <li class="f52"></li>
+                        <li class="f53"></li>
+                        <li class="f54"></li>
+                        <li class="f55"></li>
+                        <li class="f56"></li>
+                        <li class="f57"></li>
+                        <li class="f58"></li>
+                        <li class="f59"></li>
+                        <li class="f60"></li>
+                        <li class="f61"></li>
+                        <li class="f62"></li>
+                        <li class="f63"></li>
+                        <li class="f64"></li>
+                        <li class="f65"></li>
+                        <li class="f66"></li>
+                        <li class="f67"></li>
+                        <li class="f68"></li>
+                        <li class="f69"></li>
+                        <li class="f70"></li>
+                        <li class="f71"></li>
+                    </ul>
+                    <ul class="clearfix">
+                        <li class="f72"></li>
+                        <li class="f73"></li>
+                        <li class="f74"></li>
+                        <li class="f75"></li>
+                        <li class="f76"></li>
+                        <li class="f77"></li>
+                        <li class="f78"></li>
+                        <li class="f79"></li>
+                        <li class="f80"></li>
+                        <li class="f81"></li>
+                        <li class="f82"></li>
+                        <li class="f83"></li>
+                        <li class="f84"></li>
+                        <li class="f85"></li>
+                        <li class="f86"></li>
+                        <li class="f87"></li>
+                        <li class="f88"></li>
+                        <li class="f89"></li>
+                        <li class="f90"></li>
+                        <li class="f91"></li>
+                        <li class="f92"></li>
+                        <li class="f93"></li>
+                        <li class="f94"></li>
+                        <li class="f95"></li>
+                    </ul>
+                    <ul class="clearfix">
+                        <li class="f96"></li>
+                        <li class="f97"></li>
+                        <li class="f98"></li>
+                        <li class="f99"></li>
+                        <li class="g00"></li>
+                        <li class="g01"></li>
+                        <li class="g02"></li>
+                        <li class="g03"></li>
+                        <li class="g04"></li>
+                        <li class="g05"></li>
+                        <li class="g06"></li>
+                        <li class="g07"></li>
+                        <li class="g08"></li>
+                        <li class="g09"></li>
+                        <li class="g10"></li>
+                        <li class="g11"></li>
+                        <li class="g12"></li>
+                        <li class="g13"></li>
+                        <li class="g14"></li>
+                        <li class="g15"></li>
+                        <li class="g16"></li>
+                        <li class="g17"></li>
+                        <li class="g18"></li>
+                        <li class="g19"></li>
+                    </ul>
+                    <ul class="clearfix">
+                        <li class="g20"></li>
+                        <li class="g21"></li>
+                        <li class="g22"></li>
+                        <li class="g23"></li>
+                        <li class="g24"></li>
+                        <li class="g25"></li>
+                        <li class="g26"></li>
+                        <li class="g27"></li>
+                        <li class="g28"></li>
+                        <li class="g29"></li>
+                        <li class="g30"></li>
+                        <li class="g31"></li>
+                        <li class="g32"></li>
+                        <li class="g33"></li>
+                        <li class="g34"></li>
+                        <li class="g86"></li>
+                        <li class="g87"></li>
+                        <li class="g88"></li>
+                        <li class="g89"></li>
+                        <li class="g90"></li>
+                        <li class="g91"></li>
+                        <li class="g92"></li>
+                        <li class="g93"></li>
+                        <li class="g94"></li>
+                    </ul>
+                    <ul class="clearfix">
+                        <li class="g95"></li>
+                        <li class="g96"></li>
+                        <li class="g97"></li>
+                        <li class="g98"></li>
+                        <li class="g99"></li>
+                        <li class="h00"></li>
+                        <li class="h01"></li>
+                        <li class="h02"></li>
+                        <li class="h03"></li>
+                        <li class="h04"></li>
+                        <li class="h05"></li>
+                        <li class="h06"></li>
+                    </ul>
+                </div>
+                <div class="sc_face_page">
+                    <p class="sc_face_num"><span>1</span>/<b></b></p>
+                    <p class="sc_face_btn clearfix"><a class="sc_face_pre" href="javascript:;">&lt;</a><a class="sc_face_next" href="javascript:;">&gt;</a></p>
+                </div>
+            </div>
+            <!--守护专属-->
+            <div id="sc_face_exclusive" class="sc_face_con">
+                <div class="sc_face_ban">
+                    <ul class="clearfix">
+                        <li class="g76">
+                        <li class="g77">
+                        <li class="g78">
+                        <li class="g79">
+                        <li class="g80">
+                        <li class="g81">
+                        <li class="g82">
+                        <li class="g83">
+                        <li class="g84">
+                        <li class="g85">
+                    </ul>
+                </div>
+                <div class="sc_face_page">
+                    <p class="sc_face_num"><span>1</span>/<b></b></p>
+                    <p class="sc_face_btn clearfix"><a class="sc_face_pre" href="javascript:;">&lt;</a><a class="sc_face_next" href="javascript:;">&gt;</a></p>
+                </div>
+            </div>
+            <!--特权1-->
+            <div id="sc_face_vip1" class="sc_face_con">
+                <div class="sc_face_ban">
+                    <ul class="clearfix">
+                        <li class="h07">
+                        <li class="h08">
+                        <li class="h09">
+                        <li class="h10">
+                        <li class="h11">
+                        <li class="h12">
+                        <li class="h13">
+                        <li class="h14">
+                        <li class="h15">
+                        <li class="h16">
+                    </ul>
+                </div>
+                <div class="sc_face_page">
+                    <p class="sc_face_num"><span>1</span>/<b></b></p>
+                    <p class="sc_face_btn clearfix"><a class="sc_face_pre" href="javascript:;">&lt;</a><a class="sc_face_next" href="javascript:;">&gt;</a></p>
+                </div>
+            </div>
+            <!--特权2-->
+            <div id="sc_face_vip2" class="sc_face_con">
+                <div class="sc_face_ban">
+                    <ul class="clearfix">
+                        <li class="h17">
+                        <li class="h18">
+                        <li class="h19">
+                        <li class="h20">
+                        <li class="h21">
+                        <li class="h22">
+                        <li class="h23">
+                        <li class="h24">
+                        <li class="h25">
+                        <li class="h26">
+                    </ul>
+                </div>
+                <div class="sc_face_page">
+                    <p class="sc_face_num"><span>1</span>/<b></b></p>
+                    <p class="sc_face_btn clearfix"><a class="sc_face_pre" href="javascript:;">&lt;</a><a class="sc_face_next" href="javascript:;">&gt;</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="statement_guide commTips" id="statement_guide" style="bottom: 5px;"></div>
+</div>
+<!--礼物消息-->
+<script id="GiftMessageTmpl" type="text/x-jsrender">
+    <li>
+        <p class="sc_details">
+            {{if wealth_level!=0}}<i class="wealth_level" style="background: url(http://ossweb-img.qq.com/images/mgc/css_img/common/wealth_level/{{:wealth_level}}.png?v=3_8_8_2016_15_4_final_3) no-repeat center center;"></i>{{/if}}
+            <!-- 移动端管理员图标替换111 -->
+            {{if isMobileManager}}<i class="icon_mobile_admin" style="background: url(http://ossweb-img.qq.com/images/mgc/css_img/common/mobile_admin.png?v=3_8_8_2016_15_4_final_3) no-repeat center center; background-size: cover;"></i>{{else}}
+            {{if guardIcon!=""}}<span class="icon_lv" style="background: url(http://ossweb-img.qq.com/images/mgc/css_img/common/guard/{{:guardIcon}}.png?v=3_8_8_2016_15_4_final_3) no-repeat center center"></span>{{/if}}
+            {{/if}}
+            <!-- end -->
+            {{if vipIcon!=""}}<span class="icon_honor" style="background: url(http://ossweb-img.qq.com/images/mgc/css_img/common/nobility/{{:vipIcon}}.png?v=3_8_8_2016_15_4_final_3) no-repeat center center;"></span>{{/if}}<span class="talkPlayer" data-name="{{:senderName}}" data-area="{{:senderZoneName}}">{{:senderName}}</span><span style="color: #ffb400; font-size: 12px; font-weight: bold;">送了</span>
+            {{if isShowRoomConfig}}
+            <span class="showroom-gift icon_gift icon_gift_{{:giftItemID}}" style="background:url(http://ossweb-img.qq.com/images/mgc/css_img/flash/gift/freegift/gift_{{:giftItemID}}.png) no-repeat center center; background-size: cover;"></span>
+            {{else}}
+            <span class="icon_gift icon_gift_{{:giftItemID}}"></span>
+            {{/if}}
+            <span style="color: #ffb400; font-size: 18px; font-weight: bold;">×{{:count}}</span>
+        </p>
+    </li>
+</script>
+<!--礼物消息END-->
+<!--礼物单元-->
+<script id="GiftCellTmpl" type="text/x-jsrender">
+    <li data-id="{{:id}}" data-num="{{:num}}" data-lefttime="{{:lefttime}}" data-desc="{{:desc}}">
+        {{if id != 36 && isShowroom}}
+        <a class="showroom-freegift gift gift_{{:id}}" style="background:url(http://ossweb-img.qq.com/images/mgc/css_img/flash/gift/freegift/gift_{{:id}}.png) no-repeat center center; background-size:cover;"></a>
+        {{else}}
+        <a class="gift_{{:id}}"></a>
+        {{/if}}
+        <span class="num">{{:num}}</span>
+    </li>
+</script>
+<!--礼物单元-->
+<!--聊天START-->
+<script id="MsgChatTmpl" type="text/x-jsrender">
+    <li id="MsgChat_{{:MsgChatNum}}">
+        {{if channel==0}}
+        <p class="sc_details" style="color:{{:TextColor}};">
+            <span class="nick-info" style="color: {{:NickColor}}">
+            {{if senderPlayerType==0}}{{if wealth_level > 0 }}<i class="anchor_level_{{:anchor_level}}">{{:wealth_level}}</i>{{/if}}<i class="icon_anchor"></i>{{/if}}{{if senderPlayerType==1}}<i class="icon_admin"></i>{{/if}}{{if senderPlayerType==2}}{{if wealth_level!=0}}<i class="wealth_level" style="background: url(http://ossweb-img.qq.com/images/mgc/css_img/common/wealth_level/{{:wealth_level}}.png?v=3_8_8_2016_15_4_final_3) no-repeat center center;"></i>{{/if}}
+            <!-- 移动端管理员图标替换111 -->
+            {{if isMobileManager}}<i class="icon_mobile_admin" style="background: url(http://ossweb-img.qq.com/images/mgc/css_img/common/mobile_admin.png?v=3_8_8_2016_15_4_final_3) no-repeat center center; background-size: cover;"></i>{{else}}
+            {{if senderdefend>0}}<i class="icon_lv" style="background: url(http://ossweb-img.qq.com/images/mgc/css_img/common/guard/{{:senderdefend}}.png?v=3_8_8_2016_15_4_final_3) no-repeat center center"></i>{{/if}}
+            {{/if}}
+            <!-- end -->
+            {{/if}}<span data-name="{{:senderName}}" data-area="{{:senderZoneName}}" class="talkPlayer">{{:senderName}}</span>{{if viplevel>0}}<i class="icon_honor" style="background: url(http://ossweb-img.qq.com/images/mgc/css_img/common/nobility/{{:viplevel}}.png?v=3_8_8_2016_15_4_final_3) no-repeat center center;"></i>{{/if}} 说：</span>{{:MsgStr}}
+        </p>
+        {{/if}}
+        {{if channel==1}}
+        <p class="sc_details" style="color: {{:TextColor}}">    
+            <span class="nick-info" style="color: {{:NickColor}}">{{if isSelf==1}}<span data-name="{{:senderName}}" data-area="{{:senderZoneName}}" class="talkPlayer">{{:senderName}}</span> 对你说：{{/if}}{{if isSelf==2}}你对 <span data-name="{{:receiverName}}" data-area="{{:receiverZoneName}}" class="talkPlayer">{{:receiverName}}</span> 说：{{/if}}</span>{{:MsgStr}}
+        </p>
+        {{/if}}
+        {{if channel==3}}
+            {{if systemType==1}}
+                {{if senderPlayerType==2}}
+                    <p class="sc_details" style="color: {{:TextColor}}">{{if wealth_level!=0}}<i class="wealth_level" style="background: url(http://ossweb-img.qq.com/images/mgc/css_img/common/wealth_level/{{:wealth_level}}.png?v=3_8_8_2016_15_4_final_3) no-repeat center center;"></i>{{else}}{{/if}}
+                    <!-- 移动端管理员身份图标替换111 -->
+                    {{if senderIsMobileManager}}<i class="icon_mobile_admin" style="background: url(http://ossweb-img.qq.com/images/mgc/css_img/common/mobile_admin.png?v=3_8_8_2016_15_4_final_3) no-repeat center center; background-size: cover;"></i>{{else}}{{if senderdefend>0}}<i class="icon_lv" style="background: url(http://ossweb-img.qq.com/images/mgc/css_img/common/guard/{{:senderdefend}}.png?v=3_8_8_2016_15_4_final_3) no-repeat center center"></i>{{/if}}{{/if}}
+                    <!-- 替换逻辑 end -->
+                    {{:senderName}}{{if viplevel>0}}<i class="icon_honor" style="background: url(http://ossweb-img.qq.com/images/mgc/css_img/common/nobility/{{:viplevel}}.png?v=3_8_8_2016_15_4_final_3) no-repeat center center;"></i>{{/if}}
+                    将{{if sender_jacket!=0}}<i class="wealth_level" style="background: url(http://ossweb-img.qq.com/images/mgc/css_img/common/wealth_level/{{:sender_jacket}}.png?v=3_8_8_2016_15_4_final_3) no-repeat center center;"></i>{{else}}{{/if}}{{if targetGuardIcon>0}}<i class="icon_lv" style="background: url(http://ossweb-img.qq.com/images/mgc/css_img/common/guard/{{:targetGuardIcon}}.png?v=3_8_8_2016_15_4_final_3) no-repeat center center"></i>{{/if}}{{:receiverName}}{{if targetVipLevel>0}}<i class="icon_honor" style="background: url(http://ossweb-img.qq.com/images/mgc/css_img/common/nobility/{{:targetVipLevel}}.png?v=3_8_8_2016_15_4_final_3) no-repeat center center;"></i>{{/if}}{{else}}<p class="sc_details" style="color: {{:TextColor}}">{{:receiverName}}{{/if}}{{:jy}}</p>
+            {{/if}}
+            {{if systemType==2}}
+                    <p class="sc_details" style="color: {{:TextColor}}">{{if senderdefend < 400}}{{/if}}{{if wealth_level!=0}}<i class="wealth_level" style="background: url(http://ossweb-img.qq.com/images/mgc/css_img/common/wealth_level/{{:wealth_level}}.png?v=3_8_8_2016_15_4_final_3) no-repeat center center;"></i>{{else}}{{/if}}
+                    <!-- 移动端管理员图标替换111 -->
+                    {{if isMobileManager}}<i class="icon_mobile_admin" style="background: url(http://ossweb-img.qq.com/images/mgc/css_img/common/mobile_admin.png?v=3_8_8_2016_15_4_final_3) no-repeat center center; background-size: cover;"></i>{{else}}{{if senderdefend>0}}<i class="icon_lv" style="background: url(http://ossweb-img.qq.com/images/mgc/css_img/common/guard/{{:senderdefend}}.png?v=3_8_8_2016_15_4_final_3) no-repeat center center"></i>{{/if}}
+                    {{/if}}
+                    <!-- end -->
+                    {{if senderdefend == 400}}天尊守护{{/if}}{{if senderdefend == 500}}超凡守护{{/if}}{{if senderdefend >= 400}}{{/if}}{{:senderName}}{{if senderdefend >= 400}}{{/if}}{{if viplevel>0}}<i class="icon_honor" style="background: url(http://ossweb-img.qq.com/images/mgc/css_img/common/nobility/{{:viplevel}}.png?v=3_8_8_2016_15_4_final_3) no-repeat center center;"></i>{{/if}}{{if senderdefend < 400}}{{/if}}{{if senderdefend == 100 ||senderdefend == 200 ||senderdefend == 250||senderdefend == 300}}{{if is_vip_with_anchor}}{{if viplevel==1}}{{:vipCardPattern}}进入本房间{{else viplevel>1}}{{:vipCardPattern}}驾临本房间{{else}}{{:vipCardPattern}}进入本房间{{/if}}{{else}}{{if viplevel>3}}{{:vipCardPattern}}驾临本房间{{else}}{{:vipCardPattern}}进入本房间{{/if}}{{/if}}{{else senderdefend == 400}}乘坐独角兽驾临房间,房间瞬间蓬荜生辉！{{else senderdefend == 500}}乘坐梦幻飞马驾临房间,房间瞬间蓬荜生辉！{{else}}{{if is_vip_with_anchor}}{{if viplevel>1}}{{:vipCardPattern}}驾临本房间{{/if}}{{else}}{{if viplevel>3}}{{:vipCardPattern}}驾临本房间{{/if}}{{/if}}{{/if}}
+                    </p>
+            {{/if}}
+            {{if systemType==0||systemType==3}}<p class="sc_details" style="color: {{:TextColor}}">{{:MsgStr}}</p>
+            {{/if}}
+        {{/if}}
+        {{if channel==4}}
+            {{if flag==1}}
+                <p class="sc_details" style="color: {{:TextColor}}">{{if systemType==0}}{{:MsgStr}}{{else}}{{if viplevel>0}}[后援]{{if viplevel>0}}<i class="icon_honor" style="background: url(http://ossweb-img.qq.com/images/mgc/css_img/common/nobility/{{:viplevel}}.png?v=3_8_8_2016_15_4_final_3) no-repeat center center;"></i>{{/if}}{{:senderName}}来到了梦工厂，为本团增加{{:sender_jacket}}点积分~{{else}}{{:MsgStr}}{{/if}}{{/if}}</p>
+            {{else}}                
+                <p class="sc_details" style="color: {{:TextColor}}"><span class="nick-info" style="color: {{:NickColor}}">[后援]<span data-name="{{:senderName}}" data-area="{{:senderZoneName}}" class="talkPlayer">{{:senderName}}</span> 说：</span>{{:MsgStr}}</p>
+            {{/if}}
+        {{/if}}
+    </li>
+</script>
+<!--聊天END-->
+<!--最近私聊列表START-->
+<script id="MsgChatObjectTmpl" type="text/x-jsrender">
+    <li data-name="{{:name}}" data-zonename="{{:zonename}}" receiverId="{{:receiverId}}" receivername="{{:name}}" receiverzonename="{{:zonename}}" receiverplayertype="{{:receiverPlayerType}}">{{:name}}</li>
+</script>
+<!--最近私聊列表END-->
+<!-- <script src="js/mgc_chat.js?v=3_8_8_2016_15_4_final_3"></script> -->

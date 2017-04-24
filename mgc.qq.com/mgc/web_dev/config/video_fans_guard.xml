@@ -1,0 +1,273 @@
+﻿<?xml version="1.0" encoding="gb2312" standalone="yes" ?>
+<!--
+level:id 守护id 
+注
+（1）高级守护的id必须大于低级守护的id
+（2）守护的id不能变，第一个版本使用 [10 20 50 100] 4个id，方便将来需要插入中间等级的守护
+
+<name> 守护名称
+<RequireAffinity>  需要亲密度
+<RequireFollower> 需要免费花数量
+<ChatFont>	聊天字体
+<ChatFace> 专属表情
+<WordNum>  聊天文字上限（单位：字符）
+<JoinBroadcast> 入场广播
+<ChatCdTime> 缩短聊天CD时间
+<JoinFullRoom> 加入人满房间
+<PrivilegeChatBoard> 显示在主播端的专属聊天区
+<PlayerListFont>玩家列表上的字体			
+<BanChat> 禁言特权 0 没有 1 有
+<GuardIcon> 守护标签
+<MaxNumCount> 需要手动赋予的守护级别，最大人数
+-->
+
+<!--与之前xml所做的修改相信信息如下
+	name 属性直接修改为 对应守护的名称 如初级守护，中级守护
+	Guard_Icon 根据守护等级 改为 guard_lvX X代表等级如10 20 50 等	
+-->
+
+
+<GuardConfig>
+	<level id="0" valid="1"><!--id 为0表示没有守护，不得修改-->
+		<name>0</name>
+		<ChatFont></ChatFont>
+		<ChatFace>0</ChatFace>
+		<WordNum>86</WordNum>
+		<JoinBroadcast>0</JoinBroadcast>
+		<ChatCdTime>0</ChatCdTime>
+		<JoinFullRoom>0</JoinFullRoom>	
+		<PlayerListFont></PlayerListFont>
+		<GuardIcon></GuardIcon>
+		<PrivilegeChatBoard>0</PrivilegeChatBoard>
+		<BanChat>0</BanChat>
+		<MaxNumCount>0</MaxNumCount>
+		<RequireFollower>0</RequireFollower>
+		<RequireAffinity>0</RequireAffinity>
+		<RequireMonthlyAffinity>0</RequireMonthlyAffinity>
+		<!-- 防黑粉：玩家是否享有不受“刚进入视频房间时候，公屏聊天的冷却时间”特权， 0 -不享有， 非0 - 享有 -->
+		<IngorePublicChatCoolDownOnEnter>0</IngorePublicChatCoolDownOnEnter>
+		<ShowInSuperGuardList>0</ShowInSuperGuardList>
+	</level>
+	<level id="10" valid="1"><!--初级守护-->
+		<name>初级守护</name>
+		<ChatFont>0</ChatFont>
+		<ChatFace>0</ChatFace>
+		<WordNum>86</WordNum>
+		<JoinBroadcast>0</JoinBroadcast>
+		<ChatCdTime>0</ChatCdTime>
+		<JoinFullRoom>0</JoinFullRoom>	
+		<PlayerListFont></PlayerListFont>					
+		<GuardIcon>guard_lv10</GuardIcon>
+		<PrivilegeChatBoard>0</PrivilegeChatBoard>
+		<BanChat>0</BanChat>
+		<MaxNumCount>0</MaxNumCount>
+		<RequireFollower>0</RequireFollower>
+		<RequireAffinity>5000</RequireAffinity>
+		<RequireMonthlyAffinity>0</RequireMonthlyAffinity>
+		<!-- 防黑粉：玩家是否享有不受“刚进入视频房间时候，公屏聊天的冷却时间”特权， 0 -不享有， 非0 - 享有 -->
+		<IngorePublicChatCoolDownOnEnter>0</IngorePublicChatCoolDownOnEnter>
+		<ShowInSuperGuardList>0</ShowInSuperGuardList>
+	</level>
+	<level id="20" valid="1"><!--中级守护-->
+		<name>中级守护</name>
+		<ChatFont>0</ChatFont>
+		<ChatFace>1</ChatFace>
+		<WordNum>86</WordNum>
+		<JoinBroadcast>0</JoinBroadcast>
+		<ChatCdTime>0</ChatCdTime>
+		<JoinFullRoom>0</JoinFullRoom>	
+		<PlayerListFont></PlayerListFont>
+		<GuardIcon>guard_lv20</GuardIcon>
+		<PrivilegeChatBoard>0</PrivilegeChatBoard>
+		<BanChat>0</BanChat>
+		<MaxNumCount>0</MaxNumCount>
+		<RequireFollower>0</RequireFollower>
+		<RequireAffinity>10000</RequireAffinity>
+		<RequireMonthlyAffinity>0</RequireMonthlyAffinity>
+		<!-- 防黑粉：玩家是否享有不受“刚进入视频房间时候，公屏聊天的冷却时间”特权， 0 -不享有， 非0 - 享有 -->
+		<IngorePublicChatCoolDownOnEnter>0</IngorePublicChatCoolDownOnEnter>
+		<ShowInSuperGuardList>0</ShowInSuperGuardList>
+	</level>
+	<level id="50" valid="1"><!--高级守护-->
+		<name>高级守护</name>
+		<ChatFont>font_videoroom_chatgaojiguard</ChatFont>
+		<ChatFace>1</ChatFace>
+		<WordNum>86</WordNum>
+		<JoinBroadcast>0</JoinBroadcast>
+		<ChatCdTime>0</ChatCdTime>
+		<JoinFullRoom>0</JoinFullRoom>	
+		<PlayerListFont></PlayerListFont>					
+		<GuardIcon>guard_lv50</GuardIcon>
+		<PrivilegeChatBoard>0</PrivilegeChatBoard>
+		<BanChat>0</BanChat>
+		<MaxNumCount>0</MaxNumCount>
+		<RequireFollower>0</RequireFollower>
+		<RequireAffinity>20000</RequireAffinity>
+		<RequireMonthlyAffinity>0</RequireMonthlyAffinity>
+		<!-- 防黑粉：玩家是否享有不受“刚进入视频房间时候，公屏聊天的冷却时间”特权， 0 -不享有， 非0 - 享有 -->
+		<IngorePublicChatCoolDownOnEnter>1</IngorePublicChatCoolDownOnEnter>
+		<ShowInSuperGuardList>0</ShowInSuperGuardList>
+	</level>
+	<level id="100" valid="1"><!--100是天使守护，需要手动赋予-->
+		<name>天使守护</name>
+		<ChatFont>font_videoroom_chatyellowjacket</ChatFont>
+		<ChatFace>1</ChatFace>
+		<WordNum>255</WordNum><!--255个字符-->
+		<JoinBroadcast>1</JoinBroadcast>
+		<ChatCdTime>1</ChatCdTime>
+		<JoinFullRoom>1</JoinFullRoom>	
+		<DisableRooms><!--无视加入人满房间特权的房间列表-->
+			<room value="520"/>
+			<room value="521"/>
+		</DisableRooms>
+		<PlayerListFont></PlayerListFont>
+		<GuardIcon>guard_lv100</GuardIcon>
+		<PrivilegeChatBoard>1</PrivilegeChatBoard>
+		<BanChat>1</BanChat>
+		<MaxNumCount>20</MaxNumCount>
+		<RequireFollower>0</RequireFollower>
+		<RequireAffinity>50000</RequireAffinity>
+		<RequireMonthlyAffinity>0</RequireMonthlyAffinity>
+		<!-- 防黑粉：玩家是否享有不受“刚进入视频房间时候，公屏聊天的冷却时间”特权， 0 -不享有， 非0 - 享有 -->
+		<IngorePublicChatCoolDownOnEnter>1</IngorePublicChatCoolDownOnEnter>
+		<ShowInSuperGuardList>1</ShowInSuperGuardList>
+	</level>
+	<level id="200" valid="1"><!--200是灵魂守护-->
+		<name>灵魂守护</name>
+		<ChatFont>font_videoroom_chatxindongguard</ChatFont>
+		<ChatFace>1</ChatFace>
+		<WordNum>255</WordNum><!--255个字符-->
+		<JoinBroadcast>1</JoinBroadcast>
+		<ChatCdTime>1</ChatCdTime>
+		<JoinFullRoom>1</JoinFullRoom>	
+		<DisableRooms><!--无视加入人满房间特权的房间列表-->
+			<room value="520"/>
+			<room value="521"/>
+		</DisableRooms>
+		<PlayerListFont></PlayerListFont>
+		<GuardIcon>guard_lv200</GuardIcon>
+		<PrivilegeChatBoard>1</PrivilegeChatBoard>
+		<BanChat>1</BanChat>
+		<MaxNumCount>0</MaxNumCount>
+		<RequireFollower>0</RequireFollower>
+		<RequireAffinity>200000</RequireAffinity>
+		<RequireMonthlyAffinity>0</RequireMonthlyAffinity>
+		<!-- 防黑粉：玩家是否享有不受“刚进入视频房间时候，公屏聊天的冷却时间”特权， 0 -不享有， 非0 - 享有 -->
+		<IngorePublicChatCoolDownOnEnter>1</IngorePublicChatCoolDownOnEnter>
+		<ShowInSuperGuardList>1</ShowInSuperGuardList>
+	</level>
+	<level id="250" valid="1"><!--250是非凡守护-->
+		<name>非凡守护</name>
+		<ChatFont>font_videoroom_chatxindongguard</ChatFont>
+		<ChatFace>1</ChatFace>
+		<WordNum>255</WordNum><!--255个字符-->
+		<JoinBroadcast>1</JoinBroadcast>
+		<ChatCdTime>1</ChatCdTime>
+		<JoinFullRoom>1</JoinFullRoom>
+		<DisableRooms><!--无视加入人满房间特权的房间列表-->
+			<room value="520"/>
+			<room value="521"/>
+		</DisableRooms>
+		<PlayerListFont></PlayerListFont>
+		<GuardIcon>guard_lv250</GuardIcon>
+		<PrivilegeChatBoard>1</PrivilegeChatBoard>
+		<BanChat>1</BanChat>
+		<MaxNumCount>0</MaxNumCount>
+		<RequireFollower>0</RequireFollower>
+		<RequireAffinity>500000</RequireAffinity>
+		<RequireMonthlyAffinity>0</RequireMonthlyAffinity>
+		<!-- 防黑粉：玩家是否享有不受“刚进入视频房间时候，公屏聊天的冷却时间”特权， 0 -不享有， 非0 - 享有 -->
+		<IngorePublicChatCoolDownOnEnter>1</IngorePublicChatCoolDownOnEnter>
+		<ShowInSuperGuardList>1</ShowInSuperGuardList>
+	</level>
+	<level id="300" valid="1"><!--300是至尊守护-->
+		<name>至尊守护</name>
+		<ChatFont>font_videoroom_chatzhuimengguard</ChatFont>
+		<ChatFace>1</ChatFace>
+		<WordNum>255</WordNum><!--255个字符-->
+		<JoinBroadcast>1</JoinBroadcast>
+		<ChatCdTime>1</ChatCdTime>
+		<JoinFullRoom>1</JoinFullRoom>	
+		<DisableRooms><!--无视加入人满房间特权的房间列表-->
+			<room value="520"/>
+			<room value="521"/>
+		</DisableRooms>
+		<PlayerListFont></PlayerListFont>
+		<GuardIcon>guard_lv300</GuardIcon>
+		<PrivilegeChatBoard>1</PrivilegeChatBoard>
+		<BanChat>1</BanChat>
+		<MaxNumCount>0</MaxNumCount>
+		<RequireFollower>0</RequireFollower>
+		<RequireAffinity>800000</RequireAffinity>
+		<RequireMonthlyAffinity>0</RequireMonthlyAffinity>
+		<!-- 防黑粉：玩家是否享有不受“刚进入视频房间时候，公屏聊天的冷却时间”特权， 0 -不享有， 非0 - 享有 -->
+		<IngorePublicChatCoolDownOnEnter>1</IngorePublicChatCoolDownOnEnter>
+		<ShowInSuperGuardList>1</ShowInSuperGuardList>
+	</level>
+	
+	<level id="400" valid="1"><!--400是天尊守护-->
+		<name>天尊守护</name>
+		<ChatFont>font_videoroom_chatzhuimengguard</ChatFont>
+		<ChatFace>1</ChatFace>
+		<WordNum>255</WordNum><!--255个字符-->
+		<JoinBroadcast>1</JoinBroadcast>
+		<ChatCdTime>1</ChatCdTime>
+		<JoinFullRoom>1</JoinFullRoom>
+		<DisableRooms><!--无视加入人满房间特权的房间列表-->
+			<room value="520"/>
+			<room value="521"/>
+		</DisableRooms>
+		<PlayerListFont></PlayerListFont>
+		<GuardIcon>guard_lv400</GuardIcon>
+		<PrivilegeChatBoard>1</PrivilegeChatBoard>
+		<BanChat>1</BanChat>
+		<MaxNumCount>0</MaxNumCount>
+		<RequireFollower>0</RequireFollower>
+		<RequireAffinity>5000000</RequireAffinity>
+		<RequireMonthlyAffinity>100000</RequireMonthlyAffinity>
+		<!-- 防黑粉：玩家是否享有不受“刚进入视频房间时候，公屏聊天的冷却时间”特权， 0 -不享有， 非0 - 享有 -->
+		<IngorePublicChatCoolDownOnEnter>1</IngorePublicChatCoolDownOnEnter>
+		<ShowInSuperGuardList>1</ShowInSuperGuardList>
+	</level>
+	
+	<level id="500" valid="1"><!--500是超凡守护-->
+		<name>超凡守护</name>
+		<ChatFont>font_videoroom_chatzhuimengguard</ChatFont>
+		<ChatFace>1</ChatFace>
+		<WordNum>255</WordNum><!--255个字符-->
+		<JoinBroadcast>2</JoinBroadcast>
+		<ChatCdTime>1</ChatCdTime>
+		<JoinFullRoom>1</JoinFullRoom>
+		<DisableRooms><!--无视加入人满房间特权的房间列表-->
+			<room value="520"/>
+			<room value="521"/>
+		</DisableRooms>
+		<PlayerListFont></PlayerListFont>
+		<GuardIcon>guard_lv500</GuardIcon>
+		<PrivilegeChatBoard>1</PrivilegeChatBoard>
+		<BanChat>1</BanChat>
+		<MaxNumCount>0</MaxNumCount>
+		<RequireFollower>0</RequireFollower>
+		<RequireAffinity>10000000</RequireAffinity>
+		<RequireMonthlyAffinity>300000</RequireMonthlyAffinity>
+		<!-- 防黑粉：玩家是否享有不受“刚进入视频房间时候，公屏聊天的冷却时间”特权， 0 -不享有， 非0 - 享有 -->
+		<IngorePublicChatCoolDownOnEnter>1</IngorePublicChatCoolDownOnEnter>
+		<ShowInSuperGuardList>1</ShowInSuperGuardList>
+	</level>
+	
+	<!--专属聊天表情的id列表，逻辑判断需要，具体value="xxx"的配置内容参考chat_img.xml，就是那里面的g55这种东西-->
+	<ChatFaces>
+		<face_str value="g76"/>
+		<face_str value="g77"/>
+		<face_str value="g78"/>
+		<face_str value="g79"/>
+		<face_str value="g80"/>
+		<face_str value="g81"/>
+		<face_str value="g82"/>
+		<face_str value="g83"/>
+		<face_str value="g84"/>
+		<face_str value="g85"/>
+	</ChatFaces>
+	<!--守护规则的网址-->
+	<RuleURL value="http://x5.qq.com/act/a20140306mar/page04.htm#1"/>
+</GuardConfig>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <script>
+        function toDesktop(sUrl, sName) {
+            try {
+                var WshShell = new ActiveXObject("WScript.Shell");
+                var oUrlLink = WshShell.CreateShortcut(WshShell.SpecialFolders("Desktop") + "\\" + sName + ".url");
+                oUrlLink.TargetPath = sUrl;
+                oUrlLink.Save();
+            } catch (e) {
+                alert("当前IE安全级别不允许操作！");
+            }
+        }
+    </script>
+</head>
+<body>
+    <a href="javascript:void(0);" onclick="toDesktop('http:\//www.163.com/','163网易')">创建快捷方式</a>
+</body>
+</html>
+<!--[if !IE]>|xGv00|d43227f47d3dc0abbdd417d55e2f94a0<![endif]-->
